@@ -3,11 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chankoo.github.io/</loc>
+    <lastmod>2022-10-06T13:18:27+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/categories/</loc>
+    <lastmod>2022-10-06T13:18:27+09:00</lastmod>
   </url><url>
-    <loc>https://chankoo.github.io/series/</loc>
+    <loc>https://chankoo.github.io/posts/</loc>
+    <lastmod>2022-10-06T13:18:27+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/tags/react/</loc>
+    <lastmod>2022-10-06T13:18:27+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/tags/</loc>
+    <lastmod>2022-10-06T13:18:27+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/posts/useeffect/</loc>
+    <lastmod>2022-10-06T13:18:27+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/</loc>
+    <lastmod>2022-10-06T13:18:27+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/series/</loc>
   </url>
 </urlset>

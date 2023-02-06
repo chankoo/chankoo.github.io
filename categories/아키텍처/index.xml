@@ -18,7 +18,7 @@
           
             content Dependency Inversion Principle(의존성 역전 원칙) 더 구체적인(하위 계층) 모듈에 의존하는 일반적(절차적)인 의존성의 흐름을 역전 시켜 더 추상적인(상위 계층) 모듈에 의존하도록해야한다.
 추상 팩토리 패턴이 대표적이다. 객체 생성을 위해 구체 팩토리에 의존(요소 -&amp;gt; 팩토리)하는 것이 아니라, 추상 팩토리에 의존(요소 -&amp;gt; 추상 팩토리 $\Leftarrow$ 구체 팩토리)하는 것이다.
-refs [[클린 아키텍처]] links [[SOLID]] [[추상 팩토리 패턴]] 
+refs 클린 아키텍처 links SOLID 추상 팩토리 패턴 
           
           
         
@@ -52,7 +52,7 @@ refs links
         
           
             content Inversion Of Control(제어 역전) 클라이언트(프로그래머)가 직접 사용할 의존성을 제어하는 상황(일반적, 절차적) -&amp;gt; 누군가(프레임워크)가 의존성을 정해주는(DI, DIP 등으로) 상황(역전)
-refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 지배한다 links [[DI]] [[DIP]] 
+refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 지배한다 links DI DIP 
           
           
         

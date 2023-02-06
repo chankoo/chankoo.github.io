@@ -17,7 +17,7 @@
         
           
             content 파일 시스템에서 파일 관리를 위해 파일의 위치, 크기, 소유자 등의 정보를 갖고있는 특수한 형태의 파일.
-refs links [[파일 시스템]] 
+refs links 파일 시스템 
           
           
         
@@ -34,7 +34,7 @@ refs links [[파일 시스템]]
         
           
             content 저장 장치에 접근할 수 있는 경로를 특정 디렉토리에 연결하여, 디렉토리 구조에 편입하는 일
-refs links [[디렉토리]] 
+refs links 디렉토리 
           
           
         
@@ -51,7 +51,7 @@ refs links [[디렉토리]]
         
           
             content 블록 단위로 데이터 전송하는 기억장치. 캐릭터 디바이스에 비해 전송 속도가 빠르다.
-refs links [[블록]] [[캐릭터 디바이스]] 
+refs links 블록 캐릭터 디바이스 
           
           
         
@@ -85,7 +85,7 @@ refs links
         
           
             content AWS Elastic Block Store AWS가 제공하는 기본 블록 디바이스. 네트워크 통신하는 논리 드라이브(볼륨)이다.
-refs links [[블록 디바이스]] [[볼륨]] 
+refs links 블록 디바이스 볼륨 
           
           
         
@@ -137,7 +137,7 @@ refs links
         
           
             content 파일시스템을 갖춘 논리적 스토리지 영역. 보통 마운트하여 접근한다.
-refs links [[마운트]] [[파일 시스템]] 
+refs links 마운트 파일 시스템 
           
           
         
@@ -224,7 +224,7 @@ refs POSIX - 위키백과, 우리 모두의 백과사전 links
         
           
             content Pthreads. UNIX 기반 운영체제에서 멀티 스레딩을 위해 제공하는 api(Windows 도 제공해준다). C 에서 사용
-refs links [[POSIX]] 
+refs links POSIX 
           
           
         

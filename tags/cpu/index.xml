@@ -35,7 +35,7 @@ refs links
           
             content ISA를 구현하는 방법을 말한다.
 예를들어, Intel 과 AMD는 동일한 x86 ISA를 쓰지만 Microarchitecture가 다르기에 성능이 다르다.
-refs links [[ISA]] 
+refs links ISA 
           
           
         
@@ -55,7 +55,7 @@ refs links [[ISA]]
 각 비트를 기능적으로 분할하여 의미를 부여했고, 이 기계어 명렁어와 일대일 매핑하여 문자화 한 것이 어셈블리어(Assembly Language)다.
 이는 소프트웨어와 하드웨어간 인터페이스를 규정한 것이다.
 프로세서 칩을 만드는 회사마다 ISA가 다른데, 익숙한 예로 Intel의 칩은 x86을, ARM의 칩은 ARM 을 쓰는 식이다.
-refs 명령어 집합 - 위키백과, 우리 모두의 백과사전 [ 컴퓨터구조 ] ISA (Instruction Set Architecture) links [[Assembly Language]] 
+refs 명령어 집합 - 위키백과, 우리 모두의 백과사전 [ 컴퓨터구조 ] ISA (Instruction Set Architecture) links Assembly Language 
           
           
         
@@ -73,7 +73,7 @@ refs 명령어 집합 - 위키백과, 우리 모두의 백과사전 [ 컴퓨터�
           
             content 여러 일을 한꺼번에 실행하는 것. Parallelism. CPU의 영역에서 명세하자면, 여러 CPU가 스레드 하나씩을 동시에 실행하는 것이다.
 여러가지 일을 동시에 다루는 요구사항(동시성)을 해결하는 방법이기에 해법의 속성을 내포한다. 실제로 순차적 프로그래밍의 한계를 넘어서는 기술이다.
-refs [[7가지 동시성 모델]] links [[동시성]] 
+refs 7가지 동시성 모델 links 동시성 
           
           
         
@@ -91,7 +91,7 @@ refs [[7가지 동시성 모델]] links [[동시성]]
           
             content 여러 일을 한꺼번에 다루는 것. Concurrency. CPU의 영역에서 명세하자면, CPU는 하나인데 여러 스레드에서 각각의 제어흐름을 다루고 있는 상황이다.
 순차적 프로그래밍의 한계를 넘어서려는 시도이나, 여러가지 일을 동시에 다루는 척(병렬 착각, 병행성)하는 것이기에 그자체로 문제의 속성을 내포한다.
-refs [[7가지 동시성 모델]] links [[병렬성]] 
+refs 7가지 동시성 모델 links 병렬성 
           
           
         

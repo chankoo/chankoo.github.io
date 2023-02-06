@@ -35,7 +35,7 @@ refs POSIX - 위키백과, 우리 모두의 백과사전 links
         
           
             content Pthreads. UNIX 기반 운영체제에서 멀티 스레딩을 위해 제공하는 api(Windows 도 제공해준다). C 에서 사용
-refs links [[POSIX]] 
+refs links POSIX 
           
           
         

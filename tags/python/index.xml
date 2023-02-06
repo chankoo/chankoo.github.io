@@ -52,10 +52,8 @@ refs 바이트코드 - 위키백과, 우리 모두의 백과사전 links
           
             content 파이썬 바이트코드 역 어셈블러. CPython의 바이트 코드를 역 어셈블하여 바이트 코드 레벨의 분석을 돕는 모듈이다.
 ex)
-def hi(x): x += 1 print(x) return x ![[Pasted image 20221009230203.png]]
-![[Pasted image 20221009225606.png]]
-위 정의에 따르면, 추상화한 바이트코드를 바이트코드로 바꾸는 것도 어셈블이라 볼 수 있다.
-refs dis &amp;mdash; 파이썬 바이트 코드 역 어셈블러 — 파이썬 설명서 주석판 links [[Bytecode]] [[Assembler]] 
+def hi(x): x += 1 print(x) return x 위 정의에 따르면, 추상화한 바이트코드를 바이트코드로 바꾸는 것도 어셈블이라 볼 수 있다.
+refs dis &amp;mdash; 파이썬 바이트 코드 역 어셈블러 — 파이썬 설명서 주석판 links Bytecode Assembler 
           
           
         
@@ -72,7 +70,7 @@ refs dis &amp;mdash; 파이썬 바이트 코드 역 어셈블러 — 파이썬 �
         
           
             content 파이썬의 list 보다 np array가
-더 빠르다 element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다. 메모리 효율이 좋다. element의 크기가 작다 PyObject - 4 for type pointer, 4 for reference count, 4 for value &amp;ndash; and the memory allocators rounds up to 16 value - single-precision numbers takes 4 bytes each, double-precision ones, 8 bytes 동적배열 아니어서 크기가 고정이며 정적할당하여 element 타입이 고정이다 refs links [[PyObject]] [[Dynamic Array]] 
+더 빠르다 element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다. 메모리 효율이 좋다. element의 크기가 작다 PyObject - 4 for type pointer, 4 for reference count, 4 for value &amp;ndash; and the memory allocators rounds up to 16 value - single-precision numbers takes 4 bytes each, double-precision ones, 8 bytes 동적배열 아니어서 크기가 고정이며 정적할당하여 element 타입이 고정이다 refs links PyObject Dynamic Array 
           
           
         
@@ -92,7 +90,7 @@ refs dis &amp;mdash; 파이썬 바이트 코드 역 어셈블러 — 파이썬 �
 PyObject의 ref count가 0
 순환 참조가 발생했고 그 외의 참조는 없음
 예제
-l = [] l.append(l) del l refs Fetching Title#39yg links [[가비지 컬렉션]] [[PyObject]] 
+l = [] l.append(l) del l refs Fetching Title#39yg links 가비지 컬렉션 PyObject 
           
           
         
@@ -110,7 +108,7 @@ l = [] l.append(l) del l refs Fetching Title#39yg links [[가비지 컬렉션]] 
           
             content 일반적인 CPython 구현체를 가정했을때, 파이썬의 메모리 관리 알고리즘은 C로 쓰여졌고, 이해를 위해서는 CPython 의 내부 구현을 알아야한다.
 모든 파이썬 객체는 PyObject라는 c struct 를 확장하여 가지고 있다. PyObject는 ob_type 포인터 객체의 타입 오브젝트를 가리키고, ob_refcnt를 통해 레퍼런스 카운팅을 한다.
-refs Memory Management in Python – Real Python links [[CPython]] 
+refs Memory Management in Python – Real Python links CPython 
           
           
         
@@ -127,7 +125,7 @@ refs Memory Management in Python – Real Python links [[CPython]]
         
           
             content Cython: C-Extension for Python C로 파이썬의 확장 모듈을 구현하기 위해 설계한 컴파일 언어. C와 파이썬의 superset이며 표준 C/C++ 컴파일러를 이용한다. 이러한 특성은 파이썬 언어의 높은 생산성을 활용하면서 실행 속도의 향상을 가져온다.
-refs 사이썬 - 위키백과, 우리 모두의 백과사전 links [[CPython]] [[컴파일러]] 
+refs 사이썬 - 위키백과, 우리 모두의 백과사전 links CPython 컴파일러 
           
           
         
@@ -144,7 +142,7 @@ refs 사이썬 - 위키백과, 우리 모두의 백과사전 links [[CPython]] [
         
           
             content C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 인터프리터로 실행한다.
-refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동작 원리 – 도서출판 인사이트 links [[인터프리터]] [[Bytecode]] 
+refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동작 원리 – 도서출판 인사이트 links 인터프리터 Bytecode 
           
           
         

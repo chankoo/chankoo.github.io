@@ -17,7 +17,7 @@
         
           
             content 파이썬의 list 보다 np array가
-더 빠르다 element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다. 메모리 효율이 좋다. element의 크기가 작다 PyObject - 4 for type pointer, 4 for reference count, 4 for value &amp;ndash; and the memory allocators rounds up to 16 value - single-precision numbers takes 4 bytes each, double-precision ones, 8 bytes 동적배열 아니어서 크기가 고정이며 정적할당하여 element 타입이 고정이다 refs links [[PyObject]] [[Dynamic Array]] 
+더 빠르다 element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다. 메모리 효율이 좋다. element의 크기가 작다 PyObject - 4 for type pointer, 4 for reference count, 4 for value &amp;ndash; and the memory allocators rounds up to 16 value - single-precision numbers takes 4 bytes each, double-precision ones, 8 bytes 동적배열 아니어서 크기가 고정이며 정적할당하여 element 타입이 고정이다 refs links PyObject Dynamic Array 
           
           
         
@@ -37,7 +37,7 @@
 PyObject의 ref count가 0
 순환 참조가 발생했고 그 외의 참조는 없음
 예제
-l = [] l.append(l) del l refs Fetching Title#39yg links [[가비지 컬렉션]] [[PyObject]] 
+l = [] l.append(l) del l refs Fetching Title#39yg links 가비지 컬렉션 PyObject 
           
           
         
@@ -55,7 +55,7 @@ l = [] l.append(l) del l refs Fetching Title#39yg links [[가비지 컬렉션]] 
           
             content 일반적인 CPython 구현체를 가정했을때, 파이썬의 메모리 관리 알고리즘은 C로 쓰여졌고, 이해를 위해서는 CPython 의 내부 구현을 알아야한다.
 모든 파이썬 객체는 PyObject라는 c struct 를 확장하여 가지고 있다. PyObject는 ob_type 포인터 객체의 타입 오브젝트를 가리키고, ob_refcnt를 통해 레퍼런스 카운팅을 한다.
-refs Memory Management in Python – Real Python links [[CPython]] 
+refs Memory Management in Python – Real Python links CPython 
           
           
         

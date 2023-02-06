@@ -156,7 +156,7 @@
           
             <p>content 여러 일을 한꺼번에 다루는 것. Concurrency. CPU의 영역에서 명세하자면, CPU는 하나인데 여러 스레드에서 각각의 제어흐름을 다루고 있는 상황이다.
 순차적 프로그래밍의 한계를 넘어서려는 시도이나, 여러가지 일을 동시에 다루는 척(병렬 착각, 병행성)하는 것이기에 그자체로 문제의 속성을 내포한다.
-refs [[7가지 동시성 모델]] links [[병렬성]]</p>
+refs 7가지 동시성 모델 links 병렬성</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C%EC%84%B1/" title="Read More" class="excerpt_more button">Read More</a>
@@ -296,7 +296,7 @@ refs [[7가지 동시성 모델]] links [[병렬성]]</p>
 PyObject의 ref count가 0
 순환 참조가 발생했고 그 외의 참조는 없음
 예제
-l = [] l.append(l) del l refs Fetching Title#39yg links [[가비지 컬렉션]] [[PyObject]]</p>
+l = [] l.append(l) del l refs Fetching Title#39yg links 가비지 컬렉션 PyObject</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/python-gc/" title="Read More" class="excerpt_more button">Read More</a>
@@ -365,7 +365,7 @@ l = [] l.append(l) del l refs Fetching Title#39yg links [[가비지 컬렉션]] 
           
             <p>content 일반적인 CPython 구현체를 가정했을때, 파이썬의 메모리 관리 알고리즘은 C로 쓰여졌고, 이해를 위해서는 CPython 의 내부 구현을 알아야한다.
 모든 파이썬 객체는 PyObject라는 c struct 를 확장하여 가지고 있다. PyObject는 ob_type 포인터 객체의 타입 오브젝트를 가리키고, ob_refcnt를 통해 레퍼런스 카운팅을 한다.
-refs Memory Management in Python – Real Python links [[CPython]]</p>
+refs Memory Management in Python – Real Python links CPython</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/pyobject/" title="Read More" class="excerpt_more button">Read More</a>
@@ -431,7 +431,7 @@ refs Memory Management in Python – Real Python links [[CPython]]</p>
           
             <p>content 런타임에 원시코드를 읽어가며 기계어로 실시간 컴파일하는 기술. 그 결과 JIT 컴파일을 활용하면 정적 컴파일만큼 빠른 속도로 돌면서도, 인터프리터 언어만큼 잦은 인터랙션을 제공할 수 있다.
 refs -JIT 컴파일 - 위키백과, 우리 모두의 백과사전
-links [[인터프리터]]</p>
+links 인터프리터</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/jit-%EC%BB%B4%ED%8C%8C%EC%9D%BC/" title="Read More" class="excerpt_more button">Read More</a>
@@ -498,7 +498,7 @@ links [[인터프리터]]</p>
             <p>content 프로그래밍 언어(일반적으로 고급 언어)를 읽고 바로 실행하는 프로그램 또는 환경.
 인터프리터는 아래 세가지 중 적어도 하나의 일을 한다.
 소스코드를 직접 실행한다. 소스코드를 더 효율적인 중간 코드(바이트코드)로 변환하고 이를 실행한다. (인터프리터 시스템의 일부인) 컴파일러가 사전에 컴파일한 파일의 실행을 호출한다. 현대의 많은 인터프리터가 JIT 컴파일 과 같은 기술을 지원하여서 컴파일러와의 엄격한 구분은 의미를 잃었다.
-refs 인터프리터 - 위키백과, 우리 모두의 백과사전 links [[컴파일러]] [[JIT 컴파일]] [[Bytecode]]</p>
+refs 인터프리터 - 위키백과, 우리 모두의 백과사전 links 컴파일러 JIT 컴파일 Bytecode</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0/" title="Read More" class="excerpt_more button">Read More</a>
@@ -631,7 +631,7 @@ refs Fetching Title#psou links</p>
         <div class="pale">
           
             <p>content Cython: C-Extension for Python C로 파이썬의 확장 모듈을 구현하기 위해 설계한 컴파일 언어. C와 파이썬의 superset이며 표준 C/C++ 컴파일러를 이용한다. 이러한 특성은 파이썬 언어의 높은 생산성을 활용하면서 실행 속도의 향상을 가져온다.
-refs 사이썬 - 위키백과, 우리 모두의 백과사전 links [[CPython]] [[컴파일러]]</p>
+refs 사이썬 - 위키백과, 우리 모두의 백과사전 links CPython 컴파일러</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/cython/" title="Read More" class="excerpt_more button">Read More</a>
@@ -698,7 +698,7 @@ refs 사이썬 - 위키백과, 우리 모두의 백과사전 links [[CPython]] [
         <div class="pale">
           
             <p>content C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 인터프리터로 실행한다.
-refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동작 원리 – 도서출판 인사이트 links [[인터프리터]] [[Bytecode]]</p>
+refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동작 원리 – 도서출판 인사이트 links 인터프리터 Bytecode</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/cpython/" title="Read More" class="excerpt_more button">Read More</a>

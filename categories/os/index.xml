@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OS on </title>
+    <link>https://chankoo.github.io/categories/os/</link>
+    <description>Recent content in OS on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 10 Jan 2023 20:43:09 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>디렉토리</title>
+      <link>https://chankoo.github.io/posts/%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC/</link>
+      <pubDate>Tue, 10 Jan 2023 20:43:09 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC/</guid>
+      <description>
+        
+          
+            content 파일 시스템에서 파일 관리를 위해 파일의 위치, 크기, 소유자 등의 정보를 갖고있는 특수한 형태의 파일.
+refs links [[파일 시스템]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>마운트</title>
+      <link>https://chankoo.github.io/posts/%EB%A7%88%EC%9A%B4%ED%8A%B8/</link>
+      <pubDate>Fri, 14 Oct 2022 00:23:47 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%A7%88%EC%9A%B4%ED%8A%B8/</guid>
+      <description>
+        
+          
+            content 저장 장치에 접근할 수 있는 경로를 특정 디렉토리에 연결하여, 디렉토리 구조에 편입하는 일
+refs links [[디렉토리]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>블록 디바이스</title>
+      <link>https://chankoo.github.io/posts/%EB%B8%94%EB%A1%9D-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4/</link>
+      <pubDate>Fri, 14 Oct 2022 00:03:26 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%B8%94%EB%A1%9D-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4/</guid>
+      <description>
+        
+          
+            content 블록 단위로 데이터 전송하는 기억장치. 캐릭터 디바이스에 비해 전송 속도가 빠르다.
+refs links [[블록]] [[캐릭터 디바이스]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>캐릭터 디바이스</title>
+      <link>https://chankoo.github.io/posts/%E1%84%8F%E1%85%A2%E1%84%85%E1%85%B5%E1%86%A8%E1%84%90%E1%85%A5-%E1%84%83%E1%85%B5%E1%84%87%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3/</link>
+      <pubDate>Fri, 14 Oct 2022 00:02:36 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%E1%84%8F%E1%85%A2%E1%84%85%E1%85%B5%E1%86%A8%E1%84%90%E1%85%A5-%E1%84%83%E1%85%B5%E1%84%87%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3/</guid>
+      <description>
+        
+          
+            content 바이트 단위로 데이터 전송하는 문자 기반 기억장치. 키보드, 마우스, 모니터 등
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>EBS</title>
+      <link>https://chankoo.github.io/posts/ebs/</link>
+      <pubDate>Fri, 14 Oct 2022 00:02:11 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/ebs/</guid>
+      <description>
+        
+          
+            content AWS Elastic Block Store AWS가 제공하는 기본 블록 디바이스. 네트워크 통신하는 논리 드라이브(볼륨)이다.
+refs links [[블록 디바이스]] [[볼륨]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PCB</title>
+      <link>https://chankoo.github.io/posts/pcb/</link>
+      <pubDate>Thu, 13 Oct 2022 23:31:07 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/pcb/</guid>
+      <description>
+        
+          
+            content Process Control Block. 프로세스 관리를 위한 정보를 담은 OS 커널의 자료구조이다. 프로세스 실행과 스케줄링 등에 필요한 정보를 포함하여 OS 입장에서 프로세스를 표현한다.
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>블록</title>
+      <link>https://chankoo.github.io/posts/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%A8/</link>
+      <pubDate>Thu, 13 Oct 2022 23:01:33 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%A8/</guid>
+      <description>
+        
+          
+            content OS가 저장 매체의 정보를 관리하는 단위. 저장할(디스크에 쓸) 때 블록(보통 4kb) 단위로 정보를 묶어서 쓰고, 그 참조를 관리한다.
+윈도우에선 &amp;lsquo;클러스터&amp;rsquo;라는 용어도 쓴다.
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>볼륨</title>
+      <link>https://chankoo.github.io/posts/%EB%B3%BC%EB%A5%A8/</link>
+      <pubDate>Thu, 13 Oct 2022 22:29:51 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%B3%BC%EB%A5%A8/</guid>
+      <description>
+        
+          
+            content 파일시스템을 갖춘 논리적 스토리지 영역. 보통 마운트하여 접근한다.
+refs links [[마운트]] [[파일 시스템]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Starvation</title>
+      <link>https://chankoo.github.io/posts/starvation/</link>
+      <pubDate>Sun, 09 Oct 2022 00:15:32 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/starvation/</guid>
+      <description>
+        
+          
+            content 기아 상태 여러 스레드나 프로세스가 자원을 점유하는 상황에서, 특정 스레드나 프로세스가 자원을 할당 받지 못하여 진행할 수 없는 상태
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DeadLock</title>
+      <link>https://chankoo.github.io/posts/deadlock/</link>
+      <pubDate>Sun, 09 Oct 2022 00:11:12 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/deadlock/</guid>
+      <description>
+        
+          
+            content 교착 상태 한정된 자원을 공유하는 작업들이 서로의 종료를 기다리며 끝없이 대치하는 상태
+데드락의 필요 조건. 아래 4가지를 모두 만족시켜야 데드락이 발생한다.
+상호 배제(Mutual Exclusion) 점유 대기 비선점 순환 대기 refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Race Condition</title>
+      <link>https://chankoo.github.io/posts/race-condition/</link>
+      <pubDate>Sat, 08 Oct 2022 21:56:55 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/race-condition/</guid>
+      <description>
+        
+          
+            content 경쟁 상태 여러 스레드나 프로세스가 한 자원에 동시에 접근하고 조작하여 예상치 못한 결과(non deterministic)을 도출할 수 있는 상태. 즉, 스레드가 자원에 접근하는 타이밍에 결과가 영향 받는 상태를 의미한다
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>POSIX</title>
+      <link>https://chankoo.github.io/posts/posix/</link>
+      <pubDate>Sat, 08 Oct 2022 21:49:21 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/posix/</guid>
+      <description>
+        
+          
+            content Portable Operation System Interface X UNIX OS 들이 공통적으로 제공해야할 API 규격이다. OS 간 이식성 높은 유닉스 응용프로그램을 만들기 위한 목적이다.
+C 언어 인터페이스인 시스템콜과 프로세스 환경, 파일 시스템, 압축 포맷 등 다양한 규격을 정의한다.
+refs POSIX - 위키백과, 우리 모두의 백과사전 links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>POSIX threads</title>
+      <link>https://chankoo.github.io/posts/posix-threads/</link>
+      <pubDate>Sat, 08 Oct 2022 21:33:44 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/posix-threads/</guid>
+      <description>
+        
+          
+            content Pthreads. UNIX 기반 운영체제에서 멀티 스레딩을 위해 제공하는 api(Windows 도 제공해준다). C 에서 사용
+refs links [[POSIX]] 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OOP on </title>
+    <link>https://chankoo.github.io/tags/oop/</link>
+    <description>Recent content in OOP on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 06 Oct 2022 23:42:10 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/oop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIP</title>
+      <link>https://chankoo.github.io/posts/dip/</link>
+      <pubDate>Thu, 06 Oct 2022 23:42:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/dip/</guid>
+      <description>
+        
+          
+            content Dependency Inversion Principle(의존성 역전 원칙) 더 구체적인(하위 계층) 모듈에 의존하는 일반적(절차적)인 의존성의 흐름을 역전 시켜 더 추상적인(상위 계층) 모듈에 의존하도록해야한다.
+추상 팩토리 패턴이 대표적이다. 객체 생성을 위해 구체 팩토리에 의존(요소 -&amp;gt; 팩토리)하는 것이 아니라, 추상 팩토리에 의존(요소 -&amp;gt; 추상 팩토리 $\Leftarrow$ 구체 팩토리)하는 것이다.
+refs [[클린 아키텍처]] links [[SOLID]] [[추상 팩토리 패턴]] 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>메모리 on </title>
+    <link>https://chankoo.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/</link>
+    <description>Recent content in 메모리 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 03 Oct 2022 16:17:54 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>why numpy array</title>
+      <link>https://chankoo.github.io/posts/why-numpy-array/</link>
+      <pubDate>Mon, 03 Oct 2022 16:17:54 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/why-numpy-array/</guid>
+      <description>
+        
+          
+            content 파이썬의 list 보다 np array가
+더 빠르다 element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다. 메모리 효율이 좋다. element의 크기가 작다 PyObject - 4 for type pointer, 4 for reference count, 4 for value &amp;ndash; and the memory allocators rounds up to 16 value - single-precision numbers takes 4 bytes each, double-precision ones, 8 bytes 동적배열 아니어서 크기가 고정이며 정적할당하여 element 타입이 고정이다 refs links [[PyObject]] [[Dynamic Array]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Python-GC</title>
+      <link>https://chankoo.github.io/posts/python-gc/</link>
+      <pubDate>Mon, 03 Oct 2022 16:08:52 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/python-gc/</guid>
+      <description>
+        
+          
+            content 파이썬(CPython)에서는 아래 두가지 객체에 대해 가비지 컬렉션을 실행한다.
+PyObject의 ref count가 0
+순환 참조가 발생했고 그 외의 참조는 없음
+예제
+l = [] l.append(l) del l refs Fetching Title#39yg links [[가비지 컬렉션]] [[PyObject]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PyObject</title>
+      <link>https://chankoo.github.io/posts/pyobject/</link>
+      <pubDate>Mon, 03 Oct 2022 15:37:15 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/pyobject/</guid>
+      <description>
+        
+          
+            content 일반적인 CPython 구현체를 가정했을때, 파이썬의 메모리 관리 알고리즘은 C로 쓰여졌고, 이해를 위해서는 CPython 의 내부 구현을 알아야한다.
+모든 파이썬 객체는 PyObject라는 c struct 를 확장하여 가지고 있다. PyObject는 ob_type 포인터 객체의 타입 오브젝트를 가리키고, ob_refcnt를 통해 레퍼런스 카운팅을 한다.
+refs Memory Management in Python – Real Python links [[CPython]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dynamic Array</title>
+      <link>https://chankoo.github.io/posts/dynamic-array/</link>
+      <pubDate>Mon, 03 Oct 2022 00:11:36 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/dynamic-array/</guid>
+      <description>
+        
+          
+            content python 의 list 는 dynamic array이다. 런타임에 element를 추가할때, 리스트에 할당된 메모리 공간이 모자라면 리스트 크기를 늘린다. 그런데 dynamic array도 엄연한 array 이기에 &amp;rsquo;element 가 연속된 메모리 공간을 점유한다&amp;rsquo;는 제약을 따라야한다. 그래서 python(cpython)은 요소가 추가되어 리스트 크기가 변해야할 때, 전체 list를 복사하여 더 큰(2의 거듭제곱) 공간에 통째로 재할당 한다.
+이는 시간 복잡도 계산에 영향을 준다. list 에 요소를 더하는 append 나 insert 연산의 시간 복잡도를 계산할 때 메모리 재할당 시간까지 고려해야 한다는 의미다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

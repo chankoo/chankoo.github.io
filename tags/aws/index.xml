@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on </title>
+    <link>https://chankoo.github.io/tags/aws/</link>
+    <description>Recent content in AWS on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 14 Oct 2022 00:02:11 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EBS</title>
+      <link>https://chankoo.github.io/posts/ebs/</link>
+      <pubDate>Fri, 14 Oct 2022 00:02:11 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/ebs/</guid>
+      <description>
+        
+          
+            content AWS Elastic Block Store AWS가 제공하는 기본 블록 디바이스. 네트워크 통신하는 논리 드라이브(볼륨)이다.
+refs links [[블록 디바이스]] [[볼륨]] 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

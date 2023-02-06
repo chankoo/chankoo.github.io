@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>아키텍처 on </title>
+    <link>https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link>
+    <description>Recent content in 아키텍처 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 06 Oct 2022 23:42:10 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIP</title>
+      <link>https://chankoo.github.io/posts/dip/</link>
+      <pubDate>Thu, 06 Oct 2022 23:42:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/dip/</guid>
+      <description>
+        
+          
+            content Dependency Inversion Principle(의존성 역전 원칙) 더 구체적인(하위 계층) 모듈에 의존하는 일반적(절차적)인 의존성의 흐름을 역전 시켜 더 추상적인(상위 계층) 모듈에 의존하도록해야한다.
+추상 팩토리 패턴이 대표적이다. 객체 생성을 위해 구체 팩토리에 의존(요소 -&amp;gt; 팩토리)하는 것이 아니라, 추상 팩토리에 의존(요소 -&amp;gt; 추상 팩토리 $\Leftarrow$ 구체 팩토리)하는 것이다.
+refs [[클린 아키텍처]] links [[SOLID]] [[추상 팩토리 패턴]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DI</title>
+      <link>https://chankoo.github.io/posts/di/</link>
+      <pubDate>Thu, 06 Oct 2022 23:33:48 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/di/</guid>
+      <description>
+        
+          
+            content Dependency Injection(의존성 주입) 클라이언트에서 사용할 의존성을 외부에서 넣어주는 일
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>IOC</title>
+      <link>https://chankoo.github.io/posts/ioc/</link>
+      <pubDate>Thu, 06 Oct 2022 22:45:02 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/ioc/</guid>
+      <description>
+        
+          
+            content Inversion Of Control(제어 역전) 클라이언트(프로그래머)가 직접 사용할 의존성을 제어하는 상황(일반적, 절차적) -&amp;gt; 누군가(프레임워크)가 의존성을 정해주는(DI, DIP 등으로) 상황(역전)
+refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 지배한다 links [[DI]] [[DIP]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>MVVM</title>
+      <link>https://chankoo.github.io/posts/mvvm/</link>
+      <pubDate>Mon, 03 Oct 2022 13:02:32 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/mvvm/</guid>
+      <description>
+        
+          
+            content View -&amp;gt; ViewModel -&amp;gt; Model 의 구조. View 를 그리기 위한 데이터와 비즈니스 로직을 ViewModel에 모두 담아 View와 Model 결합을 끊는다. MVC(UIKit) 를 이용하던 iOS 개발의 대세 흐름이 MVVM(SwiftUI)을 이용하는 것으로 변했는데, MVC에 비해 각 계층이 더 잘 분리되어 유지보수와 테스트가 더 용이하다. MVVM은 View가 ViewModel을, ViewModel이 Model을 소유하는 방식인데, MVC의 ViewController가 Model과 View를 모두 떠맡아 비대해지는 이슈를 해결하는 구조이다. 화면을 VC 단위로 구성하는 것이 아니라, View가 필요한 비즈니스 로직(ViewModel)을 가져와 사용하는 것이다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Container-Presenter 패턴</title>
+      <link>https://chankoo.github.io/posts/container-presenter-%ED%8C%A8%ED%84%B4/</link>
+      <pubDate>Mon, 03 Oct 2022 12:37:15 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/container-presenter-%ED%8C%A8%ED%84%B4/</guid>
+      <description>
+        
+          
+            content 리액트에서 로직과 뷰 컴포넌트를 분리하는 패턴. 데이터를 가져오고 가공하는 컨테이너 컴포넌트와, 데이터를 렌더링하는 프레젠터 컴포넌트로 나눈다.
+aka Smart &amp;amp; Dumb conponents 대개 컨테이너는 렌더링하는 컴포넌트 외에 다른 ui는 렌더링하지 않으며, 프레젠터는 컨테이너로 부터 데이터를 받아 단순히 렌더링 한다.
+관심사 분리를 통해 재사용성 높은 순수한 프레젠터 컴포넌트를 만드는 이점이 있으며, 테스트가 쉬워서 험블 객체 패턴을 따랐다고도 볼 수 있겠다.
+반면 데이터 가져오는 역할을 hook이 점차 대체하며, 굳이 컨테이너 컴포넌트를 두는게 불필요하다는 의견도 늘고있다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

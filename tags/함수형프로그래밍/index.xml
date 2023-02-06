@@ -6,7 +6,25 @@
     <description>Recent content in 함수형프로그래밍 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 06 Oct 2022 01:40:37 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Oct 2022 21:07:04 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thread Safe</title>
+      <link>https://chankoo.github.io/posts/thread-safe/</link>
+      <pubDate>Sat, 08 Oct 2022 21:07:04 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/thread-safe/</guid>
+      <description>
+        
+          
+            content 일반적으로, 여러 스레드가 실행해도 정상적으로 동작(매번 같은 결과를 리턴)하는 코드(변수, 함수 등)를 스레드 안전 하다고 말한다.
+동시성을 다룰 땐 &amp;lsquo;스레드 안전&amp;rsquo; 해야하는데, 이를 구현하는 모델로 잠금장치, 함수형 프로그래밍, 클로저 등을 쓸 수 있겠다.
+refs [[7가지 동시성 모델]] links [[동시성]] 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>함수형 컴포넌트</title>
       <link>https://chankoo.github.io/posts/%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</link>

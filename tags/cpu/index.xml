@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPU on </title>
+    <link>https://chankoo.github.io/tags/cpu/</link>
+    <description>Recent content in CPU on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 13 Oct 2022 23:31:07 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/cpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PCB</title>
+      <link>https://chankoo.github.io/posts/pcb/</link>
+      <pubDate>Thu, 13 Oct 2022 23:31:07 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/pcb/</guid>
+      <description>
+        
+          
+            content Process Control Block. 프로세스 관리를 위한 정보를 담은 OS 커널의 자료구조이다. 프로세스 실행과 스케줄링 등에 필요한 정보를 포함하여 OS 입장에서 프로세스를 표현한다.
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Microarchitecture</title>
+      <link>https://chankoo.github.io/posts/microarchitecture/</link>
+      <pubDate>Sun, 09 Oct 2022 22:34:57 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/microarchitecture/</guid>
+      <description>
+        
+          
+            content ISA를 구현하는 방법을 말한다.
+예를들어, Intel 과 AMD는 동일한 x86 ISA를 쓰지만 Microarchitecture가 다르기에 성능이 다르다.
+refs links [[ISA]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ISA</title>
+      <link>https://chankoo.github.io/posts/isa/</link>
+      <pubDate>Sun, 09 Oct 2022 22:22:35 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/isa/</guid>
+      <description>
+        
+          
+            content 명령어 집합 구조(Instruction Set Architecture) CPU가 이해할 수 있는 기계어 명령어 집합을 의미한다. CPU 마다 비트 길이와 코드가 다르다.
+각 비트를 기능적으로 분할하여 의미를 부여했고, 이 기계어 명렁어와 일대일 매핑하여 문자화 한 것이 어셈블리어(Assembly Language)다.
+이는 소프트웨어와 하드웨어간 인터페이스를 규정한 것이다.
+프로세서 칩을 만드는 회사마다 ISA가 다른데, 익숙한 예로 Intel의 칩은 x86을, ARM의 칩은 ARM 을 쓰는 식이다.
+refs 명령어 집합 - 위키백과, 우리 모두의 백과사전 [ 컴퓨터구조 ] ISA (Instruction Set Architecture) links [[Assembly Language]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>병렬성</title>
+      <link>https://chankoo.github.io/posts/%EB%B3%91%EB%A0%AC%EC%84%B1/</link>
+      <pubDate>Sat, 08 Oct 2022 21:01:11 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%B3%91%EB%A0%AC%EC%84%B1/</guid>
+      <description>
+        
+          
+            content 여러 일을 한꺼번에 실행하는 것. Parallelism. CPU의 영역에서 명세하자면, 여러 CPU가 스레드 하나씩을 동시에 실행하는 것이다.
+여러가지 일을 동시에 다루는 요구사항(동시성)을 해결하는 방법이기에 해법의 속성을 내포한다. 실제로 순차적 프로그래밍의 한계를 넘어서는 기술이다.
+refs [[7가지 동시성 모델]] links [[동시성]] 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>동시성</title>
+      <link>https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C%EC%84%B1/</link>
+      <pubDate>Tue, 04 Oct 2022 22:32:56 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C%EC%84%B1/</guid>
+      <description>
+        
+          
+            content 여러 일을 한꺼번에 다루는 것. Concurrency. CPU의 영역에서 명세하자면, CPU는 하나인데 여러 스레드에서 각각의 제어흐름을 다루고 있는 상황이다.
+순차적 프로그래밍의 한계를 넘어서려는 시도이나, 여러가지 일을 동시에 다루는 척(병렬 착각, 병행성)하는 것이기에 그자체로 문제의 속성을 내포한다.
+refs [[7가지 동시성 모델]] links [[병렬성]] 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

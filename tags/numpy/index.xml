@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>numpy on </title>
+    <link>https://chankoo.github.io/tags/numpy/</link>
+    <description>Recent content in numpy on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 03 Oct 2022 16:17:54 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/numpy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>why numpy array</title>
+      <link>https://chankoo.github.io/posts/why-numpy-array/</link>
+      <pubDate>Mon, 03 Oct 2022 16:17:54 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/why-numpy-array/</guid>
+      <description>
+        
+          
+            content 파이썬의 list 보다 np array가
+더 빠르다 element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다. 메모리 효율이 좋다. element의 크기가 작다 PyObject - 4 for type pointer, 4 for reference count, 4 for value &amp;ndash; and the memory allocators rounds up to 16 value - single-precision numbers takes 4 bytes each, double-precision ones, 8 bytes 동적배열 아니어서 크기가 고정이며 정적할당하여 element 타입이 고정이다 refs links [[PyObject]] [[Dynamic Array]] 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

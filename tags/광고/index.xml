@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>광고 on </title>
+    <link>https://chankoo.github.io/tags/%EA%B4%91%EA%B3%A0/</link>
+    <description>Recent content in 광고 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 13 Oct 2022 17:03:36 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EA%B4%91%EA%B3%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>구글 태그 매니저</title>
+      <link>https://chankoo.github.io/posts/%EA%B5%AC%EA%B8%80-%ED%83%9C%EA%B7%B8-%EB%A7%A4%EB%8B%88%EC%A0%80/</link>
+      <pubDate>Thu, 13 Oct 2022 17:03:36 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EA%B5%AC%EA%B8%80-%ED%83%9C%EA%B7%B8-%EB%A7%A4%EB%8B%88%EC%A0%80/</guid>
+      <description>
+        
+          
+            content GTM 태그(어플리케이션에 삽입하여 이벤트를 전송하는 코드)를 관리하는 역할을 한다. 태그가 전송한 데이터를 분석하는 툴과는 별개이다.
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>postback</title>
+      <link>https://chankoo.github.io/posts/postback/</link>
+      <pubDate>Thu, 06 Oct 2022 00:01:42 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/postback/</guid>
+      <description>
+        
+          
+            content 광고 매체를 통해 유입된 어플리케이션 유저의 데이터를 다시 광고 매체로 돌려주는 일. 보통 어플리케이션 제공자 입장에서 postback 기능이 있는 솔루션(MMP)가 필요한데, 1) 유저 데이터를 가지고 이용중인 광고를 최적화 하려는 목적과 2) 광고 매체 마다 API 스펙이 제각각이어서 대응이 어려운 문제 때문이다.
+refs links [[webhook]] 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

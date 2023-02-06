@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UNIX on </title>
+    <link>https://chankoo.github.io/tags/unix/</link>
+    <description>Recent content in UNIX on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 08 Oct 2022 21:49:21 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>POSIX</title>
+      <link>https://chankoo.github.io/posts/posix/</link>
+      <pubDate>Sat, 08 Oct 2022 21:49:21 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/posix/</guid>
+      <description>
+        
+          
+            content Portable Operation System Interface X UNIX OS 들이 공통적으로 제공해야할 API 규격이다. OS 간 이식성 높은 유닉스 응용프로그램을 만들기 위한 목적이다.
+C 언어 인터페이스인 시스템콜과 프로세스 환경, 파일 시스템, 압축 포맷 등 다양한 규격을 정의한다.
+refs POSIX - 위키백과, 우리 모두의 백과사전 links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>POSIX threads</title>
+      <link>https://chankoo.github.io/posts/posix-threads/</link>
+      <pubDate>Sat, 08 Oct 2022 21:33:44 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/posix-threads/</guid>
+      <description>
+        
+          
+            content Pthreads. UNIX 기반 운영체제에서 멀티 스레딩을 위해 제공하는 api(Windows 도 제공해준다). C 에서 사용
+refs links [[POSIX]] 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

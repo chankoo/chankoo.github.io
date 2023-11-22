@@ -19,7 +19,41 @@
             content Co-Routine. 다른 루틴과 동등한 레벨에서 상호 협력하는 루틴. routine - subroutine 으로 종속되는 개념과 대비된다.
 프로그래머는 코루틴 간 제어 흐름을 의도에 따라 통제하는데, 실행 중인 코루틴이 자신의 흐름을 멈추고 다른 코루틴에 양보(yield) 하도록 하는 방식이다.
 코루틴 간의 스위칭을 통해 (스레드 스위칭과 유사하게) 동시성 프로그래밍할 수 있다. 코루틴이 &amp;ldquo;lightweight&amp;rdquo; 스레드라고도 불리는 이유이다. 스레드와의 주된 차이는, 별도의 스택 메모리를 갖지 않는다(stackless coroutine)는 점, 병렬 실행이 불가하다는 점 등이 있다.
-refs 파이썬과 동시성 프로그래밍 - Sungho&amp;rsquo;s Blog Coroutine, Thread 와의 차이와 그 특징 - Crucian Carp links 동시성 
+refs 파이썬과 동시성 프로그래밍 - Sungho&amp;rsquo;s Blog Coroutine, Thread 와의 차이와 그 특징 - Crucian Carp links 동시성 스레드 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Starvation</title>
+      <link>https://chankoo.github.io/posts/starvation/</link>
+      <pubDate>Sun, 09 Oct 2022 00:15:32 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/starvation/</guid>
+      <description>
+        
+          
+            content 기아 상태 여러 스레드나 프로세스가 자원을 점유하는 상황에서, 특정 스레드나 프로세스가 자원을 할당 받지 못하여 진행할 수 없는 상태
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Race Condition</title>
+      <link>https://chankoo.github.io/posts/race-condition/</link>
+      <pubDate>Sat, 08 Oct 2022 21:56:55 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/race-condition/</guid>
+      <description>
+        
+          
+            content 경쟁 상태 여러 스레드나 프로세스가 한 자원에 동시에 접근하고 조작하여 예상치 못한 결과(non deterministic)을 도출할 수 있는 상태. 즉, 스레드가 자원에 접근하는 타이밍에 결과가 영향 받는 상태를 의미한다
+refs links 
           
           
         

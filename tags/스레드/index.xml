@@ -6,7 +6,41 @@
     <description>Recent content in 스레드 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 08 Oct 2022 21:07:04 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EC%8A%A4%EB%A0%88%EB%93%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 00:15:32 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EC%8A%A4%EB%A0%88%EB%93%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starvation</title>
+      <link>https://chankoo.github.io/posts/starvation/</link>
+      <pubDate>Sun, 09 Oct 2022 00:15:32 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/starvation/</guid>
+      <description>
+        
+          
+            content 기아 상태 여러 스레드나 프로세스가 자원을 점유하는 상황에서, 특정 스레드나 프로세스가 자원을 할당 받지 못하여 진행할 수 없는 상태
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Race Condition</title>
+      <link>https://chankoo.github.io/posts/race-condition/</link>
+      <pubDate>Sat, 08 Oct 2022 21:56:55 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/race-condition/</guid>
+      <description>
+        
+          
+            content 경쟁 상태 여러 스레드나 프로세스가 한 자원에 동시에 접근하고 조작하여 예상치 못한 결과(non deterministic)을 도출할 수 있는 상태. 즉, 스레드가 자원에 접근하는 타이밍에 결과가 영향 받는 상태를 의미한다
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Thread Safe</title>
       <link>https://chankoo.github.io/posts/thread-safe/</link>

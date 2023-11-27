@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DB on </title>
+    <link>https://chankoo.github.io/categories/db/</link>
+    <description>Recent content in DB on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 22 Nov 2023 12:01:24 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DBCP</title>
+      <link>https://chankoo.github.io/posts/dbcp/</link>
+      <pubDate>Wed, 22 Nov 2023 12:01:24 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/dbcp/</guid>
+      <description>
+        
+          
+            content DB Connection Pool. DB와의 커넥션 풀을 어플리케이션 단에 미리 만들어두는 것이다. DB와 커넥션을 맺고 끊기 위해 매번 TCP 통신하는 비용을 줄인다.
+mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정 django 기준으로 성능에 중요한 설정 django는 커넥션 풀을 지원하지 않고, 요청마다 커넥션을 맺고 끊는다. CONN_MAX_AGE: 하지만 CONN_MAX_AGE(default: 0)에 값을 주면, 커넥션을 지정한 시간 동안 종료하지 않아 커넥션 풀처럼 재사용이 가능하다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mysql 인덱스</title>
+      <link>https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</link>
+      <pubDate>Tue, 21 Nov 2023 19:20:55 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</guid>
+      <description>
+        
+          
+            content mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
+refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu&amp;rsquo;s Diary 데이터 중심 애플리케이션 설계 links B-Tree INNODB Hash 인덱스 전문 검색 인덱스 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Transaction</title>
+      <link>https://chankoo.github.io/posts/transaction/</link>
+      <pubDate>Mon, 10 Oct 2022 16:37:09 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/transaction/</guid>
+      <description>
+        
+          
+            content DB에서 데이터를 조작하는 논리적 작업 단위. 이론적으로 Transaction은 ACID해야한다.
+예로 들면, 송금은 한 Transaction 이어야 하는데, 송금을 구성하는 1) 본인 계좌에서 출금 2) 상대 계좌에 입금이
+Atomic - 발생하거나, 발생하지 않거나하여 그 중간 상태가 없어야하며 Correct(Consistant) - 송금 실행 전 후 모두 관련된 제약을 지키는 상태여야하며 Isolated - 송금 실행 중 다른 Transaction과는 격리(read x, write x)되어야 하며 Durable - 송금 성공의 시점 데이터를 지속적으로 보관해야한다. refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Isolation Levels</title>
+      <link>https://chankoo.github.io/posts/isolation-levels/</link>
+      <pubDate>Sun, 09 Oct 2022 12:37:01 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/isolation-levels/</guid>
+      <description>
+        
+          
+            content Transaction 간 격리 수준. DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation 관점에서 엄격히 제한된 Transaction의 병행성 제약을 완화한다. 이상적으로 Transaction은 엄격히 격리해야 하지만, 실무적으로 걸림돌이 되기에, 격리 수준을 단계적으로 완화하는 Isolation Levels 를 정의하여 상황에 맞게 제공한다.
+Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다. Repetable Reads - 반복해서 읽어도 같은 결과를 보여주는 수준으로, 반복 read 도중 커밋이 발생하여 값이 변해도 커밋 전 값을 읽어간다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>알고리즘 on </title>
+    <link>https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+    <description>Recent content in 알고리즘 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 18 Oct 2022 22:29:11 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big-O</title>
+      <link>https://chankoo.github.io/posts/big-o/</link>
+      <pubDate>Tue, 18 Oct 2022 22:29:11 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/big-o/</guid>
+      <description>
+        
+          
+            content 연산을 수행하는 비용(시간, 공간)의 상한을 대략적으로 표기하는 방법
+비용이 어떤 비율로 증가하는지(상수, 선형, 로그, 지수 등)에만 관심있어서 지배적이지 않은 항은 무시한다 O(2N) == O(N) O(log_2(N)) == O(log_10(N)) refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>amortized analysis</title>
+      <link>https://chankoo.github.io/posts/amortized-analysis/</link>
+      <pubDate>Mon, 17 Oct 2022 00:01:04 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/amortized-analysis/</guid>
+      <description>
+        
+          
+            content 알고리즘을 수행 과정 별로 분할하여 비용(시간 복잡도)을 구하는 분석 방법. 일련의 연산들을 구분하여 평균적인 비용을 낸다는 측면에서 worst-case approach 보다 현실적일 수 있다.
+refs https://ko.wikipedia.org/wiki/%EB%B6%84%ED%95%A0%EC%83%81%ED%99%98%EB%B6%84%EC%84%9D links Big-O 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

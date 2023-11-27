@@ -6,7 +6,113 @@
     <description>Recent content in 아키텍처 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 06 Oct 2022 23:42:10 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Nov 2023 17:46:10 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>비동기</title>
+      <link>https://chankoo.github.io/posts/%EB%B9%84%EB%8F%99%EA%B8%B0/</link>
+      <pubDate>Wed, 22 Nov 2023 17:46:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%B9%84%EB%8F%99%EA%B8%B0/</guid>
+      <description>
+        
+          
+            content 동기적이지 않은 것(asynchronous)을 의미한다.
+동기적이라는 건 작업들을 순차적으로 진행함을 의미하는데, 한 작업이 끝나기를 기다려야하는 속성이 있다. 반면에 비동기는 한 작업이 끝나기를 기다리지 않고 다른 작업을 진행하는 것을 말하며, 동기적이지 않은 모든 방식을 의미한다.
+비동기의 예시 non-block I/O - 요청을 block하는 작업이 아니기에 I/O를 기다리는 동안 다른 작업을 처리할 수 있다. 멀티 스레딩 - 여러 작업을 각 스레드가 나누어 진행하기에 동기적이지 않다. block I/O 작업이라도 비동기로 진행할 수 있다 refs 비동기 프로그래밍, 비동기 I/O, 비동기 커뮤니케이션.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ISP</title>
+      <link>https://chankoo.github.io/posts/isp/</link>
+      <pubDate>Sun, 30 Oct 2022 19:08:11 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/isp/</guid>
+      <description>
+        
+          
+            content 인터페이스 분리 원칙; Interface Separation Principle 인터페이스를 분리하여, 요소가 사용하는 인터페이스에만 의존하도록 설계해야한다.
+refs 클린 아키텍처 links SOLID 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>LSP</title>
+      <link>https://chankoo.github.io/posts/lsp/</link>
+      <pubDate>Sun, 30 Oct 2022 17:51:17 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/lsp/</guid>
+      <description>
+        
+          
+            content 리스코프 치환 원칙; Liskov Subsitution Principle 상위 타입 객체는 하위 타입 객체로 별도 조작 없이 치환 가능해야한다.
+객체 지향 언어는 다형성을 제공하기에, LSP를 지킨 설계를 활용하기 유리하다. 사용할 하위 타입을 런타임에 선택하여 상위 타입을 대체하기 용이하다.
+LSP를 위반하면 OCP를 위반하는 것이다. 하위 타입을 추가(확장)하여 상위 타입을 바로 대체할 수 없기 때문이다. LSP를 위반한다면 보통 해당 객체를 사용하는 클라이언트 코드를 수정해야한다. 그리고 이 수정은 끔찍한 형태로 의존을 낳는다. 흔히 드는 예시가 직사각형을 상속한 정사각형 인데, 정사각형은 반드시 너비와 높이가 일치해야하므로 직사각형 객체를 대체할 수 없다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>모듈</title>
+      <link>https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/</link>
+      <pubDate>Thu, 27 Oct 2022 22:23:08 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/</guid>
+      <description>
+        
+          
+            content 설계 시점에 다루는 코드 덩어리. 시점상 가장 먼저 구현하는 단위
+refs 개발자에서 아키텍트로 links 컴포넌트 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SOLID</title>
+      <link>https://chankoo.github.io/posts/solid/</link>
+      <pubDate>Thu, 27 Oct 2022 22:13:29 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/solid/</guid>
+      <description>
+        
+          
+            content 모듈 수준의 소프트웨어 설계 원칙.
+SRP OCP LSP ISP DIP
+refs 클린 아키텍처 links 모듈 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SRP</title>
+      <link>https://chankoo.github.io/posts/srp/</link>
+      <pubDate>Thu, 27 Oct 2022 22:10:27 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/srp/</guid>
+      <description>
+        
+          
+            content 단일 책임 원칙 - Single Responsibility Principle 모듈은 한 액터(사용자, 이해관계자)만 책임진다. 모듈을 변경한다면 그 이유는 반드시 한 액터 때문이어야 한다.
+SRP를 따르면, 여러 액터의 요구를 책임지는 모듈은 책임을 찢어야 한다.
+예를 들어 클래스 Employee가 재무팀을 위한 급여 계산 / 인사팀을 위한 업무 시간 계산을 책임지고 있다면, 이는 SRP를 위반한다. 그래서 -&amp;gt; 급여 계산을 위한 클래스와 업무 시간 계산을 위한 클래스로 책임을 분리하고, EmployeeFacade 클래스를 두어 인터페이스를 정리할 수 있다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>DIP</title>
       <link>https://chankoo.github.io/posts/dip/</link>

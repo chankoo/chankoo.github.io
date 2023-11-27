@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>django on </title>
+    <link>https://chankoo.github.io/tags/django/</link>
+    <description>Recent content in django on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 22 Nov 2023 23:08:32 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active Record</title>
+      <link>https://chankoo.github.io/posts/active-record/</link>
+      <pubDate>Wed, 22 Nov 2023 23:08:32 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/active-record/</guid>
+      <description>
+        
+          
+            content DB row의 wrapper 객체로 데이터에 대한 접근과 도메인 로직을 함께 구현해놓는 방식이다.
+refs P of EAA: Active Record Fetching Title#kql4 links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DBCP</title>
+      <link>https://chankoo.github.io/posts/dbcp/</link>
+      <pubDate>Wed, 22 Nov 2023 12:01:24 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/dbcp/</guid>
+      <description>
+        
+          
+            content DB Connection Pool. DB와의 커넥션 풀을 어플리케이션 단에 미리 만들어두는 것이다. DB와 커넥션을 맺고 끊기 위해 매번 TCP 통신하는 비용을 줄인다.
+mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정 django 기준으로 성능에 중요한 설정 django는 커넥션 풀을 지원하지 않고, 요청마다 커넥션을 맺고 끊는다. CONN_MAX_AGE: 하지만 CONN_MAX_AGE(default: 0)에 값을 주면, 커넥션을 지정한 시간 동안 종료하지 않아 커넥션 풀처럼 재사용이 가능하다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

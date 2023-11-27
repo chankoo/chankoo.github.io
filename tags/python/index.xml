@@ -90,7 +90,7 @@ refs dis &amp;mdash; 파이썬 바이트 코드 역 어셈블러 — 파이썬 �
 PyObject의 ref count가 0
 순환 참조가 발생했고 그 외의 참조는 없음
 예제
-l = [] l.append(l) del l refs Fetching Title#39yg links 가비지 컬렉션 PyObject 
+l = [] l.append(l) del l refs Python GC가 작동하는 원리 links 가비지 컬렉션 PyObject 
           
           
         

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on </title>
+    <link>https://chankoo.github.io/tags/mysql/</link>
+    <description>Recent content in mysql on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 22 Nov 2023 12:01:24 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DBCP</title>
+      <link>https://chankoo.github.io/posts/dbcp/</link>
+      <pubDate>Wed, 22 Nov 2023 12:01:24 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/dbcp/</guid>
+      <description>
+        
+          
+            content DB Connection Pool. DB와의 커넥션 풀을 어플리케이션 단에 미리 만들어두는 것이다. DB와 커넥션을 맺고 끊기 위해 매번 TCP 통신하는 비용을 줄인다.
+mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정 django 기준으로 성능에 중요한 설정 django는 커넥션 풀을 지원하지 않고, 요청마다 커넥션을 맺고 끊는다. CONN_MAX_AGE: 하지만 CONN_MAX_AGE(default: 0)에 값을 주면, 커넥션을 지정한 시간 동안 종료하지 않아 커넥션 풀처럼 재사용이 가능하다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mysql 인덱스</title>
+      <link>https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</link>
+      <pubDate>Tue, 21 Nov 2023 19:20:55 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</guid>
+      <description>
+        
+          
+            content mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
+refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu&amp;rsquo;s Diary 데이터 중심 애플리케이션 설계 links B-Tree INNODB Hash 인덱스 전문 검색 인덱스 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>B-Tree</title>
+      <link>https://chankoo.github.io/posts/b-tree/</link>
+      <pubDate>Tue, 21 Nov 2023 18:54:17 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/b-tree/</guid>
+      <description>
+        
+          
+            content BST(Binary Search Tree)를 일반화한 자료구조로 2개 이상의 자식 노드를 갖는 Balanced Tree이다.
+B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
+디스크 I/O로 데이터를 가져오는 단위인 블록의 크기는 고정(mysql은 16KB)인데, 키의 크기가 커지면 한블록에 저장하는 키의 개수가 적어진다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Isolation Levels</title>
+      <link>https://chankoo.github.io/posts/isolation-levels/</link>
+      <pubDate>Sun, 09 Oct 2022 12:37:01 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/isolation-levels/</guid>
+      <description>
+        
+          
+            content Transaction 간 격리 수준. DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation 관점에서 엄격히 제한된 Transaction의 병행성 제약을 완화한다. 이상적으로 Transaction은 엄격히 격리해야 하지만, 실무적으로 걸림돌이 되기에, 격리 수준을 단계적으로 완화하는 Isolation Levels 를 정의하여 상황에 맞게 제공한다.
+Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다. Repetable Reads - 반복해서 읽어도 같은 결과를 보여주는 수준으로, 반복 read 도중 커밋이 발생하여 값이 변해도 커밋 전 값을 읽어간다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

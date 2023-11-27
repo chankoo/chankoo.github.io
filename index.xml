@@ -6,7 +6,59 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 22 Nov 2023 23:08:32 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Nov 2023 17:31:27 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DHCP</title>
+      <link>https://chankoo.github.io/posts/dhcp/</link>
+      <pubDate>Mon, 27 Nov 2023 17:31:27 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/dhcp/</guid>
+      <description>
+        
+          
+            content Dynamic Host Configuration Protocol. 네트워크에 연결된 장치들에게 IP 주소와 기타 매개변수(네임서버 주소, 게이트웨이 주소 등)를 자동으로 할당하는 IP 네트워크 레벨의 프로토콜.
+서버(보통은 공유기)와 클라이언트로 나뉘는데, DHCP 서버는 서브넷에서 사용가능한 네트워크 자원을 일정 기간 클라이언트에 임대하는 역할을 수행한다. 서버가 중앙 집중식으로 관리하기에 클라이언트 간 충돌 없이 네트워크 자원을 분배할 수 있다.
+refs 🌐 DHCP 이란 무엇인가? (그림으로 쉽게 정리) links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>전문 검색 인덱스</title>
+      <link>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8-%EA%B2%80%EC%83%89-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</link>
+      <pubDate>Mon, 27 Nov 2023 15:57:04 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8-%EA%B2%80%EC%83%89-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</guid>
+      <description>
+        
+          
+            content 컬럼 텍스트의 전체 값을 인덱싱해서 키워드 검색(full text search)을 용이하게 하는 방법으로 stopword, n-gram 등의 전문 검색 알고리즘을 사용한다.
+refs Real MySQL links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hash 인덱스</title>
+      <link>https://chankoo.github.io/posts/hash-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</link>
+      <pubDate>Mon, 27 Nov 2023 15:46:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/hash-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</guid>
+      <description>
+        
+          
+            content 인덱싱할 컬럼 값의 해시를 키로 이용하는 인덱스. 동등 비교에 최적화(O(N)) 되었지만 범위 검색이나 정렬에는 전혀 사용할 수 없다.
+refs Real MySQL links 해시 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Active Record</title>
       <link>https://chankoo.github.io/posts/active-record/</link>
@@ -278,6 +330,23 @@ SRP를 따르면, 여러 액터의 요구를 책임지는 모듈은 책임을 �
           
             content 알고리즘을 수행 과정 별로 분할하여 비용(시간 복잡도)을 구하는 분석 방법. 일련의 연산들을 구분하여 평균적인 비용을 낸다는 측면에서 worst-case approach 보다 현실적일 수 있다.
 refs https://ko.wikipedia.org/wiki/%EB%B6%84%ED%95%A0%EC%83%81%ED%99%98%EB%B6%84%EC%84%9D links Big-O 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>해시</title>
+      <link>https://chankoo.github.io/posts/%ED%95%B4%EC%8B%9C/</link>
+      <pubDate>Sat, 15 Oct 2022 23:46:35 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%ED%95%B4%EC%8B%9C/</guid>
+      <description>
+        
+          
+            content 임의 길이 데이터를 해시 함수를 통해 변환한 값으로, 1) 길이가 고정이고 2) 변환 전 값을 구하는 역함수가 없다.
+refs links 
           
           
         

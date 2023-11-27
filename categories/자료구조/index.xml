@@ -43,6 +43,23 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
     </item>
     
     <item>
+      <title>해시</title>
+      <link>https://chankoo.github.io/posts/%ED%95%B4%EC%8B%9C/</link>
+      <pubDate>Sat, 15 Oct 2022 23:46:35 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%ED%95%B4%EC%8B%9C/</guid>
+      <description>
+        
+          
+            content 임의 길이 데이터를 해시 함수를 통해 변환한 값으로, 1) 길이가 고정이고 2) 변환 전 값을 구하는 역함수가 없다.
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Generator</title>
       <link>https://chankoo.github.io/posts/generator/</link>
       <pubDate>Wed, 12 Oct 2022 00:08:35 +0900</pubDate>

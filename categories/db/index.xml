@@ -6,7 +6,41 @@
     <description>Recent content in DB on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 22 Nov 2023 12:01:24 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Nov 2023 15:57:04 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>전문 검색 인덱스</title>
+      <link>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8-%EA%B2%80%EC%83%89-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</link>
+      <pubDate>Mon, 27 Nov 2023 15:57:04 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8-%EA%B2%80%EC%83%89-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</guid>
+      <description>
+        
+          
+            content 컬럼 텍스트의 전체 값을 인덱싱해서 키워드 검색(full text search)을 용이하게 하는 방법으로 stopword, n-gram 등의 전문 검색 알고리즘을 사용한다.
+refs Real MySQL links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hash 인덱스</title>
+      <link>https://chankoo.github.io/posts/hash-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</link>
+      <pubDate>Mon, 27 Nov 2023 15:46:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/hash-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</guid>
+      <description>
+        
+          
+            content 인덱싱할 컬럼 값의 해시를 키로 이용하는 인덱스. 동등 비교에 최적화(O(N)) 되었지만 범위 검색이나 정렬에는 전혀 사용할 수 없다.
+refs Real MySQL links 해시 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>DBCP</title>
       <link>https://chankoo.github.io/posts/dbcp/</link>

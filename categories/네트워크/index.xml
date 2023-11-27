@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>네트워크 on </title>
+    <link>https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/</link>
+    <description>Recent content in 네트워크 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 27 Nov 2023 17:31:27 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DHCP</title>
+      <link>https://chankoo.github.io/posts/dhcp/</link>
+      <pubDate>Mon, 27 Nov 2023 17:31:27 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/dhcp/</guid>
+      <description>
+        
+          
+            content Dynamic Host Configuration Protocol. 네트워크에 연결된 장치들에게 IP 주소와 기타 매개변수(네임서버 주소, 게이트웨이 주소 등)를 자동으로 할당하는 IP 네트워크 레벨의 프로토콜.
+서버(보통은 공유기)와 클라이언트로 나뉘는데, DHCP 서버는 서브넷에서 사용가능한 네트워크 자원을 일정 기간 클라이언트에 임대하는 역할을 수행한다. 서버가 중앙 집중식으로 관리하기에 클라이언트 간 충돌 없이 네트워크 자원을 분배할 수 있다.
+refs 🌐 DHCP 이란 무엇인가? (그림으로 쉽게 정리) links 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

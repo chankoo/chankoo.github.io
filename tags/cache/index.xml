@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cache on </title>
+    <link>https://chankoo.github.io/tags/cache/</link>
+    <description>Recent content in cache on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 30 Nov 2023 14:18:34 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/cache/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cache-Control</title>
+      <link>https://chankoo.github.io/posts/cache-control/</link>
+      <pubDate>Thu, 30 Nov 2023 14:18:34 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cache-control/</guid>
+      <description>
+        
+          
+            content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
+refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>bfcache</title>
+      <link>https://chankoo.github.io/posts/bfcache/</link>
+      <pubDate>Wed, 09 Nov 2022 22:21:33 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/bfcache/</guid>
+      <description>
+        
+          
+            content Back/Forward Cache 는 브라우저가 제공하는 페이지 전체(js 포함) 스냅샷으로, 페이지 전환 이벤트(pageshow, pagehide)가 발생할때 캐시한다.
+refs Back/forward cache | Articles | web.dev links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Etag</title>
+      <link>https://chankoo.github.io/posts/etag/</link>
+      <pubDate>Fri, 04 Nov 2022 11:32:20 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/etag/</guid>
+      <description>
+        
+          
+            content 클라이언트의 http 요청의 갱신 여부를 파악하기 위해 설정하는 응답 헤더.
+요청 -&amp;gt; 서버가 요청을 Etag 변환(해시 사용) -&amp;gt; 응답 헤더에 Etag 포함 -&amp;gt; 클라이언트가 사용(If-None-Match에 담아)해 요청 -&amp;gt; 동일한 Etag 라면 http 304 Not Modified 반환
+refs Etag를 이용하여 더 나은 Restful API 만들기 | 요즘IT Conditional View Processing | Django documentation | Django ETag - HTTP | MDN links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>locality</title>
+      <link>https://chankoo.github.io/posts/locality/</link>
+      <pubDate>Sun, 16 Oct 2022 22:54:01 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/locality/</guid>
+      <description>
+        
+          
+            content (프로세서의 메모리)참조는 랜덤이 아니고 비슷한 지역에서 빈번하게 일어난다는 특성(Locality of reference)
+Spatial Locality 와 2) Temporal Locality로 크게 나뉘는데 1)은 비슷한 공간의 영역을 반복적으로, 2)는 최근에 참조한 영역을 반복적으로 참조하는 현상을 말한다. 프로세서의 캐시는 locality를 고려하여 동작하기에 프로그램을 짤 때 locality를 활용한다면 더 캐시 효율적이다.
+refs Locality of reference - Wikipedia links 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

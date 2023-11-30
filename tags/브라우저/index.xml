@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>브라우저 on </title>
+    <link>https://chankoo.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80/</link>
+    <description>Recent content in 브라우저 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 30 Nov 2023 14:18:34 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cache-Control</title>
+      <link>https://chankoo.github.io/posts/cache-control/</link>
+      <pubDate>Thu, 30 Nov 2023 14:18:34 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cache-control/</guid>
+      <description>
+        
+          
+            content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
+refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>CORS</title>
+      <link>https://chankoo.github.io/posts/cors/</link>
+      <pubDate>Wed, 29 Nov 2023 21:32:15 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cors/</guid>
+      <description>
+        
+          
+            content Cross-Origin Resource Sharing. 출처가 다른(Cross-Origin) 요청에 대해 리소스를 내려 줄 것인지 판단하는 정책이다.
+요청 헤더 Origin에 출처가 담긴다. 스킴, 도메인, 포트 중 하나라도 다르면 Cross-Origin으로 본다. 응답 헤더 Access-Control-Allow-Origin에 허용된 출처가 담긴다. 브라우저가 Origin, Access-Control-Allow-Origin 그리고 요청 시나리오를 고려하여 CORS 위반 여부를 판단한다. refs CORS는 왜 이렇게 우리를 힘들게 하는걸까? | Evans Library links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>bfcache</title>
+      <link>https://chankoo.github.io/posts/bfcache/</link>
+      <pubDate>Wed, 09 Nov 2022 22:21:33 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/bfcache/</guid>
+      <description>
+        
+          
+            content Back/Forward Cache 는 브라우저가 제공하는 페이지 전체(js 포함) 스냅샷으로, 페이지 전환 이벤트(pageshow, pagehide)가 발생할때 캐시한다.
+refs Back/forward cache | Articles | web.dev links 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

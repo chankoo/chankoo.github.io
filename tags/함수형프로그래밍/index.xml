@@ -6,7 +6,26 @@
     <description>Recent content in 함수형프로그래밍 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 08 Oct 2022 21:07:04 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Nov 2023 15:43:19 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPS</title>
+      <link>https://chankoo.github.io/posts/cps/</link>
+      <pubDate>Thu, 30 Nov 2023 15:43:19 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cps/</guid>
+      <description>
+        
+          
+            content Continuation Passing Style. 말그대로 Continuation을 전달하는 방식으로 프로그래밍하는 것을 말한다.
+이는 CPS 함수를 정의할 때 특정한 작업(ex. 콜백 함수) 을 명시적 인자로 받게되는데, CPS 함수는 해당 함수의 작업이 끝난 후 인자로 받은 작업을 수행하게 된다. Continuation이 CPS 함수에 있다가 인자로 받은 작업으로 넘어가는 것이다.
+CPS가 아니라면 함수가 그냥(암묵적으로) 작업을 수행하며, Continuation은 해당 함수에 머무른다.
+refs Continuation-passing style - Wikipedia 백엔드 개발자들이 알아야할 동시성 5 — Continuation Passing Style | by Choi Geonu | Medium Continuation-Passing Style.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Thread Safe</title>
       <link>https://chankoo.github.io/posts/thread-safe/</link>

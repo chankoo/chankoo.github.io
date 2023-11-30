@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>쿠키 on </title>
+    <link>https://chankoo.github.io/tags/%EC%BF%A0%ED%82%A4/</link>
+    <description>Recent content in 쿠키 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 19 Nov 2022 22:27:39 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EC%BF%A0%ED%82%A4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>인증 방식 비교</title>
+      <link>https://chankoo.github.io/posts/%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90/</link>
+      <pubDate>Sat, 19 Nov 2022 22:27:39 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90/</guid>
+      <description>
+        
+          
+            content 쿠키와 세션 보다 토큰 기반 인증 방식(JWT)를 이용하면 장점이 많아 현대 웹, 앱은 대부분 JWT를 쓴다.
+쿠키와 세션은 세션 아이디를 쿠키에 담고, 별도 세션을 저장하는 방식이다. 요청시 세션 아이디를 이용해 저장소의 세션을 확인하여 인증한다. 그렇기에 세션 저장소를 유지하는 비용이 발생하고, 요청이 stateful 한 상태가 되며, 매번 요청시 세션을 조회해야하는 단점이 있다.
+반면에 JWT는 토큰 자체로 인증 여부를 판단하기에 별도 저장소가 필수적이지 않으며 매번 조회 요청을 보내지 않아도 된다. 또한 stateful 하지 않아 확장성이 좋다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

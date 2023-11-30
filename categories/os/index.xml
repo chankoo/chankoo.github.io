@@ -6,7 +6,43 @@
     <description>Recent content in OS on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 10 Jan 2023 20:43:09 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/os/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Nov 2023 15:46:27 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>스케줄링</title>
+      <link>https://chankoo.github.io/posts/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81/</link>
+      <pubDate>Thu, 30 Nov 2023 15:46:27 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81/</guid>
+      <description>
+        
+          
+            content OS가 CPU를 프로세스에게 할당하는 정책이다.
+선점형 vs 비선점형(협력적) 자원을 점유하는 프로세스를 중지하고 강제로 자원을 가져가는 선점형 자원을 점유하는 프로세스가 종료되거나, I/O 발생하여 대기 할때까지 기다리는 비선점형 정적 vs 동적 프로세스에 부여된 우선순위가 고정 vs 유동 refs 스케줄링 (컴퓨팅) - 위키백과, 우리 모두의 백과사전 백엔드 개발자들이 알아야할 동시성 4 — 스케줄링. 지난 포스팅에선 많은 쓰레드와 잦은 컨텍스트 스위칭이 어떻게 웹서버의… | by Choi Geonu | Medium links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>CPS</title>
+      <link>https://chankoo.github.io/posts/cps/</link>
+      <pubDate>Thu, 30 Nov 2023 15:43:19 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cps/</guid>
+      <description>
+        
+          
+            content Continuation Passing Style. 말그대로 Continuation을 전달하는 방식으로 프로그래밍하는 것을 말한다.
+이는 CPS 함수를 정의할 때 특정한 작업(ex. 콜백 함수) 을 명시적 인자로 받게되는데, CPS 함수는 해당 함수의 작업이 끝난 후 인자로 받은 작업을 수행하게 된다. Continuation이 CPS 함수에 있다가 인자로 받은 작업으로 넘어가는 것이다.
+CPS가 아니라면 함수가 그냥(암묵적으로) 작업을 수행하며, Continuation은 해당 함수에 머무른다.
+refs Continuation-passing style - Wikipedia 백엔드 개발자들이 알아야할 동시성 5 — Continuation Passing Style | by Choi Geonu | Medium Continuation-Passing Style.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>디렉토리</title>
       <link>https://chankoo.github.io/posts/%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC/</link>
@@ -34,7 +70,7 @@ refs links 파일 시스템
         
           
             content 싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
-(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs https://deview.kr/2014/session?seq=47 [JS] 도대체 이벤트 루프가 뭔가요? - 배하람의 블로그 links Gunicorn worker types 
+(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요?
           
           
         

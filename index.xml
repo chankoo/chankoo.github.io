@@ -6,7 +6,94 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 27 Nov 2023 17:31:27 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Nov 2023 16:18:53 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>콜백 함수</title>
+      <link>https://chankoo.github.io/posts/%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98/</link>
+      <pubDate>Thu, 30 Nov 2023 16:18:53 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98/</guid>
+      <description>
+        
+          
+            content 인자로 다른 함수에게 전달되는 함수.
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>스케줄링</title>
+      <link>https://chankoo.github.io/posts/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81/</link>
+      <pubDate>Thu, 30 Nov 2023 15:46:27 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81/</guid>
+      <description>
+        
+          
+            content OS가 CPU를 프로세스에게 할당하는 정책이다.
+선점형 vs 비선점형(협력적) 자원을 점유하는 프로세스를 중지하고 강제로 자원을 가져가는 선점형 자원을 점유하는 프로세스가 종료되거나, I/O 발생하여 대기 할때까지 기다리는 비선점형 정적 vs 동적 프로세스에 부여된 우선순위가 고정 vs 유동 refs 스케줄링 (컴퓨팅) - 위키백과, 우리 모두의 백과사전 백엔드 개발자들이 알아야할 동시성 4 — 스케줄링. 지난 포스팅에선 많은 쓰레드와 잦은 컨텍스트 스위칭이 어떻게 웹서버의… | by Choi Geonu | Medium links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>CPS</title>
+      <link>https://chankoo.github.io/posts/cps/</link>
+      <pubDate>Thu, 30 Nov 2023 15:43:19 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cps/</guid>
+      <description>
+        
+          
+            content Continuation Passing Style. 말그대로 Continuation을 전달하는 방식으로 프로그래밍하는 것을 말한다.
+이는 CPS 함수를 정의할 때 특정한 작업(ex. 콜백 함수) 을 명시적 인자로 받게되는데, CPS 함수는 해당 함수의 작업이 끝난 후 인자로 받은 작업을 수행하게 된다. Continuation이 CPS 함수에 있다가 인자로 받은 작업으로 넘어가는 것이다.
+CPS가 아니라면 함수가 그냥(암묵적으로) 작업을 수행하며, Continuation은 해당 함수에 머무른다.
+refs Continuation-passing style - Wikipedia 백엔드 개발자들이 알아야할 동시성 5 — Continuation Passing Style | by Choi Geonu | Medium Continuation-Passing Style.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cache-Control</title>
+      <link>https://chankoo.github.io/posts/cache-control/</link>
+      <pubDate>Thu, 30 Nov 2023 14:18:34 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cache-control/</guid>
+      <description>
+        
+          
+            content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
+refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>CORS</title>
+      <link>https://chankoo.github.io/posts/cors/</link>
+      <pubDate>Wed, 29 Nov 2023 21:32:15 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cors/</guid>
+      <description>
+        
+          
+            content Cross-Origin Resource Sharing. 출처가 다른(Cross-Origin) 요청에 대해 리소스를 내려 줄 것인지 판단하는 정책이다.
+요청 헤더 Origin에 출처가 담긴다. 스킴, 도메인, 포트 중 하나라도 다르면 Cross-Origin으로 본다. 응답 헤더 Access-Control-Allow-Origin에 허용된 출처가 담긴다. 브라우저가 Origin, Access-Control-Allow-Origin 그리고 요청 시나리오를 고려하여 CORS 위반 여부를 판단한다. refs CORS는 왜 이렇게 우리를 힘들게 하는걸까? | Evans Library links 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>DHCP</title>
       <link>https://chankoo.github.io/posts/dhcp/</link>
@@ -198,6 +285,77 @@ refs links 파일 시스템
     </item>
     
     <item>
+      <title>인증 방식 비교</title>
+      <link>https://chankoo.github.io/posts/%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90/</link>
+      <pubDate>Sat, 19 Nov 2022 22:27:39 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90/</guid>
+      <description>
+        
+          
+            content 쿠키와 세션 보다 토큰 기반 인증 방식(JWT)를 이용하면 장점이 많아 현대 웹, 앱은 대부분 JWT를 쓴다.
+쿠키와 세션은 세션 아이디를 쿠키에 담고, 별도 세션을 저장하는 방식이다. 요청시 세션 아이디를 이용해 저장소의 세션을 확인하여 인증한다. 그렇기에 세션 저장소를 유지하는 비용이 발생하고, 요청이 stateful 한 상태가 되며, 매번 요청시 세션을 조회해야하는 단점이 있다.
+반면에 JWT는 토큰 자체로 인증 여부를 판단하기에 별도 저장소가 필수적이지 않으며 매번 조회 요청을 보내지 않아도 된다. 또한 stateful 하지 않아 확장성이 좋다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>JWT</title>
+      <link>https://chankoo.github.io/posts/jwt/</link>
+      <pubDate>Sat, 19 Nov 2022 21:38:05 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/jwt/</guid>
+      <description>
+        
+          
+            content JSON Web Token. 사용자의 정보를 Json에 담아 보내는 형식의 웹 토큰이다.
+Header / Payload / Signature 로 나뉘며, base64 인코딩을 통해 url-safe한 xxx.yyy.zzz 형태로 표현한다. Header에는 Signature 에 서명한 알고리즘 정보를 담는다. Payload에는 실제 사용자 정보를 Json 형태로 담으며 추가에 열려있다. Signature는 비대칭키 방식을 사용하여 header와 payload가 변경 안되었음을 보증한다.
+주로 인증을 위해 사용하는데, JWT의 유효성(위조 여부)만 확인하면 인증은 완료된다. 이미 JWT 발급 시점에 (id, pwd로) 사용자를 인증했고 그 결과로 JWT를 생성했기에, (Signature를 이용하여) JWT 가 위조되지 않았다는 것만 확인하면 JWT 발급 시점과 같은 사용자라는 것을 알게되는 원리이다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>bfcache</title>
+      <link>https://chankoo.github.io/posts/bfcache/</link>
+      <pubDate>Wed, 09 Nov 2022 22:21:33 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/bfcache/</guid>
+      <description>
+        
+          
+            content Back/Forward Cache 는 브라우저가 제공하는 페이지 전체(js 포함) 스냅샷으로, 페이지 전환 이벤트(pageshow, pagehide)가 발생할때 캐시한다.
+refs Back/forward cache | Articles | web.dev links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Etag</title>
+      <link>https://chankoo.github.io/posts/etag/</link>
+      <pubDate>Fri, 04 Nov 2022 11:32:20 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/etag/</guid>
+      <description>
+        
+          
+            content 클라이언트의 http 요청의 갱신 여부를 파악하기 위해 설정하는 응답 헤더.
+요청 -&amp;gt; 서버가 요청을 Etag 변환(해시 사용) -&amp;gt; 응답 헤더에 Etag 포함 -&amp;gt; 클라이언트가 사용(If-None-Match에 담아)해 요청 -&amp;gt; 동일한 Etag 라면 http 304 Not Modified 반환
+refs Etag를 이용하여 더 나은 Restful API 만들기 | 요즘IT Conditional View Processing | Django documentation | Django ETag - HTTP | MDN links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>ISP</title>
       <link>https://chankoo.github.io/posts/isp/</link>
       <pubDate>Sun, 30 Oct 2022 19:08:11 +0900</pubDate>
@@ -295,7 +453,7 @@ SRP를 따르면, 여러 액터의 요구를 책임지는 모듈은 책임을 �
         
           
             content 싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
-(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs https://deview.kr/2014/session?seq=47 [JS] 도대체 이벤트 루프가 뭔가요? - 배하람의 블로그 links Gunicorn worker types 
+(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요?
           
           
         
@@ -330,6 +488,24 @@ SRP를 따르면, 여러 액터의 요구를 책임지는 모듈은 책임을 �
           
             content 알고리즘을 수행 과정 별로 분할하여 비용(시간 복잡도)을 구하는 분석 방법. 일련의 연산들을 구분하여 평균적인 비용을 낸다는 측면에서 worst-case approach 보다 현실적일 수 있다.
 refs https://ko.wikipedia.org/wiki/%EB%B6%84%ED%95%A0%EC%83%81%ED%99%98%EB%B6%84%EC%84%9D links Big-O 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>locality</title>
+      <link>https://chankoo.github.io/posts/locality/</link>
+      <pubDate>Sun, 16 Oct 2022 22:54:01 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/locality/</guid>
+      <description>
+        
+          
+            content (프로세서의 메모리)참조는 랜덤이 아니고 비슷한 지역에서 빈번하게 일어난다는 특성(Locality of reference)
+Spatial Locality 와 2) Temporal Locality로 크게 나뉘는데 1)은 비슷한 공간의 영역을 반복적으로, 2)는 최근에 참조한 영역을 반복적으로 참조하는 현상을 말한다. 프로세서의 캐시는 locality를 고려하여 동작하기에 프로그램을 짤 때 locality를 활용한다면 더 캐시 효율적이다.
+refs Locality of reference - Wikipedia links 
           
           
         
@@ -518,8 +694,9 @@ refs links
           
             content Co-Routine. 다른 루틴과 동등한 레벨에서 상호 협력하는 루틴. routine - subroutine 으로 종속되는 개념과 대비된다.
 프로그래머는 코루틴 간 제어 흐름을 의도에 따라 통제하는데, 실행 중인 코루틴이 자신의 흐름을 멈추고 다른 코루틴에 양보(yield) 하도록 하는 방식이다.
-코루틴 간의 스위칭을 통해 (스레드 스위칭과 유사하게) 동시성 프로그래밍할 수 있다. 코루틴이 &amp;ldquo;lightweight&amp;rdquo; 스레드라고도 불리는 이유이다. 스레드와의 주된 차이는, 별도의 스택 메모리를 갖지 않는다(stackless coroutine)는 점, 병렬 실행이 불가하다는 점 등이 있다.
-refs 파이썬과 동시성 프로그래밍 - Sungho&amp;rsquo;s Blog Coroutine, Thread 와의 차이와 그 특징 - Crucian Carp links 동시성 스레드 
+코루틴 간의 스위칭을 통해 (스레드 스위칭과 유사하게) 동시성 프로그래밍할 수 있다. 코루틴이 &amp;ldquo;lightweight&amp;rdquo; 스레드라고도 불리는 이유이다.
+스레드와의 주된 차이는, 별도의 스택 메모리를 갖지 않는다(stackless coroutine)는 점, 병렬 실행이 불가하다는 점 등이 있다.
++) 작업 후 다른 루틴에게 명시적으로 제어권을 넘겨줄 경우, CPS를 따라 구현했다고 볼 수 있다.
           
           
         

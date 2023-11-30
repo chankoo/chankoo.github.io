@@ -25,6 +25,24 @@
     </item>
     
     <item>
+      <title>locality</title>
+      <link>https://chankoo.github.io/posts/locality/</link>
+      <pubDate>Sun, 16 Oct 2022 22:54:01 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/locality/</guid>
+      <description>
+        
+          
+            content (프로세서의 메모리)참조는 랜덤이 아니고 비슷한 지역에서 빈번하게 일어난다는 특성(Locality of reference)
+Spatial Locality 와 2) Temporal Locality로 크게 나뉘는데 1)은 비슷한 공간의 영역을 반복적으로, 2)는 최근에 참조한 영역을 반복적으로 참조하는 현상을 말한다. 프로세서의 캐시는 locality를 고려하여 동작하기에 프로그램을 짤 때 locality를 활용한다면 더 캐시 효율적이다.
+refs Locality of reference - Wikipedia links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>coroutine</title>
       <link>https://chankoo.github.io/posts/coroutine/</link>
       <pubDate>Tue, 11 Oct 2022 20:39:15 +0900</pubDate>
@@ -35,8 +53,9 @@
           
             content Co-Routine. 다른 루틴과 동등한 레벨에서 상호 협력하는 루틴. routine - subroutine 으로 종속되는 개념과 대비된다.
 프로그래머는 코루틴 간 제어 흐름을 의도에 따라 통제하는데, 실행 중인 코루틴이 자신의 흐름을 멈추고 다른 코루틴에 양보(yield) 하도록 하는 방식이다.
-코루틴 간의 스위칭을 통해 (스레드 스위칭과 유사하게) 동시성 프로그래밍할 수 있다. 코루틴이 &amp;ldquo;lightweight&amp;rdquo; 스레드라고도 불리는 이유이다. 스레드와의 주된 차이는, 별도의 스택 메모리를 갖지 않는다(stackless coroutine)는 점, 병렬 실행이 불가하다는 점 등이 있다.
-refs 파이썬과 동시성 프로그래밍 - Sungho&amp;rsquo;s Blog Coroutine, Thread 와의 차이와 그 특징 - Crucian Carp links 동시성 스레드 
+코루틴 간의 스위칭을 통해 (스레드 스위칭과 유사하게) 동시성 프로그래밍할 수 있다. 코루틴이 &amp;ldquo;lightweight&amp;rdquo; 스레드라고도 불리는 이유이다.
+스레드와의 주된 차이는, 별도의 스택 메모리를 갖지 않는다(stackless coroutine)는 점, 병렬 실행이 불가하다는 점 등이 있다.
++) 작업 후 다른 루틴에게 명시적으로 제어권을 넘겨줄 경우, CPS를 따라 구현했다고 볼 수 있다.
           
           
         

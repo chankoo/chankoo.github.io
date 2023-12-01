@@ -6,7 +6,25 @@
     <description>Recent content in python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 12 Oct 2022 00:08:35 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Oct 2022 22:04:24 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>해시 충돌</title>
+      <link>https://chankoo.github.io/posts/%ED%95%B4%EC%8B%9C-%EC%B6%A9%EB%8F%8C/</link>
+      <pubDate>Sun, 16 Oct 2022 22:04:24 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%ED%95%B4%EC%8B%9C-%EC%B6%A9%EB%8F%8C/</guid>
+      <description>
+        
+          
+            content (해시) 충돌은 1) 서로 다른 값이 동일한 해시를 뱉거나(해시 충돌) 2) 서로 다른 해시가 동일한 인덱스를 뱉는 경우를 말한다.
+해시 자료구조를 구성할때 모든 key가 충돌한다면, 탐색에 O(n)이 걸린다.
+모든 데이터가 하나의 인덱스에 저장(Separate Chaning)되거나 다른 인덱스에 순차적으로 저장(Open Addressing)될 것이기 때문이다. 저장할 값의 배열이 크지 않다면, Open Addressing 이 캐시 효율적이다. 연속된 공간에 저장한 데이터는 함께 캐싱될 것이고(cache line), spatial locality 에 따라 hit ratio가 높을 것이기 때문이다. 파이썬이 오픈 어드레싱 방식을 쓴다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Generator</title>
       <link>https://chankoo.github.io/posts/generator/</link>

@@ -170,16 +170,14 @@
     </picture>
 </figure>
 </p>
-<p>이는 시간 복잡도 계산에 영향을 준다. list 에 요소를 더하는 append 나 insert 연산의 시간 복잡도를 계산할 때 메모리 재할당 시간까지 고려해야 한다는 의미다.</p>
-<p>하지만</p>
+<p>이는 시간 복잡도 계산에 영향을 준다. list 에 요소를 더하는 append 나 insert 연산의 시간 복잡도를 계산할 때 메모리 재할당 시간까지 고려해야 한다는 의미다. 동적 배열에 요소를 추가할때 메모리 재할당이 필요하다면, O(N) 시간이 필요하다(분할 상환하여 계산한 일반적인 시간 복잡도는 O(1)). 또한 list.pop(k) 역시 k번째 요소를 가져온 뒤 메모리 재할당이 필요하므로 O(N)이다.</p>
 <h2 id="refs">refs</h2>
 <ul>
 <li><a href="https://enfow.github.io/study/algorithm/2020/12/08/python_bulitin_time_complexity-copy/">Python Bulit-in Time Complexity: List · Enfow&rsquo;s Blog</a></li>
 </ul>
 <h2 id="links">links</h2>
 <ul>
-<li><a href="https://chankoo.github.io/posts/amortized-analysis/">amortized analysis</a></li>
-<li></li>
+<li><a href="https://chankoo.github.io/posts/%EB%B6%84%ED%95%A0-%EC%83%81%ED%99%98-%EB%B6%84%EC%84%9D/">분할 상환 분석</a></li>
 </ul>
 
     </div>
@@ -204,6 +202,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/%EB%A1%9C%EB%93%9C-%ED%8C%A9%ED%84%B0/" class="nav-link" title="로드 팩터">로드 팩터</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98/" class="nav-link" title="콜백 함수">콜백 함수</a>
       </li>
       <li>
@@ -224,9 +225,6 @@
       <li>
         <a href="https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8-%EA%B2%80%EC%83%89-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" class="nav-link" title="전문 검색 인덱스">전문 검색 인덱스</a>
       </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/hash-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" class="nav-link" title="Hash 인덱스">Hash 인덱스</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
@@ -238,7 +236,7 @@
         
         <a href='https://chankoo.github.io/categories/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="컴퓨터구조">
           컴퓨터구조
-          <span class="button_tally">14</span>
+          <span class="button_tally">15</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
@@ -251,6 +249,11 @@
           <span class="button_tally">10</span>
         </a>
         
+        <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
+          자료구조
+          <span class="button_tally">8</span>
+        </a>
+        
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
           <span class="button_tally">6</span>
@@ -261,18 +264,13 @@
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
-          자료구조
-          <span class="button_tally">5</span>
+        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
+          알고리즘
+          <span class="button_tally">3</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
           기타
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
-          알고리즘
           <span class="button_tally">2</span>
         </a>
         
@@ -294,7 +292,7 @@
         
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
-          <span class="button_tally">9</span>
+          <span class="button_tally">10</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
@@ -305,6 +303,11 @@
         <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
           CPU
           <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/cache/' class="post_tag button button_translucent" title="cache">
+          CACHE
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
@@ -330,11 +333,6 @@
         <a href='https://chankoo.github.io/tags/%EC%8A%A4%EB%A0%88%EB%93%9C/' class="post_tag button button_translucent" title="스레드">
           스레드
           <span class="button_tally">5</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/cache/' class="post_tag button button_translucent" title="cache">
-          CACHE
-          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/c/' class="post_tag button button_translucent" title="c">
@@ -409,6 +407,11 @@
         
         <a href='https://chankoo.github.io/tags/ip/' class="post_tag button button_translucent" title="ip">
           IP
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/java/' class="post_tag button button_translucent" title="java">
+          JAVA
           <span class="button_tally">1</span>
         </a>
         

@@ -60,6 +60,24 @@ refs Etag를 이용하여 더 나은 Restful API 만들기 | 요즘IT Conditiona
     </item>
     
     <item>
+      <title>cache line</title>
+      <link>https://chankoo.github.io/posts/cache-line/</link>
+      <pubDate>Sun, 16 Oct 2022 23:15:14 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cache-line/</guid>
+      <description>
+        
+          
+            content 캐시 라인(or cache block)은 프로세서의 캐시가 메모리로 부터 읽어오는 데이터 chunk.
+보통 32, 64, 128 바이트 사이즈이다. 예를 들어 캐시 라인 사이즈가 64B이고 64kB 크기의 캐시를 쓴다면, 캐시는 1024개(= 64kB / 64B) 라인으로 구성된다.
+refs 3.2. Cache Lines and Cache Size links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>locality</title>
       <link>https://chankoo.github.io/posts/locality/</link>
       <pubDate>Sun, 16 Oct 2022 22:54:01 +0900</pubDate>

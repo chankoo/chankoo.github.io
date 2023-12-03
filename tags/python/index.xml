@@ -6,7 +6,26 @@
     <description>Recent content in python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 16 Oct 2022 22:04:24 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Nov 2022 15:42:48 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python heapq</title>
+      <link>https://chankoo.github.io/posts/python-heapq/</link>
+      <pubDate>Fri, 18 Nov 2022 15:42:48 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/python-heapq/</guid>
+      <description>
+        
+          
+            content heap을 이용하는 q의 구현을 제공하는 모듈
+heap = [] heapq.heappush(heap, item) heapq.heappop(heap) heappush 와 heappop 을 통해 힙 큐를 구현할 수 있다.
+주의할 것은
+heap 은 heap 자료구조가 아님. 선형 자료구조(ex. 리스트) 를 받아 힙의 구현을 도와주는 모듈임 최소 힙을 구현함 0을 제외한 인덱스로 읽지 말자 - heap[0] 을 제외한 값은 정렬된 형태가 아님 refs heapq — 힙 큐 알고리즘 — Python 3.12.0 문서 파이썬의 heapq 모듈로 힙 자료구조 사용하기 | Engineering Blog by Dale Seo links 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>해시 충돌</title>
       <link>https://chankoo.github.io/posts/%ED%95%B4%EC%8B%9C-%EC%B6%A9%EB%8F%8C/</link>

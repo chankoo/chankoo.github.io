@@ -43,6 +43,25 @@ LSP를 위반하면 OCP를 위반하는 것이다. 하위 타입을 추가(확�
     </item>
     
     <item>
+      <title>OCP</title>
+      <link>https://chankoo.github.io/posts/ocp/</link>
+      <pubDate>Fri, 28 Oct 2022 00:36:16 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/ocp/</guid>
+      <description>
+        
+          
+            content 개방-폐쇄 원칙; Open Close Principle 소프트웨어 요소는 확장에는 open, 수정에는 close여야 한다. 수정 보다 비용이 적은 확장으로 소프트웨어를 수정해야한다.
+OCP를 지키기 위해서는 의존 관계를 잘 설계해야한다. 의존 관계가 확장 가능한 요소와 수정해야하는 요소를 결정짓기 때문인데, A -&amp;gt; B (A가 B에 의존)이라면 A는 확장 가능한 요소이고 B는 수정해야하는 요소가 되는 것이다.
+이를 위해 DIP를 지켜야한다. 추상 보다 구현의 변화가 많은데, 구현이 추상에 의존해야 구현을 확장할 수 있기 때문이다.
+모듈 레벨(OOP 클래스)에만 적용되는 원칙이 아니다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>SOLID</title>
       <link>https://chankoo.github.io/posts/solid/</link>
       <pubDate>Thu, 27 Oct 2022 22:13:29 +0900</pubDate>

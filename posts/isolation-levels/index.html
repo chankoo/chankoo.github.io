@@ -148,7 +148,7 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
 <li>Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다.</li>
 <li>Repetable Reads - 반복해서 읽어도 같은 결과를 보여주는 수준으로, 반복 read 도중 커밋이 발생하여 값이 변해도 커밋 전 값을 읽어간다. <a href="">Phantom Reads</a> 는 발생한다.</li>
 <li>Read Comitted - 커밋된 결과라면 다 읽어버리는 수준</li>
-<li>Read Uncomiteed - 죄다 읽는 수준</li>
+<li>Read Uncomiteed - 죄다 읽는 수준. 더티 리드도 발생</li>
 </ul>
 <p><figure>
   <picture>
@@ -177,7 +177,7 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
 </p>
 <h2 id="refs">refs</h2>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Isolation_(database_systems)">https://en.wikipedia.org/wiki/Isolation_(database_systems)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Isolation_(database_systems)">Isolation (database systems) - Wikipedia</a></li>
 </ul>
 <h2 id="links">links</h2>
 <ul>
@@ -248,7 +248,7 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
         
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">11</span>
+          <span class="button_tally">13</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
@@ -258,7 +258,7 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
           자료구조
-          <span class="button_tally">8</span>
+          <span class="button_tally">9</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
@@ -271,14 +271,14 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
-          알고리즘
+        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
+          기타
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
-          기타
-          <span class="button_tally">2</span>
+        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
+          알고리즘
+          <span class="button_tally">3</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -299,7 +299,7 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
         
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
-          <span class="button_tally">10</span>
+          <span class="button_tally">11</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
@@ -309,6 +309,11 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
         
         <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
           CPU
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/solid/' class="post_tag button button_translucent" title="solid">
+          SOLID
           <span class="button_tally">6</span>
         </a>
         
@@ -327,18 +332,8 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/solid/' class="post_tag button button_translucent" title="solid">
-          SOLID
-          <span class="button_tally">5</span>
-        </a>
-        
         <a href='https://chankoo.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/' class="post_tag button button_translucent" title="메모리">
           메모리
-          <span class="button_tally">5</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/%EC%8A%A4%EB%A0%88%EB%93%9C/' class="post_tag button button_translucent" title="스레드">
-          스레드
           <span class="button_tally">5</span>
         </a>
         
@@ -424,6 +419,11 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
         
         <a href='https://chankoo.github.io/tags/javascript/' class="post_tag button button_translucent" title="javascript">
           JAVASCRIPT
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
+          MSA
           <span class="button_tally">1</span>
         </a>
         

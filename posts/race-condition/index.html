@@ -20,7 +20,7 @@
 
 <meta property="og:type" content="article">
 <meta name="description" content="content 경쟁 상태 여러 스레드나 프로세스가 한 자원에 동시에 접근하고 조작하여 예상치 못한 결과(non deterministic)을 도출할 수 있는 상태. 즉, 스레드가 자원에 접근하는 타이밍에 결과가 영향 받는 상태를 의미한다
-refs links " />
+Thread 1 Thread 2 Integer …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="Race Condition" />
@@ -28,7 +28,7 @@ refs links " />
 <meta property="og:url" content="https://chankoo.github.io/posts/race-condition/" />
 <meta property="og:title" content="Race Condition" />
 <meta property="og:description" content="content 경쟁 상태 여러 스레드나 프로세스가 한 자원에 동시에 접근하고 조작하여 예상치 못한 결과(non deterministic)을 도출할 수 있는 상태. 즉, 스레드가 자원에 접근하는 타이밍에 결과가 영향 받는 상태를 의미한다
-refs links " />
+Thread 1 Thread 2 Integer …" />
 <meta property="og:image" content="https://chankoo.github.io" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chankoo.github.io/icons/apple-touch-icon.png">
@@ -104,8 +104,7 @@ refs links " />
 </span>
     <span class="post_date">
       Oct 8, 2022</span>
-    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EC%8A%A4%EB%A0%88%EB%93%9C/' title="스레드" class="post_tag button button_translucent">스레드
-        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
         </a>
     </span>
     <span class="page_only">&nbsp;·
@@ -146,9 +145,63 @@ refs links " />
     <div class="post_body"><h2 id="content">content</h2>
 <p>경쟁 상태
 여러 스레드나 프로세스가 한 자원에 동시에 접근하고 조작하여 예상치 못한 결과(non deterministic)을 도출할 수 있는 상태. 즉, 스레드가 자원에 접근하는 타이밍에 결과가 영향 받는 상태를 의미한다</p>
+<table>
+<thead>
+<tr>
+<th>Thread 1</th>
+<th>Thread 2</th>
+<th></th>
+<th>Integer value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td>read value</td>
+<td></td>
+<td>←</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>read value</td>
+<td>←</td>
+<td>0</td>
+</tr>
+<tr>
+<td>increase value</td>
+<td></td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>increase value</td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td>write back</td>
+<td></td>
+<td>→</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>write back</td>
+<td>→</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 <h2 id="refs">refs</h2>
 <ul>
-<li></li>
+<li><a href="https://en.wikipedia.org/wiki/Race_condition">Race condition - Wikipedia</a></li>
 </ul>
 <h2 id="links">links</h2>
 <ul>
@@ -216,7 +269,7 @@ refs links " />
         
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">11</span>
+          <span class="button_tally">13</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
@@ -226,7 +279,7 @@ refs links " />
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
           자료구조
-          <span class="button_tally">8</span>
+          <span class="button_tally">9</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
@@ -239,14 +292,14 @@ refs links " />
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
-          알고리즘
+        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
+          기타
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
-          기타
-          <span class="button_tally">2</span>
+        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
+          알고리즘
+          <span class="button_tally">3</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -267,7 +320,7 @@ refs links " />
         
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
-          <span class="button_tally">10</span>
+          <span class="button_tally">11</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
@@ -277,6 +330,11 @@ refs links " />
         
         <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
           CPU
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/solid/' class="post_tag button button_translucent" title="solid">
+          SOLID
           <span class="button_tally">6</span>
         </a>
         
@@ -295,18 +353,8 @@ refs links " />
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/solid/' class="post_tag button button_translucent" title="solid">
-          SOLID
-          <span class="button_tally">5</span>
-        </a>
-        
         <a href='https://chankoo.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/' class="post_tag button button_translucent" title="메모리">
           메모리
-          <span class="button_tally">5</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/%EC%8A%A4%EB%A0%88%EB%93%9C/' class="post_tag button button_translucent" title="스레드">
-          스레드
           <span class="button_tally">5</span>
         </a>
         
@@ -392,6 +440,11 @@ refs links " />
         
         <a href='https://chankoo.github.io/tags/javascript/' class="post_tag button button_translucent" title="javascript">
           JAVASCRIPT
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
+          MSA
           <span class="button_tally">1</span>
         </a>
         

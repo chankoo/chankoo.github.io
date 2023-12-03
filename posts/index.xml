@@ -304,6 +304,25 @@ refs links 파일 시스템
     </item>
     
     <item>
+      <title>CQRS</title>
+      <link>https://chankoo.github.io/posts/cqrs/</link>
+      <pubDate>Mon, 12 Dec 2022 23:09:46 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/cqrs/</guid>
+      <description>
+        
+          
+            content Command와 Query를 다른 것으로 보고 명시적으로 분리하는 패턴. OOP 관점에서 Command를 담당하는 객체와, Query를 담당하는 객체의 책임을 분리하는 것으로 이해하면된다.
+MSA, DDD, 이벤트 소싱 등 다른 기술과 함께 활용되며 다양하게 구현한다.
+특히 마이크로 서비스로 분리한 아키텍처에서는 Query가 어려운데, 여러 서비스에 흩어진 데이터를 조회하는 비용이 크기 때문이다. 그래서 Query 효율을 높이는 관점에서 CQRS를 많이 활용한다.
+refs 마이크로서비스 패턴 links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>인증 방식 비교</title>
       <link>https://chankoo.github.io/posts/%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90/</link>
       <pubDate>Sat, 19 Nov 2022 22:27:39 +0900</pubDate>
@@ -333,6 +352,25 @@ refs links 파일 시스템
             content JSON Web Token. 사용자의 정보를 Json에 담아 보내는 형식의 웹 토큰이다.
 Header / Payload / Signature 로 나뉘며, base64 인코딩을 통해 url-safe한 xxx.yyy.zzz 형태로 표현한다. Header에는 Signature 에 서명한 알고리즘 정보를 담는다. Payload에는 실제 사용자 정보를 Json 형태로 담으며 추가에 열려있다. Signature는 비대칭키 방식을 사용하여 header와 payload가 변경 안되었음을 보증한다.
 주로 인증을 위해 사용하는데, JWT의 유효성(위조 여부)만 확인하면 인증은 완료된다. 이미 JWT 발급 시점에 (id, pwd로) 사용자를 인증했고 그 결과로 JWT를 생성했기에, (Signature를 이용하여) JWT 가 위조되지 않았다는 것만 확인하면 JWT 발급 시점과 같은 사용자라는 것을 알게되는 원리이다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Python heapq</title>
+      <link>https://chankoo.github.io/posts/python-heapq/</link>
+      <pubDate>Fri, 18 Nov 2022 15:42:48 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/python-heapq/</guid>
+      <description>
+        
+          
+            content heap을 이용하는 q의 구현을 제공하는 모듈
+heap = [] heapq.heappush(heap, item) heapq.heappop(heap) heappush 와 heappop 을 통해 힙 큐를 구현할 수 있다.
+주의할 것은
+heap 은 heap 자료구조가 아님. 선형 자료구조(ex. 리스트) 를 받아 힙의 구현을 도와주는 모듈임 최소 힙을 구현함 0을 제외한 인덱스로 읽지 말자 - heap[0] 을 제외한 값은 정렬된 형태가 아님 refs heapq — 힙 큐 알고리즘 — Python 3.12.0 문서 파이썬의 heapq 모듈로 힙 자료구조 사용하기 | Engineering Blog by Dale Seo links 
           
           
         
@@ -410,6 +448,25 @@ LSP를 위반하면 OCP를 위반하는 것이다. 하위 타입을 추가(확�
     </item>
     
     <item>
+      <title>OCP</title>
+      <link>https://chankoo.github.io/posts/ocp/</link>
+      <pubDate>Fri, 28 Oct 2022 00:36:16 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/ocp/</guid>
+      <description>
+        
+          
+            content 개방-폐쇄 원칙; Open Close Principle 소프트웨어 요소는 확장에는 open, 수정에는 close여야 한다. 수정 보다 비용이 적은 확장으로 소프트웨어를 수정해야한다.
+OCP를 지키기 위해서는 의존 관계를 잘 설계해야한다. 의존 관계가 확장 가능한 요소와 수정해야하는 요소를 결정짓기 때문인데, A -&amp;gt; B (A가 B에 의존)이라면 A는 확장 가능한 요소이고 B는 수정해야하는 요소가 되는 것이다.
+이를 위해 DIP를 지켜야한다. 추상 보다 구현의 변화가 많은데, 구현이 추상에 의존해야 구현을 확장할 수 있기 때문이다.
+모듈 레벨(OOP 클래스)에만 적용되는 원칙이 아니다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>모듈</title>
       <link>https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/</link>
       <pubDate>Thu, 27 Oct 2022 22:23:08 +0900</pubDate>
@@ -419,7 +476,7 @@ LSP를 위반하면 OCP를 위반하는 것이다. 하위 타입을 추가(확�
         
           
             content 설계 시점에 다루는 코드 덩어리. 시점상 가장 먼저 구현하는 단위
-refs 개발자에서 아키텍트로 links 컴포넌트 
+refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트 
           
           
         
@@ -876,7 +933,7 @@ refs 명령어 집합 - 위키백과, 우리 모두의 백과사전 [ 컴퓨터�
         
           
             content ISA의 명령어를 문자화 시킨 저급 언어이다. 프로그래머가 기계어를 다룰 수 있도록 고안되었고, 기계어 명령어와 일대일 대응한다. 그래서 ISA 의존적이고, 하드웨어 이식성이 낮다.
-refs Fetching Title#d80f links ISA 
+refs [Chapter 7] Assembly Language - 어셈블리어, 어셈블러 links ISA 
           
           
         
@@ -894,7 +951,7 @@ refs Fetching Title#d80f links ISA
           
             content 어셈블리 언어(Assembly Language)를 기계어로 어셈블(assemble)하는 프로그램. 어셈블은 CPU의 ISA에 맞게 이루어진다.
 하나의 프로그램을 어셈블하면 여러 개의 소스 파일로 나뉠 수 있다. 이러한 파일(기계어 조각)을 합쳐서 하나의 실행 가능한 파일로 만드는 프로그램을 링커(Linker)라 하며, 그 파일의 코드와 데이터를 메모리에 올리고, 해당 프로그램의 시작 주소로 CPU를 제어하도록 하는 프로그램이 로더(Loader)이다.
-refs Fetching Title#ykgj links Assembly Language ISA 
+refs [Chapter 7] Assembly Language - 어셈블리어, 어셈블러 links Assembly Language ISA 
           
           
         
@@ -982,7 +1039,7 @@ refs links
         
           
             content 경쟁 상태 여러 스레드나 프로세스가 한 자원에 동시에 접근하고 조작하여 예상치 못한 결과(non deterministic)을 도출할 수 있는 상태. 즉, 스레드가 자원에 접근하는 타이밍에 결과가 영향 받는 상태를 의미한다
-refs links 
+Thread 1 Thread 2 Integer value 0 read value ← 0 read value ← 0 increase value 0 increase value 0 write back → 1 write back → 1 refs Race condition - Wikipedia links 
           
           
         
@@ -1370,6 +1427,27 @@ aka Smart &amp;amp; Dumb conponents 대개 컨테이너는 렌더링하는 컴�
           
             content python 의 list 는 dynamic array이다. 런타임에 element를 추가할때, 리스트에 할당된 메모리 공간이 모자라면 리스트 크기를 늘린다. 그런데 dynamic array도 엄연한 array 이기에 &amp;rsquo;element 가 연속된 메모리 공간을 점유한다&amp;rsquo;는 제약을 따라야한다. 그래서 python(cpython)은 요소가 추가되어 리스트 크기가 변해야할 때, 전체 list를 복사하여 더 큰(2의 거듭제곱) 공간에 통째로 재할당 한다.
 이는 시간 복잡도 계산에 영향을 준다. list 에 요소를 더하는 append 나 insert 연산의 시간 복잡도를 계산할 때 메모리 재할당 시간까지 고려해야 한다는 의미다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>제텔카스텐</title>
+      <link>https://chankoo.github.io/posts/%EC%A0%9C%ED%85%94%EC%B9%B4%EC%8A%A4%ED%85%90/</link>
+      <pubDate>Sun, 02 Oct 2022 22:59:24 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%A0%9C%ED%85%94%EC%B9%B4%EC%8A%A4%ED%85%90/</guid>
+      <description>
+        
+          
+            content 생각 정리를 위한 제텔카스텐 cherry-pick
+가억과 생각을 탐색하는 자료구조
+노트 작성 원칙
+atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 영구 노트로 옮긴다. 노트 간 연결은 많을수록 좋다. 영구 노트 작성 원칙
+내 글로 다시 쓴다. 출판을 전제로 쓴다. 분량을 제한한다. 페이지 작성법
+영구 노트의 글감을 정리하여 한 편의 글을 쓴다. Cmd + Shift + E 단축키로 로컬 디렉토리(pages)에 내보낸다. pages/deploy.sh 로 publish 한다. refs 4. 옵시디안은 제텔카스텐을 위해 태어났다. 제텔카스텐 개념과 기본 세팅[한글 자막] - YouTube links 노트 템플릿 
           
           
         

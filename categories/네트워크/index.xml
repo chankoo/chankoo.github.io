@@ -86,7 +86,7 @@ refs 🌐 DHCP 이란 무엇인가? (그림으로 쉽게 정리) links
         
           
             content 서버-클라이언트 양방향 일대일 통신을 제공하는 프로토콜
-http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다 통신 상대가 정해져있어 데이터를 절약한다. stateful 하기에 채널을 온메모리로 관리해야한다. refs ../1.permanents/리얼월드 HTTP|리얼월드 HTTP links 소켓 
+http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다 통신 상대가 정해져있어 데이터를 절약한다. stateful 하기에 채널을 온메모리로 관리해야한다. refs 리얼월드 HTTP links 소켓 
           
           
         
@@ -104,6 +104,22 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
           
             content Server-Sent Events. HTML5 의 기능으로, 한번의 요청에 서버가 여러 이벤트(청크) 전송을 제공하는 프로토콜. http 위에서 동작하는 별도 텍스트 프로토콜이다(text/event-stream).
 refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>리얼월드 HTTP</title>
+      <link>https://chankoo.github.io/posts/%EB%A6%AC%EC%96%BC%EC%9B%94%EB%93%9C-http/</link>
+      <pubDate>Tue, 29 Nov 2022 19:46:55 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%A6%AC%EC%96%BC%EC%9B%94%EB%93%9C-http/</guid>
+      <description>
+        
+          
+            content refs links 
           
           
         

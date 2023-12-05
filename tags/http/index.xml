@@ -42,6 +42,40 @@ refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘�
     </item>
     
     <item>
+      <title>WebSocket</title>
+      <link>https://chankoo.github.io/posts/websocket/</link>
+      <pubDate>Thu, 30 Mar 2023 15:23:12 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/websocket/</guid>
+      <description>
+        
+          
+            content 서버-클라이언트 양방향 일대일 통신을 제공하는 프로토콜
+http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다 통신 상대가 정해져있어 데이터를 절약한다. stateful 하기에 채널을 온메모리로 관리해야한다. refs ../1.permanents/리얼월드 HTTP|리얼월드 HTTP links 소켓 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSE</title>
+      <link>https://chankoo.github.io/posts/sse/</link>
+      <pubDate>Thu, 30 Mar 2023 15:17:58 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/sse/</guid>
+      <description>
+        
+          
+            content Server-Sent Events. HTML5 의 기능으로, 한번의 요청에 서버가 여러 이벤트(청크) 전송을 제공하는 프로토콜. http 위에서 동작하는 별도 텍스트 프로토콜이다(text/event-stream).
+refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>인증 방식 비교</title>
       <link>https://chankoo.github.io/posts/%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90/</link>
       <pubDate>Sat, 19 Nov 2022 22:27:39 +0900</pubDate>

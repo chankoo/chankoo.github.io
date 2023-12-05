@@ -6,7 +6,24 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 01 Dec 2023 17:55:35 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Dec 2023 20:08:04 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TCP</title>
+      <link>https://chankoo.github.io/posts/tcp/</link>
+      <pubDate>Tue, 05 Dec 2023 20:08:04 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/tcp/</guid>
+      <description>
+        
+          
+            content Transmission Control Protocol. TCP/IP 스택 전송 계층 프로토콜로 소켓 간 신뢰할 수 있는 통신을 보장한다.
+프로세스와 프로세스(엄밀히는 소켓과 소켓)를 잇는 논리적인 개념의 point-to-point 통신 reliable: 응용계층에서 받은 데이터의 error와 loss가 없음을 보장 in-order byte stream: 데이터의 순서를 유지 Pipelined : window size 단위로 패킷을 묶어 통신 send &amp;amp; receive buffers: 송신 측과 수신 측 모두 send, receive buffer를 각각 가짐 Full duplex: 통신하는 host 양쪽 모두가 데이터 전송 가능 Connection oriented: handshake를 먼저 수행한 후 통신.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>로드 팩터</title>
       <link>https://chankoo.github.io/posts/%EB%A1%9C%EB%93%9C-%ED%8C%A9%ED%84%B0/</link>
@@ -280,6 +297,57 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
             content BST(Binary Search Tree)를 일반화한 자료구조로 2개 이상의 자식 노드를 갖는 Balanced Tree이다.
 B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
 디스크 I/O로 데이터를 가져오는 단위인 블록의 크기는 고정(mysql은 16KB)인데, 키의 크기가 커지면 한블록에 저장하는 키의 개수가 적어진다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>소켓</title>
+      <link>https://chankoo.github.io/posts/%EC%86%8C%EC%BC%93/</link>
+      <pubDate>Wed, 07 Jun 2023 19:38:33 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%86%8C%EC%BC%93/</guid>
+      <description>
+        
+          
+            content 응용계층 간의 통신을 위해서 고안된 인터페이스로 어플리케이션에서 시스템(하위 계층)의 자원과 기능을 사용하도록 한다. 프로토콜이 TCP라면, 응용계층에서 TCP/IP로 내려가는 창구가 된다.
+서버 소켓 - 구현상 같은 주소의 소켓이 여러개(하나의 리슨 소켓과 여러개의 통신 소켓)이다. 요청이 리슨 소켓으로 들어오면 accept하여 통신 소켓을 생성한다. 커넥션이 만들어진 후 클라이언트는 통신 소켓과 통신한다. 클라이언트 소켓 - 특정 포트를 선택하는 바인딩 과정 없이 자동으로 포트를 선택한다. 커널이 로컬 포트 중 적당한 포트를 골라 넘겨준다. 스펙상) 소켓은 internet address + port number로 표현하며 네트워크 전체에서 유니크하다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>WebSocket</title>
+      <link>https://chankoo.github.io/posts/websocket/</link>
+      <pubDate>Thu, 30 Mar 2023 15:23:12 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/websocket/</guid>
+      <description>
+        
+          
+            content 서버-클라이언트 양방향 일대일 통신을 제공하는 프로토콜
+http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다 통신 상대가 정해져있어 데이터를 절약한다. stateful 하기에 채널을 온메모리로 관리해야한다. refs ../1.permanents/리얼월드 HTTP|리얼월드 HTTP links 소켓 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSE</title>
+      <link>https://chankoo.github.io/posts/sse/</link>
+      <pubDate>Thu, 30 Mar 2023 15:17:58 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/sse/</guid>
+      <description>
+        
+          
+            content Server-Sent Events. HTML5 의 기능으로, 한번의 요청에 서버가 여러 이벤트(청크) 전송을 제공하는 프로토콜. http 위에서 동작하는 별도 텍스트 프로토콜이다(text/event-stream).
+refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links 
           
           
         

@@ -27,6 +27,23 @@ heap 은 heap 자료구조가 아님. 선형 자료구조(ex. 리스트) 를 받
     </item>
     
     <item>
+      <title>Event Loop</title>
+      <link>https://chankoo.github.io/posts/event-loop/</link>
+      <pubDate>Tue, 25 Oct 2022 23:23:22 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/event-loop/</guid>
+      <description>
+        
+          
+            content 싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
+(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요?
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>해시 충돌</title>
       <link>https://chankoo.github.io/posts/%ED%95%B4%EC%8B%9C-%EC%B6%A9%EB%8F%8C/</link>
       <pubDate>Sun, 16 Oct 2022 22:04:24 +0900</pubDate>
@@ -53,7 +70,7 @@ heap 은 heap 자료구조가 아님. 선형 자료구조(ex. 리스트) 를 받
       <description>
         
           
-            content 제너레이터는 제어 흐름을 양보할 수 있는 Iterator이다. 루프를 순회하는 도중 의도적으로 순회를 멈추고, 자신을 호출한 루틴으로 제어 흐름을 양보할 수 있다. 때문에 semicoroutine 이라고도 불리는데, 제어 흐름을 넘겨줄 routine을 지정할 수 있는 coroutine 의 특수한 형태이기 때문이다.
+            content 제너레이터는 제어 흐름을 양보할 수 있는 Iterator이다. 루프를 순회하는 도중 의도적으로 순회를 멈추고, 자신을 호출한 루틴으로 제어 흐름을 양보할 수 있다. 때문에 semicoroutine 이라고도 불리는데, (제어 흐름을 넘겨줄 routine을 지정할 수 있는) coroutine 의 특수한 형태이기 때문이다.
 이러한 제너레이터의 동작은 1) 메모리 효율 2) 동시성 의 관점에서 살펴볼만하다. 루프 내 요소의 평가가 필요할때 메모리에 요소를 올리는 lazy evaluation 이고, 원하는 시점에 제어흐름을 넘겨가며 동시성 프로그래밍을 가능케하는 pseudo thread 이기 때문이다.
           
           

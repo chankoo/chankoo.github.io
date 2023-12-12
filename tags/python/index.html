@@ -168,6 +168,75 @@ heap 은 heap 자료구조가 아님. 선형 자료구조(ex. 리스트) 를 받
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/event-loop/" title="Event Loop">Event Loop</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 25, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/javascript/' title="javascript" class="post_tag button button_translucent">javascript
+        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a><a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Event%20Loop&url=https%3a%2f%2fchankoo.github.io%2fposts%2fevent-loop%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fevent-loop%2f&t=Event%20Loop" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/event-loop/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
+(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&gt; 이벤트 루프 -&gt; 이벤트 루프 응답 -&gt; 대기하며 진행 커널 영역 블락 -&gt; 이벤트 발생 -&gt; 이벤트 루프에 노티 -&gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요?</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/event-loop/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/%ED%95%B4%EC%8B%9C-%EC%B6%A9%EB%8F%8C/" title="해시 충돌">해시 충돌</a>
       </h3>
       
@@ -290,7 +359,7 @@ heap 은 heap 자료구조가 아님. 선형 자료구조(ex. 리스트) 를 받
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 제너레이터는 제어 흐름을 양보할 수 있는 Iterator이다. 루프를 순회하는 도중 의도적으로 순회를 멈추고, 자신을 호출한 루틴으로 제어 흐름을 양보할 수 있다. 때문에 semicoroutine 이라고도 불리는데, 제어 흐름을 넘겨줄 routine을 지정할 수 있는 coroutine 의 특수한 형태이기 때문이다.
+            <p>content 제너레이터는 제어 흐름을 양보할 수 있는 Iterator이다. 루프를 순회하는 도중 의도적으로 순회를 멈추고, 자신을 호출한 루틴으로 제어 흐름을 양보할 수 있다. 때문에 semicoroutine 이라고도 불리는데, (제어 흐름을 넘겨줄 routine을 지정할 수 있는) coroutine 의 특수한 형태이기 때문이다.
 이러한 제너레이터의 동작은 1) 메모리 효율 2) 동시성 의 관점에서 살펴볼만하다. 루프 내 요소의 평가가 필요할때 메모리에 요소를 올리는 lazy evaluation 이고, …</p>
           
           <br>
@@ -713,73 +782,6 @@ refs 사이썬 - 위키백과, 우리 모두의 백과사전 links CPython 컴�
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/cpython/" title="CPython">CPython</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Oct 3, 2022</span>
-    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
-        </a>
-    </span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=CPython&url=https%3a%2f%2fchankoo.github.io%2fposts%2fcpython%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fcpython%2f&t=CPython" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://chankoo.github.io/posts/cpython/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 인터프리터로 실행한다.
-refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동작 원리 – 도서출판 인사이트 links 인터프리터 Bytecode</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/cpython/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -815,6 +817,12 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC/" class="nav-link" title="스트림">스트림</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B2%84%ED%8D%BC/" class="nav-link" title="프로토콜 버퍼">프로토콜 버퍼</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/tcp/" class="nav-link" title="TCP">TCP</a>
       </li>
       <li>
@@ -832,19 +840,13 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
       <li>
         <a href="https://chankoo.github.io/posts/cache-control/" class="nav-link" title="Cache-Control">Cache-Control</a>
       </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/cors/" class="nav-link" title="CORS">CORS</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/dhcp/" class="nav-link" title="DHCP">DHCP</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">17</span>
+          <span class="button_tally">20</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
@@ -852,14 +854,14 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
           <span class="button_tally">16</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="컴퓨터구조">
-          컴퓨터구조
+        <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
+          네트워크
           <span class="button_tally">16</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
-          네트워크
-          <span class="button_tally">11</span>
+        <a href='https://chankoo.github.io/categories/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="컴퓨터구조">
+          컴퓨터구조
+          <span class="button_tally">16</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
@@ -915,17 +917,17 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
         
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
+          <span class="button_tally">12</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
+          HTTP
           <span class="button_tally">11</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
           책
           <span class="button_tally">10</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
-          HTTP
-          <span class="button_tally">8</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
@@ -945,6 +947,11 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
         
         <a href='https://chankoo.github.io/tags/cache/' class="post_tag button button_translucent" title="cache">
           CACHE
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
+          MSA
           <span class="button_tally">5</span>
         </a>
         
@@ -968,6 +975,11 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
           <span class="button_tally">4</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
+          API
+          <span class="button_tally">3</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/c/' class="post_tag button button_translucent" title="c">
           C
           <span class="button_tally">3</span>
@@ -975,6 +987,11 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
         
         <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
           REACT
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/tcp/' class="post_tag button button_translucent" title="tcp">
+          TCP
           <span class="button_tally">3</span>
         </a>
         
@@ -990,21 +1007,6 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
         
         <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
           DJANGO
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/gunicorn/' class="post_tag button button_translucent" title="gunicorn">
-          GUNICORN
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
-          MSA
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/tcp/' class="post_tag button button_translucent" title="tcp">
-          TCP
           <span class="button_tally">2</span>
         </a>
         
@@ -1035,6 +1037,11 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
         
         <a href='https://chankoo.github.io/tags/frontend/' class="post_tag button button_translucent" title="frontend">
           FRONTEND
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/gunicorn/' class="post_tag button button_translucent" title="gunicorn">
+          GUNICORN
           <span class="button_tally">1</span>
         </a>
         

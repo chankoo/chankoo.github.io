@@ -6,7 +6,25 @@
     <description>Recent content in http on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Nov 2023 14:18:34 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Dec 2023 14:59:41 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>스트림</title>
+      <link>https://chankoo.github.io/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC/</link>
+      <pubDate>Tue, 12 Dec 2023 14:59:41 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC/</guid>
+      <description>
+        
+          
+            content HTTP2에서 스트림은 하나의 TCP 커넥션 내 존재하는 다수의 가상 TCP 소켓이다. 클라이언트와 서버는 스트림을 기준으로 양방향 통신하여, 스트림은 요청과 응답 메시지를 묶는 단위가 된다. HTTP1.1 까지 요청과 응답은 하나의 메시지 단위로만 이뤄졌는데, HTTP2 부터는 여러개의 요청/응답 메시지를 연속적(스트림 단위)으로 전달하는 것이다.
+스트림은 한개 이상의 요청/응답 메시지로 구성되며, 메시지는 프레임이라는 단위로 나뉜다. 프레임은 HTTP2 통신상 가장 작은 정보 단위이며 Header 이거나 Data이다.
+refs 리얼월드 HTTP HTTP/2에서 Frame, Stream의 의미 links HTTP2 TCP 소켓 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Cache-Control</title>
       <link>https://chankoo.github.io/posts/cache-control/</link>
@@ -85,6 +103,42 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links
         
           
             content refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>HTTP2</title>
+      <link>https://chankoo.github.io/posts/http2/</link>
+      <pubDate>Tue, 29 Nov 2022 19:46:09 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/http2/</guid>
+      <description>
+        
+          
+            content HTTP/1.1 이후 이루어진 대규모 업데이트(2015년)로 통신 고속화를 목적으로 하는 프로토콜.
+스트림을 사용해 (텍스트가 아니라) 바이너리 데이터를 다중으로 송수신한다. 서버 푸시를 통해 우선순위 높은 콘텐츠를 클라이언트 요청 없이도 전송할 수 있다. 헤더를 압축(HPACK)해 전송한다. refs 리얼월드 HTTP links 스트림 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>gRPC</title>
+      <link>https://chankoo.github.io/posts/grpc/</link>
+      <pubDate>Tue, 29 Nov 2022 19:33:00 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/grpc/</guid>
+      <description>
+        
+          
+            content google에서 개발한 RPC(Remote Procedure Call) 프레임워크.
+기존 RPC처럼, 네트워크 통신이 필요한 요청을 로컬에서 호출하는 것처럼 도와주는 프로토콜이다. HTTP/2 를 사용하며 프로토콜 버퍼(ProtoBuf)를 이용해 통신 효율을 높이는 특징이 있다.
+일반적인 http 기반 API(REST 등) 보다 더 빠르고(5배 가량), HTTP2의 기능을 사용할 수 있는 것이 장점이다.
+refs [네이버클라우드 기술&amp;amp;경험] 시대의 흐름, gRPC 깊게 파고들기 #1 | by NAVER CLOUD PLATFORM | NAVER CLOUD PLATFORM | Medium What is RPC? gRPC Introduction. - YouTube links HTTP2 프로토콜 버퍼 
           
           
         

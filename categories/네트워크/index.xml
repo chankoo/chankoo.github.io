@@ -6,7 +6,43 @@
     <description>Recent content in 네트워크 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 05 Dec 2023 20:08:04 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Dec 2023 14:59:41 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>스트림</title>
+      <link>https://chankoo.github.io/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC/</link>
+      <pubDate>Tue, 12 Dec 2023 14:59:41 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC/</guid>
+      <description>
+        
+          
+            content HTTP2에서 스트림은 하나의 TCP 커넥션 내 존재하는 다수의 가상 TCP 소켓이다. 클라이언트와 서버는 스트림을 기준으로 양방향 통신하여, 스트림은 요청과 응답 메시지를 묶는 단위가 된다. HTTP1.1 까지 요청과 응답은 하나의 메시지 단위로만 이뤄졌는데, HTTP2 부터는 여러개의 요청/응답 메시지를 연속적(스트림 단위)으로 전달하는 것이다.
+스트림은 한개 이상의 요청/응답 메시지로 구성되며, 메시지는 프레임이라는 단위로 나뉜다. 프레임은 HTTP2 통신상 가장 작은 정보 단위이며 Header 이거나 Data이다.
+refs 리얼월드 HTTP HTTP/2에서 Frame, Stream의 의미 links HTTP2 TCP 소켓 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>프로토콜 버퍼</title>
+      <link>https://chankoo.github.io/posts/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B2%84%ED%8D%BC/</link>
+      <pubDate>Tue, 12 Dec 2023 14:04:27 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B2%84%ED%8D%BC/</guid>
+      <description>
+        
+          
+            content 구글에서 개발한 직렬화 데이터 구조. JSON과 같은 기존 포맷보다 작고 직렬화/역직렬화 속도가 빠르다.
+데이터 타입을 정의한 Proto file을 (해당 언어에 맞게) 컴파일하여 사용한다. 최초 1바이트(두자리 16진수)로 필드 넘버와 타입을 표현하고, 차례로 length와 데이터를 표현한다.
+message Person { string name = 1; // 필드 타입 string, 필드 넘버 1 int32 age = 2; } refs 프로토콜 버퍼란 무엇인가(Protocol Buffer) 서버, 클라이언트 예제와 함께 feat. express &amp;amp; Vue 구글 프로토콜 버퍼 (Protocol buffer) Language Guide (proto 2) | Protocol Buffers Documentation links Marshalling 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>TCP</title>
       <link>https://chankoo.github.io/posts/tcp/</link>
@@ -127,6 +163,42 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links
     </item>
     
     <item>
+      <title>HTTP2</title>
+      <link>https://chankoo.github.io/posts/http2/</link>
+      <pubDate>Tue, 29 Nov 2022 19:46:09 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/http2/</guid>
+      <description>
+        
+          
+            content HTTP/1.1 이후 이루어진 대규모 업데이트(2015년)로 통신 고속화를 목적으로 하는 프로토콜.
+스트림을 사용해 (텍스트가 아니라) 바이너리 데이터를 다중으로 송수신한다. 서버 푸시를 통해 우선순위 높은 콘텐츠를 클라이언트 요청 없이도 전송할 수 있다. 헤더를 압축(HPACK)해 전송한다. refs 리얼월드 HTTP links 스트림 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>gRPC</title>
+      <link>https://chankoo.github.io/posts/grpc/</link>
+      <pubDate>Tue, 29 Nov 2022 19:33:00 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/grpc/</guid>
+      <description>
+        
+          
+            content google에서 개발한 RPC(Remote Procedure Call) 프레임워크.
+기존 RPC처럼, 네트워크 통신이 필요한 요청을 로컬에서 호출하는 것처럼 도와주는 프로토콜이다. HTTP/2 를 사용하며 프로토콜 버퍼(ProtoBuf)를 이용해 통신 효율을 높이는 특징이 있다.
+일반적인 http 기반 API(REST 등) 보다 더 빠르고(5배 가량), HTTP2의 기능을 사용할 수 있는 것이 장점이다.
+refs [네이버클라우드 기술&amp;amp;경험] 시대의 흐름, gRPC 깊게 파고들기 #1 | by NAVER CLOUD PLATFORM | NAVER CLOUD PLATFORM | Medium What is RPC? gRPC Introduction. - YouTube links HTTP2 프로토콜 버퍼 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>인증 방식 비교</title>
       <link>https://chankoo.github.io/posts/%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90/</link>
       <pubDate>Sat, 19 Nov 2022 22:27:39 +0900</pubDate>
@@ -191,6 +263,25 @@ refs Back/forward cache | Articles | web.dev links
             content 클라이언트의 http 요청의 갱신 여부를 파악하기 위해 설정하는 응답 헤더.
 요청 -&amp;gt; 서버가 요청을 Etag 변환(해시 사용) -&amp;gt; 응답 헤더에 Etag 포함 -&amp;gt; 클라이언트가 사용(If-None-Match에 담아)해 요청 -&amp;gt; 동일한 Etag 라면 http 304 Not Modified 반환
 refs Etag를 이용하여 더 나은 Restful API 만들기 | 요즘IT Conditional View Processing | Django documentation | Django ETag - HTTP | MDN links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Marshalling</title>
+      <link>https://chankoo.github.io/posts/marshalling/</link>
+      <pubDate>Tue, 01 Nov 2022 22:15:40 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/marshalling/</guid>
+      <description>
+        
+          
+            content 컴퓨터 과학에서 통신을 위해 적합한 형식으로 데이터를 변환하는 것.
+마샬링은 객체의 통신 뿐 아니라 서버에서 서버, 프로그램에서 프로그램 등 데이터의 통신을 위한 변환을 통칭한다. 메모리를 공유하지 않는 상황에서, 메모리에 올라간 데이터를 통신을 위한 형태로 변환하는 것이다.
+직렬화는 마샬링의 한 종류이며 복원의 목적으로 객체를 바이트 스트림으로 변환해 저장하는 것을 의미한다.
+refs 마샬링 (컴퓨터 과학) - 위키백과, 우리 모두의 백과사전 links 
           
           
         

@@ -26,6 +26,58 @@
     </item>
     
     <item>
+      <title>API 조합 패턴</title>
+      <link>https://chankoo.github.io/posts/api-%EC%A1%B0%ED%95%A9-%ED%8C%A8%ED%84%B4/</link>
+      <pubDate>Thu, 01 Jun 2023 16:30:05 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/api-%EC%A1%B0%ED%95%A9-%ED%8C%A8%ED%84%B4/</guid>
+      <description>
+        
+          
+            content (주로)MSA에서 프로바이더 서비스들이 제공하는 데이터를 조합하여 한번에 제공하는 API 조합기를 두는 패턴
+설계
+API 조합기로 둘 컴포넌트 선정 클라이언트 간단하지만, 클라이언트가 외부 네트워크에 존재하는 경우 느리다 API 게이트웨이 일반적인 방법으로 API 게이트웨이 패턴이라 불림 스탠드 얼론 서비스 &amp;lsquo;주문 검색 서비스&amp;rsquo; 와 같은 서비스를 두어 조합기 역할을 맡기는 방법 효율적인 조합 로직 프로바이더 서비스 순차 호출에 따른 지연 시간을 줄이는 것이 핵심 리액티브 프로그래밍을 권장 refs 마이크로서비스 패턴 links API Gateway 패턴 리액티브 프로그래밍 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>서비스 메시</title>
+      <link>https://chankoo.github.io/posts/%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%8B%9C/</link>
+      <pubDate>Wed, 24 May 2023 20:37:57 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%8B%9C/</guid>
+      <description>
+        
+          
+            content 프록시를 사용하여 서비스 간의 통신을 관리하는 인프라 계층. 도커와 쿠버네티스는 수많은 마이크로서비스의 오케스트레이션을 가능하게 하였고, 이들 서비스 간에 흐르는 트래픽을 추적하고 관리하려는 목적으로 서비스 메시를 사용한다.
+(어플리케이션 레벨이 아니라) 인프라 레벨에서 1) 트래픽 관리 2) observability 3) 보안 강화의 기능을 제공한다.
+refs 실무자를 위한 서비스 메시 - 지금 서비스 메시가 의미 있는 이유 links Istio Envoy 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>API Gateway 패턴</title>
+      <link>https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/</link>
+      <pubDate>Thu, 18 May 2023 20:29:43 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/</guid>
+      <description>
+        
+          
+            content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&amp;gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스)에 들어가야해서 오염됨 로직 구현의 책임을 잘못된 곳에 전가함 클라이언트가 여러 로직을 직접 호출하여 조합하거나 특정 서비스가 자신의 도메인인 것처럼 다른 서비스를 호출하여 구현하는 문제 클라이언트와 비즈니스 레이어의 강결합 클라이언트 성능 저하 내부 서비스의 프로토콜 제약 클라이언트에 응답할 수 있는 Http api 로 고정됨 API Gateway Pattern 의 종류 Edge Gateway(중앙 집중식) 가장 일반적인 패턴으로 게이트웨이가 거의 모든 것을 처리함.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>CQRS</title>
       <link>https://chankoo.github.io/posts/cqrs/</link>
       <pubDate>Mon, 12 Dec 2022 23:09:46 +0900</pubDate>
@@ -140,7 +192,7 @@ refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트
       <description>
         
           
-            content refs links 
+            content 아키텍트는 기술과 비즈니스 그리고 사용자를 모두 이해해야한다. 유저영역의 문제를 엔지니어링 관점에서 정의하여 소프트웨어 아키텍처를 설계한다. 아키텍처는 품질 속성과 기술 부채를 고려하여 시스템을 요소로 분리해야한다. 그리고 큰 그림 속에서 요소들을 연결하고 통합한다. 아키텍트로서 프로젝트 정리 이해관계자들은 누구였고 주요 비즈니스 목표는 무엇이었는가 최종적으로 어떤 결과를 도출했는가 어떤 기술을 사용했는가 가장 큰 리스크는 무엇이었고, 어떻게 극복했는가 다시 시작할 수 있다면 어떤 점을 다르게 하겠는가 refs links 
           
           
         

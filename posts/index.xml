@@ -6,7 +6,43 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 05 Dec 2023 20:08:04 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Dec 2023 14:59:41 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>스트림</title>
+      <link>https://chankoo.github.io/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC/</link>
+      <pubDate>Tue, 12 Dec 2023 14:59:41 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC/</guid>
+      <description>
+        
+          
+            content HTTP2에서 스트림은 하나의 TCP 커넥션 내 존재하는 다수의 가상 TCP 소켓이다. 클라이언트와 서버는 스트림을 기준으로 양방향 통신하여, 스트림은 요청과 응답 메시지를 묶는 단위가 된다. HTTP1.1 까지 요청과 응답은 하나의 메시지 단위로만 이뤄졌는데, HTTP2 부터는 여러개의 요청/응답 메시지를 연속적(스트림 단위)으로 전달하는 것이다.
+스트림은 한개 이상의 요청/응답 메시지로 구성되며, 메시지는 프레임이라는 단위로 나뉜다. 프레임은 HTTP2 통신상 가장 작은 정보 단위이며 Header 이거나 Data이다.
+refs 리얼월드 HTTP HTTP/2에서 Frame, Stream의 의미 links HTTP2 TCP 소켓 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>프로토콜 버퍼</title>
+      <link>https://chankoo.github.io/posts/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B2%84%ED%8D%BC/</link>
+      <pubDate>Tue, 12 Dec 2023 14:04:27 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B2%84%ED%8D%BC/</guid>
+      <description>
+        
+          
+            content 구글에서 개발한 직렬화 데이터 구조. JSON과 같은 기존 포맷보다 작고 직렬화/역직렬화 속도가 빠르다.
+데이터 타입을 정의한 Proto file을 (해당 언어에 맞게) 컴파일하여 사용한다. 최초 1바이트(두자리 16진수)로 필드 넘버와 타입을 표현하고, 차례로 length와 데이터를 표현한다.
+message Person { string name = 1; // 필드 타입 string, 필드 넘버 1 int32 age = 2; } refs 프로토콜 버퍼란 무엇인가(Protocol Buffer) 서버, 클라이언트 예제와 함께 feat. express &amp;amp; Vue 구글 프로토콜 버퍼 (Protocol buffer) Language Guide (proto 2) | Protocol Buffers Documentation links Marshalling 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>TCP</title>
       <link>https://chankoo.github.io/posts/tcp/</link>
@@ -385,6 +421,58 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
     </item>
     
     <item>
+      <title>API 조합 패턴</title>
+      <link>https://chankoo.github.io/posts/api-%EC%A1%B0%ED%95%A9-%ED%8C%A8%ED%84%B4/</link>
+      <pubDate>Thu, 01 Jun 2023 16:30:05 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/api-%EC%A1%B0%ED%95%A9-%ED%8C%A8%ED%84%B4/</guid>
+      <description>
+        
+          
+            content (주로)MSA에서 프로바이더 서비스들이 제공하는 데이터를 조합하여 한번에 제공하는 API 조합기를 두는 패턴
+설계
+API 조합기로 둘 컴포넌트 선정 클라이언트 간단하지만, 클라이언트가 외부 네트워크에 존재하는 경우 느리다 API 게이트웨이 일반적인 방법으로 API 게이트웨이 패턴이라 불림 스탠드 얼론 서비스 &amp;lsquo;주문 검색 서비스&amp;rsquo; 와 같은 서비스를 두어 조합기 역할을 맡기는 방법 효율적인 조합 로직 프로바이더 서비스 순차 호출에 따른 지연 시간을 줄이는 것이 핵심 리액티브 프로그래밍을 권장 refs 마이크로서비스 패턴 links API Gateway 패턴 리액티브 프로그래밍 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>서비스 메시</title>
+      <link>https://chankoo.github.io/posts/%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%8B%9C/</link>
+      <pubDate>Wed, 24 May 2023 20:37:57 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%8B%9C/</guid>
+      <description>
+        
+          
+            content 프록시를 사용하여 서비스 간의 통신을 관리하는 인프라 계층. 도커와 쿠버네티스는 수많은 마이크로서비스의 오케스트레이션을 가능하게 하였고, 이들 서비스 간에 흐르는 트래픽을 추적하고 관리하려는 목적으로 서비스 메시를 사용한다.
+(어플리케이션 레벨이 아니라) 인프라 레벨에서 1) 트래픽 관리 2) observability 3) 보안 강화의 기능을 제공한다.
+refs 실무자를 위한 서비스 메시 - 지금 서비스 메시가 의미 있는 이유 links Istio Envoy 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>API Gateway 패턴</title>
+      <link>https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/</link>
+      <pubDate>Thu, 18 May 2023 20:29:43 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/</guid>
+      <description>
+        
+          
+            content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&amp;gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스)에 들어가야해서 오염됨 로직 구현의 책임을 잘못된 곳에 전가함 클라이언트가 여러 로직을 직접 호출하여 조합하거나 특정 서비스가 자신의 도메인인 것처럼 다른 서비스를 호출하여 구현하는 문제 클라이언트와 비즈니스 레이어의 강결합 클라이언트 성능 저하 내부 서비스의 프로토콜 제약 클라이언트에 응답할 수 있는 Http api 로 고정됨 API Gateway Pattern 의 종류 Edge Gateway(중앙 집중식) 가장 일반적인 패턴으로 게이트웨이가 거의 모든 것을 처리함.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>WebSocket</title>
       <link>https://chankoo.github.io/posts/websocket/</link>
       <pubDate>Thu, 30 Mar 2023 15:23:12 +0900</pubDate>
@@ -464,6 +552,42 @@ refs 마이크로서비스 패턴 links
         
           
             content refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>HTTP2</title>
+      <link>https://chankoo.github.io/posts/http2/</link>
+      <pubDate>Tue, 29 Nov 2022 19:46:09 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/http2/</guid>
+      <description>
+        
+          
+            content HTTP/1.1 이후 이루어진 대규모 업데이트(2015년)로 통신 고속화를 목적으로 하는 프로토콜.
+스트림을 사용해 (텍스트가 아니라) 바이너리 데이터를 다중으로 송수신한다. 서버 푸시를 통해 우선순위 높은 콘텐츠를 클라이언트 요청 없이도 전송할 수 있다. 헤더를 압축(HPACK)해 전송한다. refs 리얼월드 HTTP links 스트림 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>gRPC</title>
+      <link>https://chankoo.github.io/posts/grpc/</link>
+      <pubDate>Tue, 29 Nov 2022 19:33:00 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/grpc/</guid>
+      <description>
+        
+          
+            content google에서 개발한 RPC(Remote Procedure Call) 프레임워크.
+기존 RPC처럼, 네트워크 통신이 필요한 요청을 로컬에서 호출하는 것처럼 도와주는 프로토콜이다. HTTP/2 를 사용하며 프로토콜 버퍼(ProtoBuf)를 이용해 통신 효율을 높이는 특징이 있다.
+일반적인 http 기반 API(REST 등) 보다 더 빠르고(5배 가량), HTTP2의 기능을 사용할 수 있는 것이 장점이다.
+refs [네이버클라우드 기술&amp;amp;경험] 시대의 흐름, gRPC 깊게 파고들기 #1 | by NAVER CLOUD PLATFORM | NAVER CLOUD PLATFORM | Medium What is RPC? gRPC Introduction. - YouTube links HTTP2 프로토콜 버퍼 
           
           
         
@@ -577,6 +701,25 @@ refs Etag를 이용하여 더 나은 Restful API 만들기 | 요즘IT Conditiona
     </item>
     
     <item>
+      <title>Marshalling</title>
+      <link>https://chankoo.github.io/posts/marshalling/</link>
+      <pubDate>Tue, 01 Nov 2022 22:15:40 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/marshalling/</guid>
+      <description>
+        
+          
+            content 컴퓨터 과학에서 통신을 위해 적합한 형식으로 데이터를 변환하는 것.
+마샬링은 객체의 통신 뿐 아니라 서버에서 서버, 프로그램에서 프로그램 등 데이터의 통신을 위한 변환을 통칭한다. 메모리를 공유하지 않는 상황에서, 메모리에 올라간 데이터를 통신을 위한 형태로 변환하는 것이다.
+직렬화는 마샬링의 한 종류이며 복원의 목적으로 객체를 바이트 스트림으로 변환해 저장하는 것을 의미한다.
+refs 마샬링 (컴퓨터 과학) - 위키백과, 우리 모두의 백과사전 links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>ISP</title>
       <link>https://chankoo.github.io/posts/isp/</link>
       <pubDate>Sun, 30 Oct 2022 19:08:11 +0900</pubDate>
@@ -656,7 +799,7 @@ refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트
       <description>
         
           
-            content refs links 
+            content 아키텍트는 기술과 비즈니스 그리고 사용자를 모두 이해해야한다. 유저영역의 문제를 엔지니어링 관점에서 정의하여 소프트웨어 아키텍처를 설계한다. 아키텍처는 품질 속성과 기술 부채를 고려하여 시스템을 요소로 분리해야한다. 그리고 큰 그림 속에서 요소들을 연결하고 통합한다. 아키텍트로서 프로젝트 정리 이해관계자들은 누구였고 주요 비즈니스 목표는 무엇이었는가 최종적으로 어떤 결과를 도출했는가 어떤 기술을 사용했는가 가장 큰 리스크는 무엇이었고, 어떻게 극복했는가 다시 시작할 수 있다면 어떤 점을 다르게 하겠는가 refs links 
           
           
         
@@ -1018,7 +1161,7 @@ refs links
       <description>
         
           
-            content 제너레이터는 제어 흐름을 양보할 수 있는 Iterator이다. 루프를 순회하는 도중 의도적으로 순회를 멈추고, 자신을 호출한 루틴으로 제어 흐름을 양보할 수 있다. 때문에 semicoroutine 이라고도 불리는데, 제어 흐름을 넘겨줄 routine을 지정할 수 있는 coroutine 의 특수한 형태이기 때문이다.
+            content 제너레이터는 제어 흐름을 양보할 수 있는 Iterator이다. 루프를 순회하는 도중 의도적으로 순회를 멈추고, 자신을 호출한 루틴으로 제어 흐름을 양보할 수 있다. 때문에 semicoroutine 이라고도 불리는데, (제어 흐름을 넘겨줄 routine을 지정할 수 있는) coroutine 의 특수한 형태이기 때문이다.
 이러한 제너레이터의 동작은 1) 메모리 효율 2) 동시성 의 관점에서 살펴볼만하다. 루프 내 요소의 평가가 필요할때 메모리에 요소를 올리는 lazy evaluation 이고, 원하는 시점에 제어흐름을 넘겨가며 동시성 프로그래밍을 가능케하는 pseudo thread 이기 때문이다.
           
           

@@ -693,7 +693,6 @@ refs Continuation-passing style - …</p>
         <div class="pale">
           
             <p>content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
-{{ $image := resources.Get “images/Pasted image 20231130142540.png” }}
 refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache</p>
           
           <br>
@@ -1432,8 +1431,7 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
         <div class="pale">
           
             <p>content mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-{{ $image := resources.Get “images/Pasted image 20231121192152.png” }}
-refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu’s Diary …</p>
+refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu’s Diary 데이터 중심 애플리케이션 설계 links B-Tree INNODB Hash 인덱스 전문 검색 인덱스</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1500,8 +1498,8 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
         <div class="pale">
           
             <p>content BST(Binary Search Tree)를 일반화한 자료구조로 2개 이상의 자식 노드를 갖는 Balanced Tree이다.
-B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. {{ $image := resources.Get “images/Pasted image 20231121190007.png” }}
-(Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, …</p>
+B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
+디스크 I/O로 데이터를 가져오는 단위인 블록의 크기는 고정(mysql은 16KB) …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/b-tree/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1768,8 +1766,7 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. {{ $image := resour
         <div class="pale">
           
             <p>content 응용계층 간의 통신을 위해서 고안된 인터페이스로 어플리케이션에서 시스템(하위 계층)의 자원과 기능을 사용하도록 한다. 프로토콜이 TCP라면, 응용계층에서 TCP/IP로 내려가는 창구가 된다.
-{{ $image := resources.Get “images/CLIENT SOCKET.png” }}
-서버 소켓 - 구현상 같은 주소의 소켓이 여러개(하나의 리슨 소켓과 여러개의 통신 소켓)이다. 요청이 리슨 소켓으로 들어오면 accept하여 통신 소켓을 생성한다. 커넥션이 만들어진 후 클라이언트는 통신 소켓과 통신한다. 클라이언트 소켓 - 특 …</p>
+서버 소켓 - 구현상 같은 주소의 소켓이 여러개(하나의 리슨 소켓과 여러개의 통신 소켓)이다. 요청이 리슨 소켓으로 들어오면 accept하여 통신 소켓을 생성한다. 커넥션이 만들어진 후 클라이언트는 통신 소켓과 통신한다. 클라이언트 소켓 - 특정 포트를 선택하는 바인딩 과정 없이 자동으로 포트를 선택한다. 커널이 로컬 포트 중 적당한 포트를 골라 넘겨준다. 스펙상) …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%EC%86%8C%EC%BC%93/" title="Read More" class="excerpt_more button">Read More</a>
@@ -3585,13 +3582,13 @@ refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트</p>
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
-          알고리즘
-          <span class="button_tally">3</span>
-        </a>
-        
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
+          알고리즘
           <span class="button_tally">2</span>
         </a>
         

@@ -20,7 +20,7 @@
 
 <meta property="og:type" content="article">
 <meta name="description" content="content 응용계층 간의 통신을 위해서 고안된 인터페이스로 어플리케이션에서 시스템(하위 계층)의 자원과 기능을 사용하도록 한다. 프로토콜이 TCP라면, 응용계층에서 TCP/IP로 내려가는 창구가 된다.
-{{ $image := resources.Get …" />
+서버 소켓 - 구현상 같은 주소의 소켓이 여러개( …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="소켓" />
@@ -28,7 +28,7 @@
 <meta property="og:url" content="https://chankoo.github.io/posts/%EC%86%8C%EC%BC%93/" />
 <meta property="og:title" content="소켓" />
 <meta property="og:description" content="content 응용계층 간의 통신을 위해서 고안된 인터페이스로 어플리케이션에서 시스템(하위 계층)의 자원과 기능을 사용하도록 한다. 프로토콜이 TCP라면, 응용계층에서 TCP/IP로 내려가는 창구가 된다.
-{{ $image := resources.Get …" />
+서버 소켓 - 구현상 같은 주소의 소켓이 여러개( …" />
 <meta property="og:image" content="https://chankoo.github.io" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chankoo.github.io/icons/apple-touch-icon.png">
@@ -144,7 +144,8 @@
 
     <div class="post_body"><h2 id="content">content</h2>
 <p>응용계층 간의 통신을 위해서 고안된 인터페이스로 어플리케이션에서 시스템(하위 계층)의 자원과 기능을 사용하도록 한다. 프로토콜이 TCP라면, 응용계층에서 TCP/IP로 내려가는 창구가 된다.</p>
-<p>{{ $image := resources.Get &ldquo;images/CLIENT SOCKET.png&rdquo; }}</p>
+<img src="/images/CLIENT%20SOCKET.png" alt="" >
+
 <ul>
 <li>서버 소켓 - 구현상 같은 주소의 소켓이 여러개(하나의 리슨 소켓과 여러개의 통신 소켓)이다. 요청이 리슨 소켓으로 들어오면 accept하여 통신 소켓을 생성한다. 커넥션이 만들어진 후 클라이언트는 통신 소켓과 통신한다.</li>
 <li>클라이언트 소켓 - 특정 포트를 선택하는 바인딩 과정 없이 자동으로 포트를 선택한다. 커널이 로컬 포트 중 적당한 포트를 골라 넘겨준다.</li>
@@ -249,13 +250,13 @@
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
-          알고리즘
-          <span class="button_tally">3</span>
-        </a>
-        
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
+          알고리즘
           <span class="button_tally">2</span>
         </a>
         

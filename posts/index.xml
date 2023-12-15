@@ -160,7 +160,6 @@ refs Continuation-passing style - Wikipedia 백엔드 개발자들이 알아야�
         
           
             content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
-{{ $image := resources.Get &amp;ldquo;images/Pasted image 20231130142540.png&amp;rdquo; }}
 refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
           
           
@@ -349,7 +348,6 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
         
           
             content mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-{{ $image := resources.Get &amp;ldquo;images/Pasted image 20231121192152.png&amp;rdquo; }}
 refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu&amp;rsquo;s Diary 데이터 중심 애플리케이션 설계 links B-Tree INNODB Hash 인덱스 전문 검색 인덱스 
           
           
@@ -367,8 +365,7 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
         
           
             content BST(Binary Search Tree)를 일반화한 자료구조로 2개 이상의 자식 노드를 갖는 Balanced Tree이다.
-B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. {{ $image := resources.Get &amp;ldquo;images/Pasted image 20231121190007.png&amp;rdquo; }}
-(Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
+B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
 디스크 I/O로 데이터를 가져오는 단위인 블록의 크기는 고정(mysql은 16KB)인데, 키의 크기가 커지면 한블록에 저장하는 키의 개수가 적어진다.
           
           
@@ -434,8 +431,7 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. {{ $image := resour
         
           
             content 응용계층 간의 통신을 위해서 고안된 인터페이스로 어플리케이션에서 시스템(하위 계층)의 자원과 기능을 사용하도록 한다. 프로토콜이 TCP라면, 응용계층에서 TCP/IP로 내려가는 창구가 된다.
-{{ $image := resources.Get &amp;ldquo;images/CLIENT SOCKET.png&amp;rdquo; }}
-서버 소켓 - 구현상 같은 주소의 소켓이 여러개(하나의 리슨 소켓과 여러개의 통신 소켓)이다. 요청이 리슨 소켓으로 들어오면 accept하여 통신 소켓을 생성한다. 커넥션이 만들어진 후 클라이언트는 통신 소켓과 통신한다. 클라이언트 소켓 - 특정 포트를 선택하는 바인딩 과정 없이 자동으로 포트를 선택한다. 커널이 로컬 포트 중 적당한 포트를 골라 넘겨준다.
+서버 소켓 - 구현상 같은 주소의 소켓이 여러개(하나의 리슨 소켓과 여러개의 통신 소켓)이다. 요청이 리슨 소켓으로 들어오면 accept하여 통신 소켓을 생성한다. 커넥션이 만들어진 후 클라이언트는 통신 소켓과 통신한다. 클라이언트 소켓 - 특정 포트를 선택하는 바인딩 과정 없이 자동으로 포트를 선택한다. 커널이 로컬 포트 중 적당한 포트를 골라 넘겨준다. 스펙상) 소켓은 internet address + port number로 표현하며 네트워크 전체에서 유니크하다.
           
           
         
@@ -487,7 +483,7 @@ refs 실무자를 위한 서비스 메시 - 지금 서비스 메시가 의미 �
       <description>
         
           
-            content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&amp;gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스)에 들어가야해서 오염됨 로직 구현의 책임을 잘못된 곳에 전가함 클라이언트가 여러 로직을 직접 호출하여 조합하거나 특정 서비스가 자신의 도메인인 것처럼 다른 서비스를 호출하여 구현하는 문제 클라이언트와 비즈니스 레이어의 강결합 클라이언트 성능 저하 내부 서비스의 프로토콜 제약 클라이언트에 응답할 수 있는 Http api 로 고정됨 {{ $image := resources.
+            content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&amp;gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스)에 들어가야해서 오염됨 로직 구현의 책임을 잘못된 곳에 전가함 클라이언트가 여러 로직을 직접 호출하여 조합하거나 특정 서비스가 자신의 도메인인 것처럼 다른 서비스를 호출하여 구현하는 문제 클라이언트와 비즈니스 레이어의 강결합 클라이언트 성능 저하 내부 서비스의 프로토콜 제약 클라이언트에 응답할 수 있는 Http api 로 고정됨 API Gateway Pattern 의 종류 Edge Gateway(중앙 집중식) 가장 일반적인 패턴으로 게이트웨이가 거의 모든 것을 처리함.
           
           
         
@@ -969,23 +965,6 @@ SRP를 따르면, 여러 액터의 요구를 책임지는 모듈은 책임을 �
     </item>
     
     <item>
-      <title>amortized analysis</title>
-      <link>https://chankoo.github.io/posts/amortized-analysis/</link>
-      <pubDate>Mon, 17 Oct 2022 00:01:04 +0900</pubDate>
-      
-      <guid>https://chankoo.github.io/posts/amortized-analysis/</guid>
-      <description>
-        
-          
-            content 알고리즘을 수행 과정 별로 분할하여 비용(시간 복잡도)을 구하는 분석 방법. 일련의 연산들을 구분하여 평균적인 비용을 낸다는 측면에서 worst-case approach 보다 현실적일 수 있다.
-refs https://ko.wikipedia.org/wiki/%EB%B6%84%ED%95%A0%EC%83%81%ED%99%98%EB%B6%84%EC%84%9D links Big-O 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>분할 상환 분석</title>
       <link>https://chankoo.github.io/posts/%EB%B6%84%ED%95%A0-%EC%83%81%ED%99%98-%EB%B6%84%EC%84%9D/</link>
       <pubDate>Mon, 17 Oct 2022 00:01:04 +0900</pubDate>
@@ -1384,9 +1363,7 @@ refs [Chapter 7] Assembly Language - 어셈블리어, 어셈블러 links Assembl
           
             content 파이썬 바이트코드 역 어셈블러. CPython의 바이트 코드를 역 어셈블하여 바이트 코드 레벨의 분석을 돕는 모듈이다.
 ex)
-def hi(x): x += 1 print(x) return x {{ $image := resources.Get &amp;ldquo;images/Pasted image 20221009230203.png&amp;rdquo; }}
-{{ $image := resources.Get &amp;ldquo;images/Pasted image 20221009225606.png&amp;rdquo; }}
-위 정의에 따르면, 추상화한 바이트코드를 바이트코드로 바꾸는 것도 어셈블이라 볼 수 있다.
+def hi(x): x += 1 print(x) return x 위 정의에 따르면, 추상화한 바이트코드를 바이트코드로 바꾸는 것도 어셈블이라 볼 수 있다.
 refs dis &amp;mdash; 파이썬 바이트 코드 역 어셈블러 — 파이썬 설명서 주석판 links Bytecode Assembler 
           
           
@@ -1897,6 +1874,20 @@ aka Smart &amp;amp; Dumb conponents 대개 컨테이너는 렌더링하는 컴�
 atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 영구 노트로 옮긴다. 노트 간 연결은 많을수록 좋다. 영구 노트 작성 원칙
 내 글로 다시 쓴다. 출판을 전제로 쓴다. 분량을 제한한다. 페이지 작성법
 영구 노트의 글감을 정리하여 한 편의 글을 쓴다. Cmd + Shift + E 단축키로 로컬 디렉토리(pages)에 내보낸다. pages/deploy.sh 로 publish 한다. refs 4. 옵시디안은 제텔카스텐을 위해 태어났다. 제텔카스텐 개념과 기본 세팅[한글 자막] - YouTube links 노트 템플릿 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://chankoo.github.io/posts/amortized-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/amortized-analysis/</guid>
+      <description>
+        
           
           
         

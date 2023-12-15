@@ -52,7 +52,6 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
         
           
             content mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-{{ $image := resources.Get &amp;ldquo;images/Pasted image 20231121192152.png&amp;rdquo; }}
 refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu&amp;rsquo;s Diary 데이터 중심 애플리케이션 설계 links B-Tree INNODB Hash 인덱스 전문 검색 인덱스 
           
           
@@ -70,8 +69,7 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
         
           
             content BST(Binary Search Tree)를 일반화한 자료구조로 2개 이상의 자식 노드를 갖는 Balanced Tree이다.
-B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. {{ $image := resources.Get &amp;ldquo;images/Pasted image 20231121190007.png&amp;rdquo; }}
-(Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
+B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
 디스크 I/O로 데이터를 가져오는 단위인 블록의 크기는 고정(mysql은 16KB)인데, 키의 크기가 커지면 한블록에 저장하는 키의 개수가 적어진다.
           
           

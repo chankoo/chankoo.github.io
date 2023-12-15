@@ -20,7 +20,7 @@
 
 <meta property="og:type" content="article">
 <meta name="description" content="content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
-refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알 …" />
+{{ $image := resources.Get …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="Cache-Control" />
@@ -28,7 +28,7 @@ refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알 …" />
 <meta property="og:url" content="https://chankoo.github.io/posts/cache-control/" />
 <meta property="og:title" content="Cache-Control" />
 <meta property="og:description" content="content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
-refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알 …" />
+{{ $image := resources.Get …" />
 <meta property="og:image" content="https://chankoo.github.io" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chankoo.github.io/icons/apple-touch-icon.png">
@@ -146,9 +146,7 @@ refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알 …" />
 
     <div class="post_body"><h2 id="content">content</h2>
 <p>리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.</p>
-<figure><img src="/images/Pasted%20image%2020231130142540.png"/>
-</figure>
-
+<p>{{ $image := resources.Get &ldquo;images/Pasted image 20231130142540.png&rdquo; }}</p>
 <h2 id="refs">refs</h2>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">Cache-Control - HTTP | MDN</a></li>

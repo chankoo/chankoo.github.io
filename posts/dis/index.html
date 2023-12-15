@@ -21,7 +21,7 @@
 <meta property="og:type" content="article">
 <meta name="description" content="content 파이썬 바이트코드 역 어셈블러. CPython의 바이트 코드를 역 어셈블하여 바이트 코드 레벨의 분석을 돕는 모듈이다.
 ex)
-def hi(x): x &#43;= 1 print(x) return x 위 정의에 따르면, 추상화한 바이트코드를 바이트코드로 바꾸는 것도 어셈블이라 볼  …" />
+def hi(x): x &#43;= 1 print(x) return x {{ $image := resources.Get …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="dis" />
@@ -30,7 +30,7 @@ def hi(x): x &#43;= 1 print(x) return x 위 정의에 따르면, 추상화한 �
 <meta property="og:title" content="dis" />
 <meta property="og:description" content="content 파이썬 바이트코드 역 어셈블러. CPython의 바이트 코드를 역 어셈블하여 바이트 코드 레벨의 분석을 돕는 모듈이다.
 ex)
-def hi(x): x &#43;= 1 print(x) return x 위 정의에 따르면, 추상화한 바이트코드를 바이트코드로 바꾸는 것도 어셈블이라 볼  …" />
+def hi(x): x &#43;= 1 print(x) return x {{ $image := resources.Get …" />
 <meta property="og:image" content="https://chankoo.github.io" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chankoo.github.io/icons/apple-touch-icon.png">
@@ -151,12 +151,8 @@ def hi(x): x &#43;= 1 print(x) return x 위 정의에 따르면, 추상화한 �
 	x += 1
 	print(x)
 	return x
-</code></pre><figure><img src="/images/Pasted%20image%2020221009230203.png"/>
-</figure>
-
-<figure><img src="/images/Pasted%20image%2020221009225606.png"/>
-</figure>
-
+</code></pre><p>{{ $image := resources.Get &ldquo;images/Pasted image 20221009230203.png&rdquo; }}</p>
+<p>{{ $image := resources.Get &ldquo;images/Pasted image 20221009225606.png&rdquo; }}</p>
 <p>위 정의에 따르면, 추상화한 바이트코드를 바이트코드로 바꾸는 것도 어셈블이라 볼 수 있다.</p>
 <h2 id="refs">refs</h2>
 <ul>

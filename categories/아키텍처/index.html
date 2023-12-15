@@ -777,30 +777,883 @@ refs 클린 아키텍처 links SOLID</p>
     </div>
   </li>
 
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/lsp/" title="LSP">LSP</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 30, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/solid/' title="SOLID" class="post_tag button button_translucent">SOLID
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=LSP&url=https%3a%2f%2fchankoo.github.io%2fposts%2flsp%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2flsp%2f&t=LSP" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/lsp/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 리스코프 치환 원칙; Liskov Subsitution Principle 상위 타입 객체는 하위 타입 객체로 별도 조작 없이 치환 가능해야한다.
+객체 지향 언어는 다형성을 제공하기에, LSP를 지킨 설계를 활용하기 유리하다. 사용할 하위 타입을 런타임에 선택하여 상위 타입을 대체하기 용이하다.
+LSP를 위반하면 OCP를 위반하는 것이다. 하위 타입을 추가(확장)하여 상위 타입을 바로 대체할 수 없기 때문이다. LSP를 위반한다면 보통 해당 객체를 사용하는 클라이언트 코드를 수정해야한다. 그리고 이 수정은 끔찍한 형태로 의존을 낳는다. 흔히 드는 예시가  …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/lsp/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/ocp/" title="OCP">OCP</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 28, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/solid/' title="SOLID" class="post_tag button button_translucent">SOLID
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=OCP&url=https%3a%2f%2fchankoo.github.io%2fposts%2focp%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2focp%2f&t=OCP" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/ocp/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 개방-폐쇄 원칙; Open Close Principle 소프트웨어 요소는 확장에는 open, 수정에는 close여야 한다. 수정 보다 비용이 적은 확장으로 소프트웨어를 수정해야한다.
+OCP를 지키기 위해서는 의존 관계를 잘 설계해야한다. 의존 관계가 확장 가능한 요소와 수정해야하는 요소를 결정짓기 때문인데, A -&gt; B (A가 B에 의존)이라면 A는 확장 가능한 요소이고 B는 수정해야하는 요소가 되는 것이다.
+이를 위해 DIP를 지켜야한다. 추상 보다 구현의 변화가 많은데, 구현이 추상에 의존해야 구현을 확장할 수 있기 때문이다.
+모듈 레벨(OOP …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/ocp/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/" title="모듈">모듈</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 27, 2022</span>
+    <span class="post_time"> · 1 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=%eb%aa%a8%eb%93%88&url=https%3a%2f%2fchankoo.github.io%2fposts%2f%25EB%25AA%25A8%25EB%2593%2588%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2f%25EB%25AA%25A8%25EB%2593%2588%2f&t=%eb%aa%a8%eb%93%88" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 설계 시점에 다루는 코드 덩어리. 시점상 가장 먼저 구현하는 단위
+refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%97%90%EC%84%9C-%EC%95%84%ED%82%A4%ED%85%8D%ED%8A%B8%EB%A1%9C/" title="개발자에서 아키텍트로">개발자에서 아키텍트로</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 27, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EC%B1%85/' title="책" class="post_tag button button_translucent">책
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=%ea%b0%9c%eb%b0%9c%ec%9e%90%ec%97%90%ec%84%9c%20%ec%95%84%ed%82%a4%ed%85%8d%ed%8a%b8%eb%a1%9c&url=https%3a%2f%2fchankoo.github.io%2fposts%2f%25EA%25B0%259C%25EB%25B0%259C%25EC%259E%2590%25EC%2597%2590%25EC%2584%259C-%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25ED%258A%25B8%25EB%25A1%259C%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2f%25EA%25B0%259C%25EB%25B0%259C%25EC%259E%2590%25EC%2597%2590%25EC%2584%259C-%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25ED%258A%25B8%25EB%25A1%259C%2f&t=%ea%b0%9c%eb%b0%9c%ec%9e%90%ec%97%90%ec%84%9c%20%ec%95%84%ed%82%a4%ed%85%8d%ed%8a%b8%eb%a1%9c" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%97%90%EC%84%9C-%EC%95%84%ED%82%A4%ED%85%8D%ED%8A%B8%EB%A1%9C/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 아키텍트는 기술과 비즈니스 그리고 사용자를 모두 이해해야한다. 유저영역의 문제를 엔지니어링 관점에서 정의하여 소프트웨어 아키텍처를 설계한다. 아키텍처는 품질 속성과 기술 부채를 고려하여 시스템을 요소로 분리해야한다. 그리고 큰 그림 속에서 요소들을 연결하고 통합한다. 아키텍트로서 프로젝트 정리 이해관계자들은 누구였고 주요 비즈니스 목표는 무엇이었는가 최종적으로 어떤 결과를 도출했는가 어떤 기술을 사용했는가 가장 큰 리스크는 무엇이었고, 어떻게 극복했는가 다시 시작할 수 있다면 어떤 점을 다르게 하겠는가 refs links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%97%90%EC%84%9C-%EC%95%84%ED%82%A4%ED%85%8D%ED%8A%B8%EB%A1%9C/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/solid/" title="SOLID">SOLID</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 27, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/solid/' title="SOLID" class="post_tag button button_translucent">SOLID
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=SOLID&url=https%3a%2f%2fchankoo.github.io%2fposts%2fsolid%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fsolid%2f&t=SOLID" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/solid/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 모듈 수준의 소프트웨어 설계 원칙.
+SRP OCP LSP ISP DIP
+refs 클린 아키텍처 links 모듈</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/solid/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/srp/" title="SRP">SRP</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 27, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/solid/' title="SOLID" class="post_tag button button_translucent">SOLID
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=SRP&url=https%3a%2f%2fchankoo.github.io%2fposts%2fsrp%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fsrp%2f&t=SRP" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/srp/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 단일 책임 원칙 - Single Responsibility Principle 모듈은 한 액터(사용자, 이해관계자)만 책임진다. 모듈을 변경한다면 그 이유는 반드시 한 액터 때문이어야 한다.
+SRP를 따르면, 여러 액터의 요구를 책임지는 모듈은 책임을 찢어야 한다.
+예를 들어 클래스 Employee가 재무팀을 위한 급여 계산 / 인사팀을 위한 업무 시간 계산을 책임지고 있다면, 이는 SRP를 위반한다. 그래서 -&gt; 급여 계산을 위한 클래스와 업무 시간 계산을 위한 클래스로 책임을 분리하고, EmployeeFacade …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/srp/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/gof%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/" title="GoF의 디자인 패턴">GoF의 디자인 패턴</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 27, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EC%B1%85/' title="책" class="post_tag button button_translucent">책
+        </a><a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' title="디자인패턴" class="post_tag button button_translucent">디자인패턴
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=GoF%ec%9d%98%20%eb%94%94%ec%9e%90%ec%9d%b8%20%ed%8c%a8%ed%84%b4&url=https%3a%2f%2fchankoo.github.io%2fposts%2fgof%25EC%259D%2598-%25EB%2594%2594%25EC%259E%2590%25EC%259D%25B8-%25ED%258C%25A8%25ED%2584%25B4%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fgof%25EC%259D%2598-%25EB%2594%2594%25EC%259E%2590%25EC%259D%25B8-%25ED%258C%25A8%25ED%2584%25B4%2f&t=GoF%ec%9d%98%20%eb%94%94%ec%9e%90%ec%9d%b8%20%ed%8c%a8%ed%84%b4" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/gof%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content refs links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/gof%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/dip/" title="DIP">DIP</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 6, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/solid/' title="SOLID" class="post_tag button button_translucent">SOLID
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=DIP&url=https%3a%2f%2fchankoo.github.io%2fposts%2fdip%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fdip%2f&t=DIP" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/dip/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content Dependency Inversion Principle(의존성 역전 원칙) 더 구체적인(하위 계층) 모듈에 의존하는 일반적(절차적)인 의존성의 흐름을 역전 시켜 더 추상적인(상위 계층) 모듈에 의존하도록해야한다.
+추상 팩토리 패턴이 대표적이다. 객체 생성을 위해 구체 팩토리에 의존(요소 -&gt; 팩토리)하는 것이 아니라, 추상 팩토리에 의존(요소 -&gt; 추상 팩토리 $\Leftarrow$ 구체 팩토리)하는 것이다.
+refs 클린 아키텍처 links SOLID 추상 팩토리 패턴</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/dip/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/di/" title="DI">DI</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 6, 2022</span>
+    <span class="post_time"> · 1 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=DI&url=https%3a%2f%2fchankoo.github.io%2fposts%2fdi%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fdi%2f&t=DI" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/di/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content Dependency Injection(의존성 주입) 클라이언트에서 사용할 의존성을 외부에서 넣어주는 일
+refs links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/di/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/ioc/" title="IOC">IOC</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 6, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' title="디자인패턴" class="post_tag button button_translucent">디자인패턴
+        </a><a href='https://chankoo.github.io/tags/spring/' title="spring" class="post_tag button button_translucent">spring
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=IOC&url=https%3a%2f%2fchankoo.github.io%2fposts%2fioc%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fioc%2f&t=IOC" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/ioc/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content Inversion Of Control(제어 역전) 클라이언트(프로그래머)가 직접 사용할 의존성을 제어하는 상황(일반적, 절차적) -&gt; 누군가(프레임워크)가 의존성을 정해주는(DI, DIP 등으로) 상황(역전)
+refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 지배한다 links DI DIP</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/ioc/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%ED%81%B4%EB%A6%B0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" title="클린 아키텍처">클린 아키텍처</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 4, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EC%B1%85/' title="책" class="post_tag button button_translucent">책
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=%ed%81%b4%eb%a6%b0%20%ec%95%84%ed%82%a4%ed%85%8d%ec%b2%98&url=https%3a%2f%2fchankoo.github.io%2fposts%2f%25ED%2581%25B4%25EB%25A6%25B0-%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25EC%25B2%2598%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2f%25ED%2581%25B4%25EB%25A6%25B0-%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25EC%25B2%2598%2f&t=%ed%81%b4%eb%a6%b0%20%ec%95%84%ed%82%a4%ed%85%8d%ec%b2%98" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/%ED%81%B4%EB%A6%B0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content refs links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%ED%81%B4%EB%A6%B0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/mvvm/" title="MVVM">MVVM</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 3, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' title="디자인패턴" class="post_tag button button_translucent">디자인패턴
+        </a><a href='https://chankoo.github.io/tags/frontend/' title="frontend" class="post_tag button button_translucent">frontend
+        </a><a href='https://chankoo.github.io/tags/ios/' title="iOS" class="post_tag button button_translucent">iOS
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=MVVM&url=https%3a%2f%2fchankoo.github.io%2fposts%2fmvvm%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fmvvm%2f&t=MVVM" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/mvvm/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content View -&gt; ViewModel -&gt; Model 의 구조. View 를 그리기 위한 데이터와 비즈니스 로직을 ViewModel에 모두 담아 View와 Model 결합을 끊는다. MVC(UIKit) 를 이용하던 iOS 개발의 대세 흐름이 MVVM(SwiftUI)을 이용하는 것으로 변했는데, MVC에 비해 각 계층이 더 잘 분리되어 유지보수와 테스트가 더 용이하다. MVVM은 View가 ViewModel을, ViewModel이 Model을 소유하는 방식인데, MVC의 ViewController가 Model과 View를 모두 떠맡아 비대해지는 이슈 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/mvvm/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/container-presenter-%ED%8C%A8%ED%84%B4/" title="Container-Presenter 패턴">Container-Presenter 패턴</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 3, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' title="디자인패턴" class="post_tag button button_translucent">디자인패턴
+        </a><a href='https://chankoo.github.io/tags/react/' title="react" class="post_tag button button_translucent">react
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Container-Presenter%20%ed%8c%a8%ed%84%b4&url=https%3a%2f%2fchankoo.github.io%2fposts%2fcontainer-presenter-%25ED%258C%25A8%25ED%2584%25B4%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fcontainer-presenter-%25ED%258C%25A8%25ED%2584%25B4%2f&t=Container-Presenter%20%ed%8c%a8%ed%84%b4" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/container-presenter-%ED%8C%A8%ED%84%B4/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 리액트에서 로직과 뷰 컴포넌트를 분리하는 패턴. 데이터를 가져오고 가공하는 컨테이너 컴포넌트와, 데이터를 렌더링하는 프레젠터 컴포넌트로 나눈다.
+aka Smart &amp; Dumb conponents 대개 컨테이너는 렌더링하는 컴포넌트 외에 다른 ui는 렌더링하지 않으며, 프레젠터는 컨테이너로 부터 데이터를 받아 단순히 렌더링 한다.
+관심사 분리를 통해 재사용성 높은 순수한 프레젠터 컴포넌트를 만드는 이점이 있으며, 테스트가 쉬워서 험블 객체 패턴을 따랐다고도 볼 수 있겠다.
+반면 데이터 가져오는 역할을 hook이 점차 대체하며, 굳이 컨테이너 컴포넌 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/container-presenter-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
       <li>
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
       </li>
     </ul>
   </div>

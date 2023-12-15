@@ -35,6 +35,7 @@ refs 리얼월드 HTTP HTTP/2에서 Frame, Stream의 의미 links HTTP2 TCP 소�
         
           
             content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
+{{ $image := resources.Get &amp;ldquo;images/Pasted image 20231130142540.png&amp;rdquo; }}
 refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
           
           

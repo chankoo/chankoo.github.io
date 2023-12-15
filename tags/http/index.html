@@ -224,6 +224,7 @@ refs 리얼월드 HTTP …</p>
         <div class="pale">
           
             <p>content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
+{{ $image := resources.Get “images/Pasted image 20231130142540.png” }}
 refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache</p>
           
           <br>
@@ -782,27 +783,76 @@ Header / Payload / Signature 로 나뉘며, base64 인코딩을 통해 url-safe�
     </div>
   </li>
 
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/etag/" title="Etag">Etag</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Nov 4, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/http/' title="http" class="post_tag button button_translucent">http
+        </a><a href='https://chankoo.github.io/tags/cache/' title="cache" class="post_tag button button_translucent">cache
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Etag&url=https%3a%2f%2fchankoo.github.io%2fposts%2fetag%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fchankoo.github.io%2fposts%2fetag%2f&t=Etag" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://chankoo.github.io/posts/etag/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 클라이언트의 http 요청의 갱신 여부를 파악하기 위해 설정하는 응답 헤더.
+요청 -&gt; 서버가 요청을 Etag 변환(해시 사용) -&gt; 응답 헤더에 Etag 포함 -&gt; 클라이언트가 사용(If-None-Match에 담아)해 요청 -&gt; 동일한 Etag 라면 http 304 Not Modified 반환
+refs Etag를 이용하여 더 나은 Restful API 만들기 | 요즘IT Conditional View Processing | Django documentation | Django ETag - HTTP | MDN links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/etag/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
       <li>
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/http/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/http/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/http/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
       </li>
     </ul>
   </div>

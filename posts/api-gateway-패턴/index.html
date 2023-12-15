@@ -168,9 +168,7 @@
 </ul>
 </li>
 </ol>
-<figure><img src="/images/image%201.png"/>
-</figure>
-
+<p>{{ $image := resources.Get &ldquo;images/image 1.png&rdquo; }}</p>
 <ol start="2">
 <li>API Gateway Pattern 의 종류
 <ol>
@@ -189,9 +187,7 @@
 </li>
 </ol>
 <ul>
-<li><figure><img src="/images/Pasted%20image%2020230525094854.png%7c400"/>
-</figure>
-</li>
+<li>{{ $image := resources.Get &ldquo;images/Pasted image 20230525094854.png|400&rdquo; }}</li>
 </ul>
 </li>
 <li>Two-Tier Gateway(2계층)
@@ -215,9 +211,7 @@
 </li>
 </ol>
 <ul>
-<li><figure><img src="/images/Pasted%20image%2020230525095238.png%7c400"/>
-</figure>
-</li>
+<li>{{ $image := resources.Get &ldquo;images/Pasted image 20230525095238.png|400&rdquo; }}</li>
 </ul>
 </li>
 </ol>
@@ -244,17 +238,13 @@
 </li>
 </ol>
 <ul>
-<li><figure><img src="/images/Pasted%20image%2020230525100203.png%7c400"/>
-</figure>
-</li>
+<li>{{ $image := resources.Get &ldquo;images/Pasted image 20230525100203.png|400&rdquo; }}</li>
 </ul>
 </li>
 <li>Per-Pod Gateway
 <ol>
 <li>개별 pod(또는 컨테이너)에 프록시 게이트웨이를 포함하는 형태로 Microgateway를 확장</li>
-<li><figure><img src="/images/Pasted%20image%2020230525095658.png%7c400"/>
-</figure>
-</li>
+<li>{{ $image := resources.Get &ldquo;images/Pasted image 20230525095658.png|400&rdquo; }}</li>
 </ol>
 </li>
 <li>Sidecar Gateways and Service Mesh(사이드카 게이트웨이 및 서비스 메시)
@@ -268,9 +258,7 @@
 <li>권한 부여 (Authorization)</li>
 </ul>
 </li>
-<li><figure><img src="/images/Pasted%20image%2020230525095907.png%7c400"/>
-</figure>
-</li>
+<li>{{ $image := resources.Get &ldquo;images/Pasted image 20230525095907.png|400&rdquo; }}</li>
 </ol>
 </li>
 </ol>

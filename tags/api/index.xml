@@ -34,7 +34,7 @@ API 조합기로 둘 컴포넌트 선정 클라이언트 간단하지만, 클라
       <description>
         
           
-            content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&amp;gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스)에 들어가야해서 오염됨 로직 구현의 책임을 잘못된 곳에 전가함 클라이언트가 여러 로직을 직접 호출하여 조합하거나 특정 서비스가 자신의 도메인인 것처럼 다른 서비스를 호출하여 구현하는 문제 클라이언트와 비즈니스 레이어의 강결합 클라이언트 성능 저하 내부 서비스의 프로토콜 제약 클라이언트에 응답할 수 있는 Http api 로 고정됨 API Gateway Pattern 의 종류 Edge Gateway(중앙 집중식) 가장 일반적인 패턴으로 게이트웨이가 거의 모든 것을 처리함.
+            content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&amp;gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스)에 들어가야해서 오염됨 로직 구현의 책임을 잘못된 곳에 전가함 클라이언트가 여러 로직을 직접 호출하여 조합하거나 특정 서비스가 자신의 도메인인 것처럼 다른 서비스를 호출하여 구현하는 문제 클라이언트와 비즈니스 레이어의 강결합 클라이언트 성능 저하 내부 서비스의 프로토콜 제약 클라이언트에 응답할 수 있는 Http api 로 고정됨 {{ $image := resources.
           
           
         

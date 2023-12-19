@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>기타 on </title>
+    <title>기타 on chankoo</title>
     <link>https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/</link>
-    <description>Recent content in 기타 on </description>
+    <description>Recent content in 기타 on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Thu, 13 Oct 2022 17:03:36 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>구글 태그 매니저</title>

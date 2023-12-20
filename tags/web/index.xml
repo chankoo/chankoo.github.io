@@ -25,6 +25,23 @@
     </item>
     
     <item>
+      <title>webhook</title>
+      <link>https://chankoo.github.io/posts/webhook/</link>
+      <pubDate>Mon, 27 Nov 2023 20:53:18 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/webhook/</guid>
+      <description>
+        
+          
+            content 특정 이벤트가 발생했을때 타겟 서비스 엔드포인트로 데이터를 전달하는 http 기반의 콜백
+refs 웹훅(Webhook) | 토스페이먼츠 개발자센터 links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>WebSocket</title>
       <link>https://chankoo.github.io/posts/websocket/</link>
       <pubDate>Thu, 30 Mar 2023 15:23:12 +0900</pubDate>
@@ -70,6 +87,41 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links
             content JSON Web Token. 사용자의 정보를 Json에 담아 보내는 형식의 웹 토큰이다.
 Header / Payload / Signature 로 나뉘며, base64 인코딩을 통해 url-safe한 xxx.yyy.zzz 형태로 표현한다. Header에는 Signature 에 서명한 알고리즘 정보를 담는다. Payload에는 실제 사용자 정보를 Json 형태로 담으며 추가에 열려있다. Signature는 비대칭키 방식을 사용하여 header와 payload가 변경 안되었음을 보증한다.
 주로 인증을 위해 사용하는데, JWT의 유효성(위조 여부)만 확인하면 인증은 완료된다. 이미 JWT 발급 시점에 (id, pwd로) 사용자를 인증했고 그 결과로 JWT를 생성했기에, (Signature를 이용하여) JWT 가 위조되지 않았다는 것만 확인하면 JWT 발급 시점과 같은 사용자라는 것을 알게되는 원리이다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ASGI</title>
+      <link>https://chankoo.github.io/posts/asgi/</link>
+      <pubDate>Tue, 11 Oct 2022 21:00:21 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/asgi/</guid>
+      <description>
+        
+          
+            content Asynchronous Server Gateway Interface. 파이썬 웹 애플리케이션과 웹 서버의 공통 인터페이스를 기술한 프로토콜.
+WSGI 처럼, 프로토콜 서버 내 앱들에게 표준화된 요청/응답을 주고받는 방식이나, ASGI는 비동기 방식으로 이벤트를 주고 받는 구조적인 차이가 있다.
+refs ASGI (Asynchronous Server Gateway Interface) Specification — ASGI 3.0 documentation &amp;ldquo;파이썬 웹 개발의 미래&amp;rdquo; ASGI의 개념과 활용 방법 - ITWorld Korea links WSGI 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>WSGI</title>
+      <link>https://chankoo.github.io/posts/wsgi/</link>
+      <pubDate>Tue, 11 Oct 2022 21:00:21 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/wsgi/</guid>
+      <description>
+        
+          
+            content WSGI(Web Server Gateway Interface) 는 파이썬 웹앱과 웹서버 간 통신 인터페이스 명세이다.
+refs links ASGI gunicorn 
           
           
         

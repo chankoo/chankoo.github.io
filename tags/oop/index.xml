@@ -1,24 +1,77 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OOP on </title>
+    <title>OOP on chankoo</title>
     <link>https://chankoo.github.io/tags/oop/</link>
-    <description>Recent content in OOP on </description>
+    <description>Recent content in OOP on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 06 Oct 2022 23:42:10 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/oop/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Dec 2023 13:45:58 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/oop/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>DIP</title>
-      <link>https://chankoo.github.io/posts/dip/</link>
-      <pubDate>Thu, 06 Oct 2022 23:42:10 +0900</pubDate>
+      <title>객체지향의 사실과 오해</title>
+      <link>https://chankoo.github.io/posts/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4/</link>
+      <pubDate>Wed, 20 Dec 2023 13:45:58 +0900</pubDate>
       
-      <guid>https://chankoo.github.io/posts/dip/</guid>
+      <guid>https://chankoo.github.io/posts/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4/</guid>
       <description>
         
           
-            content Dependency Inversion Principle(의존성 역전 원칙) 더 구체적인(하위 계층) 모듈에 의존하는 일반적(절차적)인 의존성의 흐름을 역전 시켜 더 추상적인(상위 계층) 모듈에 의존하도록해야한다.
-추상 팩토리 패턴이 대표적이다. 객체 생성을 위해 구체 팩토리에 의존(요소 -&amp;gt; 팩토리)하는 것이 아니라, 추상 팩토리에 의존(요소 -&amp;gt; 추상 팩토리 $\Leftarrow$ 구체 팩토리)하는 것이다.
-refs 클린 아키텍처 links SOLID 추상 팩토리 패턴 
+            content 오해를 덜어낸 객체지향 구현 로직 (클래스가 아니라)특정한 객체를 상상하고, 우선 객체의 행동을 정의하자 정의된 행동을 기반으로 협력의 공동체를 상상해보자. 이 공동체는 요청과 응답의 흐름으로 소통할 것이고 공동체의 구성원에게는 여러가지 책임이 할당된다 다음으로 협력에 필요한 데이터 필드가 있다면 이를 정의하자. 잊지말자 상태보다 협력이 우선이다 마지막으로, (이제서야) 클래스를 구현해야한다. 게다가 클래스는 &amp;lsquo;타입&amp;rsquo;을 구현하기 위한 수단에 불과하다 더 구체적인 설계와 구현 구조설계: 도메인 모델
+도메인의 본질적인 부분을 개념으로 모델링 안정적인 &amp;lsquo;구조&amp;rsquo;의 설계 기능적 요구사항 추출: 유스케이스
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>캡슐화</title>
+      <link>https://chankoo.github.io/posts/%EC%BA%A1%EC%8A%90%ED%99%94/</link>
+      <pubDate>Wed, 20 Dec 2023 13:44:23 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%BA%A1%EC%8A%90%ED%99%94/</guid>
+      <description>
+        
+          
+            content OOP에서 1) 객체의 attribute와 method를 하나로 묶고 2) 실제 구현 내용을 내부에 감추는 일.
+캡슐화는 객체간 종속을 인터페이스 레벨에 묶어두어 모듈의 결합도를 낮춘다.
+refs 캡슐화 - 위키백과, 우리 모두의 백과사전 객체지향의 사실과 오해 links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>다형성</title>
+      <link>https://chankoo.github.io/posts/%EB%8B%A4%ED%98%95%EC%84%B1/</link>
+      <pubDate>Sun, 30 Oct 2022 18:40:49 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%8B%A4%ED%98%95%EC%84%B1/</guid>
+      <description>
+        
+          
+            content 한 객체가 여러 형(type)에 속할 수 있는 프로그래밍 언어의 속성. 객체 지향 언어는 동적 바인딩을 제공하여 런타임에 객체의 형을 확정할 수 있게 한다.
+다형성은 객체의 구현 타입에 의존하지 않고 (인터페이스에 의존하는) 추상적인 설계를 가능하게해 요소 간 결합도를 낮춘다.
+refs 다형성 (컴퓨터 과학) - 위키백과, 우리 모두의 백과사전 links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>생성자</title>
+      <link>https://chankoo.github.io/posts/%EC%83%9D%EC%84%B1%EC%9E%90/</link>
+      <pubDate>Wed, 12 Oct 2022 11:19:58 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%83%9D%EC%84%B1%EC%9E%90/</guid>
+      <description>
+        
+          
+            content 객체를 초기화하고, 멤버 변수를 할당하여 객체를 (개념적으로)생성하는 서브루틴.
+python의 예를 들면, python 객체는 new 를 통해 메모리에 할당되며, init 을 통해 멤버 변수를 정의한다. (개념적인) 객체의 생성이 init 을 통해 이루어졌으므로, init 이 python의 생성자라 할 수 있다.
+refs Constructor (object-oriented programming) - Wikipedia Object lifetime - Wikipedia Python: __init__() is not the only constructor - DEV Community links 
           
           
         

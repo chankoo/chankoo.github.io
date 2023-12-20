@@ -24,5 +24,58 @@
       </description>
     </item>
     
+    <item>
+      <title>CSRF</title>
+      <link>https://chankoo.github.io/posts/csrf/</link>
+      <pubDate>Sun, 20 Nov 2022 23:58:54 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/csrf/</guid>
+      <description>
+        
+          
+            content Cross Site Request Forgery. 타겟 사이트의 사용자 권한을 획득한 피싱(cross) 사이트가 위조된 요청을 타겟 사이트로 날리는 공격. 사용자가 타겟 사이트의 권한을 획득한 채로 피싱 사이트에서 작업하는 방식으로 동작한다.
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>XSS</title>
+      <link>https://chankoo.github.io/posts/xss/</link>
+      <pubDate>Sat, 19 Nov 2022 23:25:57 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/xss/</guid>
+      <description>
+        
+          
+            content Cross Site Scripting. cross site로 쿠키나 세션 등 정보를 탈취하는 스크립트를 삽입하는 방식의 공격
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>쿠키 보안</title>
+      <link>https://chankoo.github.io/posts/%EC%BF%A0%ED%82%A4-%EB%B3%B4%EC%95%88/</link>
+      <pubDate>Sat, 19 Nov 2022 22:39:34 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%BF%A0%ED%82%A4-%EB%B3%B4%EC%95%88/</guid>
+      <description>
+        
+          
+            content 쿠키에 아래 속성을 추가하여 보안을 확보한다.
+HTTP Only XSS 등 자바스크립트 기반 공격에서 쿠키를 보호하기 위해 사용하는 속성으로, true 인 경우 클라이언트(브라우저)에서 쿠키에 접근할 수 없다.
+Secure HTTPS 에서만 쿠키를 전송하는 속성으로, true 인 경우 HTTP에선 쿠키를 전송하지 않는다.
+refs [Web] HTTP Only와 Secure Cookie 이해하기 links XSS 
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>

@@ -111,6 +111,24 @@ refs links
     </item>
     
     <item>
+      <title>파일</title>
+      <link>https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%BC/</link>
+      <pubDate>Thu, 13 Oct 2022 23:00:29 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%BC/</guid>
+      <description>
+        
+          
+            content OS가 사용자에게 제공하는 논리적, 추상적인 정보 집합. 파일 내 실제 정보는 블록 단위로 관리한다.
+(Linux 에서 모든 것은 파일이다)
+refs links 블록 파일 시스템 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>볼륨</title>
       <link>https://chankoo.github.io/posts/%EB%B3%BC%EB%A5%A8/</link>
       <pubDate>Thu, 13 Oct 2022 22:29:51 +0900</pubDate>

@@ -6,7 +6,25 @@
     <description>Recent content in MSA on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jun 2023 16:30:05 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/msa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jun 2023 16:39:03 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/msa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>리액티브 프로그래밍</title>
+      <link>https://chankoo.github.io/posts/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</link>
+      <pubDate>Thu, 01 Jun 2023 16:39:03 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</guid>
+      <description>
+        
+          
+            content 데이터 스트림에 영향을 미치는 모든 변경 사항을 observer 들에게 전파하는 프로그래밍
+리액티브 매니페스토
+반응성(responsive) : 리액티브 시스템은 빠를 뿐 아니라 + 일정하고 예상가능한 반응 시간을 제공한다. 회복성(resilient) : 장애가 발생해도 시스템은 반응해야한다. 여러 컴포넌트의 시간과 공간 분리 (즉, 컴포넌트가 각각 독립적인 생명주기를 갖고 다른 프로세스에서 실행), 작업 위임시 비동기적으로 위임하는 등의 기법이 있다. 탄력성(elastic) : 애플리케이션의 생명주기 동안 다양한 부하를 받는데 이때 리액티브 시스템에서는 자동으로 관련 컴포넌트에 할당된 자원 수를 늘린다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>API 조합 패턴</title>
       <link>https://chankoo.github.io/posts/api-%EC%A1%B0%ED%95%A9-%ED%8C%A8%ED%84%B4/</link>
@@ -36,7 +54,7 @@ API 조합기로 둘 컴포넌트 선정 클라이언트 간단하지만, 클라
           
             content 프록시를 사용하여 서비스 간의 통신을 관리하는 인프라 계층. 도커와 쿠버네티스는 수많은 마이크로서비스의 오케스트레이션을 가능하게 하였고, 이들 서비스 간에 흐르는 트래픽을 추적하고 관리하려는 목적으로 서비스 메시를 사용한다.
 (어플리케이션 레벨이 아니라) 인프라 레벨에서 1) 트래픽 관리 2) observability 3) 보안 강화의 기능을 제공한다.
-refs 실무자를 위한 서비스 메시 - 지금 서비스 메시가 의미 있는 이유 links Istio Envoy 
+refs 실무자를 위한 서비스 메시 - 지금 서비스 메시가 의미 있는 이유 links 
           
           
         

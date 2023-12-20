@@ -6,7 +6,25 @@
     <description>Recent content in 동시성 on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Nov 2023 15:46:27 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 21:29:31 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2PL</title>
+      <link>https://chankoo.github.io/posts/2pl/</link>
+      <pubDate>Wed, 20 Dec 2023 21:29:31 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/2pl/</guid>
+      <description>
+        
+          
+            content Two Phase Locking. DB에서 직렬성을 구현하는데 널리 쓰이는 알고리즘.
+잠금을 확장과 수축의 두단계로 나누어 모든 트랜잭션이 lock을 획득한 후 차례로 unlock 하기에 직렬성을 구현할 수 있다.
+refs 데이터 중심 애플리케이션 설계 2 Phase Locking (2PL) : 네이버 블로그 links 직렬성 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>스케줄링</title>
       <link>https://chankoo.github.io/posts/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81/</link>
@@ -37,6 +55,25 @@
 이는 CPS 함수를 정의할 때 특정한 작업(ex. 콜백 함수) 을 명시적 인자로 받게되는데, CPS 함수는 해당 함수의 작업이 끝난 후 인자로 받은 작업을 수행하게 된다. Continuation이 CPS 함수에 있다가 인자로 받은 작업으로 넘어가는 것이다.
 CPS가 아니라면 함수가 그냥(암묵적으로) 작업을 수행하며, Continuation은 해당 함수에 머무른다.
 refs Continuation-passing style - Wikipedia 백엔드 개발자들이 알아야할 동시성 5 — Continuation Passing Style | by Choi Geonu | Medium Continuation-Passing Style.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>gevent</title>
+      <link>https://chankoo.github.io/posts/gevent/</link>
+      <pubDate>Tue, 28 Nov 2023 15:55:32 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/gevent/</guid>
+      <description>
+        
+          
+            content 코루틴 기반의 파이썬 라이브러리로 고성능 I/O를 위한 동시성을 지원한다.
+greenlet 이라는 경량 스레드(코루틴)와 event loop를 이용하여 넌블러킹 &amp;amp; 비동기 I/O를 지원한다. monkey patching을 이용해 표준 라이브러리의 구현을 gevent의 구현으로 바꿔치기하는 방식으로 동작한다.
+파이썬이 표준으로 제공하는 구현이 아니고 어디까지나 monkey patching(흑마법) 이기에 한계가 분명하다. (대표적으로 mysqlclient는 gevent 와 호환되지 않는다)
+refs What is gevent? - gevent 23.9.2.dev0 documentation 백엔드 개발자들이 알아야할 동시성 번외편— Python의 Concurrency | by Choi Geonu | Medium links coroutine 스레드 
           
           
         
@@ -116,6 +153,42 @@ refs Continuation-passing style - Wikipedia 백엔드 개발자들이 알아야�
     </item>
     
     <item>
+      <title>Phantom Reads</title>
+      <link>https://chankoo.github.io/posts/phantom-reads/</link>
+      <pubDate>Mon, 10 Oct 2022 17:37:43 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/phantom-reads/</guid>
+      <description>
+        
+          
+            content range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션(phantom)의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.
+Serializable을 제외한 격리 수준에서 모두 발생한다. gap lock을 쓰지 않는다면, range select 쿼리의 대상인 rows set 외에는 락이 걸려있지 않으므로, 다른 트랜잭션이 새로운 row를 만들 수 있고, 그 row가 다음번 range select 에 걸릴 수 있는 것이다.
+refs links Isolation Levels 직렬성 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>직렬성</title>
+      <link>https://chankoo.github.io/posts/%EC%A7%81%EB%A0%AC%EC%84%B1/</link>
+      <pubDate>Mon, 10 Oct 2022 17:20:14 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%A7%81%EB%A0%AC%EC%84%B1/</guid>
+      <description>
+        
+          
+            content DB에서 직렬성은 모든 트랜잭션을 순차적으로 수행하는 것과 같은 결과를 내는 격리 수준을 의미한다.
+보통 아래 세가지 방법 중 하나로 구현하는데,
+실제적인 직렬 실행 - 순차적으로 트랜잭션을 실행한다. 2PL 낙관적 동시성 제어(ex. 직렬성 스냅숏 격리) refs 데이터 중심 애플리케이션 설계 links 2PL 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Isolation Levels</title>
       <link>https://chankoo.github.io/posts/isolation-levels/</link>
       <pubDate>Sun, 09 Oct 2022 12:37:01 +0900</pubDate>
@@ -126,6 +199,24 @@ refs Continuation-passing style - Wikipedia 백엔드 개발자들이 알아야�
           
             content Transaction 간 격리 수준. DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation 관점에서 엄격히 제한된 Transaction의 병행성 제약을 완화한다. 이상적으로 Transaction은 엄격히 격리해야 하지만, 실무적으로 걸림돌이 되기에, 격리 수준을 단계적으로 완화하는 Isolation Levels 를 정의하여 상황에 맞게 제공한다.
 Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다. Repetable Reads - 반복해서 읽어도 같은 결과를 보여주는 수준으로, 반복 read 도중 커밋이 발생하여 값이 변해도 커밋 전 값을 읽어간다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>gunicorn</title>
+      <link>https://chankoo.github.io/posts/gunicorn/</link>
+      <pubDate>Sun, 09 Oct 2022 12:34:05 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/gunicorn/</guid>
+      <description>
+        
+          
+            content UNIX 용 WSGI 서버이다.
+파이썬 어플리케이션을 서빙하는 worker 를 fork하는데, worker 타입은 다음과 같다.
+sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블로킹이 적을 경우 적합 gthread N개 스레드를 fork한다. 멀티스레딩을 지원하는 앱일 경우 적합 gevent gevent로 구현한 N개 웹서버를 실행한다. I/O 바운드인 보통의 서비스에 적합 refs Gunicorn vs Python GIL. What is the Python GIL, how it works… | by Luis Sena | Medium links WSGI 7가지 동시성 모델 gevent 
           
           
         
@@ -193,7 +284,7 @@ refs 7가지 동시성 모델 links 동시성
       <description>
         
           
-            content refs 스레드와 잠금장치 발표자료.pdf links 
+            content refs links 7가지 동시성 모델 - 스레드와 잠금장치.pdf 
           
           
         
@@ -230,6 +321,23 @@ refs 7가지 동시성 모델 links 동시성
             content 여러 일을 한꺼번에 다루는 것. Concurrency. CPU의 영역에서 명세하자면, CPU는 하나인데 여러 스레드에서 각각의 제어흐름을 다루고 있는 상황이다.
 순차적 프로그래밍의 한계를 넘어서려는 시도이나, 여러가지 일을 동시에 다루는 척(병렬 착각, 병행성)하는 것이기에 그자체로 문제의 속성을 내포한다.
 refs 7가지 동시성 모델 links 병렬성 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GIL</title>
+      <link>https://chankoo.github.io/posts/gil/</link>
+      <pubDate>Mon, 03 Oct 2022 15:57:13 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/gil/</guid>
+      <description>
+        
+          
+            content 파이썬 객체의 레퍼런스 카운팅이 정상적으로 동작하도록, 인터프리터의 동작을 전역적으로 통제하는 락. 여러 스레드가 한 객체의 레퍼런스 카운트를 조작하는 동시성 을 제어하기위해, GIL 을 가진 스레드만 자원을 통제할 수 있다.
+더 구체적으로 말하면, 멀티 스레딩 환경에서 각 스레드는 레퍼런스 카운팅을 위해 PyObject 의 ob_refcnt를 조작하는데, 이는 race condition이다. race condition 해결을 위해 일반적인 mutex 를 사용하자니 각 객체 마다 락이 필요하고, deadlock 의 리스크도 존재한다. 그래서 파이썬(CPython)은 GIL을 통해 인터프리터 자체를 잠가버렸다.
           
           
         

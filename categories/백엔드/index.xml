@@ -6,7 +6,26 @@
     <description>Recent content in 백엔드 on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Nov 2023 10:27:27 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Nov 2023 15:55:32 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gevent</title>
+      <link>https://chankoo.github.io/posts/gevent/</link>
+      <pubDate>Tue, 28 Nov 2023 15:55:32 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/gevent/</guid>
+      <description>
+        
+          
+            content 코루틴 기반의 파이썬 라이브러리로 고성능 I/O를 위한 동시성을 지원한다.
+greenlet 이라는 경량 스레드(코루틴)와 event loop를 이용하여 넌블러킹 &amp;amp; 비동기 I/O를 지원한다. monkey patching을 이용해 표준 라이브러리의 구현을 gevent의 구현으로 바꿔치기하는 방식으로 동작한다.
+파이썬이 표준으로 제공하는 구현이 아니고 어디까지나 monkey patching(흑마법) 이기에 한계가 분명하다. (대표적으로 mysqlclient는 gevent 와 호환되지 않는다)
+refs What is gevent? - gevent 23.9.2.dev0 documentation 백엔드 개발자들이 알아야할 동시성 번외편— Python의 Concurrency | by Choi Geonu | Medium links coroutine 스레드 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>데이터 중심 애플리케이션 설계</title>
       <link>https://chankoo.github.io/posts/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EC%8B%AC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%A4%EA%B3%84/</link>
@@ -33,6 +52,24 @@
         
           
             content refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>gunicorn</title>
+      <link>https://chankoo.github.io/posts/gunicorn/</link>
+      <pubDate>Sun, 09 Oct 2022 12:34:05 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/gunicorn/</guid>
+      <description>
+        
+          
+            content UNIX 용 WSGI 서버이다.
+파이썬 어플리케이션을 서빙하는 worker 를 fork하는데, worker 타입은 다음과 같다.
+sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블로킹이 적을 경우 적합 gthread N개 스레드를 fork한다. 멀티스레딩을 지원하는 앱일 경우 적합 gevent gevent로 구현한 N개 웹서버를 실행한다. I/O 바운드인 보통의 서비스에 적합 refs Gunicorn vs Python GIL. What is the Python GIL, how it works… | by Luis Sena | Medium links WSGI 7가지 동시성 모델 gevent 
           
           
         

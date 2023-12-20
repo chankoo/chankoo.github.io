@@ -6,7 +6,24 @@
     <description>Recent content in 네트워크 on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Dec 2023 14:59:41 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Dec 2023 10:44:56 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OAuth2.0</title>
+      <link>https://chankoo.github.io/posts/oauth2.0/</link>
+      <pubDate>Sat, 16 Dec 2023 10:44:56 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/oauth2.0/</guid>
+      <description>
+        
+          
+            content Open Authorization 2.0 개방형 인증을 위한 표준으로 유저 신원 확인을 위해 다른 서비스에서 리소스를 가져오는 방식으로 동작한다. 비밀번호를 입력할 필요 없이 유저(Resource Owner)의 신원 정보를 서드파티 서비스(Resource Server &amp;amp; Authorization Server) 에서 받아오는 방식이다.
+refs OAuth_2.md OAuth - Wikipedia links 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>스트림</title>
       <link>https://chankoo.github.io/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC/</link>
@@ -70,7 +87,24 @@ message Person { string name = 1; // 필드 타입 string, 필드 넘버 1 int32
         
           
             content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
-refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
+private - only cached in client public - can be cached in proxies refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>webhook</title>
+      <link>https://chankoo.github.io/posts/webhook/</link>
+      <pubDate>Mon, 27 Nov 2023 20:53:18 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/webhook/</guid>
+      <description>
+        
+          
+            content 특정 이벤트가 발생했을때 타겟 서비스 엔드포인트로 데이터를 전달하는 http 기반의 콜백
+refs 웹훅(Webhook) | 토스페이먼츠 개발자센터 links 
           
           
         

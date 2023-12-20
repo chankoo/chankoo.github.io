@@ -6,7 +6,25 @@
     <description>Recent content in DB on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Nov 2023 15:57:04 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 21:29:31 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2PL</title>
+      <link>https://chankoo.github.io/posts/2pl/</link>
+      <pubDate>Wed, 20 Dec 2023 21:29:31 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/2pl/</guid>
+      <description>
+        
+          
+            content Two Phase Locking. DB에서 직렬성을 구현하는데 널리 쓰이는 알고리즘.
+잠금을 확장과 수축의 두단계로 나누어 모든 트랜잭션이 lock을 획득한 후 차례로 unlock 하기에 직렬성을 구현할 수 있다.
+refs 데이터 중심 애플리케이션 설계 2 Phase Locking (2PL) : 네이버 블로그 links 직렬성 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>전문 검색 인덱스</title>
       <link>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8-%EA%B2%80%EC%83%89-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</link>
@@ -84,7 +102,43 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
         
           
             content mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu&amp;rsquo;s Diary 데이터 중심 애플리케이션 설계 links B-Tree INNODB Hash 인덱스 전문 검색 인덱스 
+refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu&amp;rsquo;s Diary 데이터 중심 애플리케이션 설계 links B-Tree Hash 인덱스 전문 검색 인덱스 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Phantom Reads</title>
+      <link>https://chankoo.github.io/posts/phantom-reads/</link>
+      <pubDate>Mon, 10 Oct 2022 17:37:43 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/phantom-reads/</guid>
+      <description>
+        
+          
+            content range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션(phantom)의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.
+Serializable을 제외한 격리 수준에서 모두 발생한다. gap lock을 쓰지 않는다면, range select 쿼리의 대상인 rows set 외에는 락이 걸려있지 않으므로, 다른 트랜잭션이 새로운 row를 만들 수 있고, 그 row가 다음번 range select 에 걸릴 수 있는 것이다.
+refs links Isolation Levels 직렬성 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>직렬성</title>
+      <link>https://chankoo.github.io/posts/%EC%A7%81%EB%A0%AC%EC%84%B1/</link>
+      <pubDate>Mon, 10 Oct 2022 17:20:14 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%A7%81%EB%A0%AC%EC%84%B1/</guid>
+      <description>
+        
+          
+            content DB에서 직렬성은 모든 트랜잭션을 순차적으로 수행하는 것과 같은 결과를 내는 격리 수준을 의미한다.
+보통 아래 세가지 방법 중 하나로 구현하는데,
+실제적인 직렬 실행 - 순차적으로 트랜잭션을 실행한다. 2PL 낙관적 동시성 제어(ex. 직렬성 스냅숏 격리) refs 데이터 중심 애플리케이션 설계 links 2PL 
           
           
         

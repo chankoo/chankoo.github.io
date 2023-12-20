@@ -35,7 +35,7 @@ refs 리얼월드 HTTP HTTP/2에서 Frame, Stream의 의미 links HTTP2 TCP 소�
         
           
             content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
-refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
+private - only cached in client public - can be cached in proxies refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
           
           
         
@@ -53,6 +53,23 @@ refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘�
           
             content Cross-Origin Resource Sharing. 출처가 다른(Cross-Origin) 요청에 대해 리소스를 내려 줄 것인지 판단하는 정책이다.
 요청 헤더 Origin에 출처가 담긴다. 스킴, 도메인, 포트 중 하나라도 다르면 Cross-Origin으로 본다. 응답 헤더 Access-Control-Allow-Origin에 허용된 출처가 담긴다. 브라우저가 Origin, Access-Control-Allow-Origin 그리고 요청 시나리오를 고려하여 CORS 위반 여부를 판단한다. refs CORS는 왜 이렇게 우리를 힘들게 하는걸까? | Evans Library links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>webhook</title>
+      <link>https://chankoo.github.io/posts/webhook/</link>
+      <pubDate>Mon, 27 Nov 2023 20:53:18 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/webhook/</guid>
+      <description>
+        
+          
+            content 특정 이벤트가 발생했을때 타겟 서비스 엔드포인트로 데이터를 전달하는 http 기반의 콜백
+refs 웹훅(Webhook) | 토스페이먼츠 개발자센터 links 
           
           
         
@@ -139,6 +156,25 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links
 기존 RPC처럼, 네트워크 통신이 필요한 요청을 로컬에서 호출하는 것처럼 도와주는 프로토콜이다. HTTP/2 를 사용하며 프로토콜 버퍼(ProtoBuf)를 이용해 통신 효율을 높이는 특징이 있다.
 일반적인 http 기반 API(REST 등) 보다 더 빠르고(5배 가량), HTTP2의 기능을 사용할 수 있는 것이 장점이다.
 refs [네이버클라우드 기술&amp;amp;경험] 시대의 흐름, gRPC 깊게 파고들기 #1 | by NAVER CLOUD PLATFORM | NAVER CLOUD PLATFORM | Medium What is RPC? gRPC Introduction. - YouTube links HTTP2 프로토콜 버퍼 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>쿠키 보안</title>
+      <link>https://chankoo.github.io/posts/%EC%BF%A0%ED%82%A4-%EB%B3%B4%EC%95%88/</link>
+      <pubDate>Sat, 19 Nov 2022 22:39:34 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%BF%A0%ED%82%A4-%EB%B3%B4%EC%95%88/</guid>
+      <description>
+        
+          
+            content 쿠키에 아래 속성을 추가하여 보안을 확보한다.
+HTTP Only XSS 등 자바스크립트 기반 공격에서 쿠키를 보호하기 위해 사용하는 속성으로, true 인 경우 클라이언트(브라우저)에서 쿠키에 접근할 수 없다.
+Secure HTTPS 에서만 쿠키를 전송하는 속성으로, true 인 경우 HTTP에선 쿠키를 전송하지 않는다.
+refs [Web] HTTP Only와 Secure Cookie 이해하기 links XSS 
           
           
         

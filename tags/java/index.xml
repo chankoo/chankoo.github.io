@@ -25,5 +25,23 @@
       </description>
     </item>
     
+    <item>
+      <title>Iterator</title>
+      <link>https://chankoo.github.io/posts/iterator/</link>
+      <pubDate>Tue, 11 Oct 2022 23:36:52 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/iterator/</guid>
+      <description>
+        
+          
+            content 특정 집합 객체 요소에 순차적으로 접근 가능하도록 구현해놓은 객체. Iterator 패턴을 따라서 내부를 노출하지 않고 집합 객체의 구현에 종속되지 않아야한다.
+Iterator 를 제공하는 객체는 Iterator Protocol 을 따랐다고 표현하는데, 이는 언어마다 상이하다. 에를 들어 javascript 에선 Iteration Protocol 하위에 Iteration Protocol 과 Iterator Protocol이 존재한다.
+구현은 프로그래밍 언어마다 다양할 수 있다. 보통 Iterable 객체와 묶여서 구현한다. python과 java 모두 Iterable 객체로 부터 Iterator를 얻으며(iter, iterator()), 다음 요소를 가져오는 메소드를 제공한다(next, next()).
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>

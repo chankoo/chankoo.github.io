@@ -6,7 +6,40 @@
     <description>Recent content in 책 on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Nov 2023 15:19:03 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EC%B1%85/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 14:01:38 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EC%B1%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Domain Driven Design</title>
+      <link>https://chankoo.github.io/posts/domain-driven-design/</link>
+      <pubDate>Wed, 20 Dec 2023 14:01:38 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/domain-driven-design/</guid>
+      <description>
+        
+          
+            content Domain과 Model Domain은 사용자가 SW를 사용하는 대상 영역을 말한다 SW의 본질은 (해당 도메인에서)사용자의 문제를 해결하는 것이다 그러므로 개발은 사용자 활동에 관련한 지식 체계에 집중해야 한다 지식의 양이 방대하므로 Model을 통해 추상화한다 Model의 유용성 모델과 핵심 설계는 서로 영향을 주며 구체화된다 유지보수와 계속되는 기능 개선을 가능케 한다 모델은 모든 구성원이 사용하는 언어의 중추이다 개발자와 도메인 전문가의 의사소통시 번역이 불필요하다 언어가 모델이 긴밀히 연결되므로 언어를 통해 모델을 정제할 수 있다 모델은 지식의 정수만을 뽑아낸 것이다 도메인 지식을 조직화하고 가장 중요한 요소를 구분짓는다 효과적인 모델링의 요소 개발 project의 iteration 내내 모델과 구현의 연결고리를 유지한다 모델은 언어에 기반해야하고 언어 역시 모델을 토대로 정제된다 모델은 풍부한 도메인 지식을 담아야한다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>객체지향의 사실과 오해</title>
+      <link>https://chankoo.github.io/posts/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4/</link>
+      <pubDate>Wed, 20 Dec 2023 13:45:58 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4/</guid>
+      <description>
+        
+          
+            content 오해를 덜어낸 객체지향 구현 로직 (클래스가 아니라)특정한 객체를 상상하고, 우선 객체의 행동을 정의하자 정의된 행동을 기반으로 협력의 공동체를 상상해보자. 이 공동체는 요청과 응답의 흐름으로 소통할 것이고 공동체의 구성원에게는 여러가지 책임이 할당된다 다음으로 협력에 필요한 데이터 필드가 있다면 이를 정의하자. 잊지말자 상태보다 협력이 우선이다 마지막으로, (이제서야) 클래스를 구현해야한다. 게다가 클래스는 &amp;lsquo;타입&amp;rsquo;을 구현하기 위한 수단에 불과하다 더 구체적인 설계와 구현 구조설계: 도메인 모델
+도메인의 본질적인 부분을 개념으로 모델링 안정적인 &amp;lsquo;구조&amp;rsquo;의 설계 기능적 요구사항 추출: 유스케이스
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Real MySQL</title>
       <link>https://chankoo.github.io/posts/real-mysql/</link>
@@ -144,7 +177,7 @@
       <description>
         
           
-            content refs 스레드와 잠금장치 발표자료.pdf links 
+            content refs links 7가지 동시성 모델 - 스레드와 잠금장치.pdf 
           
           
         

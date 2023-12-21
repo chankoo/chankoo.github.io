@@ -85,8 +85,7 @@
     <a href="https://chankoo.github.io/series/" class="nav_item" title="시리즈">시리즈 <img src='https://chankoo.github.io/icons/caret-icon.svg' alt="icon" class="nav_icon"></a>
     <div class="nav_sub">
       <span class="nav_child"></span>
-        <a href="https://www.linkedin.com/" class="nav_child nav_item" title="LinkedIn">LinkedIn</a>
-        <a href="https://twitter.com/" class="nav_child nav_item" title="Twitter">Twitter</a>
+        <a href="https://chankoo.github.io/series/%EB%8C%80%EC%9A%A9%EB%9F%89-%ED%8A%B8%EB%9E%98%ED%94%BD-%EB%95%8C%EB%A0%A4%EB%A7%9E%EA%B8%B0/" class="nav_child nav_item" title="대용량 트래픽 때려맞기">대용량 트래픽 때려맞기</a>
     </div>
   </div>
       
@@ -122,6 +121,38 @@
 <div class="grid-inverse wrap content">
   <div>
     <ul class="posts" id="posts">
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/transaction/" title="Transaction">Transaction</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-10-10</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content DB에서 데이터를 조작하는 논리적 작업 단위. 이론적으로 Transaction은 ACID해야한다.
+예로 들면, 송금은 한 Transaction 이어야 하는데, 송금을 구성하는 1) 본인 계좌에서 출금 2) 상대 계좌에 입금이
+Atomic - 발생하거나, 발생하지 않거나하여 그 중간 상태가 없어야하며 Correct(Consistant) - 송금 실행 전 후 모두 관련된 제약을 지키는 상태여야하며 Isolated - 송금 실행 중 다른 Transaction과는 격리(read x, write x)되어야 하며 Durable - 송금 성공의 시점 데이터를 지속적 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/transaction/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
         <li class="post_item">
   <div class="excerpt">
     <div class="excerpt_header">
@@ -618,7 +649,7 @@ refs 7가지 동시성 모델 links 동시성</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content refs links 7가지 동시성 모델 - 스레드와 잠금장치.pdf</p>
+            <p>refs links 7가지 동시성 모델 - 스레드와 잠금장치.pdf</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/7%EA%B0%80%EC%A7%80-%EB%8F%99%EC%8B%9C%EC%84%B1-%EB%AA%A8%EB%8D%B8/" title="Read More" class="excerpt_more button">Read More</a>
@@ -919,7 +950,7 @@ refs 7가지 동시성 모델 links 병렬성</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content refs links</p>
+            <p>refs links</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%ED%81%B4%EB%A6%B0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1510,7 +1541,7 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">35</span>
+          <span class="button_tally">36</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
@@ -1596,7 +1627,7 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
         
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
-          <span class="button_tally">9</span>
+          <span class="button_tally">10</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
@@ -1606,6 +1637,11 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
         
         <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class="post_tag button button_translucent" title="디자인패턴">
           디자인패턴
+          <span class="button_tally">8</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
           <span class="button_tally">8</span>
         </a>
         
@@ -1621,11 +1657,6 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
         
         <a href='https://chankoo.github.io/tags/solid/' class="post_tag button button_translucent" title="solid">
           SOLID
-          <span class="button_tally">6</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
           <span class="button_tally">6</span>
         </a>
         
@@ -1728,7 +1759,7 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/msa/' class=" post_tag button button_translucent" data-position=9 title="msa">MSA<span class="button_tally">9</span>
+            <a href='https://chankoo.github.io/tags/msa/' class=" post_tag button button_translucent" data-position=10 title="msa">MSA<span class="button_tally">10</span>
             </a>
             
             
@@ -1788,7 +1819,7 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=6 title="분산시스템">분산시스템<span class="button_tally">6</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=8 title="분산시스템">분산시스템<span class="button_tally">8</span>
             </a>
             
             

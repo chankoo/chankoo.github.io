@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>GoF의 디자인 패턴 | chankoo</title>
+<title>numpy array | chankoo</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,21 +21,23 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="refs links " />
+<meta name="description" content="content 파이썬의 list 보다 np array가
+더 빠르다 element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다. 메모리 효율이 좋다. element의 크기가 작다 PyObject - 4 for type pointer, 4 for reference …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="GoF의 디자인 패턴" />
+<meta name="twitter:title" content="numpy array" />
 <meta name="twitter:image" content="https://chankoo.github.io/"/>
-<meta property="og:url" content="https://chankoo.github.io/posts/gof%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/" />
-<meta property="og:title" content="GoF의 디자인 패턴" />
-<meta property="og:description" content="refs links " />
+<meta property="og:url" content="https://chankoo.github.io/posts/numpy-array/" />
+<meta property="og:title" content="numpy array" />
+<meta property="og:description" content="content 파이썬의 list 보다 np array가
+더 빠르다 element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다. 메모리 효율이 좋다. element의 크기가 작다 PyObject - 4 for type pointer, 4 for reference …" />
 <meta property="og:image" content="https://chankoo.github.io/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chankoo.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://chankoo.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://chankoo.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://chankoo.github.io/posts/gof%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/">
+<link rel="canonical" href="https://chankoo.github.io/posts/numpy-array/">
 
 
 
@@ -101,7 +103,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">GoF의 디자인 패턴</h1>
+    <h1 class="post_title">numpy array</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -109,19 +111,44 @@
 </svg>
 </span>
     <span class="post_date">
-      2022-10-27</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EC%B1%85/' title="책" class="post_tag button button_translucent">책
-        </a><a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' title="디자인패턴" class="post_tag button button_translucent">디자인패턴
+      2022-10-03</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
         </a>
     </span>
   </div>
 
-    <div class="post_body"><h2 id="refs">refs</h2>
+    <div class="post_body"><h2 id="content">content</h2>
+<p>파이썬의 list 보다 np array가</p>
+<ol>
+<li>더 빠르다
+<ol>
+<li>element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다.</li>
+</ol>
+</li>
+<li>메모리 효율이 좋다.
+<ol>
+<li>element의 크기가 작다
+<ol>
+<li>
+<ol>
+<li>PyObject - 4 for type pointer, 4 for reference count, 4 for value &ndash; and the memory allocators rounds up to 16</li>
+</ol>
+</li>
+<li>value - single-precision numbers takes 4 bytes each, double-precision ones, 8 bytes</li>
+</ol>
+</li>
+<li>동적배열 아니어서 크기가 고정이며</li>
+<li>정적할당하여 element 타입이 고정이다</li>
+</ol>
+</li>
+</ol>
+<h2 id="refs">refs</h2>
 <ul>
 <li></li>
 </ul>
 <h2 id="links">links</h2>
 <ul>
-<li></li>
+<li><a href="https://chankoo.github.io/posts/pyobject/">PyObject</a></li>
+<li><a href="https://chankoo.github.io/posts/dynamic-array/">Dynamic Array</a></li>
 </ul>
 
     </div>

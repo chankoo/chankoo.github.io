@@ -67,7 +67,7 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
       <description>
         
           
-            content BST(Binary Search Tree)를 일반화한 자료구조로 2개 이상의 자식 노드를 갖는 Balanced Tree이다.
+            BST(Binary Search Tree)를 일반화한 자료구조로 2개 이상의 자식 노드를 갖는 Balanced Tree이다.
 B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
 디스크 I/O로 데이터를 가져오는 단위인 블록의 크기는 고정(mysql은 16KB)인데, 키의 크기가 커지면 한블록에 저장하는 키의 개수가 적어진다.
           

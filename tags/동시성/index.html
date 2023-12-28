@@ -77,6 +77,13 @@
       
         
 
+  <div class="nav_parent">
+    <a href="https://chankoo.github.io/series/" class="nav_item" title="시리즈">시리즈 <img src='https://chankoo.github.io/icons/caret-icon.svg' alt="icon" class="nav_icon"></a>
+    <div class="nav_sub">
+      <span class="nav_child"></span>
+        <a href="https://chankoo.github.io/series/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5/" class="nav_child nav_item" title="시스템 디자인 연습">시스템 디자인 연습</a>
+    </div>
+  </div>
       
 <div class='follow'>
   <a href="https://github.com/chankoo">
@@ -108,6 +115,42 @@
 <div class="grid-inverse wrap content">
   <div>
     <ul class="posts" id="posts">
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-12</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
+        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>작업 첫번째 실험은 가장 기본적인 페이지 조회이다. 로컬 환경에서 Django와 gunicorn 조합으로 어느 정도의 조회 트래픽을 감당하는지 파악하는 것이었다. 크게 두가지 작업을 진행했는데, 하나는 빈 페이지를 읽는, 다른 하나는 100자 분량의 짧은 글(post) 100개가 로드된 페이지를 읽는 작업이다.
+목표 목표는 1000 RPS(초당 요청 수)를 견디는지 확인하는 것이었다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 5분 동안 요청을 지속했다.
+결과 요약 gevent 워커 사용: gunicorn gevent …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
         <li class="post_item">
   <div class="excerpt">
     <div class="excerpt_header">
@@ -309,42 +352,6 @@ refs What is gevent? - gevent …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%EC%8A%A4%EB%A0%88%EB%93%9C/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-12</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>작업 첫번째 실험은 가장 기본적인 페이지 조회이다. 로컬 환경에서 Django와 gunicorn 조합으로 어느 정도의 조회 트래픽을 감당하는지 파악하는 것이었다. 크게 두가지 작업을 진행했는데, 하나는 빈 페이지를 읽는, 다른 하나는 100자 분량의 짧은 글(post) 100개가 로드된 페이지를 읽는 작업이다.
-목표 목표는 1000 RPS(초당 요청 수)를 견디는지 확인하는 것이었다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 5분 동안 요청을 지속했다.
-결과 요약 gevent 워커 사용: gunicorn gevent …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -822,15 +829,6 @@ refs 7가지 동시성 모델 links 병렬성</p>
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
-        <a href="https://chankoo.github.io/posts/domain-driven-design/" class="nav-link" title="Domain Driven Design">Domain Driven Design</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4/" class="nav-link" title="객체지향의 사실과 오해">객체지향의 사실과 오해</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%8C%A8%ED%84%B4-%EB%AA%A8%EC%9D%8C/" class="nav-link" title="마이크로서비스 패턴 모음">마이크로서비스 패턴 모음</a>
-      </li>
-      <li>
         <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" class="nav-link" title="API Gateway 패턴">API Gateway 패턴</a>
       </li>
     </ul>
@@ -840,6 +838,12 @@ refs 7가지 동시성 모델 links 병렬성</p>
         <a href="https://chankoo.github.io/posts/2pl/" class="nav-link" title="2PL">2PL</a>
       </li>
       <li>
+        <a href="https://chankoo.github.io/posts/domain-driven-design/" class="nav-link" title="Domain Driven Design">Domain Driven Design</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4/" class="nav-link" title="객체지향의 사실과 오해">객체지향의 사실과 오해</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/%EC%BA%A1%EC%8A%90%ED%99%94/" class="nav-link" title="캡슐화">캡슐화</a>
       </li>
       <li>
@@ -847,9 +851,6 @@ refs 7가지 동시성 모델 links 병렬성</p>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/oauth2.0/" class="nav-link" title="OAuth2.0">OAuth2.0</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%8C%A8%ED%84%B4-%EB%AA%A8%EC%9D%8C/" class="nav-link" title="마이크로서비스 패턴 모음">마이크로서비스 패턴 모음</a>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" class="nav-link" title="API Gateway 패턴">API Gateway 패턴</a>

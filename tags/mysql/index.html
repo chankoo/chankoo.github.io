@@ -145,6 +145,43 @@ refs Real MySQL links</p>
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-26</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
+        </a><a href='https://chankoo.github.io/tags/aws/' title="aws" class="post_tag button button_translucent">aws
+        </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>작업 이번에는 피드 서비스에서 주된 이슈인 Fanout 시나리오를 실험했다. 유저가 게시글을 작성하면 해당 글이 500명의 친구 피드로 전송되는 상황이다. 한 유저 당 501개의 create 요청을 발생시키는 고부하 작업이다.
+목표 500 RPS(약 250,000 QPS) 를 감당할 수 확인한다. 가상 사용자(VU) 500명을 설정하고, 1초 간격으로 3분 동안 요청을 지속했다.
+결과 요약 DB의 옵션을 이해하고 우선적으로 DB 성능을 튜닝하는 것이 중요하다. 그래도 DB가 병목일 땐 캐시와 비동기 작업을 적극적으로 활용하자. 환경 서버: Django + …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/dbcp/" title="DBCP">DBCP</a>
       </h3>
       
@@ -361,7 +398,7 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
         
         <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
           언어
-          <span class="button_tally">16</span>
+          <span class="button_tally">15</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -376,7 +413,7 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
         
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
-          <span class="button_tally">4</span>
+          <span class="button_tally">7</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -398,15 +435,26 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
       </nav>
     </div>
     <div>
+      <h2 class="mt-4 taxonomy" id="series-section">Series</h2>
+      <nav class="tags_nav">
+        <a href='https://chankoo.github.io/series/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5/' class="post_tag button button_translucent" title="시스템-디자인-연습">
+          시스템-디자인-연습
+          <span class="button_tally">3</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+    <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
       <nav class="tags_nav">
-        <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
-          PYTHON
+        <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
+          동시성
           <span class="button_tally">20</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
-          동시성
+        <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
+          PYTHON
           <span class="button_tally">19</span>
         </a>
         
@@ -450,6 +498,11 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
+          MYSQL
+          <span class="button_tally">6</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/solid/' class="post_tag button button_translucent" title="solid">
           SOLID
           <span class="button_tally">6</span>
@@ -465,8 +518,8 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
-          MYSQL
+        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
+          DJANGO
           <span class="button_tally">5</span>
         </a>
         
@@ -490,13 +543,8 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/c/' class="post_tag button button_translucent" title="c">
-          C
-          <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/tcp/' class="post_tag button button_translucent" title="tcp">
-          TCP
+        <a href='https://chankoo.github.io/tags/aws/' class="post_tag button button_translucent" title="aws">
+          AWS
           <span class="button_tally">3</span>
         </a>
         
@@ -510,7 +558,7 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/aws/' class=" post_tag button button_translucent" data-position=1 title="aws">AWS<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/aws/' class=" post_tag button button_translucent" data-position=3 title="aws">AWS<span class="button_tally">3</span>
             </a>
             
             
@@ -526,7 +574,7 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=2 title="django">DJANGO<span class="button_tally">2</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=5 title="django">DJANGO<span class="button_tally">5</span>
             </a>
             
             
@@ -558,11 +606,7 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=5 title="mysql">MYSQL<span class="button_tally">5</span>
-            </a>
-            
-            
-            <a href='https://chankoo.github.io/tags/numpy/' class=" post_tag button button_translucent" data-position=1 title="numpy">NUMPY<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=6 title="mysql">MYSQL<span class="button_tally">6</span>
             </a>
             
             
@@ -570,7 +614,7 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=20 title="python">PYTHON<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=19 title="python">PYTHON<span class="button_tally">19</span>
             </a>
             
             
@@ -606,11 +650,15 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=19 title="동시성">동시성<span class="button_tally">19</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
             </a>
             
             
             <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=8 title="디자인패턴">디자인패턴<span class="button_tally">8</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class=" post_tag button button_translucent" data-position=3 title="부하테스트">부하테스트<span class="button_tally">3</span>
             </a>
             
             

@@ -2210,23 +2210,6 @@ refs 7가지 동시성 모델 links 병렬성
     </item>
     
     <item>
-      <title>why numpy array</title>
-      <link>https://chankoo.github.io/posts/why-numpy-array/</link>
-      <pubDate>Mon, 03 Oct 2022 16:17:54 +0900</pubDate>
-      
-      <guid>https://chankoo.github.io/posts/why-numpy-array/</guid>
-      <description>
-        
-          
-            content 파이썬의 list 보다 np array가
-더 빠르다 element로 PyObject 대신 value를 들고 있어 직접 접근할 수 있다. 메모리 효율이 좋다. element의 크기가 작다 PyObject - 4 for type pointer, 4 for reference count, 4 for value &amp;ndash; and the memory allocators rounds up to 16 value - single-precision numbers takes 4 bytes each, double-precision ones, 8 bytes 동적배열 아니어서 크기가 고정이며 정적할당하여 element 타입이 고정이다 refs links PyObject Dynamic Array 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Python-GC</title>
       <link>https://chankoo.github.io/posts/python-gc/</link>
       <pubDate>Mon, 03 Oct 2022 16:08:52 +0900</pubDate>

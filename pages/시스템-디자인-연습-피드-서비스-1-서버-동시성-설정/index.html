@@ -126,7 +126,7 @@
     <div class="post_body"><h3 id="작업">작업</h3>
 <p>첫번째 실험은 가장 기본적인 페이지 조회이다. 로컬 환경에서 Django와 gunicorn 조합으로 어느 정도의 조회 트래픽을 감당하는지 파악하는 것이었다. 크게 두가지 작업을 진행했는데, 하나는 빈 페이지를 읽는, 다른 하나는 100자 분량의 짧은 글(post) 100개가 로드된 페이지를 읽는 작업이다.</p>
 <h3 id="목표">목표</h3>
-<p>목표는 1000 RPS(초당 요청 수)를 견디는지 확인하는 것이었다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 5분 동안 요청을 지속했다.</p>
+<p>목표는 로컬 환경에서 1000 RPS(초당 요청 수)를 견딜 수 있는지 확인하는 것이다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 5분 동안 요청을 지속했다.</p>
 <h3 id="결과-요약">결과 요약</h3>
 <ol>
 <li>gevent 워커 사용: gunicorn gevent 워커를 사용했을 때 조회 성능이 안정적이었다. 많은 수의 경량 스레드를 활용하는 gevent의 특성 때문으로 보인다.</li>
@@ -144,27 +144,26 @@ DB: SQLite<br>
 <p>빈 페이지를 읽을 때는 gunicorn 설정을 조정하는 것만으로 목표를 달성하는 수준이었다. 워커 클래스를 gevent로 설정하고 worker_connection 1000개를 사용함으로써 I/O 작업이 대부분인 웹 페이지 조회 요청을 효과적으로 처리했다. 이는 sync 설정을 사용했을때 요청 처리 시간이 늘며 RPS 300~400 수준을 기록한 것과 대비되는 결과다.</p>
 <img src="/images/281984859-a21d1e13-2420-4897-ba47-f7ba7c8db711.png" alt="" >
 
+<pre><code>[gunicorn 설정]
+ worker = 9(cpu_count * 2 + 1)
+ worker_class = &quot;gevent&quot;
+ worker_connection = 1000
+</code></pre>
 <blockquote>
-<p>gunicorn 설정
-worker = 9(cpu_count * 2 + 1)<br>
-worker_class = &ldquo;gevent&rdquo;
-worker_connection = 1000</p>
-</blockquote>
-<blockquote>
-<p>결과
-checks&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 99.74%
-data_received&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;: 81 MB  268 kB/s
-http_reqs&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 276763 918.952395/s
+<p>결과<br>
+checks&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 99.74%<br>
+data_received&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;: 81 MB  268 kB/s<br>
+http_reqs&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 276763 918.952395/s<br>
 iteration_duration&hellip;&hellip;&hellip;&hellip;.: avg=1.08s p(95)=1.42s</p>
 </blockquote>
 <p>반면에 데이터를 포함한 페이지를 읽을 때는 모든 gunicorn 설정에서 RPS 300 미만을 기록했다. DB 병목을 의심하며 Redis에 캐시하여 실험해봤지만, 최종적으로 RPS 350 수준에 그쳤다. 이 결과로 인해 컴퓨팅 파워의 스케일 아웃이 필요하다고 판단했다.</p>
 <img src="/images/282230954-5df96295-f2fc-4987-a9b1-96e803157e4a.png" alt="" >
 
 <blockquote>
-<p>결과
-checks&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 99.58%
-data_received&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;: 5.0 GB 17 MB/s
-http_reqs&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 106619 351.608025/s
+<p>결과<br>
+checks&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 99.58%<br>
+data_received&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;: 5.0 GB 17 MB/s<br>
+http_reqs&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 106619 351.608025/s<br>
 iteration_duration&hellip;&hellip;&hellip;&hellip;.: avg=2.82s  p(95)=4.63s</p>
 </blockquote>
 <h2 id="refs">refs</h2>

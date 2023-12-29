@@ -27,6 +27,24 @@ refs What is gevent? - gevent 23.9.2.dev0 documentation 백엔드 개발자들�
     </item>
     
     <item>
+      <title>&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/</link>
+      <pubDate>Sun, 26 Nov 2023 13:54:34 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/</guid>
+      <description>
+        
+          
+            작업 이번에는 피드 서비스에서 주된 이슈인 Fanout 시나리오를 실험했다. 유저가 게시글을 작성하면 해당 글이 500명의 친구 피드로 전송되는 상황이다. 한 유저 당 501개의 create 요청을 발생시키는 고부하 작업이다.
+목표 500 RPS(약 250,000 QPS) 를 감당할 수 확인한다. 가상 사용자(VU) 500명을 설정하고, 1초 간격으로 3분 동안 요청을 지속했다.
+결과 요약 DB의 옵션을 이해하고 우선적으로 DB 성능을 튜닝하는 것이 중요하다. 그래도 DB가 병목일 땐 캐시와 비동기 작업을 적극적으로 활용하자. 환경 서버: Django + gunicorn DB: SQLite or Mysql or Redis 인프라: Docker Compose or (AWS ECS Fargate + Docker)
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>데이터 중심 애플리케이션 설계</title>
       <link>https://chankoo.github.io/posts/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EC%8B%AC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%A4%EA%B3%84/</link>
       <pubDate>Mon, 20 Nov 2023 10:27:27 +0900</pubDate>
@@ -52,6 +70,42 @@ refs What is gevent? - gevent 23.9.2.dev0 documentation 백엔드 개발자들�
         
           
             refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/</link>
+      <pubDate>Wed, 15 Nov 2023 15:21:15 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/</guid>
+      <description>
+        
+          
+            작업 두번째 실험에서는 AWS ECS Fargate 를 이용해 페이지 조회 작업을 스케일 아웃했다. 첫번째 실험과 같은 조건인데, 100개의 짧은 글(post)이 로드된 페이지를 읽는 작업이다.
+목표 로컬 환경과 마찬가지로 1000 RPS 를 감당할 수 있는지 실험하는 것이었다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 3분 동안 요청을 지속했다.
+결과 요약 물리적 네트워크 대역폭이 병목인 상황을 확인하고 테스트 환경까지 클라우드에 구축했다. 위 목표를 달성하기 위해 Fargate 기준 vCPU 8개(1024 * 8)가 필요하다는 것을 확인했다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/</link>
+      <pubDate>Sun, 12 Nov 2023 21:11:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/</guid>
+      <description>
+        
+          
+            작업 첫번째 실험은 가장 기본적인 페이지 조회이다. 로컬 환경에서 Django와 gunicorn 조합으로 어느 정도의 조회 트래픽을 감당하는지 파악하는 것이었다. 크게 두가지 작업을 진행했는데, 하나는 빈 페이지를 읽는, 다른 하나는 100자 분량의 짧은 글(post) 100개가 로드된 페이지를 읽는 작업이다.
+목표 목표는 1000 RPS(초당 요청 수)를 견디는지 확인하는 것이었다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 5분 동안 요청을 지속했다.
+결과 요약 gevent 워커 사용: gunicorn gevent 워커를 사용했을 때 조회 성능이 안정적이었다.
           
           
         

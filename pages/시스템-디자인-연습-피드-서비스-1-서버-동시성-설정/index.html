@@ -142,7 +142,8 @@ DB: SQLite<br>
 </blockquote>
 <h3 id="결과-상세">결과 상세</h3>
 <p>빈 페이지를 읽을 때는 gunicorn 설정을 조정하는 것만으로 목표를 달성하는 수준이었다. 워커 클래스를 gevent로 설정하고 worker_connection 1000개를 사용함으로써 I/O 작업이 대부분인 웹 페이지 조회 요청을 효과적으로 처리했다. 이는 sync 설정을 사용했을때 요청 처리 시간이 늘며 RPS 300~400 수준을 기록한 것과 대비되는 결과다.</p>
-<p>![[281984859-a21d1e13-2420-4897-ba47-f7ba7c8db711.png]]</p>
+<img src="/images/281984859-a21d1e13-2420-4897-ba47-f7ba7c8db711.png" alt="" >
+
 <blockquote>
 <p>gunicorn 설정
 worker = 9(cpu_count * 2 + 1)<br>
@@ -157,7 +158,8 @@ http_reqs&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 276763 918.9
 iteration_duration&hellip;&hellip;&hellip;&hellip;.: avg=1.08s p(95)=1.42s</p>
 </blockquote>
 <p>반면에 데이터를 포함한 페이지를 읽을 때는 모든 gunicorn 설정에서 RPS 300 미만을 기록했다. DB 병목을 의심하며 Redis에 캐시하여 실험해봤지만, 최종적으로 RPS 350 수준에 그쳤다. 이 결과로 인해 컴퓨팅 파워의 스케일 아웃이 필요하다고 판단했다.</p>
-<p>![[282230954-5df96295-f2fc-4987-a9b1-96e803157e4a.png]]</p>
+<img src="/images/282230954-5df96295-f2fc-4987-a9b1-96e803157e4a.png" alt="" >
+
 <blockquote>
 <p>결과
 checks&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.: 99.58%
@@ -239,33 +241,19 @@ iteration_duration&hellip;&hellip;&hellip;&hellip;.: avg=2.82s  p(95)=4.63s</p>
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
-        <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" class="nav-link" title="API Gateway 패턴">API Gateway 패턴</a>
-      </li>
-    </ul>
-    <h2 class="mt-4">Recent Posts</h2>
-    <ul class="flex-column">
-      <li>
-        <a href="https://chankoo.github.io/posts/2pl/" class="nav-link" title="2PL">2PL</a>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
       </li>
       <li>
-        <a href="https://chankoo.github.io/posts/domain-driven-design/" class="nav-link" title="Domain Driven Design">Domain Driven Design</a>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계">&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계</a>
       </li>
       <li>
-        <a href="https://chankoo.github.io/posts/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4/" class="nav-link" title="객체지향의 사실과 오해">객체지향의 사실과 오해</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EC%BA%A1%EC%8A%90%ED%99%94/" class="nav-link" title="캡슐화">캡슐화</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99/" class="nav-link" title="컴포넌트 설계 원칙">컴포넌트 설계 원칙</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/oauth2.0/" class="nav-link" title="OAuth2.0">OAuth2.0</a>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" class="nav-link" title="API Gateway 패턴">API Gateway 패턴</a>
       </li>
     </ul>
+    
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">

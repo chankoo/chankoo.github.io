@@ -141,13 +141,13 @@ DB: SQLite<br>
 테스팅: K6 + Grafana + InfluxDB</p>
 </blockquote>
 <h3 id="결과-상세">결과 상세</h3>
-<p>빈 페이지를 읽을 때는 gunicorn 설정을 조정하는 것만으로 목표를 달성하는 수준이었다. 워커 클래스를 gevent로 설정하고 worker_connection 1000개를 사용함으로써 I/O 작업이 대부분인 웹 페이지 조회 요청을 효과적으로 처리했다. 이는 sync 설정을 사용했을때 요청 처리 시간이 늘며 RPS 300~400 수준을 기록한 것과 대비되는 결과다.</p>
+<p>빈 페이지를 읽을 때는 gunicorn 설정을 조정하는 것만으로 목표를 달성하는 수준이었다. 워커 클래스를 gevent로 설정하고 워커당 1000개 worker_connections 을 사용함으로써 I/O 작업이 대부분인 웹 페이지 조회 요청을 효과적으로 처리했다. 이는 sync 설정을 사용했을때 요청 처리 시간이 늘며 RPS 300~400 수준을 기록한 것과 대비되는 결과다.</p>
 <img src="/images/281984859-a21d1e13-2420-4897-ba47-f7ba7c8db711.png" alt="" >
 
 <pre><code>[gunicorn 설정]
  worker = 9(cpu_count * 2 + 1)
  worker_class = &quot;gevent&quot;
- worker_connection = 1000
+ worker_connections = 1000
 </code></pre>
 <blockquote>
 <p>결과<br>
@@ -292,7 +292,7 @@ iteration_duration&hellip;&hellip;&hellip;&hellip;.: avg=2.82s  p(95)=4.63s</p>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
           자료구조
-          <span class="button_tally">11</span>
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
@@ -317,7 +317,7 @@ iteration_duration&hellip;&hellip;&hellip;&hellip;.: avg=2.82s  p(95)=4.63s</p>
         
         <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
           알고리즘
-          <span class="button_tally">2</span>
+          <span class="button_tally">3</span>
         </a>
         
         

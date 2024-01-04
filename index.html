@@ -301,6 +301,69 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC/" title="위상 정렬">위상 정렬</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-04</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>유향 그래프의 정점을 탐색 가능한 순서로 정렬하는 알고리즘이다.
+유입 간선이 없는 정점들을 찾아 정렬된 리스트에 추가한다. 유입 간선이 없으므로 바로 탐색해도 무방한 정점들이다. 해당 정점들의 유출 간선들을 제거한다. 앞선 정점들을 방문한 상황에서는, 해당 간선들이 그 다음 탐색에 영향주지 않는다. 모든 정점을 정렬할 때 까지 1과 2를 반복한다. 불가하다면 그래프에 사이클이 존재하는 것이다. [구현 예시] from collections import defaultdict, deque indegree = defaultdict(int) for v, neighbors …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%B8%94%EB%A3%B8-%ED%95%84%ED%84%B0/" title="블룸 필터">블룸 필터</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-04</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>집합의 모든 값을 비트 배열에 저장한 자료형으로 특정 값이 집합에 속하는지 검사하는 용도로 쓰인다.
+m 비트 크기에 k 개의 서로 다른 해시함수를 사용해 구현한다. 해시 함수는 독립적이고 균일하게 분포해야한다.
+O(k) 시간에 새로운 값을 검사할 수 있다. k개 해시 모두 1인 경우 집합에 속하는 값이라 판단한다. 한정된 공간에서 집합이 커질 수록 긍정 오류(속하지 않으나 속한다고 판별)가 커지는 특성이 있지만, 부정 오류(속하는데 속하지 않는다 판별)는 발생하지 않아 1차적인 판별 알고리즘으로 많이 쓰인다.</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%B8%94%EB%A3%B8-%ED%95%84%ED%84%B0/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/2pl/" title="2PL">2PL</a>
       </h3>
       
@@ -1739,76 +1802,6 @@ refs 마이크로서비스 패턴 links</p>
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/saga-%ED%8C%A8%ED%84%B4/" title="Saga 패턴">Saga 패턴</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-12-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content 분산 트랜잭션 환경에서 서비스 간 비동기 메시징을 이용하여 편성한 일련의 로컬 트랜잭션.
-각 서비스가 변경분 커밋을 수행하고 완료 메시지를 발행하여 다음 서비스의 트랜잭션을 유도한다. 마찬가지로 각 서비스는 보상 트랜잭션(compensatable transaction)을 통해 문제 발생 시 변경분을 발생 역순으로 undo하도록해 롤백한다.
-분상 환경에서 메시징을 이용하는 특성상, saga 그 자체로는 엄격한 Isolation을 제공할 수 없다. 메시지 읽고 처리하는 행위를 격리하기 힘들기에, 메시지 읽는 순서가 바뀐다든지 하는 이슈로 트랜잭션의 결과가  …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/saga-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98/" title="분산 트랜잭션">분산 트랜잭션</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-12-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content 트랜잭션의 속성(ACID)을 2개 이상으로 분산된 네트워크에서도 만족시키는 트랜잭션.
-X/Open DTP(XA) 모델이라는 표준이 있으며, 이는 2단계 커밋(2PC)를 활용하여 각 리소스를 트랜잭션으로 관리한다. 요즘엔 2PC 대신 Saga 패턴을 쓰는 추세이다.
-refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA - 위키백과, 우리 모두의 백과사전 마이크로서비스 패턴 links Transaction 2PC Saga 패턴</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -1905,7 +1898,7 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
           자료구조
-          <span class="button_tally">11</span>
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
@@ -1930,7 +1923,7 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
         
         <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
           알고리즘
-          <span class="button_tally">2</span>
+          <span class="button_tally">3</span>
         </a>
         
         

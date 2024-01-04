@@ -6,7 +6,25 @@
     <description>Recent content in 자료구조 on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Dec 2023 21:13:53 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jan 2024 11:54:17 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>블룸 필터</title>
+      <link>https://chankoo.github.io/posts/%EB%B8%94%EB%A3%B8-%ED%95%84%ED%84%B0/</link>
+      <pubDate>Thu, 04 Jan 2024 11:54:17 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%B8%94%EB%A3%B8-%ED%95%84%ED%84%B0/</guid>
+      <description>
+        
+          
+            집합의 모든 값을 비트 배열에 저장한 자료형으로 특정 값이 집합에 속하는지 검사하는 용도로 쓰인다.
+m 비트 크기에 k 개의 서로 다른 해시함수를 사용해 구현한다. 해시 함수는 독립적이고 균일하게 분포해야한다.
+O(k) 시간에 새로운 값을 검사할 수 있다. k개 해시 모두 1인 경우 집합에 속하는 값이라 판단한다. 한정된 공간에서 집합이 커질 수록 긍정 오류(속하지 않으나 속한다고 판별)가 커지는 특성이 있지만, 부정 오류(속하는데 속하지 않는다 판별)는 발생하지 않아 1차적인 판별 알고리즘으로 많이 쓰인다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Snowflake ID</title>
       <link>https://chankoo.github.io/posts/snowflake-id/</link>

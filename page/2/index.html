@@ -125,6 +125,76 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/saga-%ED%8C%A8%ED%84%B4/" title="Saga 패턴">Saga 패턴</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-12-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
+        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 분산 트랜잭션 환경에서 서비스 간 비동기 메시징을 이용하여 편성한 일련의 로컬 트랜잭션.
+각 서비스가 변경분 커밋을 수행하고 완료 메시지를 발행하여 다음 서비스의 트랜잭션을 유도한다. 마찬가지로 각 서비스는 보상 트랜잭션(compensatable transaction)을 통해 문제 발생 시 변경분을 발생 역순으로 undo하도록해 롤백한다.
+분상 환경에서 메시징을 이용하는 특성상, saga 그 자체로는 엄격한 Isolation을 제공할 수 없다. 메시지 읽고 처리하는 행위를 격리하기 힘들기에, 메시지 읽는 순서가 바뀐다든지 하는 이슈로 트랜잭션의 결과가  …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/saga-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98/" title="분산 트랜잭션">분산 트랜잭션</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-12-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
+        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content 트랜잭션의 속성(ACID)을 2개 이상으로 분산된 네트워크에서도 만족시키는 트랜잭션.
+X/Open DTP(XA) 모델이라는 표준이 있으며, 이는 2단계 커밋(2PC)를 활용하여 각 리소스를 트랜잭션으로 관리한다. 요즘엔 2PC 대신 Saga 패턴을 쓰는 추세이다.
+refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA - 위키백과, 우리 모두의 백과사전 마이크로서비스 패턴 links Transaction 2PC Saga 패턴</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/%EB%A6%AC%EC%96%BC%EC%9B%94%EB%93%9C-http/" title="리얼월드 HTTP">리얼월드 HTTP</a>
       </h3>
       
@@ -1732,78 +1802,6 @@ refs Constructor (object-oriented programming) - Wikipedia Object lifetime - Wik
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/iterator/" title="Iterator">Iterator</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-10-11</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' title="디자인패턴" class="post_tag button button_translucent">디자인패턴
-        </a><a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
-        </a><a href='https://chankoo.github.io/tags/javascript/' title="javascript" class="post_tag button button_translucent">javascript
-        </a><a href='https://chankoo.github.io/tags/java/' title="java" class="post_tag button button_translucent">java
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content 특정 집합 객체 요소에 순차적으로 접근 가능하도록 구현해놓은 객체. Iterator 패턴을 따라서 내부를 노출하지 않고 집합 객체의 구현에 종속되지 않아야한다.
-Iterator 를 제공하는 객체는 Iterator Protocol 을 따랐다고 표현하는데, 이는 언어마다 상이하다. 에를 들어 javascript 에선 Iteration Protocol 하위에 Iteration Protocol 과 Iterator Protocol이 존재한다.
-구현은 프로그래밍 언어마다 다양할 수 있다. 보통 Iterable 객체와 묶여서 구현한다. python과 java …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/iterator/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/asgi/" title="ASGI">ASGI</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-10-11</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/web/' title="web" class="post_tag button button_translucent">web
-        </a><a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content Asynchronous Server Gateway Interface. 파이썬 웹 애플리케이션과 웹 서버의 공통 인터페이스를 기술한 프로토콜.
-WSGI 처럼, 프로토콜 서버 내 앱들에게 표준화된 요청/응답을 주고받는 방식이나, ASGI는 비동기 방식으로 이벤트를 주고 받는 구조적인 차이가 있다.
-refs ASGI (Asynchronous Server Gateway Interface) Specification — ASGI 3.0 documentation “파이썬 웹 개발의 미래” ASGI의 개념과 활용 방법 - ITWorld Korea …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/asgi/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item">
@@ -1900,7 +1898,7 @@ refs ASGI (Asynchronous Server Gateway Interface) Specification — ASGI 3.0 doc
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
           자료구조
-          <span class="button_tally">11</span>
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
@@ -1925,7 +1923,7 @@ refs ASGI (Asynchronous Server Gateway Interface) Specification — ASGI 3.0 doc
         
         <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
           알고리즘
-          <span class="button_tally">2</span>
+          <span class="button_tally">3</span>
         </a>
         
         

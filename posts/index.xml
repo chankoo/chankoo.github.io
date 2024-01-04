@@ -6,7 +6,42 @@
     <description>Recent content in Posts on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Dec 2023 21:29:31 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jan 2024 19:13:01 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>위상 정렬</title>
+      <link>https://chankoo.github.io/posts/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC/</link>
+      <pubDate>Thu, 04 Jan 2024 19:13:01 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC/</guid>
+      <description>
+        
+          
+            유향 그래프의 정점을 탐색 가능한 순서로 정렬하는 알고리즘이다.
+유입 간선이 없는 정점들을 찾아 정렬된 리스트에 추가한다. 유입 간선이 없으므로 바로 탐색해도 무방한 정점들이다. 해당 정점들의 유출 간선들을 제거한다. 앞선 정점들을 방문한 상황에서는, 해당 간선들이 그 다음 탐색에 영향주지 않는다. 모든 정점을 정렬할 때 까지 1과 2를 반복한다. 불가하다면 그래프에 사이클이 존재하는 것이다. [구현 예시] from collections import defaultdict, deque indegree = defaultdict(int) for v, neighbors in G.items(): for neighbor in neighbors: indegree[neighbor] += 1 Q = deque() for v in G.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>블룸 필터</title>
+      <link>https://chankoo.github.io/posts/%EB%B8%94%EB%A3%B8-%ED%95%84%ED%84%B0/</link>
+      <pubDate>Thu, 04 Jan 2024 11:54:17 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%B8%94%EB%A3%B8-%ED%95%84%ED%84%B0/</guid>
+      <description>
+        
+          
+            집합의 모든 값을 비트 배열에 저장한 자료형으로 특정 값이 집합에 속하는지 검사하는 용도로 쓰인다.
+m 비트 크기에 k 개의 서로 다른 해시함수를 사용해 구현한다. 해시 함수는 독립적이고 균일하게 분포해야한다.
+O(k) 시간에 새로운 값을 검사할 수 있다. k개 해시 모두 1인 경우 집합에 속하는 값이라 판단한다. 한정된 공간에서 집합이 커질 수록 긍정 오류(속하지 않으나 속한다고 판별)가 커지는 특성이 있지만, 부정 오류(속하는데 속하지 않는다 판별)는 발생하지 않아 1차적인 판별 알고리즘으로 많이 쓰인다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>2PL</title>
       <link>https://chankoo.github.io/posts/2pl/</link>
@@ -1728,7 +1763,7 @@ refs links ASGI gunicorn
       <description>
         
           
-            content range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션(phantom)의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.
+            content range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.
 Serializable을 제외한 격리 수준에서 모두 발생한다. gap lock을 쓰지 않는다면, range select 쿼리의 대상인 rows set 외에는 락이 걸려있지 않으므로, 다른 트랜잭션이 새로운 row를 만들 수 있고, 그 row가 다음번 range select 에 걸릴 수 있는 것이다.
 refs links Isolation Levels 직렬성 
           
@@ -1892,7 +1927,7 @@ refs dis &amp;mdash; 파이썬 바이트 코드 역 어셈블러 — 파이썬 �
         
           
             content Transaction 간 격리 수준. DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation 관점에서 엄격히 제한된 Transaction의 병행성 제약을 완화한다. 이상적으로 Transaction은 엄격히 격리해야 하지만, 실무적으로 걸림돌이 되기에, 격리 수준을 단계적으로 완화하는 Isolation Levels 를 정의하여 상황에 맞게 제공한다.
-Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다. Repetable Reads - 반복해서 읽어도 같은 결과를 보여주는 수준으로, 반복 read 도중 커밋이 발생하여 값이 변해도 커밋 전 값을 읽어간다.
+Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다. Repetable Reads 반복해서 읽어도 같은 결과를 보여주는 수준으로, 반복 read 도중 커밋이 발생하여 값이 변해도 커밋 전 값을 읽어간다.
           
           
         

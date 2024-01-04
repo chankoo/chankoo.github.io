@@ -21,16 +21,16 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="content range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션(phantom)의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.
-Serializable을 제외한 격리 수준에 …" />
+<meta name="description" content="content range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.
+Serializable을 제외한 격리 수준에서 모두 발생한 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="Phantom Reads" />
 <meta name="twitter:image" content="https://chankoo.github.io/"/>
 <meta property="og:url" content="https://chankoo.github.io/posts/phantom-reads/" />
 <meta property="og:title" content="Phantom Reads" />
-<meta property="og:description" content="content range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션(phantom)의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.
-Serializable을 제외한 격리 수준에 …" />
+<meta property="og:description" content="content range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.
+Serializable을 제외한 격리 수준에서 모두 발생한 …" />
 <meta property="og:image" content="https://chankoo.github.io/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chankoo.github.io/icons/apple-touch-icon.png">
@@ -124,7 +124,7 @@ Serializable을 제외한 격리 수준에 …" />
   </div>
 
     <div class="post_body"><h2 id="content">content</h2>
-<p>range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션(phantom)의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.</p>
+<p>range select 하는 쿼리를 반복해서 실행할때, 다른 트랜잭션의 영향으로 결과 셋이 달라지는 현상. 존재하지 않는(phantom) 새로운 행들이 나타나거나, 그렇게 나타난 행들이 사라지는 상태를 의미한다.</p>
 <p>Serializable을 제외한 격리 수준에서 모두 발생한다. gap lock을 쓰지 않는다면, range select 쿼리의 대상인 rows set 외에는 락이 걸려있지 않으므로, 다른 트랜잭션이 새로운 row를 만들 수 있고, 그 row가 다음번 range select 에 걸릴 수 있는 것이다.</p>
 <h2 id="refs">refs</h2>
 <ul>
@@ -216,7 +216,7 @@ Serializable을 제외한 격리 수준에 …" />
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
           자료구조
-          <span class="button_tally">11</span>
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
@@ -241,7 +241,7 @@ Serializable을 제외한 격리 수준에 …" />
         
         <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
           알고리즘
-          <span class="button_tally">2</span>
+          <span class="button_tally">3</span>
         </a>
         
         

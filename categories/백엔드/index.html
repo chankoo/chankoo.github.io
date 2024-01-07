@@ -119,6 +119,76 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트">&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-07</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>작업 다대다 채팅을 실험했다. 같은 채팅방에 있는 유저 N명이 각자 s초 간격으로 메시지를 전송하는 상황을 가정했다.
+목표 100명의 사용자가 1초 간격으로 각자 메시지를 입력할 때, 정상적인 입출력이 가능한 시스템을 구성한다. 커넥션 유지 시간을 10초로 두고 6회의 이터레이션을 돌게함으로써 약 1분간의 부하 테스트를 진행한다.
+살펴봐야할 지표는
+커넥션 유지 - 주어진 시간 동안 100개 커넥션을 문제없이 유지하는지 RPS - 입력 RPS 100(100명 / 1초), 출력 RPS 10000(100명 * 100개 / 1초) …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처">&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>작업 여러명이 참여한 채팅방에서 메시지를 입력하고 출력하는 다대다 채팅을 구현한다. 웹소켓으로 구성한 일반적인 형태의 채팅 서버를 만들고 그 성능을 테스트했다.
+시스템 구성 AWS 기반으로 채팅 서버를 구현했다. 채팅 서버는 AWS ECS Fargate 로 배포했으며 때에 따라 확장한다. 채팅 서버 앞단에 ALB를 두어 웹소켓 트래픽을 로드 밸런싱한다. 채팅 서버의 웹소켓 엔드포인트에서 실시간으로 채팅을 입출력한다. ws://{host}/chats/ws/{channel_id} channel_id 는 채팅방 역할을 한다. 즉, 같은 channel_id 에 접속한 사용자 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
       </h3>
       
@@ -130,9 +200,8 @@
 </span>
     <span class="post_date">
       2023-11-26</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a><a href='https://chankoo.github.io/tags/aws/' title="aws" class="post_tag button button_translucent">aws
         </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
         </a>
     </span>
   </div>
@@ -167,8 +236,7 @@
 </span>
     <span class="post_date">
       2023-11-15</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a><a href='https://chankoo.github.io/tags/aws/' title="aws" class="post_tag button button_translucent">aws
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
         </a>
     </span>
   </div>
@@ -204,8 +272,7 @@
 </span>
     <span class="post_date">
       2023-11-12</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
         </a>
     </span>
   </div>
@@ -240,6 +307,7 @@
 </span>
     <span class="post_date">
       2023-11-11</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
         </a>
     </span>
   </div>
@@ -253,6 +321,40 @@
           
           <br>
           <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EC%9B%B9%EC%86%8C%EC%BC%93-%ED%99%95%EC%9E%A5%EC%84%B1/" title="웹소켓 확장성">웹소켓 확장성</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/web/' title="web" class="post_tag button button_translucent">web
+        </a><a href='https://chankoo.github.io/tags/http/' title="http" class="post_tag button button_translucent">http
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>웹소켓은 stateful 하기에 웹소켓 서버의 확장을 구현하기 까다롭다.
+(다른 경우와 마찬가지로)수직보다는 수평 확장이 대개 낫다. 수직 확장은 1) 비용이 많이 들고(자원 확장의 비선형성, 때에 따라 자원 조절 불가) 2) 단일실패점이 될 위험이 있다. 메시지 공유를 위한 서버 간 채널이 필요하다. 보통 pub/sub 을 통해 각각 다른 서버에 연결된 클라이언트를 동기화한다. 로드 밸런싱 알고리즘에 대한 고려가 필요하다. 웹소켓 부하 분산은 (요청 단위 아니라) 지속적인 커넥션 단위로 동작해야한다. 그렇기에 일반적으로 많이 쓰는 라운드 로빈을 사용하면, 실제 요청 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EC%9B%B9%EC%86%8C%EC%BC%93-%ED%99%95%EC%9E%A5%EC%84%B1/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -422,6 +524,12 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트">&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처">&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
       </li>
       <li>
@@ -432,9 +540,6 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
       </li>
       <li>
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 준비">&lt;시스템 디자인 연습&gt; 준비</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" class="nav-link" title="API Gateway 패턴">API Gateway 패턴</a>
       </li>
     </ul>
     
@@ -448,7 +553,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
         
         <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
           OS
-          <span class="button_tally">18</span>
+          <span class="button_tally">19</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
@@ -458,12 +563,12 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
         
         <a href='https://chankoo.github.io/categories/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="컴퓨터구조">
           컴퓨터구조
-          <span class="button_tally">17</span>
+          <span class="button_tally">18</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
           언어
-          <span class="button_tally">15</span>
+          <span class="button_tally">17</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -471,14 +576,14 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
           <span class="button_tally">12</span>
         </a>
         
+        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
+          백엔드
+          <span class="button_tally">11</span>
+        </a>
+        
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
           <span class="button_tally">10</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
-          백엔드
-          <span class="button_tally">8</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -504,7 +609,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/series/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5/' class="post_tag button button_translucent" title="시스템-디자인-연습">
           시스템-디자인-연습
-          <span class="button_tally">4</span>
+          <span class="button_tally">6</span>
         </a>
         
         
@@ -513,19 +618,19 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
       <nav class="tags_nav">
-        <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
-          동시성
+        <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
+          PYTHON
           <span class="button_tally">20</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
-          PYTHON
+        <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
+          동시성
           <span class="button_tally">19</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
           HTTP
-          <span class="button_tally">13</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
@@ -536,6 +641,11 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">10</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
+          WEB
+          <span class="button_tally">8</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
@@ -553,11 +663,6 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
-          WEB
-          <span class="button_tally">7</span>
-        </a>
-        
         <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
           CPU
           <span class="button_tally">6</span>
@@ -573,6 +678,16 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="부하테스트">
+          부하테스트
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' class="post_tag button button_translucent" title="시스템디자인">
+          시스템디자인
+          <span class="button_tally">6</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/' class="post_tag button button_translucent" title="컴포넌트">
           컴포넌트
           <span class="button_tally">6</span>
@@ -580,11 +695,6 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
         
         <a href='https://chankoo.github.io/tags/cache/' class="post_tag button button_translucent" title="cache">
           CACHE
-          <span class="button_tally">5</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
-          DJANGO
           <span class="button_tally">5</span>
         </a>
         
@@ -598,19 +708,14 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="부하테스트">
-          부하테스트
+        <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="파일시스템">
+          파일시스템
           <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class="post_tag button button_translucent" title="함수형프로그래밍">
           함수형프로그래밍
           <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">3</span>
         </a>
         
         
@@ -623,7 +728,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/aws/' class=" post_tag button button_translucent" data-position=3 title="aws">AWS<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/aws/' class=" post_tag button button_translucent" data-position=1 title="aws">AWS<span class="button_tally">1</span>
             </a>
             
             
@@ -639,7 +744,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=5 title="django">DJANGO<span class="button_tally">5</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=3 title="django">DJANGO<span class="button_tally">3</span>
             </a>
             
             
@@ -647,7 +752,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/http/' class=" post_tag button button_translucent" data-position=13 title="http">HTTP<span class="button_tally">13</span>
+            <a href='https://chankoo.github.io/tags/http/' class=" post_tag button button_translucent" data-position=14 title="http">HTTP<span class="button_tally">14</span>
             </a>
             
             
@@ -679,7 +784,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=19 title="python">PYTHON<span class="button_tally">19</span>
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=20 title="python">PYTHON<span class="button_tally">20</span>
             </a>
             
             
@@ -703,7 +808,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=7 title="web">WEB<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=8 title="web">WEB<span class="button_tally">8</span>
             </a>
             
             
@@ -715,7 +820,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=19 title="동시성">동시성<span class="button_tally">19</span>
             </a>
             
             
@@ -723,7 +828,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class=" post_tag button button_translucent" data-position=4 title="부하테스트">부하테스트<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class=" post_tag button button_translucent" data-position=6 title="부하테스트">부하테스트<span class="button_tally">6</span>
             </a>
             
             
@@ -732,6 +837,10 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
             
             
             <a href='https://chankoo.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80/' class=" post_tag button button_translucent" data-position=3 title="브라우저">브라우저<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' class=" post_tag button button_translucent" data-position=6 title="시스템디자인">시스템디자인<span class="button_tally">6</span>
             </a>
             
             
@@ -747,7 +856,7 @@ sync 병렬로 동작하는 N개 프로세스를 fork한다. I/O로 인한 블�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=3 title="파일시스템">파일시스템<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=4 title="파일시스템">파일시스템<span class="button_tally">4</span>
             </a>
             
             

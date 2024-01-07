@@ -125,6 +125,76 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트">&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-07</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>작업 다대다 채팅을 실험했다. 같은 채팅방에 있는 유저 N명이 각자 s초 간격으로 메시지를 전송하는 상황을 가정했다.
+목표 100명의 사용자가 1초 간격으로 각자 메시지를 입력할 때, 정상적인 입출력이 가능한 시스템을 구성한다. 커넥션 유지 시간을 10초로 두고 6회의 이터레이션을 돌게함으로써 약 1분간의 부하 테스트를 진행한다.
+살펴봐야할 지표는
+커넥션 유지 - 주어진 시간 동안 100개 커넥션을 문제없이 유지하는지 RPS - 입력 RPS 100(100명 / 1초), 출력 RPS 10000(100명 * 100개 / 1초) …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처">&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>작업 여러명이 참여한 채팅방에서 메시지를 입력하고 출력하는 다대다 채팅을 구현한다. 웹소켓으로 구성한 일반적인 형태의 채팅 서버를 만들고 그 성능을 테스트했다.
+시스템 구성 AWS 기반으로 채팅 서버를 구현했다. 채팅 서버는 AWS ECS Fargate 로 배포했으며 때에 따라 확장한다. 채팅 서버 앞단에 ALB를 두어 웹소켓 트래픽을 로드 밸런싱한다. 채팅 서버의 웹소켓 엔드포인트에서 실시간으로 채팅을 입출력한다. ws://{host}/chats/ws/{channel_id} channel_id 는 채팅방 역할을 한다. 즉, 같은 channel_id 에 접속한 사용자 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
       </h3>
       
@@ -136,9 +206,8 @@
 </span>
     <span class="post_date">
       2023-11-26</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a><a href='https://chankoo.github.io/tags/aws/' title="aws" class="post_tag button button_translucent">aws
         </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
         </a>
     </span>
   </div>
@@ -173,8 +242,7 @@
 </span>
     <span class="post_date">
       2023-11-15</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a><a href='https://chankoo.github.io/tags/aws/' title="aws" class="post_tag button button_translucent">aws
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
         </a>
     </span>
   </div>
@@ -210,8 +278,7 @@
 </span>
     <span class="post_date">
       2023-11-12</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
         </a>
     </span>
   </div>
@@ -246,6 +313,7 @@
 </span>
     <span class="post_date">
       2023-11-11</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
         </a>
     </span>
   </div>
@@ -268,7 +336,7 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" title="API Gateway 패턴">API Gateway 패턴</a>
+        <a href="https://chankoo.github.io/posts/%EC%9B%B9%EC%86%8C%EC%BC%93-%ED%99%95%EC%9E%A5%EC%84%B1/" title="웹소켓 확장성">웹소켓 확장성</a>
       </h3>
       
   <div class="post_meta">
@@ -278,8 +346,8 @@
 </svg>
 </span>
     <span class="post_date">
-      2023-05-18</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/api/' title="api" class="post_tag button button_translucent">api
+      2024-01-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/web/' title="web" class="post_tag button button_translucent">web
+        </a><a href='https://chankoo.github.io/tags/http/' title="http" class="post_tag button button_translucent">http
         </a>
     </span>
   </div>
@@ -288,10 +356,11 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스) …</p>
+            <p>웹소켓은 stateful 하기에 웹소켓 서버의 확장을 구현하기 까다롭다.
+(다른 경우와 마찬가지로)수직보다는 수평 확장이 대개 낫다. 수직 확장은 1) 비용이 많이 들고(자원 확장의 비선형성, 때에 따라 자원 조절 불가) 2) 단일실패점이 될 위험이 있다. 메시지 공유를 위한 서버 간 채널이 필요하다. 보통 pub/sub 을 통해 각각 다른 서버에 연결된 클라이언트를 동기화한다. 로드 밸런싱 알고리즘에 대한 고려가 필요하다. 웹소켓 부하 분산은 (요청 단위 아니라) 지속적인 커넥션 단위로 동작해야한다. 그렇기에 일반적으로 많이 쓰는 라운드 로빈을 사용하면, 실제 요청 …</p>
           
           <br>
-          <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
+          <a href="https://chankoo.github.io/posts/%EC%9B%B9%EC%86%8C%EC%BC%93-%ED%99%95%EC%9E%A5%EC%84%B1/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -355,6 +424,38 @@ O(k) 시간에 새로운 값을 검사할 수 있다. k개 해시 모두 1인 �
           
           <br>
           <a href="https://chankoo.github.io/posts/%EB%B8%94%EB%A3%B8-%ED%95%84%ED%84%B0/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/2%EC%9D%98-%EB%B3%B4%EC%88%98/" title="2의 보수">2의 보수</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-12-27</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>컴퓨터에 음수를 저장하기 위한 일반적인 방법으로, 특정 값의 2의 보수를 그 값의 음수 표현으로 여긴다. 특정 2진수 n에 대해, n보다 한자리 큰 2의 제곱수에서 n을 빼서 구한다.
+“n의 2의 보수는 00이다” 와 같이 표현한다. 최상위 비트(MSB)를 부호 비트로 쓰는 상황(0일 때 양수 1일 때 음수를 표현)을 전제한다. 십진수 7을 예로 들면, 4비트 이진수로 표현하면 0111 이고, 0111의 2의 보수는 1001인데, 1001을 -7에 대한 표현으로 저장하는 것이다.
+1의 보수로 2의 보수 구하는 법</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/2%EC%9D%98-%EB%B3%B4%EC%88%98/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -1634,6 +1735,39 @@ refs 실무자를 위한 서비스 메시 - 지금 서비스 메시가 의미 �
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" title="API Gateway 패턴">API Gateway 패턴</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-05-18</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
+        </a><a href='https://chankoo.github.io/tags/api/' title="api" class="post_tag button button_translucent">api
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스) …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/websocket/" title="WebSocket">WebSocket</a>
       </h3>
       
@@ -1664,144 +1798,6 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/sse/" title="SSE">SSE</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-03-30</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/web/' title="web" class="post_tag button button_translucent">web
-        </a><a href='https://chankoo.github.io/tags/http/' title="http" class="post_tag button button_translucent">http
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content Server-Sent Events. HTML5 의 기능으로, 한번의 요청에 서버가 여러 이벤트(청크) 전송을 제공하는 프로토콜. http 위에서 동작하는 별도 텍스트 프로토콜이다(text/event-stream).
-refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/sse/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC/" title="디렉토리">디렉토리</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-01-10</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' title="기억장치" class="post_tag button button_translucent">기억장치
-        </a><a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="파일시스템" class="post_tag button button_translucent">파일시스템
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content 파일 시스템에서 파일 관리를 위해 파일의 위치, 크기, 소유자 등의 정보를 갖고있는 특수한 형태의 파일.
-refs links 파일 시스템</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/cqrs/" title="CQRS">CQRS</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-12-12</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content Command와 Query를 다른 것으로 보고 명시적으로 분리하는 패턴. OOP 관점에서 Command를 담당하는 객체와, Query를 담당하는 객체의 책임을 분리하는 것으로 이해하면된다.
-MSA, DDD, 이벤트 소싱 등 다른 기술과 함께 활용되며 다양하게 구현한다.
-특히 마이크로 서비스로 분리한 아키텍처에서는 Query가 어려운데, 여러 서비스에 흩어진 데이터를 조회하는 비용이 크기 때문이다. 그래서 Query 효율을 높이는 관점에서 CQRS를 많이 활용한다.
-refs 마이크로서비스 패턴 links</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/cqrs/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/2pc/" title="2PC">2PC</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-12-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>2단계 커밋(Two Phase Commit) 으로 분산 트랜잭션 환경에서 트랜잭션을 구현하는 방법이다. 트랜잭션의 커밋을 준비와 실제 동작의 2단계로 나누어, 분산 환경에서 커밋 준비가 완료되면 비로소 실제 커밋을 하는 방식이다.
-2PC 에서 원자성은 2개의 되돌릴 수 없는 포인트에 의해 결정되는데, 1) 참여자가 준비 단계에서 커밋 가능하다고 답변하는 시점과 2) 코디네이터(리소스 매니저)가 커밋하는 시점이다. 1)과 2) 가 만족되면 참여자의 커밋이 어떤 사유로 실패하든, 반복적으로 커밋을 시도한다.
-트랜잭션에 관여하는 모든 서비스가 정상 동작해야하는 가용성 이슈 …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/2pc/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -1820,10 +1816,13 @@ refs 마이크로서비스 패턴 links</p>
         <a href="/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
       </li>
       <li class="page-item">
+        <a href="/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
+      </li>
+      <li class="page-item">
         <a href="/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/4/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
       </li>
@@ -1852,6 +1851,12 @@ refs 마이크로서비스 패턴 links</p>
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트">&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처">&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
       </li>
       <li>
@@ -1862,9 +1867,6 @@ refs 마이크로서비스 패턴 links</p>
       </li>
       <li>
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 준비">&lt;시스템 디자인 연습&gt; 준비</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" class="nav-link" title="API Gateway 패턴">API Gateway 패턴</a>
       </li>
     </ul>
     
@@ -1878,7 +1880,7 @@ refs 마이크로서비스 패턴 links</p>
         
         <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
           OS
-          <span class="button_tally">18</span>
+          <span class="button_tally">19</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
@@ -1888,12 +1890,12 @@ refs 마이크로서비스 패턴 links</p>
         
         <a href='https://chankoo.github.io/categories/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="컴퓨터구조">
           컴퓨터구조
-          <span class="button_tally">17</span>
+          <span class="button_tally">18</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
           언어
-          <span class="button_tally">15</span>
+          <span class="button_tally">17</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -1901,14 +1903,14 @@ refs 마이크로서비스 패턴 links</p>
           <span class="button_tally">12</span>
         </a>
         
+        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
+          백엔드
+          <span class="button_tally">11</span>
+        </a>
+        
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
           <span class="button_tally">10</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
-          백엔드
-          <span class="button_tally">8</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -1934,7 +1936,7 @@ refs 마이크로서비스 패턴 links</p>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/series/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5/' class="post_tag button button_translucent" title="시스템-디자인-연습">
           시스템-디자인-연습
-          <span class="button_tally">4</span>
+          <span class="button_tally">6</span>
         </a>
         
         
@@ -1943,19 +1945,19 @@ refs 마이크로서비스 패턴 links</p>
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
       <nav class="tags_nav">
-        <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
-          동시성
+        <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
+          PYTHON
           <span class="button_tally">20</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
-          PYTHON
+        <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
+          동시성
           <span class="button_tally">19</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
           HTTP
-          <span class="button_tally">13</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
@@ -1966,6 +1968,11 @@ refs 마이크로서비스 패턴 links</p>
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">10</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
+          WEB
+          <span class="button_tally">8</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
@@ -1983,11 +1990,6 @@ refs 마이크로서비스 패턴 links</p>
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
-          WEB
-          <span class="button_tally">7</span>
-        </a>
-        
         <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
           CPU
           <span class="button_tally">6</span>
@@ -2003,6 +2005,16 @@ refs 마이크로서비스 패턴 links</p>
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="부하테스트">
+          부하테스트
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' class="post_tag button button_translucent" title="시스템디자인">
+          시스템디자인
+          <span class="button_tally">6</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/' class="post_tag button button_translucent" title="컴포넌트">
           컴포넌트
           <span class="button_tally">6</span>
@@ -2010,11 +2022,6 @@ refs 마이크로서비스 패턴 links</p>
         
         <a href='https://chankoo.github.io/tags/cache/' class="post_tag button button_translucent" title="cache">
           CACHE
-          <span class="button_tally">5</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
-          DJANGO
           <span class="button_tally">5</span>
         </a>
         
@@ -2028,19 +2035,14 @@ refs 마이크로서비스 패턴 links</p>
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="부하테스트">
-          부하테스트
+        <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="파일시스템">
+          파일시스템
           <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class="post_tag button button_translucent" title="함수형프로그래밍">
           함수형프로그래밍
           <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">3</span>
         </a>
         
         
@@ -2053,7 +2055,7 @@ refs 마이크로서비스 패턴 links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/aws/' class=" post_tag button button_translucent" data-position=3 title="aws">AWS<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/aws/' class=" post_tag button button_translucent" data-position=1 title="aws">AWS<span class="button_tally">1</span>
             </a>
             
             
@@ -2069,7 +2071,7 @@ refs 마이크로서비스 패턴 links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=5 title="django">DJANGO<span class="button_tally">5</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=3 title="django">DJANGO<span class="button_tally">3</span>
             </a>
             
             
@@ -2077,7 +2079,7 @@ refs 마이크로서비스 패턴 links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/http/' class=" post_tag button button_translucent" data-position=13 title="http">HTTP<span class="button_tally">13</span>
+            <a href='https://chankoo.github.io/tags/http/' class=" post_tag button button_translucent" data-position=14 title="http">HTTP<span class="button_tally">14</span>
             </a>
             
             
@@ -2109,7 +2111,7 @@ refs 마이크로서비스 패턴 links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=19 title="python">PYTHON<span class="button_tally">19</span>
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=20 title="python">PYTHON<span class="button_tally">20</span>
             </a>
             
             
@@ -2133,7 +2135,7 @@ refs 마이크로서비스 패턴 links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=7 title="web">WEB<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=8 title="web">WEB<span class="button_tally">8</span>
             </a>
             
             
@@ -2145,7 +2147,7 @@ refs 마이크로서비스 패턴 links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=19 title="동시성">동시성<span class="button_tally">19</span>
             </a>
             
             
@@ -2153,7 +2155,7 @@ refs 마이크로서비스 패턴 links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class=" post_tag button button_translucent" data-position=4 title="부하테스트">부하테스트<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class=" post_tag button button_translucent" data-position=6 title="부하테스트">부하테스트<span class="button_tally">6</span>
             </a>
             
             
@@ -2162,6 +2164,10 @@ refs 마이크로서비스 패턴 links</p>
             
             
             <a href='https://chankoo.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80/' class=" post_tag button button_translucent" data-position=3 title="브라우저">브라우저<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' class=" post_tag button button_translucent" data-position=6 title="시스템디자인">시스템디자인<span class="button_tally">6</span>
             </a>
             
             
@@ -2177,7 +2183,7 @@ refs 마이크로서비스 패턴 links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=3 title="파일시스템">파일시스템<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=4 title="파일시스템">파일시스템<span class="button_tally">4</span>
             </a>
             
             

@@ -7,7 +7,7 @@
   
   >
   <head>
-<title>aws | chankoo</title>
+<title>AWS | chankoo</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,10 +22,10 @@
 <meta name="description" content="" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="aws" />
+<meta name="twitter:title" content="AWS" />
 <meta name="twitter:image" content="https://chankoo.github.io/"/>
 <meta property="og:url" content="https://chankoo.github.io/tags/aws/" />
-<meta property="og:title" content="aws" />
+<meta property="og:title" content="AWS" />
 <meta property="og:description" content="" />
 <meta property="og:image" content="https://chankoo.github.io/" />
 
@@ -119,80 +119,6 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-26</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a><a href='https://chankoo.github.io/tags/aws/' title="aws" class="post_tag button button_translucent">aws
-        </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>작업 이번에는 피드 서비스에서 주된 이슈인 Fanout 시나리오를 실험했다. 유저가 게시글을 작성하면 해당 글을 500명의 친구 피드로 전송하는 것이다. 이는 한 유저 당 501개의 create 요청을 발생시키는 고부하 작업이다.
-목표 500 RPS(약 250,000 QPS) 를 견디는 시스템을 만든다. 가상 사용자(VU) 500명을 설정하고, 1초 간격으로 3분 동안 요청을 지속했다.
-결과 요약 DB의 옵션을 이해하고 우선적으로 DB 성능을 튜닝하는 것이 중요하다. 그래도 DB가 병목일 땐 캐시와 비동기 작업을 적극적으로 활용하자. 환경 AWS</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/" title="&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계">&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-15</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a><a href='https://chankoo.github.io/tags/aws/' title="aws" class="post_tag button button_translucent">aws
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>작업 두번째 실험에서는 AWS ECS Fargate 를 이용해 페이지 조회 작업을 스케일 아웃했다. 첫번째 실험과 같은 조건인데, 100개의 짧은 글(post)이 로드된 페이지를 읽는 작업이다.
-목표 1000 RPS를 견디는 환경을 만든다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 3분 동안 요청을 지속했다.
-결과 요약 물리적 네트워크 대역폭이 병목인 상황을 확인하고 테스트 환경까지 클라우드에 구축했다. 위 목표를 달성하기 위해 Fargate 기준 vCPU 8개(1024 * 8)가 필요하다는 것을 확인했다. 환경 AWS
-서버: Django …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/ebs/" title="EBS">EBS</a>
       </h3>
       
@@ -250,6 +176,12 @@ refs links 블록 디바이스 볼륨</p>
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트">&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처">&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
       </li>
       <li>
@@ -260,9 +192,6 @@ refs links 블록 디바이스 볼륨</p>
       </li>
       <li>
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 준비">&lt;시스템 디자인 연습&gt; 준비</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" class="nav-link" title="API Gateway 패턴">API Gateway 패턴</a>
       </li>
     </ul>
     
@@ -276,7 +205,7 @@ refs links 블록 디바이스 볼륨</p>
         
         <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
           OS
-          <span class="button_tally">18</span>
+          <span class="button_tally">19</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
@@ -286,12 +215,12 @@ refs links 블록 디바이스 볼륨</p>
         
         <a href='https://chankoo.github.io/categories/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="컴퓨터구조">
           컴퓨터구조
-          <span class="button_tally">17</span>
+          <span class="button_tally">18</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
           언어
-          <span class="button_tally">15</span>
+          <span class="button_tally">17</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -299,14 +228,14 @@ refs links 블록 디바이스 볼륨</p>
           <span class="button_tally">12</span>
         </a>
         
+        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
+          백엔드
+          <span class="button_tally">11</span>
+        </a>
+        
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
           <span class="button_tally">10</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
-          백엔드
-          <span class="button_tally">8</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -332,7 +261,7 @@ refs links 블록 디바이스 볼륨</p>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/series/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5/' class="post_tag button button_translucent" title="시스템-디자인-연습">
           시스템-디자인-연습
-          <span class="button_tally">4</span>
+          <span class="button_tally">6</span>
         </a>
         
         
@@ -341,19 +270,19 @@ refs links 블록 디바이스 볼륨</p>
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
       <nav class="tags_nav">
-        <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
-          동시성
+        <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
+          PYTHON
           <span class="button_tally">20</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
-          PYTHON
+        <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
+          동시성
           <span class="button_tally">19</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
           HTTP
-          <span class="button_tally">13</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
@@ -364,6 +293,11 @@ refs links 블록 디바이스 볼륨</p>
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">10</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
+          WEB
+          <span class="button_tally">8</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
@@ -381,11 +315,6 @@ refs links 블록 디바이스 볼륨</p>
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
-          WEB
-          <span class="button_tally">7</span>
-        </a>
-        
         <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
           CPU
           <span class="button_tally">6</span>
@@ -401,6 +330,16 @@ refs links 블록 디바이스 볼륨</p>
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="부하테스트">
+          부하테스트
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' class="post_tag button button_translucent" title="시스템디자인">
+          시스템디자인
+          <span class="button_tally">6</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/' class="post_tag button button_translucent" title="컴포넌트">
           컴포넌트
           <span class="button_tally">6</span>
@@ -408,11 +347,6 @@ refs links 블록 디바이스 볼륨</p>
         
         <a href='https://chankoo.github.io/tags/cache/' class="post_tag button button_translucent" title="cache">
           CACHE
-          <span class="button_tally">5</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
-          DJANGO
           <span class="button_tally">5</span>
         </a>
         
@@ -426,19 +360,14 @@ refs links 블록 디바이스 볼륨</p>
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="부하테스트">
-          부하테스트
+        <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="파일시스템">
+          파일시스템
           <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class="post_tag button button_translucent" title="함수형프로그래밍">
           함수형프로그래밍
           <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">3</span>
         </a>
         
         
@@ -451,7 +380,7 @@ refs links 블록 디바이스 볼륨</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/aws/' class=" post_tag button button_translucent" data-position=3 title="aws">AWS<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/aws/' class=" post_tag button button_translucent" data-position=1 title="aws">AWS<span class="button_tally">1</span>
             </a>
             
             
@@ -467,7 +396,7 @@ refs links 블록 디바이스 볼륨</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=5 title="django">DJANGO<span class="button_tally">5</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=3 title="django">DJANGO<span class="button_tally">3</span>
             </a>
             
             
@@ -475,7 +404,7 @@ refs links 블록 디바이스 볼륨</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/http/' class=" post_tag button button_translucent" data-position=13 title="http">HTTP<span class="button_tally">13</span>
+            <a href='https://chankoo.github.io/tags/http/' class=" post_tag button button_translucent" data-position=14 title="http">HTTP<span class="button_tally">14</span>
             </a>
             
             
@@ -507,7 +436,7 @@ refs links 블록 디바이스 볼륨</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=19 title="python">PYTHON<span class="button_tally">19</span>
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=20 title="python">PYTHON<span class="button_tally">20</span>
             </a>
             
             
@@ -531,7 +460,7 @@ refs links 블록 디바이스 볼륨</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=7 title="web">WEB<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=8 title="web">WEB<span class="button_tally">8</span>
             </a>
             
             
@@ -543,7 +472,7 @@ refs links 블록 디바이스 볼륨</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=19 title="동시성">동시성<span class="button_tally">19</span>
             </a>
             
             
@@ -551,7 +480,7 @@ refs links 블록 디바이스 볼륨</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class=" post_tag button button_translucent" data-position=4 title="부하테스트">부하테스트<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' class=" post_tag button button_translucent" data-position=6 title="부하테스트">부하테스트<span class="button_tally">6</span>
             </a>
             
             
@@ -560,6 +489,10 @@ refs links 블록 디바이스 볼륨</p>
             
             
             <a href='https://chankoo.github.io/tags/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80/' class=" post_tag button button_translucent" data-position=3 title="브라우저">브라우저<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' class=" post_tag button button_translucent" data-position=6 title="시스템디자인">시스템디자인<span class="button_tally">6</span>
             </a>
             
             
@@ -575,7 +508,7 @@ refs links 블록 디바이스 볼륨</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=3 title="파일시스템">파일시스템<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=4 title="파일시스템">파일시스템<span class="button_tally">4</span>
             </a>
             
             

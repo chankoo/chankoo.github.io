@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>시스템디자인 on chankoo</title>
+    <link>https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/</link>
+    <description>Recent content in 시스템디자인 on chankoo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Jan 2024 12:11:10 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Sun, 07 Jan 2024 12:11:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description>
+        
+          
+            작업 다대다 채팅을 실험했다. 같은 채팅방에 있는 유저 N명이 각자 s초 간격으로 메시지를 전송하는 상황을 가정했다.
+목표 100명의 사용자가 1초 간격으로 각자 메시지를 입력할 때, 정상적인 입출력이 가능한 시스템을 구성한다. 커넥션 유지 시간을 10초로 두고 6회의 이터레이션을 돌게함으로써 약 1분간의 부하 테스트를 진행한다.
+살펴봐야할 지표는
+커넥션 유지 - 주어진 시간 동안 100개 커넥션을 문제없이 유지하는지 RPS - 입력 RPS 100(100명 / 1초), 출력 RPS 10000(100명 * 100개 / 1초) 부하가 가능한지 결과 요약 커넥션을 유지하는 데에는 큰 부하가 없었다 사용자 수 제곱에 비례하는 출력수 때문에 부하가 크다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link>
+      <pubDate>Sat, 06 Jan 2024 12:11:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid>
+      <description>
+        
+          
+            작업 여러명이 참여한 채팅방에서 메시지를 입력하고 출력하는 다대다 채팅을 구현한다. 웹소켓으로 구성한 일반적인 형태의 채팅 서버를 만들고 그 성능을 테스트했다.
+시스템 구성 AWS 기반으로 채팅 서버를 구현했다. 채팅 서버는 AWS ECS Fargate 로 배포했으며 때에 따라 확장한다. 채팅 서버 앞단에 ALB를 두어 웹소켓 트래픽을 로드 밸런싱한다. 채팅 서버의 웹소켓 엔드포인트에서 실시간으로 채팅을 입출력한다. ws://{host}/chats/ws/{channel_id} channel_id 는 채팅방 역할을 한다. 즉, 같은 channel_id 에 접속한 사용자는 메시지 입출력을 공유하는 다대다 채팅에 참여한다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/</link>
+      <pubDate>Sun, 26 Nov 2023 13:54:34 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/</guid>
+      <description>
+        
+          
+            작업 이번에는 피드 서비스에서 주된 이슈인 Fanout 시나리오를 실험했다. 유저가 게시글을 작성하면 해당 글을 500명의 친구 피드로 전송하는 것이다. 이는 한 유저 당 501개의 create 요청을 발생시키는 고부하 작업이다.
+목표 500 RPS(약 250,000 QPS) 를 견디는 시스템을 만든다. 가상 사용자(VU) 500명을 설정하고, 1초 간격으로 3분 동안 요청을 지속했다.
+결과 요약 DB의 옵션을 이해하고 우선적으로 DB 성능을 튜닝하는 것이 중요하다. 그래도 DB가 병목일 땐 캐시와 비동기 작업을 적극적으로 활용하자. 환경 AWS
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/</link>
+      <pubDate>Wed, 15 Nov 2023 15:21:15 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/</guid>
+      <description>
+        
+          
+            작업 두번째 실험에서는 AWS ECS Fargate 를 이용해 페이지 조회 작업을 스케일 아웃했다. 첫번째 실험과 같은 조건인데, 100개의 짧은 글(post)이 로드된 페이지를 읽는 작업이다.
+목표 1000 RPS를 견디는 환경을 만든다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 3분 동안 요청을 지속했다.
+결과 요약 물리적 네트워크 대역폭이 병목인 상황을 확인하고 테스트 환경까지 클라우드에 구축했다. 위 목표를 달성하기 위해 Fargate 기준 vCPU 8개(1024 * 8)가 필요하다는 것을 확인했다. 환경 AWS
+서버: Django + gunicorn
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/</link>
+      <pubDate>Sun, 12 Nov 2023 21:11:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/</guid>
+      <description>
+        
+          
+            작업 첫번째 실험은 가장 기본적인 페이지 조회이다. 로컬 환경에서 Django와 gunicorn 조합으로 어느 정도의 조회 트래픽을 감당하는지 파악하는 것이었다. 크게 두가지 작업을 진행했는데, 하나는 빈 페이지를 읽는, 다른 하나는 100자 분량의 짧은 글(post) 100개가 로드된 페이지를 읽는 작업이다.
+목표 목표는 로컬 환경에서 1000 RPS(초당 요청 수)를 견딜 수 있는지 확인하는 것이다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 5분 동안 요청을 지속했다.
+결과 요약 gevent 워커 사용: gunicorn gevent 워커를 사용했을 때 조회 성능이 안정적이었다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 준비</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/</link>
+      <pubDate>Sat, 11 Nov 2023 21:39:59 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/</guid>
+      <description>
+        
+          
+            배경 &amp;lsquo;대용량 트래픽&amp;rsquo; 또는 &amp;lsquo;분산 시스템&amp;rsquo;과 같은 용어를 채용공고에서 접하는 것이 일반적인 경험이 된 지 오래다. 대규모 서비스를 운영하는 아키텍처 대부분이 분산 시스템을 기반으로 하고 있기에, 이를 이해하고 경험해봐야겠다는 생각을 한 지도 오래되었다.
+그러나 대규모 분산 시스템을 실제로 경험하는 것은 쉬운 일이 아니다. 시니어 개발자들은 시스템 디자인 인터뷰 자리에서 복잡한 아키텍처를 뚝딱 그려낸다던데, 언제 그런 수준으로 성장할 수 있을지 의문이 들었다. &amp;ldquo;가상 면접 사례로 배우는 대규모 시스템 설계 기초&amp;quot;와 같은 훌륭한 책을 읽으며 이론적 지식을 쌓는 것은 유익했지만, 내 업무에 그러한 지식을 적용할 기회는 많지 않았다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

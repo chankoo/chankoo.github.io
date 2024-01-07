@@ -6,7 +6,43 @@
     <description>Recent content in Pages on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Nov 2023 13:54:34 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jan 2024 12:11:10 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Sun, 07 Jan 2024 12:11:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description>
+        
+          
+            작업 다대다 채팅을 실험했다. 같은 채팅방에 있는 유저 N명이 각자 s초 간격으로 메시지를 전송하는 상황을 가정했다.
+목표 100명의 사용자가 1초 간격으로 각자 메시지를 입력할 때, 정상적인 입출력이 가능한 시스템을 구성한다. 커넥션 유지 시간을 10초로 두고 6회의 이터레이션을 돌게함으로써 약 1분간의 부하 테스트를 진행한다.
+살펴봐야할 지표는
+커넥션 유지 - 주어진 시간 동안 100개 커넥션을 문제없이 유지하는지 RPS - 입력 RPS 100(100명 / 1초), 출력 RPS 10000(100명 * 100개 / 1초) 부하가 가능한지 결과 요약 커넥션을 유지하는 데에는 큰 부하가 없었다 사용자 수 제곱에 비례하는 출력수 때문에 부하가 크다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</title>
+      <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link>
+      <pubDate>Sat, 06 Jan 2024 12:11:10 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid>
+      <description>
+        
+          
+            작업 여러명이 참여한 채팅방에서 메시지를 입력하고 출력하는 다대다 채팅을 구현한다. 웹소켓으로 구성한 일반적인 형태의 채팅 서버를 만들고 그 성능을 테스트했다.
+시스템 구성 AWS 기반으로 채팅 서버를 구현했다. 채팅 서버는 AWS ECS Fargate 로 배포했으며 때에 따라 확장한다. 채팅 서버 앞단에 ALB를 두어 웹소켓 트래픽을 로드 밸런싱한다. 채팅 서버의 웹소켓 엔드포인트에서 실시간으로 채팅을 입출력한다. ws://{host}/chats/ws/{channel_id} channel_id 는 채팅방 역할을 한다. 즉, 같은 channel_id 에 접속한 사용자는 메시지 입출력을 공유하는 다대다 채팅에 참여한다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</title>
       <link>https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/</link>

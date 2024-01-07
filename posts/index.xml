@@ -6,7 +6,24 @@
     <description>Recent content in Posts on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Jan 2024 19:13:01 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jan 2024 16:19:35 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>웹소켓 확장성</title>
+      <link>https://chankoo.github.io/posts/%EC%9B%B9%EC%86%8C%EC%BC%93-%ED%99%95%EC%9E%A5%EC%84%B1/</link>
+      <pubDate>Sat, 06 Jan 2024 16:19:35 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%9B%B9%EC%86%8C%EC%BC%93-%ED%99%95%EC%9E%A5%EC%84%B1/</guid>
+      <description>
+        
+          
+            웹소켓은 stateful 하기에 웹소켓 서버의 확장을 구현하기 까다롭다.
+(다른 경우와 마찬가지로)수직보다는 수평 확장이 대개 낫다. 수직 확장은 1) 비용이 많이 들고(자원 확장의 비선형성, 때에 따라 자원 조절 불가) 2) 단일실패점이 될 위험이 있다. 메시지 공유를 위한 서버 간 채널이 필요하다. 보통 pub/sub 을 통해 각각 다른 서버에 연결된 클라이언트를 동기화한다. 로드 밸런싱 알고리즘에 대한 고려가 필요하다. 웹소켓 부하 분산은 (요청 단위 아니라) 지속적인 커넥션 단위로 동작해야한다. 그렇기에 일반적으로 많이 쓰는 라운드 로빈을 사용하면, 실제 요청량에 따라 부하 분산에 실패할 수 있다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>위상 정렬</title>
       <link>https://chankoo.github.io/posts/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC/</link>
@@ -36,6 +53,24 @@
             집합의 모든 값을 비트 배열에 저장한 자료형으로 특정 값이 집합에 속하는지 검사하는 용도로 쓰인다.
 m 비트 크기에 k 개의 서로 다른 해시함수를 사용해 구현한다. 해시 함수는 독립적이고 균일하게 분포해야한다.
 O(k) 시간에 새로운 값을 검사할 수 있다. k개 해시 모두 1인 경우 집합에 속하는 값이라 판단한다. 한정된 공간에서 집합이 커질 수록 긍정 오류(속하지 않으나 속한다고 판별)가 커지는 특성이 있지만, 부정 오류(속하는데 속하지 않는다 판별)는 발생하지 않아 1차적인 판별 알고리즘으로 많이 쓰인다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>2의 보수</title>
+      <link>https://chankoo.github.io/posts/2%EC%9D%98-%EB%B3%B4%EC%88%98/</link>
+      <pubDate>Wed, 27 Dec 2023 13:30:59 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/2%EC%9D%98-%EB%B3%B4%EC%88%98/</guid>
+      <description>
+        
+          
+            컴퓨터에 음수를 저장하기 위한 일반적인 방법으로, 특정 값의 2의 보수를 그 값의 음수 표현으로 여긴다. 특정 2진수 n에 대해, n보다 한자리 큰 2의 제곱수에서 n을 빼서 구한다.
+&amp;ldquo;n의 2의 보수는 00이다&amp;rdquo; 와 같이 표현한다. 최상위 비트(MSB)를 부호 비트로 쓰는 상황(0일 때 양수 1일 때 음수를 표현)을 전제한다. 십진수 7을 예로 들면, 4비트 이진수로 표현하면 0111 이고, 0111의 2의 보수는 1001인데, 1001을 -7에 대한 표현으로 저장하는 것이다.
+1의 보수로 2의 보수 구하는 법
           
           
         
@@ -1344,6 +1379,61 @@ refs GoF의 디자인 패턴 links 캡슐화
           
             content 싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
 (gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요?
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>파일 디스크립터</title>
+      <link>https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0/</link>
+      <pubDate>Thu, 20 Oct 2022 23:57:44 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0/</guid>
+      <description>
+        
+          
+            content 유닉스 기반 OS에서 프로세스가 내부적으로 저장한 파일의 추상표현으로, 음이 아닌 정수이다.
+프로세스가 파일을 열면 OS는 해당 프로세스의 파일 디스크립터 중 가장 작은 값을 할당해준다. 다음부터 프로세스가 파일에 접근할 때는 파일 디스크립터 값을 인덱스로 사용한다. 해당 FD로 파일 테이블 포인터를 찾은 뒤, 시스템 파일을 참조한다.
+0 ~ 2는 예약된 자리로 각각 표준 입력, 표준 출력, 표준 에러 출력을 의미한다.
+refs 파일 디스크립터(File Descriptor)란? links 파일 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>파이썬 디스크립터</title>
+      <link>https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0/</link>
+      <pubDate>Thu, 20 Oct 2022 21:18:18 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0/</guid>
+      <description>
+        
+          
+            매직 메서드 get, set, delete 중 하나 이상을 정의한 객체를 의미하며, 클래스 변수에 저장한 객체(디스크립터 객체)의 어트리뷰트를 제어하는 기능을 한다. 즉, 디스크립터를 이용하면 객체 어트리뷰트의 lookup, storage, and deletion을 커스터마이징할 수 있다.
+보통 인스턴스 데이터에 대한 접근을 관리하는 용도로 쓰인다. ex) django.models.fields.FileField 의 FileDescriptor -&amp;gt; FileField를 가져올때 항상 FieldFile을 내놓도록 제어
+refs [Chapter .06] 디스크립터로 더 멋진 객체 만들기 - 파이썬 틀린코드 (Feat. 파이썬 클린코드) [Python] 디스크립터(Descriptor) links FileField 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>FileField</title>
+      <link>https://chankoo.github.io/posts/filefield/</link>
+      <pubDate>Thu, 20 Oct 2022 19:25:34 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/filefield/</guid>
+      <description>
+        
+          
+            업로드한 파일을 위한 Django Field 객체로 DB 테이블의 컬럼을 추상화했다. 파일을 추상화한 FieldFile 객체의 wrapper이다. 생성을 위해 파일 시스템을 추상화한 Storage 의 구현체와 path로 지정할 문자열(upload_to)가 필요하다.
+FileField 를 get 하면 항상 FieldFile 객체를 가져오는데, 이는 파이썬의 디스크립터를 이용하여 기능한다. FileField에 descriptor_class로 FileDescriptor 객체가 선언되어있어서, FileField 를 가져올때 Dynamic lookup 을 통해 FieldFile을 내어놓는 것이다.
+refs Model field reference | Django documentation | Django links 파일 시스템 파이썬 디스크립터 
           
           
         

@@ -138,7 +138,7 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content OS가 CPU를 프로세스에게 할당하는 정책이다.
+            <p>OS가 CPU를 프로세스에게 할당하는 정책이다.
 선점형 vs 비선점형(협력적) 자원을 점유하는 프로세스를 중지하고 강제로 자원을 가져가는 선점형 자원을 점유하는 프로세스가 종료되거나, I/O 발생하여 대기 할때까지 기다리는 비선점형 정적 vs 동적 프로세스에 부여된 우선순위가 고정 vs 유동 refs 스케줄링 (컴퓨팅) - 위키백과, 우리 모두의 백과사전 백엔드 개발자들이 알아야할 동시성 4 — 스케줄링. 지난 포스팅에선 많은 쓰레드와 잦은 컨텍스트 스위칭이 어떻게 웹서버의… | by Choi Geonu | Medium links</p>
           
           <br>
@@ -172,7 +172,7 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content Continuation Passing Style. 말그대로 Continuation을 전달하는 방식으로 프로그래밍하는 것을 말한다.
+            <p>Continuation Passing Style. 말그대로 Continuation을 전달하는 방식으로 프로그래밍하는 것을 말한다.
 이는 CPS 함수를 정의할 때 특정한 작업(ex. 콜백 함수) 을 명시적 인자로 받게되는데, CPS 함수는 해당 함수의 작업이 끝난 후 인자로 받은 작업을 수행하게 된다. Continuation이 CPS 함수에 있다가 인자로 받은 작업으로 넘어가는 것이다.
 CPS가 아니라면 함수가 그냥(암묵적으로) 작업을 수행하며, Continuation은 해당 함수에 머무른다.
 refs Continuation-passing style - …</p>
@@ -208,7 +208,7 @@ refs Continuation-passing style - …</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 파일 시스템에서 파일 관리를 위해 파일의 위치, 크기, 소유자 등의 정보를 갖고있는 특수한 형태의 파일.
+            <p>파일 시스템에서 파일 관리를 위해 파일의 위치, 크기, 소유자 등의 정보를 갖고있는 특수한 형태의 파일.
 refs links 파일 시스템</p>
           
           <br>
@@ -243,8 +243,8 @@ refs links 파일 시스템</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
-(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&gt; 이벤트 루프 -&gt; 이벤트 루프 응답 -&gt; 대기하며 진행 커널 영역 블락 -&gt; 이벤트 발생 -&gt; 이벤트 루프에 노티 -&gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요?</p>
+            <p>싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
+(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&gt; 이벤트 루프 -&gt; 이벤트 루프 응답 -&gt; 대기하며 진행 커널 영역 블락 -&gt; 이벤트 발생 -&gt; 이벤트 루프에 노티 -&gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요? - 배하람의 블로그 links gevent 비동 …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/event-loop/" title="Read More" class="excerpt_more button">Read More</a>
@@ -276,10 +276,10 @@ refs links 파일 시스템</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 유닉스 기반 OS에서 프로세스가 내부적으로 저장한 파일의 추상표현으로, 음이 아닌 정수이다.
-프로세스가 파일을 열면 OS는 해당 프로세스의 파일 디스크립터 중 가장 작은 값을 할당해준다. 다음부터 프로세스가 파일에 접근할 때는 파일 디스크립터 값을 인덱스로 사용한다. 해당 FD로 파일 테이블 포인터를 찾은 뒤, 시스템 파일을 참조한다.
+            <p>유닉스 기반 OS에서 프로세스가 내부적으로 저장한 파일의 추상표현으로, 음이 아닌 정수이다.
+프로세스가 파일을 열면 OS는 해당 프로세스의 파일 디스크립터 중 가장 작은 값을 할당해준다. 다음부터 프로세스가 파일에 접근할 때는 파일 디스크립터 값을 인덱스로 사용한다. 해당 FD로 파일 테이블 포인터를 찾은 뒤, 시스템 파일을 참조(Inode에 접근)한다.
 0 ~ 2는 예약된 자리로 각각 표준 입력, 표준 출력, 표준 에러 출력을 의미한다.
-refs 파일 디스크립터(File Descriptor)란? links 파일</p>
+refs 파일 디스크립터(File Descriptor)란? links 파일 inode</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0/" title="Read More" class="excerpt_more button">Read More</a>
@@ -311,7 +311,7 @@ refs 파일 디스크립터(File Descriptor)란? links 파일</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 저장 장치에 접근할 수 있는 경로를 특정 디렉토리에 연결하여, 디렉토리 구조에 편입하는 일
+            <p>저장 장치에 접근할 수 있는 경로를 특정 디렉토리에 연결하여, 디렉토리 구조에 편입하는 일
 refs links 디렉토리</p>
           
           <br>
@@ -411,7 +411,7 @@ refs links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content AWS Elastic Block Store AWS가 제공하는 기본 블록 디바이스. 네트워크 통신하는 논리 드라이브(볼륨)이다.
+            <p>AWS Elastic Block Store AWS가 제공하는 기본 블록 디바이스. 네트워크 통신하는 논리 드라이브(볼륨)이다.
 refs links 블록 디바이스 볼륨</p>
           
           <br>
@@ -444,11 +444,44 @@ refs links 블록 디바이스 볼륨</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content Process Control Block. 프로세스 관리를 위한 정보를 담은 OS 커널의 자료구조이다. 프로세스 실행과 스케줄링 등에 필요한 정보를 포함하여 OS 입장에서 프로세스를 표현한다.
+            <p>Process Control Block. 프로세스 관리를 위한 정보를 담은 OS 커널의 자료구조이다. 프로세스 실행과 스케줄링 등에 필요한 정보를 포함하여 OS 입장에서 프로세스를 표현한다.
 refs links</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/pcb/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/inode/" title="inode">inode</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-10-13</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="파일시스템" class="post_tag button button_translucent">파일시스템
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>유닉스 계통 파일 시스템에서 사용하는 자료구조.
+수퍼블록 - 파일시스템과 파티션 정보(df) inode 블록 - PCB와 유사하게 (inode 방식의) 파일 메타 데이터를 갖는다. 파일과 일대일 매핑 (compare with directory entry) 데이터 블록 - 실제 정보를 저장한 블록(디스크 블록) refs links 파일 시스템 PCB</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/inode/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -469,6 +502,7 @@ refs links</p>
 </span>
     <span class="post_date">
       2022-10-13</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' title="기억장치" class="post_tag button button_translucent">기억장치
+        </a><a href='https://chankoo.github.io/tags/unix/' title="UNIX" class="post_tag button button_translucent">UNIX
         </a>
     </span>
   </div>
@@ -477,7 +511,7 @@ refs links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content OS가 저장 매체의 정보를 관리하는 단위. 저장할(디스크에 쓸) 때 블록(보통 4kb) 단위로 정보를 묶어서 쓰고, 그 참조를 관리한다.
+            <p>OS가 저장 매체의 정보를 관리하는 단위. 저장할(디스크에 쓸) 때 블록(보통 4kb) 단위로 정보를 묶어서 쓰고, 그 참조를 관리한다.
 윈도우에선 ‘클러스터’라는 용어도 쓴다.
 refs links</p>
           
@@ -545,7 +579,7 @@ refs links 파일 시스템</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content OS 가 파일을 쉽게 관리하도록 파일을 보관하고 조직하는 체계.
+            <p>OS 가 파일을 쉽게 관리하도록 파일을 보관하고 조직하는 체계.
 효율적으로 파일을 저장하기 위해 파일 시스템이 등장했다. 불연속적인 저장 매체 공간에 파일을 체계적으로 저장하고 불러오는 자료구조와 알고리즘을 포함한다.
 블록체인(링크드리스트) 인덱스 블록 기법 refs links 파일</p>
           
@@ -580,7 +614,7 @@ refs links 파일 시스템</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 파일시스템을 갖춘 논리적 스토리지 영역. 보통 마운트하여 접근한다.
+            <p>파일시스템을 갖춘 논리적 스토리지 영역. 보통 마운트하여 접근한다.
 refs links 마운트 파일 시스템</p>
           
           <br>
@@ -613,7 +647,7 @@ refs links 마운트 파일 시스템</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 기아 상태 여러 스레드나 프로세스가 자원을 점유하는 상황에서, 특정 스레드나 프로세스가 자원을 할당 받지 못하여 진행할 수 없는 상태
+            <p>기아 상태 여러 스레드나 프로세스가 자원을 점유하는 상황에서, 특정 스레드나 프로세스가 자원을 할당 받지 못하여 진행할 수 없는 상태
 refs links</p>
           
           <br>
@@ -644,7 +678,7 @@ refs links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 교착 상태 한정된 자원을 공유하는 작업들이 서로의 종료를 기다리며 끝없이 대치하는 상태
+            <p>교착 상태 한정된 자원을 공유하는 작업들이 서로의 종료를 기다리며 끝없이 대치하는 상태
 데드락의 필요 조건. 아래 4가지를 모두 만족시켜야 데드락이 발생한다.
 상호 배제(Mutual Exclusion) 점유 대기 비선점 순환 대기 refs links</p>
           
@@ -678,7 +712,7 @@ refs links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 경쟁 상태 여러 스레드나 프로세스가 한 자원에 동시에 접근하고 조작하여 예상치 못한 결과(non deterministic)을 도출할 수 있는 상태. 즉, 스레드가 자원에 접근하는 타이밍에 결과가 영향 받는 상태를 의미한다
+            <p>경쟁 상태 여러 스레드나 프로세스가 한 자원에 동시에 접근하고 조작하여 예상치 못한 결과(non deterministic)을 도출할 수 있는 상태. 즉, 스레드가 자원에 접근하는 타이밍에 결과가 영향 받는 상태를 의미한다
 Thread 1 Thread 2 Integer value 0 read value ← 0 read value ← 0 increase value 0 increase value 0 write back → 1 write back → 1 refs Race condition - Wikipedia links</p>
           
           <br>
@@ -747,7 +781,7 @@ refs POSIX - 위키백과, 우리 모두의 백과사전 links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content Pthreads. UNIX 기반 운영체제에서 멀티 스레딩을 위해 제공하는 api(Windows 도 제공해준다). C 에서 사용
+            <p>Pthreads. UNIX 기반 운영체제에서 멀티 스레딩을 위해 제공하는 api(Windows 도 제공해준다). C 에서 사용
 refs links POSIX</p>
           
           <br>
@@ -808,16 +842,21 @@ refs links POSIX</p>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">37</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
-          OS
-          <span class="button_tally">19</span>
+          <span class="button_tally">41</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
           네트워크
+          <span class="button_tally">21</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
+          OS
+          <span class="button_tally">20</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
+          언어
           <span class="button_tally">18</span>
         </a>
         
@@ -826,9 +865,9 @@ refs links POSIX</p>
           <span class="button_tally">18</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
-          언어
-          <span class="button_tally">17</span>
+        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
+          백엔드
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -836,14 +875,14 @@ refs links POSIX</p>
           <span class="button_tally">12</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
-          백엔드
+        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
+          DB
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
-          DB
-          <span class="button_tally">10</span>
+        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
+          기타
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -851,9 +890,9 @@ refs links POSIX</p>
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
-          기타
-          <span class="button_tally">3</span>
+        <a href='https://chankoo.github.io/categories/%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="테스트">
+          테스트
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
@@ -880,12 +919,12 @@ refs links POSIX</p>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
-          <span class="button_tally">20</span>
+          <span class="button_tally">21</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
           동시성
-          <span class="button_tally">19</span>
+          <span class="button_tally">20</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
@@ -895,7 +934,7 @@ refs links POSIX</p>
         
         <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
           책
-          <span class="button_tally">12</span>
+          <span class="button_tally">13</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
@@ -903,23 +942,23 @@ refs links POSIX</p>
           <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
-          WEB
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
-          기억장치
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
+          WEB
+          <span class="button_tally">9</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class="post_tag button button_translucent" title="디자인패턴">
           디자인패턴
-          <span class="button_tally">8</span>
+          <span class="button_tally">9</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
+          기억장치
           <span class="button_tally">8</span>
         </a>
         
@@ -960,21 +999,21 @@ refs links POSIX</p>
         
         <a href='https://chankoo.github.io/tags/oop/' class="post_tag button button_translucent" title="oop">
           OOP
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
-          REACT
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="파일시스템">
           파일시스템
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class="post_tag button button_translucent" title="함수형프로그래밍">
           함수형프로그래밍
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
+          REACT
           <span class="button_tally">4</span>
         </a>
         
@@ -1008,7 +1047,15 @@ refs links POSIX</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=1 title="frontend">FRONTEND<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/docker/' class=" post_tag button button_translucent" data-position=1 title="docker">DOCKER<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/elasticsearch/' class=" post_tag button button_translucent" data-position=1 title="elasticsearch">ELASTICSEARCH<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=2 title="frontend">FRONTEND<span class="button_tally">2</span>
             </a>
             
             
@@ -1040,11 +1087,15 @@ refs links POSIX</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=4 title="oop">OOP<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/nextjs/' class=" post_tag button button_translucent" data-position=1 title="nextjs">NEXTJS<span class="button_tally">1</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=20 title="python">PYTHON<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=5 title="oop">OOP<span class="button_tally">5</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=21 title="python">PYTHON<span class="button_tally">21</span>
             </a>
             
             
@@ -1064,11 +1115,11 @@ refs links POSIX</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=2 title="unix">UNIX<span class="button_tally">2</span>
+            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=3 title="unix">UNIX<span class="button_tally">3</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=8 title="web">WEB<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=9 title="web">WEB<span class="button_tally">9</span>
             </a>
             
             
@@ -1080,11 +1131,11 @@ refs links POSIX</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=19 title="동시성">동시성<span class="button_tally">19</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=8 title="디자인패턴">디자인패턴<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=9 title="디자인패턴">디자인패턴<span class="button_tally">9</span>
             </a>
             
             
@@ -1092,7 +1143,7 @@ refs links POSIX</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=8 title="분산시스템">분산시스템<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
             </a>
             
             
@@ -1104,11 +1155,11 @@ refs links POSIX</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=3 title="인증">인증<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=4 title="인증">인증<span class="button_tally">4</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=12 title="책">책<span class="button_tally">12</span>
+            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=13 title="책">책<span class="button_tally">13</span>
             </a>
             
             
@@ -1116,11 +1167,11 @@ refs links POSIX</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=4 title="파일시스템">파일시스템<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=5 title="파일시스템">파일시스템<span class="button_tally">5</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=4 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=5 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">5</span>
             </a>
             
             <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>

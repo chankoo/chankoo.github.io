@@ -119,6 +119,42 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/asyncio-lock/" title="Asyncio Lock">Asyncio Lock</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-09</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a><a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>asyncio 라이브러리가 제공하는 잠금으로 코루틴 간 경합 상황을 해결하는 도구이다.
+멀티 스레딩 환경에서는 적합하지 않은데, 스레드 레벨에서는 점유 배제를 보장할 수 없기 때문이다. 즉, 스레드 A의 코루틴이 잠금을 획득했더라도 스레드 B의 코루틴은 영향 받지 않는다.
+refs asyncio의 동기화수단들 · Wireframe links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/asyncio-lock/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/snowflake-id/" title="Snowflake ID">Snowflake ID</a>
       </h3>
       
@@ -143,6 +179,40 @@ timestamp - 약 70년의 timestamp를 표현 가능. 생성 순으로 정렬 가
           
           <br>
           <a href="https://chankoo.github.io/posts/snowflake-id/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/cap/" title="CAP">CAP</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-12-02</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>CAP Theorem. 분산 시스템에서 CAP의 세가지 조건이 동시에 만족할 수 없다는 정리이다.
+Consistency(일관성): 일관된 읽기를 보장 Availability(가용성): 응답을 보장 Partition tolererance(분할 용인): (네트워크 실패를 가정) 일부 메시지가 드랍되어도 시스템이 동작함 P의 조건은 분산 시스템과 네트워크의 본질이므로, 시스템 구현시 CP 또는 AP를 선택하는 문제만 남는다.
+refs CAP Theorem, 오해와 진실 links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/cap/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -438,16 +508,21 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">37</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
-          OS
-          <span class="button_tally">19</span>
+          <span class="button_tally">41</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
           네트워크
+          <span class="button_tally">21</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
+          OS
+          <span class="button_tally">20</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
+          언어
           <span class="button_tally">18</span>
         </a>
         
@@ -456,9 +531,9 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
           <span class="button_tally">18</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
-          언어
-          <span class="button_tally">17</span>
+        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
+          백엔드
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -466,14 +541,14 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
           <span class="button_tally">12</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
-          백엔드
+        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
+          DB
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
-          DB
-          <span class="button_tally">10</span>
+        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
+          기타
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -481,9 +556,9 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
-          기타
-          <span class="button_tally">3</span>
+        <a href='https://chankoo.github.io/categories/%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="테스트">
+          테스트
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
@@ -510,12 +585,12 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
-          <span class="button_tally">20</span>
+          <span class="button_tally">21</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
           동시성
-          <span class="button_tally">19</span>
+          <span class="button_tally">20</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
@@ -525,7 +600,7 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
         
         <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
           책
-          <span class="button_tally">12</span>
+          <span class="button_tally">13</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
@@ -533,23 +608,23 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
           <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
-          WEB
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
-          기억장치
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
+          WEB
+          <span class="button_tally">9</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class="post_tag button button_translucent" title="디자인패턴">
           디자인패턴
-          <span class="button_tally">8</span>
+          <span class="button_tally">9</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
+          기억장치
           <span class="button_tally">8</span>
         </a>
         
@@ -590,21 +665,21 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
         
         <a href='https://chankoo.github.io/tags/oop/' class="post_tag button button_translucent" title="oop">
           OOP
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
-          REACT
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="파일시스템">
           파일시스템
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class="post_tag button button_translucent" title="함수형프로그래밍">
           함수형프로그래밍
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
+          REACT
           <span class="button_tally">4</span>
         </a>
         
@@ -638,7 +713,15 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=1 title="frontend">FRONTEND<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/docker/' class=" post_tag button button_translucent" data-position=1 title="docker">DOCKER<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/elasticsearch/' class=" post_tag button button_translucent" data-position=1 title="elasticsearch">ELASTICSEARCH<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=2 title="frontend">FRONTEND<span class="button_tally">2</span>
             </a>
             
             
@@ -670,11 +753,15 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=4 title="oop">OOP<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/nextjs/' class=" post_tag button button_translucent" data-position=1 title="nextjs">NEXTJS<span class="button_tally">1</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=20 title="python">PYTHON<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=5 title="oop">OOP<span class="button_tally">5</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=21 title="python">PYTHON<span class="button_tally">21</span>
             </a>
             
             
@@ -694,11 +781,11 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=2 title="unix">UNIX<span class="button_tally">2</span>
+            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=3 title="unix">UNIX<span class="button_tally">3</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=8 title="web">WEB<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=9 title="web">WEB<span class="button_tally">9</span>
             </a>
             
             
@@ -710,11 +797,11 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=19 title="동시성">동시성<span class="button_tally">19</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=8 title="디자인패턴">디자인패턴<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=9 title="디자인패턴">디자인패턴<span class="button_tally">9</span>
             </a>
             
             
@@ -722,7 +809,7 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=8 title="분산시스템">분산시스템<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
             </a>
             
             
@@ -734,11 +821,11 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=3 title="인증">인증<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=4 title="인증">인증<span class="button_tally">4</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=12 title="책">책<span class="button_tally">12</span>
+            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=13 title="책">책<span class="button_tally">13</span>
             </a>
             
             
@@ -746,11 +833,11 @@ refs 분산 트랜잭션 - 위키백과, 우리 모두의 백과사전 X/Open XA
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=4 title="파일시스템">파일시스템<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=5 title="파일시스템">파일시스템<span class="button_tally">5</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=4 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=5 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">5</span>
             </a>
             
             <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>

@@ -6,7 +6,25 @@
     <description>Recent content in UNIX on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Oct 2022 21:49:21 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Oct 2022 23:01:33 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>블록</title>
+      <link>https://chankoo.github.io/posts/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%A8/</link>
+      <pubDate>Thu, 13 Oct 2022 23:01:33 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%A8/</guid>
+      <description>
+        
+          
+            OS가 저장 매체의 정보를 관리하는 단위. 저장할(디스크에 쓸) 때 블록(보통 4kb) 단위로 정보를 묶어서 쓰고, 그 참조를 관리한다.
+윈도우에선 &amp;lsquo;클러스터&amp;rsquo;라는 용어도 쓴다.
+refs links 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>POSIX</title>
       <link>https://chankoo.github.io/posts/posix/</link>
@@ -34,7 +52,7 @@ refs POSIX - 위키백과, 우리 모두의 백과사전 links
       <description>
         
           
-            content Pthreads. UNIX 기반 운영체제에서 멀티 스레딩을 위해 제공하는 api(Windows 도 제공해준다). C 에서 사용
+            Pthreads. UNIX 기반 운영체제에서 멀티 스레딩을 위해 제공하는 api(Windows 도 제공해준다). C 에서 사용
 refs links POSIX 
           
           

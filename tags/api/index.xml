@@ -16,7 +16,7 @@
       <description>
         
           
-            content (주로)MSA에서 프로바이더 서비스들이 제공하는 데이터를 조합하여 한번에 제공하는 API 조합기를 두는 패턴
+            (주로)MSA에서 프로바이더 서비스들이 제공하는 데이터를 조합하여 한번에 제공하는 API 조합기를 두는 패턴
 설계
 API 조합기로 둘 컴포넌트 선정 클라이언트 간단하지만, 클라이언트가 외부 네트워크에 존재하는 경우 느리다 API 게이트웨이 일반적인 방법으로 API 게이트웨이 패턴이라 불림 스탠드 얼론 서비스 &amp;lsquo;주문 검색 서비스&amp;rsquo; 와 같은 서비스를 두어 조합기 역할을 맡기는 방법 효율적인 조합 로직 프로바이더 서비스 순차 호출에 따른 지연 시간을 줄이는 것이 핵심 리액티브 프로그래밍을 권장 refs 마이크로서비스 패턴 links API Gateway 패턴 리액티브 프로그래밍 
           
@@ -50,7 +50,7 @@ API 조합기로 둘 컴포넌트 선정 클라이언트 간단하지만, 클라
       <description>
         
           
-            content google에서 개발한 RPC(Remote Procedure Call) 프레임워크.
+            google에서 개발한 RPC(Remote Procedure Call) 프레임워크.
 기존 RPC처럼, 네트워크 통신이 필요한 요청을 로컬에서 호출하는 것처럼 도와주는 프로토콜이다. HTTP/2 를 사용하며 프로토콜 버퍼(ProtoBuf)를 이용해 통신 효율을 높이는 특징이 있다.
 일반적인 http 기반 API(REST 등) 보다 더 빠르고(5배 가량), HTTP2의 기능을 사용할 수 있는 것이 장점이다.
 refs [네이버클라우드 기술&amp;amp;경험] 시대의 흐름, gRPC 깊게 파고들기 #1 | by NAVER CLOUD PLATFORM | NAVER CLOUD PLATFORM | Medium What is RPC? gRPC Introduction. - YouTube links HTTP2 프로토콜 버퍼 

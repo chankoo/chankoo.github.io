@@ -16,7 +16,7 @@
       <description>
         
           
-            content (프로세서의 메모리)참조는 랜덤이 아니고 비슷한 지역에서 빈번하게 일어난다는 특성(Locality of reference)
+            (프로세서의 메모리)참조는 랜덤이 아니고 비슷한 지역에서 빈번하게 일어난다는 특성(Locality of reference)
 Spatial Locality 와 2) Temporal Locality로 크게 나뉘는데 1)은 비슷한 공간의 영역을 반복적으로, 2)는 최근에 참조한 영역을 반복적으로 참조하는 현상을 말한다. 프로세서의 캐시는 locality를 고려하여 동작하기에 프로그램을 짤 때 locality를 활용한다면 더 캐시 효율적이다.
 refs Locality of reference - Wikipedia links 
           
@@ -34,7 +34,7 @@ refs Locality of reference - Wikipedia links
       <description>
         
           
-            content Process Control Block. 프로세스 관리를 위한 정보를 담은 OS 커널의 자료구조이다. 프로세스 실행과 스케줄링 등에 필요한 정보를 포함하여 OS 입장에서 프로세스를 표현한다.
+            Process Control Block. 프로세스 관리를 위한 정보를 담은 OS 커널의 자료구조이다. 프로세스 실행과 스케줄링 등에 필요한 정보를 포함하여 OS 입장에서 프로세스를 표현한다.
 refs links 
           
           
@@ -51,7 +51,7 @@ refs links
       <description>
         
           
-            content ISA를 구현하는 방법을 말한다.
+            ISA를 구현하는 방법을 말한다.
 예를들어, Intel 과 AMD는 동일한 x86 ISA를 쓰지만 Microarchitecture가 다르기에 성능이 다르다.
 refs links ISA 
           
@@ -69,7 +69,7 @@ refs links ISA
       <description>
         
           
-            content 명령어 집합 구조(Instruction Set Architecture) CPU가 이해할 수 있는 기계어 명령어 집합을 의미한다. CPU 마다 비트 길이와 코드가 다르다.
+            명령어 집합 구조(Instruction Set Architecture) CPU가 이해할 수 있는 기계어 명령어 집합을 의미한다. CPU 마다 비트 길이와 코드가 다르다.
 각 비트를 기능적으로 분할하여 의미를 부여했고, 이 기계어 명렁어와 일대일 매핑하여 문자화 한 것이 어셈블리어(Assembly Language)다.
 이는 소프트웨어와 하드웨어간 인터페이스를 규정한 것이다.
 프로세서 칩을 만드는 회사마다 ISA가 다른데, 익숙한 예로 Intel의 칩은 x86을, ARM의 칩은 ARM 을 쓰는 식이다.
@@ -89,7 +89,7 @@ refs 명령어 집합 - 위키백과, 우리 모두의 백과사전 [ 컴퓨터�
       <description>
         
           
-            content 여러 일을 한꺼번에 실행하는 것. Parallelism. CPU의 영역에서 명세하자면, 여러 CPU가 스레드 하나씩을 동시에 실행하는 것이다.
+            여러 일을 한꺼번에 실행하는 것. Parallelism. CPU의 영역에서 명세하자면, 여러 CPU가 스레드 하나씩을 동시에 실행하는 것이다.
 여러가지 일을 동시에 다루는 요구사항(동시성)을 해결하는 방법이기에 해법의 속성을 내포한다. 실제로 순차적 프로그래밍의 한계를 넘어서는 기술이다.
 refs 7가지 동시성 모델 links 동시성 
           
@@ -107,7 +107,7 @@ refs 7가지 동시성 모델 links 동시성
       <description>
         
           
-            content 여러 일을 한꺼번에 다루는 것. Concurrency. CPU의 영역에서 명세하자면, CPU는 하나인데 여러 스레드에서 각각의 제어흐름을 다루고 있는 상황이다.
+            여러 일을 한꺼번에 다루는 것. Concurrency. CPU의 영역에서 명세하자면, CPU는 하나인데 여러 스레드에서 각각의 제어흐름을 다루고 있는 상황이다.
 순차적 프로그래밍의 한계를 넘어서려는 시도이나, 여러가지 일을 동시에 다루는 척(병렬 착각, 병행성)하는 것이기에 그자체로 문제의 속성을 내포한다.
 refs 7가지 동시성 모델 links 병렬성 
           

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on chankoo</title>
+    <link>https://chankoo.github.io/tags/docker/</link>
+    <description>Recent content in docker on chankoo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 24 Oct 2022 11:34:03 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>도커 네트워크</title>
+      <link>https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/</link>
+      <pubDate>Mon, 24 Oct 2022 11:34:03 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/</guid>
+      <description>
+        
+          
+             도커 네트워크는 docker0 라는 이름의 가상 네트워크 브리지(bridge 옵션이 디폴트)로 구성된다. docker0 는 도커 내부 로직에 따라 16bit netmask의 ip를 할당 받으며, 컨테이너들의 gateway로 기능한다.
+컨테이너들은 docker0와 pair interface로 통신하는데, docker0 쪽은 vethXXX, 컨테이너 쪽은 eth0 라는 이름으로 구성되어 서로 packet을 주고받는다. 컨테이너는 Linux Namespace 를 이용하여 각자 독립적인 네트워크 공간을 할당받는다
+refs Networking overview | Docker Docs link 네트워크 브리지 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

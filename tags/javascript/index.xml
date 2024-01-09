@@ -16,8 +16,8 @@
       <description>
         
           
-            content 싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
-(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요?
+            싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
+(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요? - 배하람의 블로그 links gevent 비동기 
           
           
         
@@ -33,7 +33,7 @@
       <description>
         
           
-            content 특정 집합 객체 요소에 순차적으로 접근 가능하도록 구현해놓은 객체. Iterator 패턴을 따라서 내부를 노출하지 않고 집합 객체의 구현에 종속되지 않아야한다.
+            특정 집합 객체 요소에 순차적으로 접근 가능하도록 구현해놓은 객체. Iterator 패턴을 따라서 내부를 노출하지 않고 집합 객체의 구현에 종속되지 않아야한다.
 Iterator 를 제공하는 객체는 Iterator Protocol 을 따랐다고 표현하는데, 이는 언어마다 상이하다. 에를 들어 javascript 에선 Iteration Protocol 하위에 Iteration Protocol 과 Iterator Protocol이 존재한다.
 구현은 프로그래밍 언어마다 다양할 수 있다. 보통 Iterable 객체와 묶여서 구현한다. python과 java 모두 Iterable 객체로 부터 Iterator를 얻으며(iter, iterator()), 다음 요소를 가져오는 메소드를 제공한다(next, next()).
           

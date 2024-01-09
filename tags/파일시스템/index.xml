@@ -16,7 +16,7 @@
       <description>
         
           
-            content 파일 시스템에서 파일 관리를 위해 파일의 위치, 크기, 소유자 등의 정보를 갖고있는 특수한 형태의 파일.
+            파일 시스템에서 파일 관리를 위해 파일의 위치, 크기, 소유자 등의 정보를 갖고있는 특수한 형태의 파일.
 refs links 파일 시스템 
           
           
@@ -33,10 +33,27 @@ refs links 파일 시스템
       <description>
         
           
-            content 유닉스 기반 OS에서 프로세스가 내부적으로 저장한 파일의 추상표현으로, 음이 아닌 정수이다.
-프로세스가 파일을 열면 OS는 해당 프로세스의 파일 디스크립터 중 가장 작은 값을 할당해준다. 다음부터 프로세스가 파일에 접근할 때는 파일 디스크립터 값을 인덱스로 사용한다. 해당 FD로 파일 테이블 포인터를 찾은 뒤, 시스템 파일을 참조한다.
+            유닉스 기반 OS에서 프로세스가 내부적으로 저장한 파일의 추상표현으로, 음이 아닌 정수이다.
+프로세스가 파일을 열면 OS는 해당 프로세스의 파일 디스크립터 중 가장 작은 값을 할당해준다. 다음부터 프로세스가 파일에 접근할 때는 파일 디스크립터 값을 인덱스로 사용한다. 해당 FD로 파일 테이블 포인터를 찾은 뒤, 시스템 파일을 참조(Inode에 접근)한다.
 0 ~ 2는 예약된 자리로 각각 표준 입력, 표준 출력, 표준 에러 출력을 의미한다.
-refs 파일 디스크립터(File Descriptor)란? links 파일 
+refs 파일 디스크립터(File Descriptor)란? links 파일 inode 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>inode</title>
+      <link>https://chankoo.github.io/posts/inode/</link>
+      <pubDate>Thu, 13 Oct 2022 23:27:02 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/inode/</guid>
+      <description>
+        
+          
+            유닉스 계통 파일 시스템에서 사용하는 자료구조.
+수퍼블록 - 파일시스템과 파티션 정보(df) inode 블록 - PCB와 유사하게 (inode 방식의) 파일 메타 데이터를 갖는다. 파일과 일대일 매핑 (compare with directory entry) 데이터 블록 - 실제 정보를 저장한 블록(디스크 블록) refs links 파일 시스템 PCB 
           
           
         
@@ -52,7 +69,7 @@ refs 파일 디스크립터(File Descriptor)란? links 파일
       <description>
         
           
-            content OS 가 파일을 쉽게 관리하도록 파일을 보관하고 조직하는 체계.
+            OS 가 파일을 쉽게 관리하도록 파일을 보관하고 조직하는 체계.
 효율적으로 파일을 저장하기 위해 파일 시스템이 등장했다. 불연속적인 저장 매체 공간에 파일을 체계적으로 저장하고 불러오는 자료구조와 알고리즘을 포함한다.
 블록체인(링크드리스트) 인덱스 블록 기법 refs links 파일 
           
@@ -70,7 +87,7 @@ refs 파일 디스크립터(File Descriptor)란? links 파일
       <description>
         
           
-            content 파일시스템을 갖춘 논리적 스토리지 영역. 보통 마운트하여 접근한다.
+            파일시스템을 갖춘 논리적 스토리지 영역. 보통 마운트하여 접근한다.
 refs links 마운트 파일 시스템 
           
           

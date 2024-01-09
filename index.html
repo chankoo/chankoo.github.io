@@ -336,6 +336,73 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%94%BD%EC%8A%A4%EC%B2%98/" title="테스트 픽스처">테스트 픽스처</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-09</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>테스트 실행을 위해 필요한 초기 상태로, 객체와 환경 등 모든 것의 고정된 상태를 의미한다. 예를 들어 테스트에 db 객체가 필요하다면, 필요한 모든 데이터가 로딩 된 db 객체를 픽스처로 만들어두어야 한다.
+테스트 더블과 헷갈릴 수 있는데, 더블은 테스트 수행 중에 실제 구현을 대신하여 동작하는 구현을 의미한다. 반면에 픽스처는 테스트 수행을 위해 고정되어야할 환경으로 그 의미가 전혀 다르다. 같은 객체가 더블이면서 픽스처인 경우가 있어(ex. 픽스처로 세팅된 db Mock) 혼동이 오는데, 그 목적이 달라 사용하는 맥락에 따라 구분해야한다.</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%94%BD%EC%8A%A4%EC%B2%98/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/asyncio-lock/" title="Asyncio Lock">Asyncio Lock</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-09</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a><a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>asyncio 라이브러리가 제공하는 잠금으로 코루틴 간 경합 상황을 해결하는 도구이다.
+멀티 스레딩 환경에서는 적합하지 않은데, 스레드 레벨에서는 점유 배제를 보장할 수 없기 때문이다. 즉, 스레드 A의 코루틴이 잠금을 획득했더라도 스레드 B의 코루틴은 영향 받지 않는다.
+refs asyncio의 동기화수단들 · Wireframe links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/asyncio-lock/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/%EC%9B%B9%EC%86%8C%EC%BC%93-%ED%99%95%EC%9E%A5%EC%84%B1/" title="웹소켓 확장성">웹소켓 확장성</a>
       </h3>
       
@@ -583,7 +650,7 @@ refs 데이터 중심 애플리케이션 설계 2 Phase Locking (2PL) : 네이�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content OOP에서 1) 객체의 attribute와 method를 하나로 묶고 2) 실제 구현 내용을 내부에 감추는 일.
+            <p>OOP에서 1) 객체의 attribute와 method를 하나로 묶고 2) 실제 구현 내용을 내부에 감추는 일.
 캡슐화는 객체간 종속을 인터페이스 레벨에 묶어두어 모듈의 결합도를 낮춘다.
 refs 캡슐화 - 위키백과, 우리 모두의 백과사전 객체지향의 사실과 오해 links</p>
           
@@ -649,7 +716,7 @@ refs 캡슐화 - 위키백과, 우리 모두의 백과사전 객체지향의 사
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content Open Authorization 2.0 개방형 인증을 위한 표준으로 유저 신원 확인을 위해 다른 서비스에서 리소스를 가져오는 방식으로 동작한다. 비밀번호를 입력할 필요 없이 유저(Resource Owner)의 신원 정보를 서드파티 서비스(Resource Server &amp; Authorization Server) 에서 받아오는 방식이다.
+            <p>Open Authorization 2.0 개방형 인증을 위한 표준으로 유저 신원 확인을 위해 다른 서비스에서 리소스를 가져오는 방식으로 동작한다. 비밀번호를 입력할 필요 없이 유저(Resource Owner)의 신원 정보를 서드파티 서비스(Resource Server &amp; Authorization Server) 에서 받아오는 방식이다.
 refs OAuth_2.md OAuth - Wikipedia links</p>
           
           <br>
@@ -748,9 +815,9 @@ refs 리얼월드 HTTP …</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 구글에서 개발한 직렬화 데이터 구조. JSON과 같은 기존 포맷보다 작고 직렬화/역직렬화 속도가 빠르다.
+            <p>구글에서 개발한 직렬화 데이터 구조. JSON과 같은 기존 포맷보다 작고 직렬화/역직렬화 속도가 빠르다.
 데이터 타입을 정의한 Proto file을 (해당 언어에 맞게) 컴파일하여 사용한다. 최초 1바이트(두자리 16진수)로 필드 넘버와 타입을 표현하고, 차례로 length와 데이터를 표현한다.
-message Person { string name = 1; // 필드 타입 string, 필드 넘버 1 int32 age = 2; } refs 프로토콜 버퍼란 무엇인가(Protocol Buffer) 서버, 클라이언트 예제와 함께 feat. express …</p>
+message Person { string name = 1; // 필드 타입 string, 필드 넘버 1 int32 age = 2; } refs 프로토콜 버퍼란 무엇인가(Protocol Buffer) 서버, 클라이언트 예제와 함께 feat. express &amp; Vue 구 …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B2%84%ED%8D%BC/" title="Read More" class="excerpt_more button">Read More</a>
@@ -782,7 +849,7 @@ message Person { string name = 1; // 필드 타입 string, 필드 넘버 1 int32
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content Transmission Control Protocol. TCP/IP 스택 전송 계층 프로토콜로 소켓 간 신뢰할 수 있는 통신을 보장한다.
+            <p>Transmission Control Protocol. TCP/IP 스택 전송 계층 프로토콜로 소켓 간 신뢰할 수 있는 통신을 보장한다.
 프로세스와 프로세스(엄밀히는 소켓과 소켓)를 잇는 논리적인 개념의 point-to-point 통신 reliable: 응용계층에서 받은 데이터의 error와 loss가 없음을 보장 in-order byte stream: 데이터의 순서를 유지 Pipelined : window size 단위로 패킷을 묶어 통신 send &amp; receive buffers: 송신 측과 수신 측 모두 send, receive buffer …</p>
           
           <br>
@@ -815,12 +882,46 @@ message Person { string name = 1; // 필드 타입 string, 필드 넘버 1 int32
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 객체 생성을 위해 구체 팩토리에 의존(요소 -&gt; 팩토리)하는 것이 아니라, 추상 팩토리에 의존(요소 -&gt; 추상 팩토리 $\Leftarrow$ 구체 팩토리)하는 패턴이다.
+            <p>객체 생성을 위해 구체 팩토리에 의존(요소 -&gt; 팩토리)하는 것이 아니라, 추상 팩토리에 의존(요소 -&gt; 추상 팩토리 $\Leftarrow$ 구체 팩토리)하는 패턴이다.
 DIP의 전형적인 예시이다.
 refs links DIP</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%EC%B6%94%EC%83%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/cap/" title="CAP">CAP</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-12-02</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>CAP Theorem. 분산 시스템에서 CAP의 세가지 조건이 동시에 만족할 수 없다는 정리이다.
+Consistency(일관성): 일관된 읽기를 보장 Availability(가용성): 응답을 보장 Partition tolererance(분할 용인): (네트워크 실패를 가정) 일부 메시지가 드랍되어도 시스템이 동작함 P의 조건은 분산 시스템과 네트워크의 본질이므로, 시스템 구현시 CP 또는 AP를 선택하는 문제만 남는다.
+refs CAP Theorem, 오해와 진실 links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/cap/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -880,7 +981,7 @@ refs links 해시 테이블 해시 충돌 Dynamic Array</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 인자로 다른 함수에게 전달되는 함수.
+            <p>인자로 다른 함수에게 전달되는 함수.
 refs links</p>
           
           <br>
@@ -913,7 +1014,7 @@ refs links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content OS가 CPU를 프로세스에게 할당하는 정책이다.
+            <p>OS가 CPU를 프로세스에게 할당하는 정책이다.
 선점형 vs 비선점형(협력적) 자원을 점유하는 프로세스를 중지하고 강제로 자원을 가져가는 선점형 자원을 점유하는 프로세스가 종료되거나, I/O 발생하여 대기 할때까지 기다리는 비선점형 정적 vs 동적 프로세스에 부여된 우선순위가 고정 vs 유동 refs 스케줄링 (컴퓨팅) - 위키백과, 우리 모두의 백과사전 백엔드 개발자들이 알아야할 동시성 4 — 스케줄링. 지난 포스팅에선 많은 쓰레드와 잦은 컨텍스트 스위칭이 어떻게 웹서버의… | by Choi Geonu | Medium links</p>
           
           <br>
@@ -947,7 +1048,7 @@ refs links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content Continuation Passing Style. 말그대로 Continuation을 전달하는 방식으로 프로그래밍하는 것을 말한다.
+            <p>Continuation Passing Style. 말그대로 Continuation을 전달하는 방식으로 프로그래밍하는 것을 말한다.
 이는 CPS 함수를 정의할 때 특정한 작업(ex. 콜백 함수) 을 명시적 인자로 받게되는데, CPS 함수는 해당 함수의 작업이 끝난 후 인자로 받은 작업을 수행하게 된다. Continuation이 CPS 함수에 있다가 인자로 받은 작업으로 넘어가는 것이다.
 CPS가 아니라면 함수가 그냥(암묵적으로) 작업을 수행하며, Continuation은 해당 함수에 머무른다.
 refs Continuation-passing style - …</p>
@@ -984,7 +1085,7 @@ refs Continuation-passing style - …</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
+            <p>리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
 private - only cached in client public - can be cached in proxies refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache</p>
           
           <br>
@@ -1019,8 +1120,8 @@ private - only cached in client public - can be cached in proxies refs Cache-Con
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content Cross-Origin Resource Sharing. 출처가 다른(Cross-Origin) 요청에 대해 리소스를 내려 줄 것인지 판단하는 정책이다.
-요청 헤더 Origin에 출처가 담긴다. 스킴, 도메인, 포트 중 하나라도 다르면 Cross-Origin으로 본다. 응답 헤더 Access-Control-Allow-Origin에 허용된 출처가 담긴다. 브라우저가 Origin, Access-Control-Allow-Origin 그리고 요청 시나리오를 고려하여 CORS 위반 여부를 판단한다. refs CORS는 왜 이렇게 우리를 힘들게 하는걸까? | …</p>
+            <p>Cross-Origin Resource Sharing. 출처가 다른(Cross-Origin) 요청에 대해 리소스를 내려 줄 것인지 판단하는 정책이다.
+요청 헤더 Origin에 출처가 담긴다. 스킴, 도메인, 포트 중 하나라도 다르면 Cross-Origin으로 본다. 응답 헤더 Access-Control-Allow-Origin에 허용된 출처가 담긴다. 브라우저가 Origin, Access-Control-Allow-Origin 그리고 요청 시나리오를 고려하여 CORS 위반 여부를 판단한다. refs CORS는 왜 이렇게 우리를 힘들게 하는걸까? | Evans …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/cors/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1053,7 +1154,7 @@ private - only cached in client public - can be cached in proxies refs Cache-Con
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 코루틴 기반의 파이썬 라이브러리로 고성능 I/O를 위한 동시성을 지원한다.
+            <p>코루틴 기반의 파이썬 라이브러리로 고성능 I/O를 위한 동시성을 지원한다.
 greenlet 이라는 경량 스레드(코루틴)와 event loop를 이용하여 넌블러킹 &amp; 비동기 I/O를 지원한다. monkey patching을 이용해 표준 라이브러리의 구현을 gevent의 구현으로 바꿔치기하는 방식으로 동작한다.
 파이썬이 표준으로 제공하는 구현이 아니고 어디까지나 monkey patching(흑마법) 이기에 한계가 분명하다. (대표적으로 mysqlclient는 gevent 와 호환되지 않는다)
 refs What is gevent? - gevent …</p>
@@ -1089,7 +1190,7 @@ refs What is gevent? - gevent …</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 특정 이벤트가 발생했을때 타겟 서비스 엔드포인트로 데이터를 전달하는 http 기반의 콜백
+            <p>특정 이벤트가 발생했을때 타겟 서비스 엔드포인트로 데이터를 전달하는 http 기반의 콜백
 refs 웹훅(Webhook) | 토스페이먼츠 개발자센터 links</p>
           
           <br>
@@ -1156,7 +1257,7 @@ refs 🌐 DHCP 이란 무엇인가? (그림으로 쉽게 정리) links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 컬럼 텍스트의 전체 값을 인덱싱해서 키워드 검색(full text search)을 용이하게 하는 방법으로 stopword, n-gram 등의 전문 검색 알고리즘을 사용한다.
+            <p>컬럼 텍스트의 전체 값을 인덱싱해서 키워드 검색(full text search)을 용이하게 하는 방법으로 stopword, n-gram 등의 전문 검색 알고리즘을 사용한다.
 refs Real MySQL links</p>
           
           <br>
@@ -1187,7 +1288,7 @@ refs Real MySQL links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 인덱싱할 컬럼 값의 해시를 키로 이용하는 인덱스. 동등 비교에 최적화(O(N)) 되었지만 범위 검색이나 정렬에는 전혀 사용할 수 없다.
+            <p>인덱싱할 컬럼 값의 해시를 키로 이용하는 인덱스. 동등 비교에 최적화(O(N)) 되었지만 범위 검색이나 정렬에는 전혀 사용할 수 없다.
 refs Real MySQL links 해시</p>
           
           <br>
@@ -1285,9 +1386,9 @@ refs P of EAA: Active Record Fetching Title#kql4 links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 동기적이지 않은 것(asynchronous)을 의미한다.
+            <p>동기적이지 않은 것(asynchronous)을 의미한다.
 동기적이라는 건 작업들을 순차적으로 진행함을 의미하는데, 한 작업이 끝나기를 기다려야하는 속성이 있다. 반면에 비동기는 한 작업이 끝나기를 기다리지 않고 다른 작업을 진행하는 것을 말하며, 동기적이지 않은 모든 방식을 의미한다.
-비동기의 예시 non-block I/O - 요청을 block하는 작업이 아니기에 I/O를 기다리는 동안 다른 작업을 처리할 수 있다. 멀티 스레딩 - 여러 작업을 각 스레드가 나누어 진행하기에 동기적이지 않다. block I/O 작업이라도 비동기로 진행할 수 있다 refs …</p>
+비동기의 예시 non-block I/O - 요청을 block하는 작업이 아니기에 I/O를 기다리는 동안 다른 작업을 처리할 수 있다. 멀티 스레딩 - 여러 작업을 각 스레드가 나누어 진행하기에 동기적이지 않다. block I/O 작업이라도 비동기로 진행할 수 있다 refs 비동기 프로그 …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%EB%B9%84%EB%8F%99%EA%B8%B0/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1319,8 +1420,8 @@ refs P of EAA: Active Record Fetching Title#kql4 links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 컴퓨터 과학에서 어떠한 작업을 처리하는 흐름의 단위를 말한다.
-종류 하드웨어 스레드 - 하드웨어 레벨에서 CPU 코어의 작업을 나눠 놓은 단위이다. 코어의 한 하드웨어 스레드가 메모리에 접근하는 시간에 다른 스레드가 CPU 연산을 이용하는 병행처리를 가능케 한다. OS 스레드 - 일반적인 의미의 스레드로, CPU에서 실제로 실행(CPU 스케줄링)되는 단위이다. OS 커널이 시스템콜을 통해 스레드를 생성하고, 컨텍스트 스위칭을 한다. 네이티브 스레드, 커널 스레드라 불리기도 한다. 유저 스레드 - 유저가 관리하는 단위의 스레드로 프로그래밍 레벨에서 추상화 …</p>
+            <p>컴퓨터 과학에서 어떠한 작업을 처리하는 흐름의 단위를 말한다.
+종류 하드웨어 스레드 - 하드웨어 레벨에서 CPU 코어의 작업을 나눠 놓은 단위이다. 코어의 한 하드웨어 스레드가 메모리에 접근하는 시간에 다른 스레드가 CPU 연산을 이용하는 병행처리를 가능케 한다. OS 스레드 - 일반적인 의미의 스레드로, CPU에서 실제로 실행(CPU 스케줄링)되는 단위이다. OS 커널이 시스템콜을 통해 스레드를 생성하고, 컨텍스트 스위칭을 한다. 네이티브 스레드, 커널 스레드라 불리기도 한다. 유저 스레드 - 유저가 관리하는 단위의 스레드로 프로그래밍 레벨에서 추상화한 OS 스레드 …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%EC%8A%A4%EB%A0%88%EB%93%9C/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1353,8 +1454,8 @@ refs P of EAA: Active Record Fetching Title#kql4 links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content DB Connection Pool. DB와의 커넥션 풀을 어플리케이션 단에 미리 만들어두는 것이다. DB와 커넥션을 맺고 끊기 위해 매번 TCP 통신하는 비용을 줄인다.
-mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정 django 기준으로 성능에 중요한 설정 django는 커넥션 풀을 지원하지 않고, 요청마다 커넥션을 맺고 끊는다. CONN_MAX_AGE: …</p>
+            <p>DB Connection Pool. DB와의 커넥션 풀을 어플리케이션 단에 미리 만들어두는 것이다. DB와 커넥션을 맺고 끊기 위해 매번 TCP 통신하는 비용을 줄인다.
+mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정 django 기준으로 성능에 중요한 설정 django는 커넥션 풀을 지원하지 않고, 요청마다 커넥션을 맺고 끊는다. CONN_MAX_AGE: 하지만 CONN_MAX_AGE(default: 0) …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/dbcp/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1384,7 +1485,7 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content Log Structured Merge Tree는 로그성 데이터 색인을 위해 고안된 자료구조로, 정렬된 키-값 데이터인 SS테이블(Sorted String Table) 형식으로 디스크에 데이터를 저장한다.
+            <p>Log Structured Merge Tree는 로그성 데이터 색인을 위해 고안된 자료구조로, 정렬된 키-값 데이터인 SS테이블(Sorted String Table) 형식으로 디스크에 데이터를 저장한다.
 refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형태 : LSM 트리 &amp; B 트리 | by allocProc | Medium links B-Tree Hash 인덱스</p>
           
           <br>
@@ -1417,7 +1518,7 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
+            <p>mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
 refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu’s Diary 데이터 중심 애플리케이션 설계 links B-Tree Hash 인덱스 전문 검색 인덱스</p>
           
           <br>
@@ -1531,6 +1632,41 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EC%97%AD%EC%83%89%EC%9D%B8/" title="역색인">역색인</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-19</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/elasticsearch/' title="elasticsearch" class="post_tag button button_translucent">elasticsearch
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>키워드에 문서 인덱스를 저장하는 작업으로, 키워드를 포함한 문서를 빠르게 찾는 역인덱스이다.
+예를 들어,
+“검색 엔진은 정보를 빠르게 찾을 수 있는 도구이다.” “인덱스는 검색을 효율적으로 만들어주는 역할을 한다.” 위 문서들을 역색인 하면 아래와 같이 저장한다.
+{ &quot;검색&quot;: [1, 2], &quot;엔진&quot;: [1], &quot;정보&quot;: [1], &quot;빠르게&quot;: [1], &quot;찾다&quot;: [1], &quot;도구&quot;: [1], &quot;인덱스&quot;: [2], &quot;효율적 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EC%97%AD%EC%83%89%EC%9D%B8/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/%EA%B5%AC%EA%B8%80-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%8A%94-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EC%9D%BC%ED%95%9C%EB%8B%A4/" title="구글 엔지니어는 이렇게 일한다">구글 엔지니어는 이렇게 일한다</a>
       </h3>
       
@@ -1554,6 +1690,42 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
           
           <br>
           <a href="https://chankoo.github.io/posts/%EA%B5%AC%EA%B8%80-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%8A%94-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EC%9D%BC%ED%95%9C%EB%8B%A4/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/client-side-navigation/" title="Client-side Navigation">Client-side Navigation</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-08</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/web/' title="web" class="post_tag button button_translucent">web
+        </a><a href='https://chankoo.github.io/tags/frontend/' title="frontend" class="post_tag button button_translucent">frontend
+        </a><a href='https://chankoo.github.io/tags/nextjs/' title="nextjs" class="post_tag button button_translucent">nextjs
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Next.js 의 페이지 간 이동을 client-side에서 처리하는 것을 의미한다
+a 태그를 사용한 전통적인 라우팅과 달리, full page reload 를 (당연히) 하지 않고, 링크가 있으면 prefetching 하여 필요한 데이터(js 파일)를 미리 받아오며, 자체적으로 code splitting과 cache, partial-rendering 을 통해 사용성을 높이는 이점이 있다.
+refs links Client-Side Routing</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/client-side-navigation/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -1616,183 +1788,11 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 응용계층 간의 통신을 위해서 고안된 인터페이스로 어플리케이션에서 시스템(하위 계층)의 자원과 기능을 사용하도록 한다. 프로토콜이 TCP라면, 응용계층에서 TCP/IP로 내려가는 창구가 된다.
+            <p>응용계층 간의 통신을 위해서 고안된 인터페이스로 어플리케이션에서 시스템(하위 계층)의 자원과 기능을 사용하도록 한다. 프로토콜이 TCP라면, 응용계층에서 TCP/IP로 내려가는 창구가 된다.
 서버 소켓 - 구현상 같은 주소의 소켓이 여러개(하나의 리슨 소켓과 여러개의 통신 소켓)이다. 요청이 리슨 소켓으로 들어오면 accept하여 통신 소켓을 생성한다. 커넥션이 만들어진 후 클라이언트는 통신 소켓과 통신한다. 클라이언트 소켓 - 특정 포트를 선택하는 바인딩 과정 없이 자동으로 포트를 선택한다. 커널이 로컬 포트 중 적당한 포트를 골라 넘겨준다. 스펙상) …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%EC%86%8C%EC%BC%93/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" title="리액티브 프로그래밍">리액티브 프로그래밍</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-06-01</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' title="함수형프로그래밍" class="post_tag button button_translucent">함수형프로그래밍
-        </a><a href='https://chankoo.github.io/tags/react/' title="react" class="post_tag button button_translucent">react
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content 데이터 스트림에 영향을 미치는 모든 변경 사항을 observer 들에게 전파하는 프로그래밍
-리액티브 매니페스토
-반응성(responsive) : 리액티브 시스템은 빠를 뿐 아니라 + 일정하고 예상가능한 반응 시간을 제공한다. 회복성(resilient) : 장애가 발생해도 시스템은 반응해야한다. 여러 컴포넌트의 시간과 공간 분리 (즉, 컴포넌트가 각각 독립적인 생명주기를 갖고 다른 프로세스에서 실행), 작업 위임시 비동기적으로 위임하는 등의 기법이 있다. 탄력성(elastic) : …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/api-%EC%A1%B0%ED%95%A9-%ED%8C%A8%ED%84%B4/" title="API 조합 패턴">API 조합 패턴</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-06-01</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/api/' title="api" class="post_tag button button_translucent">api
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content (주로)MSA에서 프로바이더 서비스들이 제공하는 데이터를 조합하여 한번에 제공하는 API 조합기를 두는 패턴
-설계
-API 조합기로 둘 컴포넌트 선정 클라이언트 간단하지만, 클라이언트가 외부 네트워크에 존재하는 경우 느리다 API 게이트웨이 일반적인 방법으로 API 게이트웨이 패턴이라 불림 스탠드 얼론 서비스 ‘주문 검색 서비스’ 와 같은 서비스를 두어 조합기 역할을 맡기는 방법 효율적인 조합 로직 프로바이더 서비스 순차 호출에 따른 지연 시간을 줄이는 것이 핵심 리액티브 프로그래밍을 권장 refs 마이크로서비스 패턴 links …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/api-%EC%A1%B0%ED%95%A9-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%8B%9C/" title="서비스 메시">서비스 메시</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-05-24</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content 프록시를 사용하여 서비스 간의 통신을 관리하는 인프라 계층. 도커와 쿠버네티스는 수많은 마이크로서비스의 오케스트레이션을 가능하게 하였고, 이들 서비스 간에 흐르는 트래픽을 추적하고 관리하려는 목적으로 서비스 메시를 사용한다.
-(어플리케이션 레벨이 아니라) 인프라 레벨에서 1) 트래픽 관리 2) observability 3) 보안 강화의 기능을 제공한다.
-refs 실무자를 위한 서비스 메시 - 지금 서비스 메시가 의미 있는 이유 links</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%8B%9C/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" title="API Gateway 패턴">API Gateway 패턴</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-05-18</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/api/' title="api" class="post_tag button button_translucent">api
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스) …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/websocket/" title="WebSocket">WebSocket</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-03-30</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/web/' title="web" class="post_tag button button_translucent">web
-        </a><a href='https://chankoo.github.io/tags/http/' title="http" class="post_tag button button_translucent">http
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content 서버-클라이언트 양방향 일대일 통신을 제공하는 프로토콜
-http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다 통신 상대가 정해져있어 데이터를 절약한다. stateful 하기에 채널을 온메모리로 관리해야한다. refs 리얼월드 HTTP links 소켓</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/websocket/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -1875,16 +1875,21 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">37</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
-          OS
-          <span class="button_tally">19</span>
+          <span class="button_tally">41</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
           네트워크
+          <span class="button_tally">21</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
+          OS
+          <span class="button_tally">20</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
+          언어
           <span class="button_tally">18</span>
         </a>
         
@@ -1893,9 +1898,9 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
           <span class="button_tally">18</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
-          언어
-          <span class="button_tally">17</span>
+        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
+          백엔드
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -1903,14 +1908,14 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
           <span class="button_tally">12</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
-          백엔드
+        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
+          DB
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
-          DB
-          <span class="button_tally">10</span>
+        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
+          기타
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -1918,9 +1923,9 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
-          기타
-          <span class="button_tally">3</span>
+        <a href='https://chankoo.github.io/categories/%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="테스트">
+          테스트
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
@@ -1947,12 +1952,12 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
-          <span class="button_tally">20</span>
+          <span class="button_tally">21</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
           동시성
-          <span class="button_tally">19</span>
+          <span class="button_tally">20</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
@@ -1962,7 +1967,7 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
         
         <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
           책
-          <span class="button_tally">12</span>
+          <span class="button_tally">13</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
@@ -1970,23 +1975,23 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
           <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
-          WEB
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
-          기억장치
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
+          WEB
+          <span class="button_tally">9</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class="post_tag button button_translucent" title="디자인패턴">
           디자인패턴
-          <span class="button_tally">8</span>
+          <span class="button_tally">9</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
+          기억장치
           <span class="button_tally">8</span>
         </a>
         
@@ -2027,21 +2032,21 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
         
         <a href='https://chankoo.github.io/tags/oop/' class="post_tag button button_translucent" title="oop">
           OOP
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
-          REACT
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="파일시스템">
           파일시스템
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class="post_tag button button_translucent" title="함수형프로그래밍">
           함수형프로그래밍
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
+          REACT
           <span class="button_tally">4</span>
         </a>
         
@@ -2075,7 +2080,15 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=1 title="frontend">FRONTEND<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/docker/' class=" post_tag button button_translucent" data-position=1 title="docker">DOCKER<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/elasticsearch/' class=" post_tag button button_translucent" data-position=1 title="elasticsearch">ELASTICSEARCH<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=2 title="frontend">FRONTEND<span class="button_tally">2</span>
             </a>
             
             
@@ -2107,11 +2120,15 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=4 title="oop">OOP<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/nextjs/' class=" post_tag button button_translucent" data-position=1 title="nextjs">NEXTJS<span class="button_tally">1</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=20 title="python">PYTHON<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=5 title="oop">OOP<span class="button_tally">5</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=21 title="python">PYTHON<span class="button_tally">21</span>
             </a>
             
             
@@ -2131,11 +2148,11 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=2 title="unix">UNIX<span class="button_tally">2</span>
+            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=3 title="unix">UNIX<span class="button_tally">3</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=8 title="web">WEB<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=9 title="web">WEB<span class="button_tally">9</span>
             </a>
             
             
@@ -2147,11 +2164,11 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=19 title="동시성">동시성<span class="button_tally">19</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=8 title="디자인패턴">디자인패턴<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=9 title="디자인패턴">디자인패턴<span class="button_tally">9</span>
             </a>
             
             
@@ -2159,7 +2176,7 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=8 title="분산시스템">분산시스템<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
             </a>
             
             
@@ -2171,11 +2188,11 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=3 title="인증">인증<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=4 title="인증">인증<span class="button_tally">4</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=12 title="책">책<span class="button_tally">12</span>
+            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=13 title="책">책<span class="button_tally">13</span>
             </a>
             
             
@@ -2183,11 +2200,11 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=4 title="파일시스템">파일시스템<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=5 title="파일시스템">파일시스템<span class="button_tally">5</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=4 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=5 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">5</span>
             </a>
             
             <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>

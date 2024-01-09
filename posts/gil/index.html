@@ -21,16 +21,16 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="content 파이썬 객체의 레퍼런스 카운팅이 정상적으로 동작하도록, 인터프리터의 동작을 전역적으로 통제하는 락. 여러 스레드가 한 객체의 레퍼런스 카운트를 조작하는 동시성 을 제어하기위해, GIL 을 가진 스레드만 자원을 통제할 수 있다.
-더 구체적으로 말하면, 멀티 스레딩 환경에서  …" />
+<meta name="description" content="파이썬 객체의 레퍼런스 카운팅이 정상적으로 동작하도록, 인터프리터의 동작을 전역적으로 통제하는 락. 여러 스레드가 한 객체의 레퍼런스 카운트를 조작하는 동시성 을 제어하기위해, GIL 을 가진 스레드만 자원을 통제할 수 있다.
+더 구체적으로 말하면, 멀티 스레딩 환경에서 각 스레드는 레 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="GIL" />
 <meta name="twitter:image" content="https://chankoo.github.io/"/>
 <meta property="og:url" content="https://chankoo.github.io/posts/gil/" />
 <meta property="og:title" content="GIL" />
-<meta property="og:description" content="content 파이썬 객체의 레퍼런스 카운팅이 정상적으로 동작하도록, 인터프리터의 동작을 전역적으로 통제하는 락. 여러 스레드가 한 객체의 레퍼런스 카운트를 조작하는 동시성 을 제어하기위해, GIL 을 가진 스레드만 자원을 통제할 수 있다.
-더 구체적으로 말하면, 멀티 스레딩 환경에서  …" />
+<meta property="og:description" content="파이썬 객체의 레퍼런스 카운팅이 정상적으로 동작하도록, 인터프리터의 동작을 전역적으로 통제하는 락. 여러 스레드가 한 객체의 레퍼런스 카운트를 조작하는 동시성 을 제어하기위해, GIL 을 가진 스레드만 자원을 통제할 수 있다.
+더 구체적으로 말하면, 멀티 스레딩 환경에서 각 스레드는 레 …" />
 <meta property="og:image" content="https://chankoo.github.io/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chankoo.github.io/icons/apple-touch-icon.png">
@@ -124,10 +124,9 @@
     </span>
   </div>
 
-    <div class="post_body"><h2 id="content">content</h2>
-<p>파이썬 객체의 레퍼런스 카운팅이 정상적으로 동작하도록, 인터프리터의 동작을 전역적으로 통제하는 락. 여러 스레드가 한 객체의 레퍼런스 카운트를 조작하는 <a href="https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C%EC%84%B1/">동시성</a> 을 제어하기위해, GIL 을 가진 스레드만 자원을 통제할 수 있다.</p>
+    <div class="post_body"><p>파이썬 객체의 레퍼런스 카운팅이 정상적으로 동작하도록, 인터프리터의 동작을 전역적으로 통제하는 락. 여러 스레드가 한 객체의 레퍼런스 카운트를 조작하는 <a href="https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C%EC%84%B1/">동시성</a> 을 제어하기위해, GIL 을 가진 스레드만 자원을 통제할 수 있다.</p>
 <p>더 구체적으로 말하면, 멀티 스레딩 환경에서 각 스레드는 레퍼런스 카운팅을 위해 PyObject 의 ob_refcnt를 조작하는데, 이는 race condition이다. race condition 해결을 위해 일반적인 mutex 를 사용하자니 각 객체 마다 락이 필요하고, deadlock 의 리스크도 존재한다. 그래서 파이썬(CPython)은 GIL을 통해 인터프리터 자체를 잠가버렸다.</p>
-<p>GIL로 레퍼런스 카운팅 문제를 해결했지만, 이것이 파이썬에서 race condition 이 발생하지 않는다는 얘기는 아니다. GIL은 바이트코드를 레벨에서 atomic한 실행을 보장하기 때문이다.</p>
+<p>GIL로 레퍼런스 카운팅 문제를 해결했지만, 이것이 파이썬에서 race condition 이 발생하지 않는다는 얘기는 아니다. GIL은 레퍼런스 카운팅의 atomic한 실행을 보장하는 것 뿐이다. 스레드 레벨에서의 동작은 다른 얘기고 아래처럼 스레드 안전하지 않은 수행이 이루어질 수 있다.</p>
 <p><figure>
   <picture>
 
@@ -233,16 +232,21 @@ sys.getswitchinterval()  # default 5ms
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">37</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
-          OS
-          <span class="button_tally">19</span>
+          <span class="button_tally">41</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
           네트워크
+          <span class="button_tally">21</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
+          OS
+          <span class="button_tally">20</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
+          언어
           <span class="button_tally">18</span>
         </a>
         
@@ -251,9 +255,9 @@ sys.getswitchinterval()  # default 5ms
           <span class="button_tally">18</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
-          언어
-          <span class="button_tally">17</span>
+        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
+          백엔드
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -261,14 +265,14 @@ sys.getswitchinterval()  # default 5ms
           <span class="button_tally">12</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
-          백엔드
+        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
+          DB
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
-          DB
-          <span class="button_tally">10</span>
+        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
+          기타
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -276,9 +280,9 @@ sys.getswitchinterval()  # default 5ms
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
-          기타
-          <span class="button_tally">3</span>
+        <a href='https://chankoo.github.io/categories/%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="테스트">
+          테스트
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
@@ -305,12 +309,12 @@ sys.getswitchinterval()  # default 5ms
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
-          <span class="button_tally">20</span>
+          <span class="button_tally">21</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
           동시성
-          <span class="button_tally">19</span>
+          <span class="button_tally">20</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
@@ -320,7 +324,7 @@ sys.getswitchinterval()  # default 5ms
         
         <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
           책
-          <span class="button_tally">12</span>
+          <span class="button_tally">13</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
@@ -328,23 +332,23 @@ sys.getswitchinterval()  # default 5ms
           <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
-          WEB
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
-          기억장치
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
+          WEB
+          <span class="button_tally">9</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class="post_tag button button_translucent" title="디자인패턴">
           디자인패턴
-          <span class="button_tally">8</span>
+          <span class="button_tally">9</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
+          기억장치
           <span class="button_tally">8</span>
         </a>
         
@@ -385,21 +389,21 @@ sys.getswitchinterval()  # default 5ms
         
         <a href='https://chankoo.github.io/tags/oop/' class="post_tag button button_translucent" title="oop">
           OOP
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
-          REACT
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="파일시스템">
           파일시스템
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class="post_tag button button_translucent" title="함수형프로그래밍">
           함수형프로그래밍
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
+          REACT
           <span class="button_tally">4</span>
         </a>
         
@@ -433,7 +437,15 @@ sys.getswitchinterval()  # default 5ms
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=1 title="frontend">FRONTEND<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/docker/' class=" post_tag button button_translucent" data-position=1 title="docker">DOCKER<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/elasticsearch/' class=" post_tag button button_translucent" data-position=1 title="elasticsearch">ELASTICSEARCH<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=2 title="frontend">FRONTEND<span class="button_tally">2</span>
             </a>
             
             
@@ -465,11 +477,15 @@ sys.getswitchinterval()  # default 5ms
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=4 title="oop">OOP<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/nextjs/' class=" post_tag button button_translucent" data-position=1 title="nextjs">NEXTJS<span class="button_tally">1</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=20 title="python">PYTHON<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=5 title="oop">OOP<span class="button_tally">5</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=21 title="python">PYTHON<span class="button_tally">21</span>
             </a>
             
             
@@ -489,11 +505,11 @@ sys.getswitchinterval()  # default 5ms
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=2 title="unix">UNIX<span class="button_tally">2</span>
+            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=3 title="unix">UNIX<span class="button_tally">3</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=8 title="web">WEB<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=9 title="web">WEB<span class="button_tally">9</span>
             </a>
             
             
@@ -505,11 +521,11 @@ sys.getswitchinterval()  # default 5ms
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=19 title="동시성">동시성<span class="button_tally">19</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=8 title="디자인패턴">디자인패턴<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=9 title="디자인패턴">디자인패턴<span class="button_tally">9</span>
             </a>
             
             
@@ -517,7 +533,7 @@ sys.getswitchinterval()  # default 5ms
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=8 title="분산시스템">분산시스템<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
             </a>
             
             
@@ -529,11 +545,11 @@ sys.getswitchinterval()  # default 5ms
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=3 title="인증">인증<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=4 title="인증">인증<span class="button_tally">4</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=12 title="책">책<span class="button_tally">12</span>
+            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=13 title="책">책<span class="button_tally">13</span>
             </a>
             
             
@@ -541,11 +557,11 @@ sys.getswitchinterval()  # default 5ms
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=4 title="파일시스템">파일시스템<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=5 title="파일시스템">파일시스템<span class="button_tally">5</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=4 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=5 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">5</span>
             </a>
             
             <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>

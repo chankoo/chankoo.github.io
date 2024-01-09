@@ -139,7 +139,7 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content (프로세서의 메모리)참조는 랜덤이 아니고 비슷한 지역에서 빈번하게 일어난다는 특성(Locality of reference)
+            <p>(프로세서의 메모리)참조는 랜덤이 아니고 비슷한 지역에서 빈번하게 일어난다는 특성(Locality of reference)
 Spatial Locality 와 2) Temporal Locality로 크게 나뉘는데 1)은 비슷한 공간의 영역을 반복적으로, 2)는 최근에 참조한 영역을 반복적으로 참조하는 현상을 말한다. 프로세서의 캐시는 locality를 고려하여 동작하기에 프로그램을 짤 때 locality를 활용한다면 더 캐시 효율적이다.
 refs Locality of reference - Wikipedia links</p>
           
@@ -173,7 +173,7 @@ refs Locality of reference - Wikipedia links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content Process Control Block. 프로세스 관리를 위한 정보를 담은 OS 커널의 자료구조이다. 프로세스 실행과 스케줄링 등에 필요한 정보를 포함하여 OS 입장에서 프로세스를 표현한다.
+            <p>Process Control Block. 프로세스 관리를 위한 정보를 담은 OS 커널의 자료구조이다. 프로세스 실행과 스케줄링 등에 필요한 정보를 포함하여 OS 입장에서 프로세스를 표현한다.
 refs links</p>
           
           <br>
@@ -206,7 +206,7 @@ refs links</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content ISA를 구현하는 방법을 말한다.
+            <p>ISA를 구현하는 방법을 말한다.
 예를들어, Intel 과 AMD는 동일한 x86 ISA를 쓰지만 Microarchitecture가 다르기에 성능이 다르다.
 refs links ISA</p>
           
@@ -240,11 +240,11 @@ refs links ISA</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 명령어 집합 구조(Instruction Set Architecture) CPU가 이해할 수 있는 기계어 명령어 집합을 의미한다. CPU 마다 비트 길이와 코드가 다르다.
+            <p>명령어 집합 구조(Instruction Set Architecture) CPU가 이해할 수 있는 기계어 명령어 집합을 의미한다. CPU 마다 비트 길이와 코드가 다르다.
 각 비트를 기능적으로 분할하여 의미를 부여했고, 이 기계어 명렁어와 일대일 매핑하여 문자화 한 것이 어셈블리어(Assembly Language)다.
 이는 소프트웨어와 하드웨어간 인터페이스를 규정한 것이다.
 프로세서 칩을 만드는 회사마다 ISA가 다른데, 익숙한 예로 Intel의 칩은 x86을, ARM의 칩은 ARM 을 쓰는 식이다.
-refs 명령어 집합 - 위키백과, 우리 모두의 백과사 …</p>
+refs 명령어 집합 - 위키백과, 우리 모두의 백과사전 [ 컴퓨터구 …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/isa/" title="Read More" class="excerpt_more button">Read More</a>
@@ -277,7 +277,7 @@ refs 명령어 집합 - 위키백과, 우리 모두의 백과사 …</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 여러 일을 한꺼번에 실행하는 것. Parallelism. CPU의 영역에서 명세하자면, 여러 CPU가 스레드 하나씩을 동시에 실행하는 것이다.
+            <p>여러 일을 한꺼번에 실행하는 것. Parallelism. CPU의 영역에서 명세하자면, 여러 CPU가 스레드 하나씩을 동시에 실행하는 것이다.
 여러가지 일을 동시에 다루는 요구사항(동시성)을 해결하는 방법이기에 해법의 속성을 내포한다. 실제로 순차적 프로그래밍의 한계를 넘어서는 기술이다.
 refs 7가지 동시성 모델 links 동시성</p>
           
@@ -312,7 +312,7 @@ refs 7가지 동시성 모델 links 동시성</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content 여러 일을 한꺼번에 다루는 것. Concurrency. CPU의 영역에서 명세하자면, CPU는 하나인데 여러 스레드에서 각각의 제어흐름을 다루고 있는 상황이다.
+            <p>여러 일을 한꺼번에 다루는 것. Concurrency. CPU의 영역에서 명세하자면, CPU는 하나인데 여러 스레드에서 각각의 제어흐름을 다루고 있는 상황이다.
 순차적 프로그래밍의 한계를 넘어서려는 시도이나, 여러가지 일을 동시에 다루는 척(병렬 착각, 병행성)하는 것이기에 그자체로 문제의 속성을 내포한다.
 refs 7가지 동시성 모델 links 병렬성</p>
           
@@ -374,16 +374,21 @@ refs 7가지 동시성 모델 links 병렬성</p>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">37</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
-          OS
-          <span class="button_tally">19</span>
+          <span class="button_tally">41</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
           네트워크
+          <span class="button_tally">21</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
+          OS
+          <span class="button_tally">20</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
+          언어
           <span class="button_tally">18</span>
         </a>
         
@@ -392,9 +397,9 @@ refs 7가지 동시성 모델 links 병렬성</p>
           <span class="button_tally">18</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
-          언어
-          <span class="button_tally">17</span>
+        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
+          백엔드
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -402,14 +407,14 @@ refs 7가지 동시성 모델 links 병렬성</p>
           <span class="button_tally">12</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
-          백엔드
+        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
+          DB
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
-          DB
-          <span class="button_tally">10</span>
+        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
+          기타
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B3%B4%EC%95%88/' class="post_tag button button_translucent" title="보안">
@@ -417,9 +422,9 @@ refs 7가지 동시성 모델 links 병렬성</p>
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
-          기타
-          <span class="button_tally">3</span>
+        <a href='https://chankoo.github.io/categories/%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="테스트">
+          테스트
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
@@ -446,12 +451,12 @@ refs 7가지 동시성 모델 links 병렬성</p>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
-          <span class="button_tally">20</span>
+          <span class="button_tally">21</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
           동시성
-          <span class="button_tally">19</span>
+          <span class="button_tally">20</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
@@ -461,7 +466,7 @@ refs 7가지 동시성 모델 links 병렬성</p>
         
         <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
           책
-          <span class="button_tally">12</span>
+          <span class="button_tally">13</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
@@ -469,23 +474,23 @@ refs 7가지 동시성 모델 links 병렬성</p>
           <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
-          WEB
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">10</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
-          기억장치
-          <span class="button_tally">8</span>
+        <a href='https://chankoo.github.io/tags/web/' class="post_tag button button_translucent" title="web">
+          WEB
+          <span class="button_tally">9</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class="post_tag button button_translucent" title="디자인패턴">
           디자인패턴
-          <span class="button_tally">8</span>
+          <span class="button_tally">9</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98/' class="post_tag button button_translucent" title="기억장치">
+          기억장치
           <span class="button_tally">8</span>
         </a>
         
@@ -526,21 +531,21 @@ refs 7가지 동시성 모델 links 병렬성</p>
         
         <a href='https://chankoo.github.io/tags/oop/' class="post_tag button button_translucent" title="oop">
           OOP
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
-          REACT
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="파일시스템">
           파일시스템
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class="post_tag button button_translucent" title="함수형프로그래밍">
           함수형프로그래밍
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
+          REACT
           <span class="button_tally">4</span>
         </a>
         
@@ -574,7 +579,15 @@ refs 7가지 동시성 모델 links 병렬성</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=1 title="frontend">FRONTEND<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/docker/' class=" post_tag button button_translucent" data-position=1 title="docker">DOCKER<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/elasticsearch/' class=" post_tag button button_translucent" data-position=1 title="elasticsearch">ELASTICSEARCH<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/frontend/' class=" post_tag button button_translucent" data-position=2 title="frontend">FRONTEND<span class="button_tally">2</span>
             </a>
             
             
@@ -606,11 +619,15 @@ refs 7가지 동시성 모델 links 병렬성</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=4 title="oop">OOP<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/nextjs/' class=" post_tag button button_translucent" data-position=1 title="nextjs">NEXTJS<span class="button_tally">1</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=20 title="python">PYTHON<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/oop/' class=" post_tag button button_translucent" data-position=5 title="oop">OOP<span class="button_tally">5</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=21 title="python">PYTHON<span class="button_tally">21</span>
             </a>
             
             
@@ -630,11 +647,11 @@ refs 7가지 동시성 모델 links 병렬성</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=2 title="unix">UNIX<span class="button_tally">2</span>
+            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=3 title="unix">UNIX<span class="button_tally">3</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=8 title="web">WEB<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/web/' class=" post_tag button button_translucent" data-position=9 title="web">WEB<span class="button_tally">9</span>
             </a>
             
             
@@ -646,11 +663,11 @@ refs 7가지 동시성 모델 links 병렬성</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=19 title="동시성">동시성<span class="button_tally">19</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=8 title="디자인패턴">디자인패턴<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=9 title="디자인패턴">디자인패턴<span class="button_tally">9</span>
             </a>
             
             
@@ -658,7 +675,7 @@ refs 7가지 동시성 모델 links 병렬성</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=8 title="분산시스템">분산시스템<span class="button_tally">8</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
             </a>
             
             
@@ -670,11 +687,11 @@ refs 7가지 동시성 모델 links 병렬성</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=3 title="인증">인증<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/%EC%9D%B8%EC%A6%9D/' class=" post_tag button button_translucent" data-position=4 title="인증">인증<span class="button_tally">4</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=12 title="책">책<span class="button_tally">12</span>
+            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=13 title="책">책<span class="button_tally">13</span>
             </a>
             
             
@@ -682,11 +699,11 @@ refs 7가지 동시성 모델 links 병렬성</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=4 title="파일시스템">파일시스템<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=5 title="파일시스템">파일시스템<span class="button_tally">5</span>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=4 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' class=" post_tag button button_translucent" data-position=5 title="함수형프로그래밍">함수형프로그래밍<span class="button_tally">5</span>
             </a>
             
             <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>

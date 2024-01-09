@@ -16,7 +16,7 @@
       <description>
         
           
-            content Inversion Of Control(제어 역전) 클라이언트(프로그래머)가 직접 사용할 의존성을 제어하는 상황(일반적, 절차적) -&amp;gt; 누군가(프레임워크)가 의존성을 정해주는(DI, DIP 등으로) 상황(역전)
+            Inversion Of Control(제어 역전) 클라이언트(프로그래머)가 직접 사용할 의존성을 제어하는 상황(일반적, 절차적) -&amp;gt; 누군가(프레임워크)가 의존성을 정해주는(DI, DIP 등으로) 상황(역전)
 refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 지배한다 links DI DIP 
           
           

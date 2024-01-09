@@ -16,7 +16,7 @@
       <description>
         
           
-            content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
+            리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
 private - only cached in client public - can be cached in proxies refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
           
           
@@ -33,7 +33,7 @@ private - only cached in client public - can be cached in proxies refs Cache-Con
       <description>
         
           
-            content Cross-Origin Resource Sharing. 출처가 다른(Cross-Origin) 요청에 대해 리소스를 내려 줄 것인지 판단하는 정책이다.
+            Cross-Origin Resource Sharing. 출처가 다른(Cross-Origin) 요청에 대해 리소스를 내려 줄 것인지 판단하는 정책이다.
 요청 헤더 Origin에 출처가 담긴다. 스킴, 도메인, 포트 중 하나라도 다르면 Cross-Origin으로 본다. 응답 헤더 Access-Control-Allow-Origin에 허용된 출처가 담긴다. 브라우저가 Origin, Access-Control-Allow-Origin 그리고 요청 시나리오를 고려하여 CORS 위반 여부를 판단한다. refs CORS는 왜 이렇게 우리를 힘들게 하는걸까? | Evans Library links 
           
           
@@ -50,7 +50,7 @@ private - only cached in client public - can be cached in proxies refs Cache-Con
       <description>
         
           
-            content Back/Forward Cache 는 브라우저가 제공하는 페이지 전체(js 포함) 스냅샷으로, 페이지 전환 이벤트(pageshow, pagehide)가 발생할때 캐시한다.
+            Back/Forward Cache 는 브라우저가 제공하는 페이지 전체(js 포함) 스냅샷으로, 페이지 전환 이벤트(pageshow, pagehide)가 발생할때 캐시한다.
 refs Back/forward cache | Articles | web.dev links 
           
           

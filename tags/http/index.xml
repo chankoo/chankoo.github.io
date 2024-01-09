@@ -51,7 +51,7 @@ refs 리얼월드 HTTP HTTP/2에서 Frame, Stream의 의미 links HTTP2 TCP 소�
       <description>
         
           
-            content 리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
+            리소스의 캐시 여부를 지정하는 http 응답/요청 헤더. Cache-Control에 부여한 directive에 따라 캐시 사용 전략이 결정된다. Etag나 bfcache 등이 모두 영향받는다.
 private - only cached in client public - can be cached in proxies refs Cache-Control - HTTP | MDN 프론트엔드 개발자가 알아야 할 ‘캐싱’ 개념 정리 | 요즘IT links Etag bfcache 
           
           
@@ -68,7 +68,7 @@ private - only cached in client public - can be cached in proxies refs Cache-Con
       <description>
         
           
-            content Cross-Origin Resource Sharing. 출처가 다른(Cross-Origin) 요청에 대해 리소스를 내려 줄 것인지 판단하는 정책이다.
+            Cross-Origin Resource Sharing. 출처가 다른(Cross-Origin) 요청에 대해 리소스를 내려 줄 것인지 판단하는 정책이다.
 요청 헤더 Origin에 출처가 담긴다. 스킴, 도메인, 포트 중 하나라도 다르면 Cross-Origin으로 본다. 응답 헤더 Access-Control-Allow-Origin에 허용된 출처가 담긴다. 브라우저가 Origin, Access-Control-Allow-Origin 그리고 요청 시나리오를 고려하여 CORS 위반 여부를 판단한다. refs CORS는 왜 이렇게 우리를 힘들게 하는걸까? | Evans Library links 
           
           
@@ -85,7 +85,7 @@ private - only cached in client public - can be cached in proxies refs Cache-Con
       <description>
         
           
-            content 특정 이벤트가 발생했을때 타겟 서비스 엔드포인트로 데이터를 전달하는 http 기반의 콜백
+            특정 이벤트가 발생했을때 타겟 서비스 엔드포인트로 데이터를 전달하는 http 기반의 콜백
 refs 웹훅(Webhook) | 토스페이먼츠 개발자센터 links 
           
           
@@ -102,7 +102,7 @@ refs 웹훅(Webhook) | 토스페이먼츠 개발자센터 links
       <description>
         
           
-            content 서버-클라이언트 양방향 일대일 통신을 제공하는 프로토콜
+            서버-클라이언트 양방향 일대일 통신을 제공하는 프로토콜
 http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다 통신 상대가 정해져있어 데이터를 절약한다. stateful 하기에 채널을 온메모리로 관리해야한다. refs 리얼월드 HTTP links 소켓 
           
           
@@ -119,7 +119,7 @@ http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다
       <description>
         
           
-            content Server-Sent Events. HTML5 의 기능으로, 한번의 요청에 서버가 여러 이벤트(청크) 전송을 제공하는 프로토콜. http 위에서 동작하는 별도 텍스트 프로토콜이다(text/event-stream).
+            Server-Sent Events. HTML5 의 기능으로, 한번의 요청에 서버가 여러 이벤트(청크) 전송을 제공하는 프로토콜. http 위에서 동작하는 별도 텍스트 프로토콜이다(text/event-stream).
 refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links 
           
           
@@ -152,7 +152,7 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links
       <description>
         
           
-            content HTTP/1.1 이후 이루어진 대규모 업데이트(2015년)로 통신 고속화를 목적으로 하는 프로토콜.
+            HTTP/1.1 이후 이루어진 대규모 업데이트(2015년)로 통신 고속화를 목적으로 하는 프로토콜.
 스트림을 사용해 (텍스트가 아니라) 바이너리 데이터를 다중으로 송수신한다. 서버 푸시를 통해 우선순위 높은 콘텐츠를 클라이언트 요청 없이도 전송할 수 있다. 헤더를 압축(HPACK)해 전송한다. refs 리얼월드 HTTP links 스트림 
           
           
@@ -169,7 +169,7 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links
       <description>
         
           
-            content google에서 개발한 RPC(Remote Procedure Call) 프레임워크.
+            google에서 개발한 RPC(Remote Procedure Call) 프레임워크.
 기존 RPC처럼, 네트워크 통신이 필요한 요청을 로컬에서 호출하는 것처럼 도와주는 프로토콜이다. HTTP/2 를 사용하며 프로토콜 버퍼(ProtoBuf)를 이용해 통신 효율을 높이는 특징이 있다.
 일반적인 http 기반 API(REST 등) 보다 더 빠르고(5배 가량), HTTP2의 기능을 사용할 수 있는 것이 장점이다.
 refs [네이버클라우드 기술&amp;amp;경험] 시대의 흐름, gRPC 깊게 파고들기 #1 | by NAVER CLOUD PLATFORM | NAVER CLOUD PLATFORM | Medium What is RPC? gRPC Introduction. - YouTube links HTTP2 프로토콜 버퍼 
@@ -188,7 +188,7 @@ refs [네이버클라우드 기술&amp;amp;경험] 시대의 흐름, gRPC 깊게
       <description>
         
           
-            content 쿠키에 아래 속성을 추가하여 보안을 확보한다.
+            쿠키에 아래 속성을 추가하여 보안을 확보한다.
 HTTP Only XSS 등 자바스크립트 기반 공격에서 쿠키를 보호하기 위해 사용하는 속성으로, true 인 경우 클라이언트(브라우저)에서 쿠키에 접근할 수 없다.
 Secure HTTPS 에서만 쿠키를 전송하는 속성으로, true 인 경우 HTTP에선 쿠키를 전송하지 않는다.
 refs [Web] HTTP Only와 Secure Cookie 이해하기 links XSS 
@@ -207,7 +207,7 @@ refs [Web] HTTP Only와 Secure Cookie 이해하기 links XSS
       <description>
         
           
-            content 쿠키와 세션 보다 토큰 기반 인증 방식(JWT)를 이용하면 장점이 많아 현대 웹, 앱은 대부분 JWT를 쓴다.
+            쿠키와 세션 보다 토큰 기반 인증 방식(JWT)를 이용하면 장점이 많아 현대 웹, 앱은 대부분 JWT를 쓴다.
 쿠키와 세션은 세션 아이디를 쿠키에 담고, 별도 세션을 저장하는 방식이다. 요청시 세션 아이디를 이용해 저장소의 세션을 확인하여 인증한다. 그렇기에 세션 저장소를 유지하는 비용이 발생하고, 요청이 stateful 한 상태가 되며, 매번 요청시 세션을 조회해야하는 단점이 있다.
 반면에 JWT는 토큰 자체로 인증 여부를 판단하기에 별도 저장소가 필수적이지 않으며 매번 조회 요청을 보내지 않아도 된다. 또한 stateful 하지 않아 확장성이 좋다.
           
@@ -225,7 +225,7 @@ refs [Web] HTTP Only와 Secure Cookie 이해하기 links XSS
       <description>
         
           
-            content JSON Web Token. 사용자의 정보를 Json에 담아 보내는 형식의 웹 토큰이다.
+            JSON Web Token. 사용자의 정보를 Json에 담아 보내는 형식의 웹 토큰이다.
 Header / Payload / Signature 로 나뉘며, base64 인코딩을 통해 url-safe한 xxx.yyy.zzz 형태로 표현한다. Header에는 Signature 에 서명한 알고리즘 정보를 담는다. Payload에는 실제 사용자 정보를 Json 형태로 담으며 추가에 열려있다. Signature는 비대칭키 방식을 사용하여 header와 payload가 변경 안되었음을 보증한다.
 주로 인증을 위해 사용하는데, JWT의 유효성(위조 여부)만 확인하면 인증은 완료된다. 이미 JWT 발급 시점에 (id, pwd로) 사용자를 인증했고 그 결과로 JWT를 생성했기에, (Signature를 이용하여) JWT 가 위조되지 않았다는 것만 확인하면 JWT 발급 시점과 같은 사용자라는 것을 알게되는 원리이다.
           

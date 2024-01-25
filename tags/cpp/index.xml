@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cpp on chankoo</title>
+    <link>https://chankoo.github.io/tags/cpp/</link>
+    <description>Recent content in cpp on chankoo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 Jan 2024 13:49:42 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>레퍼런스</title>
+      <link>https://chankoo.github.io/posts/%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/</link>
+      <pubDate>Tue, 23 Jan 2024 13:49:42 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/</guid>
+      <description>
+        
+          
+            언어마다 구현의 차이는 있지만, &amp;lsquo;메모리에 저장된 실제 데이터를 가리키는 변수&amp;rsquo; 를 의미힌다.
+파이썬에서 레퍼런스는 객체를 가리키는 변수이다. 해당 객체가 레퍼런스 카운팅을 통해 레퍼런스를 관리한다. 레퍼런스는 스택 영역에, 객체는 힙 영역에 각각 저장한다. 할당되는 순간(x = 9999999999), 레퍼런스가 힙 영역의 객체를 가리키며 객체의 레퍼런스 카운트를 증가시킨다. 다른 레퍼런스를 선언하고 기존 레퍼런스를 할당(y = x)해도 같은 일이 발생한다. 새로 만든 레퍼런스는 기존 레퍼런스가 가리키던 객체를 가리키게 되고(y -&amp;gt; 9999999999), 기존 객체의 레퍼런스 카운트가 증가한다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -119,6 +119,246 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/asyncio-cancellation/" title="Asyncio Cancellation">Asyncio Cancellation</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-25</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>코루틴이 외부 요인에 의해 중단되었음을 의미
+모든 await 구문에서 아무때나 발생 가능하다. CancelledError 예외가 발생하게되며, 예외 처리를 통해 clean-up 해야한다. clean-up 작업이 까다로운데, 제대로 처리하지 못하면 예기치 못한 문제(취소된 작업이 db 커넥션을 물고 있다거나)를 야기한다.
+명시적으로 Cancellation을 발생시키려면,
+코루틴에 asyncio.CancelledError 를 throw 하거나(실제 코드에선 잘 안쓰임) 퓨처 또는 태스크 객체의 .cancel() 을 호출하거나 raise …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/asyncio-cancellation/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/" title="전문가를 위한 파이썬">전문가를 위한 파이썬</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-23</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EC%B1%85/' title="책" class="post_tag button button_translucent">책
+        </a><a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>refs Fluent Python Chapter 1. 파이썬 데이터 모델 (Feat. 일관성 있는 언어) links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/call-by-sharing/" title="Call by Sharing">Call by Sharing</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-23</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a><a href='https://chankoo.github.io/tags/javascript/' title="javascript" class="post_tag button button_translucent">javascript
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>인자의 레퍼런스(또는 포인터)를 복사해서 사용하는 함수 호출 방식이다.
+파이썬에서는 모든 타입을 Call by Sharing으로 전달한다. print_arg를 실행하면 인자로 전달된 객체의 레퍼런스 카운트가 증가(2 -&gt; 4)함을 확인할 수 있다.
+// python import sys def print_arg(arg): print(id(arg), sys.getrefcount(arg)) a = 9999 print(id(a), sys.getrefcount(a)) # 4416168912 2 print_arg(a) # 4416168912 4 b = [1,2,3] …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/call-by-sharing/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/" title="레퍼런스">레퍼런스</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-23</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a><a href='https://chankoo.github.io/tags/cpp/' title="cpp" class="post_tag button button_translucent">cpp
+        </a><a href='https://chankoo.github.io/tags/javascript/' title="javascript" class="post_tag button button_translucent">javascript
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>언어마다 구현의 차이는 있지만, ‘메모리에 저장된 실제 데이터를 가리키는 변수’ 를 의미힌다.
+파이썬에서 레퍼런스는 객체를 가리키는 변수이다. 해당 객체가 레퍼런스 카운팅을 통해 레퍼런스를 관리한다. 레퍼런스는 스택 영역에, 객체는 힙 영역에 각각 저장한다. 할당되는 순간(x = 9999999999), 레퍼런스가 힙 영역의 객체를 가리키며 객체의 레퍼런스 카운트를 증가시킨다. 다른 레퍼런스를 선언하고 기존 레퍼런스를 할당(y = x)해도 같은 일이 발생한다. 새로 만든 레퍼런스는 기존 레퍼런스가 가리키던 객체를 가리키게 되고(y -&gt; …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/using-asyncio-in-python/" title="Using Asyncio in Python">Using Asyncio in Python</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-20</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EC%B1%85/' title="책" class="post_tag button button_translucent">책
+        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>refs links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/using-asyncio-in-python/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/asyncio/" title="Asyncio">Asyncio</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-20</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>async / await 문을 이용해 비동기 프로그래밍을 구현하는 파이썬 라이브러리이다.
+IO 작업에 async 기반 동시성은
+스레드 기반 동시성 보다 안전한 선점 스케줄링을 구현하면서 가볍다. 많은 자원이 아니라 단순히 시간이 필요한 IO 작업에 적합하다. 멀티 스레딩 코드보다 제어권 변동을 명시적으로 표현(await)하여 코드 레벨에서 관측 가능하다. 사용자 관점에서 주요한 요소들을 알아보자.
+asyncio.run() 코루틴 체인의 최상위 진입점으로, 코루틴 내 코루틴들을 모두 실행한다. 이벤트 루프 생성, 태스크 실행, 보류 태스크 취소, 이벤트 루프 소멸까지  …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/asyncio/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C-%ED%8E%B8%EC%A7%91/" title="동시 편집">동시 편집</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-19</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>실시간 협업 툴을 만들때 사용하는 기술로 CRDT와 OT가 대표적이다.
+OT(Operational Transformation)은 유저들의 모든 변경사항을 기록하고, 서버에 전송해 순차적으로 적용해 결과를 만드는 방식이다. 구글 독스 등에서 사용하는 기술이나, 사용자가 몰리면 과부하 걸릴 수 있다. 반면 CRDT(Conflict-Free-Replicated Data Types)는 모든 개체(char 등) 유니크한 값으로 저장하기에 변경 사항을 합칠 때 충돌이 발생하지 않는다. 매번 서버의 응답을 기다릴 필요 없는 방식이다.
+refs CRDT vs OT A Gentle …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C-%ED%8E%B8%EC%A7%91/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%94%BD%EC%8A%A4%EC%B2%98/" title="테스트 픽스처">테스트 픽스처</a>
       </h3>
       
@@ -173,7 +413,7 @@
           
             <p>asyncio 라이브러리가 제공하는 잠금으로 코루틴 간 경합 상황을 해결하는 도구이다.
 멀티 스레딩 환경에서는 적합하지 않은데, 스레드 레벨에서는 점유 배제를 보장할 수 없기 때문이다. 즉, 스레드 A의 코루틴이 잠금을 획득했더라도 스레드 B의 코루틴은 영향 받지 않는다.
-refs asyncio의 동기화수단들 · Wireframe links</p>
+refs asyncio의 동기화수단들 · Wireframe links Asyncio</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/asyncio-lock/" title="Read More" class="excerpt_more button">Read More</a>
@@ -604,6 +844,42 @@ message Person { string name = 1; // 필드 타입 string, 필드 넘버 1 int32
           
           <br>
           <a href="https://chankoo.github.io/posts/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B2%84%ED%8D%BC/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/awaitable-%EA%B0%9D%EC%B2%B4/" title="Awaitable 객체">Awaitable 객체</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-12-07</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>await 키워드로 실행하는 코루틴, 퓨처, 태스크를 의미한다.
+awaitable 객체는 다음과 같이 정의한다.
+코루틴 이거나 이터레이터를 반환하는 <em>await</em>() 메소드를 구현한 객체 퓨처는 이벤트 루프와 상호작용하는 객체로 작업 실행 상태와 결과를 저장한다.
+상태는 1) PENDING, 2) CANCELLED, 3) FINISHED 의 세가지이며, CANCELLED 와 FINISHED는 완료 상태이다 결과 값을 저장(.set_result(value))하고 가져올(.result()) 수 있다. 실행 중 취소(.cancel()) 할 수 있다. …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/awaitable-%EA%B0%9D%EC%B2%B4/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -1171,7 +1447,8 @@ refs P of EAA: Active Record Fetching Title#kql4 links</p>
           
             <p>동기적이지 않은 것(asynchronous)을 의미한다.
 동기적이라는 건 작업들을 순차적으로 진행함을 의미하는데, 한 작업이 끝나기를 기다려야하는 속성이 있다. 반면에 비동기는 한 작업이 끝나기를 기다리지 않고 다른 작업을 진행하는 것을 말하며, 동기적이지 않은 모든 방식을 의미한다.
-비동기의 예시 non-block I/O - 요청을 block하는 작업이 아니기에 I/O를 기다리는 동안 다른 작업을 처리할 수 있다. 멀티 스레딩 - 여러 작업을 각 스레드가 나누어 진행하기에 동기적이지 않다. block I/O 작업이라도 비동기로 진행할 수 있다 refs 비동기 프로그 …</p>
+비동기 프로그래밍을 가능케하는 조건
+non-block IO - 요청을 block하는 작업이 아니기에 I/O를 기다리는 동안 다른 작업을 처리(async, non-block)할 수 있다. 멀티 스레딩 - 여러 작업을 각 스레드가 나누어 진행하기에 동기적이지 않다. block IO 작업이라 …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/%EB%B9%84%EB%8F%99%EA%B8%B0/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1514,279 +1791,6 @@ refs links</p>
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%8C%A8%ED%84%B4-%EB%AA%A8%EC%9D%8C/" title="마이크로서비스 패턴 모음">마이크로서비스 패턴 모음</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-06-07</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>패턴 개괄
-애플리케이션 패턴(application pattern): 개발자가 맞닥뜨리는 문제를 해결합니다. 분해: 시스템을 여러 서비스로 분해하는 기준을 결정하는 것. 비즈니스 능력 &lt;-&gt; 하위 도메인(DDD) 쿼리: 분산 db에서 쿼리하는 방법 API 조합 &lt;-&gt; CQRS 데이터 일관성: 분산 db 간 일관성 유지하는 방법 참고 - 2PC는 가용성 이슈와 성능 이슈 때문에 제외 테스트 자동화: 가급적 E2E를 피하고, 서비스 별로 분리하여 테스트하는 단순화가 필요 consumer-driven contract test / consumer-side …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%8C%A8%ED%84%B4-%EB%AA%A8%EC%9D%8C/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EC%86%8C%EC%BC%93/" title="소켓">소켓</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-06-07</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/tcp/' title="TCP" class="post_tag button button_translucent">TCP
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>응용계층 간의 통신을 위해서 고안된 인터페이스로 어플리케이션에서 시스템(하위 계층)의 자원과 기능을 사용하도록 한다. 프로토콜이 TCP라면, 응용계층에서 TCP/IP로 내려가는 창구가 된다.
-서버 소켓 - 구현상 같은 주소의 소켓이 여러개(하나의 리슨 소켓과 여러개의 통신 소켓)이다. 요청이 리슨 소켓으로 들어오면 accept하여 통신 소켓을 생성한다. 커넥션이 만들어진 후 클라이언트는 통신 소켓과 통신한다. 클라이언트 소켓 - 특정 포트를 선택하는 바인딩 과정 없이 자동으로 포트를 선택한다. 커널이 로컬 포트 중 적당한 포트를 골라 넘겨준다. 스펙상) …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EC%86%8C%EC%BC%93/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" title="리액티브 프로그래밍">리액티브 프로그래밍</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-06-01</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/%ED%95%A8%EC%88%98%ED%98%95%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' title="함수형프로그래밍" class="post_tag button button_translucent">함수형프로그래밍
-        </a><a href='https://chankoo.github.io/tags/react/' title="react" class="post_tag button button_translucent">react
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content 데이터 스트림에 영향을 미치는 모든 변경 사항을 observer 들에게 전파하는 프로그래밍
-리액티브 매니페스토
-반응성(responsive) : 리액티브 시스템은 빠를 뿐 아니라 + 일정하고 예상가능한 반응 시간을 제공한다. 회복성(resilient) : 장애가 발생해도 시스템은 반응해야한다. 여러 컴포넌트의 시간과 공간 분리 (즉, 컴포넌트가 각각 독립적인 생명주기를 갖고 다른 프로세스에서 실행), 작업 위임시 비동기적으로 위임하는 등의 기법이 있다. 탄력성(elastic) : …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/api-%EC%A1%B0%ED%95%A9-%ED%8C%A8%ED%84%B4/" title="API 조합 패턴">API 조합 패턴</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-06-01</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/api/' title="api" class="post_tag button button_translucent">api
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>(주로)MSA에서 프로바이더 서비스들이 제공하는 데이터를 조합하여 한번에 제공하는 API 조합기를 두는 패턴
-설계
-API 조합기로 둘 컴포넌트 선정 클라이언트 간단하지만, 클라이언트가 외부 네트워크에 존재하는 경우 느리다 API 게이트웨이 일반적인 방법으로 API 게이트웨이 패턴이라 불림 스탠드 얼론 서비스 ‘주문 검색 서비스’ 와 같은 서비스를 두어 조합기 역할을 맡기는 방법 효율적인 조합 로직 프로바이더 서비스 순차 호출에 따른 지연 시간을 줄이는 것이 핵심 리액티브 프로그래밍을 권장 refs 마이크로서비스 패턴 links API …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/api-%EC%A1%B0%ED%95%A9-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%8B%9C/" title="서비스 메시">서비스 메시</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-05-24</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content 프록시를 사용하여 서비스 간의 통신을 관리하는 인프라 계층. 도커와 쿠버네티스는 수많은 마이크로서비스의 오케스트레이션을 가능하게 하였고, 이들 서비스 간에 흐르는 트래픽을 추적하고 관리하려는 목적으로 서비스 메시를 사용한다.
-(어플리케이션 레벨이 아니라) 인프라 레벨에서 1) 트래픽 관리 2) observability 3) 보안 강화의 기능을 제공한다.
-refs 실무자를 위한 서비스 메시 - 지금 서비스 메시가 의미 있는 이유 links</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%8B%9C/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" title="API Gateway 패턴">API Gateway 패턴</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-05-18</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/msa/' title="MSA" class="post_tag button button_translucent">MSA
-        </a><a href='https://chankoo.github.io/tags/api/' title="api" class="post_tag button button_translucent">api
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스) …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/websocket/" title="WebSocket">WebSocket</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-03-30</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/web/' title="web" class="post_tag button button_translucent">web
-        </a><a href='https://chankoo.github.io/tags/http/' title="http" class="post_tag button button_translucent">http
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>서버-클라이언트 양방향 일대일 통신을 제공하는 프로토콜
-http는 아니지만 http 업그레이드 헤더를 사용하도록 호환된다 통신 상대가 정해져있어 데이터를 절약한다. stateful 하기에 채널을 온메모리로 관리해야한다. refs 리얼월드 HTTP links 소켓</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/websocket/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/sse/" title="SSE">SSE</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-03-30</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/web/' title="web" class="post_tag button button_translucent">web
-        </a><a href='https://chankoo.github.io/tags/http/' title="http" class="post_tag button button_translucent">http
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Server-Sent Events. HTML5 의 기능으로, 한번의 요청에 서버가 여러 이벤트(청크) 전송을 제공하는 프로토콜. http 위에서 동작하는 별도 텍스트 프로토콜이다(text/event-stream).
-refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/sse/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -1854,17 +1858,60 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
       <li>
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
       </li>
+    </ul>
+    <h2 class="mt-4">Recent Posts</h2>
+    <ul class="flex-column">
       <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 준비">&lt;시스템 디자인 연습&gt; 준비</a>
+        <a href="https://chankoo.github.io/posts/asyncio-cancellation/" class="nav-link" title="Asyncio Cancellation">Asyncio Cancellation</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/" class="nav-link" title="전문가를 위한 파이썬">전문가를 위한 파이썬</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/call-by-sharing/" class="nav-link" title="Call by Sharing">Call by Sharing</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/" class="nav-link" title="레퍼런스">레퍼런스</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/using-asyncio-in-python/" class="nav-link" title="Using Asyncio in Python">Using Asyncio in Python</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/asyncio/" class="nav-link" title="Asyncio">Asyncio</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C-%ED%8E%B8%EC%A7%91/" class="nav-link" title="동시 편집">동시 편집</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%94%BD%EC%8A%A4%EC%B2%98/" class="nav-link" title="테스트 픽스처">테스트 픽스처</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트">&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처">&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계">&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
       </li>
     </ul>
-    
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
           <span class="button_tally">41</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
+          언어
+          <span class="button_tally">25</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
@@ -1875,11 +1922,6 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
         <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
           OS
           <span class="button_tally">20</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
-          언어
-          <span class="button_tally">18</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="컴퓨터구조">
@@ -1912,14 +1954,14 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="테스트">
-          테스트
+        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
+          알고리즘
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://chankoo.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' class="post_tag button button_translucent" title="알고리즘">
-          알고리즘
-          <span class="button_tally">3</span>
+        <a href='https://chankoo.github.io/categories/%ED%85%8C%EC%8A%A4%ED%8A%B8/' class="post_tag button button_translucent" title="테스트">
+          테스트
+          <span class="button_tally">4</span>
         </a>
         
         
@@ -1941,22 +1983,22 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/tags/python/' class="post_tag button button_translucent" title="python">
           PYTHON
-          <span class="button_tally">21</span>
+          <span class="button_tally">27</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class="post_tag button button_translucent" title="동시성">
           동시성
-          <span class="button_tally">20</span>
+          <span class="button_tally">24</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
+          책
+          <span class="button_tally">15</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/http/' class="post_tag button button_translucent" title="http">
           HTTP
           <span class="button_tally">14</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/tags/%EC%B1%85/' class="post_tag button button_translucent" title="책">
-          책
-          <span class="button_tally">13</span>
         </a>
         
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
@@ -2034,8 +2076,8 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/react/' class="post_tag button button_translucent" title="react">
-          REACT
+        <a href='https://chankoo.github.io/tags/javascript/' class="post_tag button button_translucent" title="javascript">
+          JAVASCRIPT
           <span class="button_tally">4</span>
         </a>
         
@@ -2058,6 +2100,10 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
             
             
             <a href='https://chankoo.github.io/tags/cache/' class=" post_tag button button_translucent" data-position=5 title="cache">CACHE<span class="button_tally">5</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/cpp/' class=" post_tag button button_translucent" data-position=1 title="cpp">CPP<span class="button_tally">1</span>
             </a>
             
             
@@ -2097,7 +2143,7 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/javascript/' class=" post_tag button button_translucent" data-position=2 title="javascript">JAVASCRIPT<span class="button_tally">2</span>
+            <a href='https://chankoo.github.io/tags/javascript/' class=" post_tag button button_translucent" data-position=4 title="javascript">JAVASCRIPT<span class="button_tally">4</span>
             </a>
             
             
@@ -2117,7 +2163,7 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=21 title="python">PYTHON<span class="button_tally">21</span>
+            <a href='https://chankoo.github.io/tags/python/' class=" post_tag button button_translucent" data-position=27 title="python">PYTHON<span class="button_tally">27</span>
             </a>
             
             
@@ -2153,7 +2199,7 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=20 title="동시성">동시성<span class="button_tally">20</span>
+            <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' class=" post_tag button button_translucent" data-position=24 title="동시성">동시성<span class="button_tally">24</span>
             </a>
             
             
@@ -2181,7 +2227,7 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=13 title="책">책<span class="button_tally">13</span>
+            <a href='https://chankoo.github.io/tags/%EC%B1%85/' class=" post_tag button button_translucent" data-position=15 title="책">책<span class="button_tally">15</span>
             </a>
             
             

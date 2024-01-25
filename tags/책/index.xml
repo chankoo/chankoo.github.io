@@ -6,7 +6,39 @@
     <description>Recent content in 책 on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Dec 2023 14:01:38 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EC%B1%85/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Jan 2024 17:17:59 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EC%B1%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>전문가를 위한 파이썬</title>
+      <link>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/</link>
+      <pubDate>Tue, 23 Jan 2024 17:17:59 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/</guid>
+      <description>
+        
+          
+            refs Fluent Python Chapter 1. 파이썬 데이터 모델 (Feat. 일관성 있는 언어) links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using Asyncio in Python</title>
+      <link>https://chankoo.github.io/posts/using-asyncio-in-python/</link>
+      <pubDate>Sat, 20 Jan 2024 18:37:07 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/using-asyncio-in-python/</guid>
+      <description>
+        
+          
+            refs links 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Domain Driven Design</title>
       <link>https://chankoo.github.io/posts/domain-driven-design/</link>

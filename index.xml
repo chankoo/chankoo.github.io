@@ -6,7 +6,130 @@
     <description>Recent content on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jan 2024 17:33:48 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jan 2024 15:44:56 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asyncio Cancellation</title>
+      <link>https://chankoo.github.io/posts/asyncio-cancellation/</link>
+      <pubDate>Thu, 25 Jan 2024 15:44:56 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/asyncio-cancellation/</guid>
+      <description>
+        
+          
+            코루틴이 외부 요인에 의해 중단되었음을 의미
+모든 await 구문에서 아무때나 발생 가능하다. CancelledError 예외가 발생하게되며, 예외 처리를 통해 clean-up 해야한다. clean-up 작업이 까다로운데, 제대로 처리하지 못하면 예기치 못한 문제(취소된 작업이 db 커넥션을 물고 있다거나)를 야기한다.
+명시적으로 Cancellation을 발생시키려면,
+코루틴에 asyncio.CancelledError 를 throw 하거나(실제 코드에선 잘 안쓰임) 퓨처 또는 태스크 객체의 .cancel() 을 호출하거나 raise asyncio.CancelledError 를 통해 스스로 작업을 취소 import asyncio async def f(): try: while True: await asyncio.sleep(0) # cancellable 하게 만드는 asyncio.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>전문가를 위한 파이썬</title>
+      <link>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/</link>
+      <pubDate>Tue, 23 Jan 2024 17:17:59 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/</guid>
+      <description>
+        
+          
+            refs Fluent Python Chapter 1. 파이썬 데이터 모델 (Feat. 일관성 있는 언어) links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Call by Sharing</title>
+      <link>https://chankoo.github.io/posts/call-by-sharing/</link>
+      <pubDate>Tue, 23 Jan 2024 17:13:57 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/call-by-sharing/</guid>
+      <description>
+        
+          
+            인자의 레퍼런스(또는 포인터)를 복사해서 사용하는 함수 호출 방식이다.
+파이썬에서는 모든 타입을 Call by Sharing으로 전달한다. print_arg를 실행하면 인자로 전달된 객체의 레퍼런스 카운트가 증가(2 -&amp;gt; 4)함을 확인할 수 있다.
+// python import sys def print_arg(arg): print(id(arg), sys.getrefcount(arg)) a = 9999 print(id(a), sys.getrefcount(a)) # 4416168912 2 print_arg(a) # 4416168912 4 b = [1,2,3] print(id(b), sys.getrefcount(b)) # 4416560768 2 print_arg(b) # 4416560768 4 js 에서는 참조 타입을 인자로 전달할때 사용된다(원시 타입은 Call by value로 동작).
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>레퍼런스</title>
+      <link>https://chankoo.github.io/posts/%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/</link>
+      <pubDate>Tue, 23 Jan 2024 13:49:42 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/</guid>
+      <description>
+        
+          
+            언어마다 구현의 차이는 있지만, &amp;lsquo;메모리에 저장된 실제 데이터를 가리키는 변수&amp;rsquo; 를 의미힌다.
+파이썬에서 레퍼런스는 객체를 가리키는 변수이다. 해당 객체가 레퍼런스 카운팅을 통해 레퍼런스를 관리한다. 레퍼런스는 스택 영역에, 객체는 힙 영역에 각각 저장한다. 할당되는 순간(x = 9999999999), 레퍼런스가 힙 영역의 객체를 가리키며 객체의 레퍼런스 카운트를 증가시킨다. 다른 레퍼런스를 선언하고 기존 레퍼런스를 할당(y = x)해도 같은 일이 발생한다. 새로 만든 레퍼런스는 기존 레퍼런스가 가리키던 객체를 가리키게 되고(y -&amp;gt; 9999999999), 기존 객체의 레퍼런스 카운트가 증가한다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using Asyncio in Python</title>
+      <link>https://chankoo.github.io/posts/using-asyncio-in-python/</link>
+      <pubDate>Sat, 20 Jan 2024 18:37:07 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/using-asyncio-in-python/</guid>
+      <description>
+        
+          
+            refs links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Asyncio</title>
+      <link>https://chankoo.github.io/posts/asyncio/</link>
+      <pubDate>Sat, 20 Jan 2024 13:30:38 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/asyncio/</guid>
+      <description>
+        
+          
+            async / await 문을 이용해 비동기 프로그래밍을 구현하는 파이썬 라이브러리이다.
+IO 작업에 async 기반 동시성은
+스레드 기반 동시성 보다 안전한 선점 스케줄링을 구현하면서 가볍다. 많은 자원이 아니라 단순히 시간이 필요한 IO 작업에 적합하다. 멀티 스레딩 코드보다 제어권 변동을 명시적으로 표현(await)하여 코드 레벨에서 관측 가능하다. 사용자 관점에서 주요한 요소들을 알아보자.
+asyncio.run() 코루틴 체인의 최상위 진입점으로, 코루틴 내 코루틴들을 모두 실행한다. 이벤트 루프 생성, 태스크 실행, 보류 태스크 취소, 이벤트 루프 소멸까지 한번에 작업한다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>동시 편집</title>
+      <link>https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C-%ED%8E%B8%EC%A7%91/</link>
+      <pubDate>Fri, 19 Jan 2024 10:27:32 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C-%ED%8E%B8%EC%A7%91/</guid>
+      <description>
+        
+          
+            실시간 협업 툴을 만들때 사용하는 기술로 CRDT와 OT가 대표적이다.
+OT(Operational Transformation)은 유저들의 모든 변경사항을 기록하고, 서버에 전송해 순차적으로 적용해 결과를 만드는 방식이다. 구글 독스 등에서 사용하는 기술이나, 사용자가 몰리면 과부하 걸릴 수 있다. 반면 CRDT(Conflict-Free-Replicated Data Types)는 모든 개체(char 등) 유니크한 값으로 저장하기에 변경 사항을 합칠 때 충돌이 발생하지 않는다. 매번 서버의 응답을 기다릴 필요 없는 방식이다.
+refs CRDT vs OT A Gentle Introduction to CRDTs – vlcn.io links 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>테스트 픽스처</title>
       <link>https://chankoo.github.io/posts/%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%94%BD%EC%8A%A4%EC%B2%98/</link>
@@ -35,7 +158,7 @@
           
             asyncio 라이브러리가 제공하는 잠금으로 코루틴 간 경합 상황을 해결하는 도구이다.
 멀티 스레딩 환경에서는 적합하지 않은데, 스레드 레벨에서는 점유 배제를 보장할 수 없기 때문이다. 즉, 스레드 A의 코루틴이 잠금을 획득했더라도 스레드 B의 코루틴은 영향 받지 않는다.
-refs asyncio의 동기화수단들 · Wireframe links 
+refs asyncio의 동기화수단들 · Wireframe links Asyncio 
           
           
         
@@ -297,6 +420,25 @@ refs 리얼월드 HTTP HTTP/2에서 Frame, Stream의 의미 links HTTP2 TCP 소�
             구글에서 개발한 직렬화 데이터 구조. JSON과 같은 기존 포맷보다 작고 직렬화/역직렬화 속도가 빠르다.
 데이터 타입을 정의한 Proto file을 (해당 언어에 맞게) 컴파일하여 사용한다. 최초 1바이트(두자리 16진수)로 필드 넘버와 타입을 표현하고, 차례로 length와 데이터를 표현한다.
 message Person { string name = 1; // 필드 타입 string, 필드 넘버 1 int32 age = 2; } refs 프로토콜 버퍼란 무엇인가(Protocol Buffer) 서버, 클라이언트 예제와 함께 feat. express &amp;amp; Vue 구글 프로토콜 버퍼 (Protocol buffer) Language Guide (proto 2) | Protocol Buffers Documentation links Marshalling 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Awaitable 객체</title>
+      <link>https://chankoo.github.io/posts/awaitable-%EA%B0%9D%EC%B2%B4/</link>
+      <pubDate>Thu, 07 Dec 2023 14:11:07 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/awaitable-%EA%B0%9D%EC%B2%B4/</guid>
+      <description>
+        
+          
+            await 키워드로 실행하는 코루틴, 퓨처, 태스크를 의미한다.
+awaitable 객체는 다음과 같이 정의한다.
+코루틴 이거나 이터레이터를 반환하는 _await_() 메소드를 구현한 객체 퓨처는 이벤트 루프와 상호작용하는 객체로 작업 실행 상태와 결과를 저장한다.
+상태는 1) PENDING, 2) CANCELLED, 3) FINISHED 의 세가지이며, CANCELLED 와 FINISHED는 완료 상태이다 결과 값을 저장(.set_result(value))하고 가져올(.result()) 수 있다. 실행 중 취소(.cancel()) 할 수 있다. .add_done_callback() 으로 완료 후 호출할 콜백을 등록할 수 있다. 태스크는 퓨처의 서브클래스로 퓨처 인터페이스에 더해 코루틴과 상호작용하는 역할을 한다.
           
           
         
@@ -612,7 +754,8 @@ refs P of EAA: Active Record Fetching Title#kql4 links
           
             동기적이지 않은 것(asynchronous)을 의미한다.
 동기적이라는 건 작업들을 순차적으로 진행함을 의미하는데, 한 작업이 끝나기를 기다려야하는 속성이 있다. 반면에 비동기는 한 작업이 끝나기를 기다리지 않고 다른 작업을 진행하는 것을 말하며, 동기적이지 않은 모든 방식을 의미한다.
-비동기의 예시 non-block I/O - 요청을 block하는 작업이 아니기에 I/O를 기다리는 동안 다른 작업을 처리할 수 있다. 멀티 스레딩 - 여러 작업을 각 스레드가 나누어 진행하기에 동기적이지 않다. block I/O 작업이라도 비동기로 진행할 수 있다 refs 비동기 프로그래밍, 비동기 I/O, 비동기 커뮤니케이션.
+비동기 프로그래밍을 가능케하는 조건
+non-block IO - 요청을 block하는 작업이 아니기에 I/O를 기다리는 동안 다른 작업을 처리(async, non-block)할 수 있다. 멀티 스레딩 - 여러 작업을 각 스레드가 나누어 진행하기에 동기적이지 않다. block IO 작업이라도 비동기로 진행할 수 있다 예외 async / blocking IO async로 동작하려하지만 제어권이 없기 때문에 메인 플로우를 진행시키지 못한다.
           
           
         
@@ -1679,7 +1822,7 @@ refs GoF의 디자인 패턴 links 캡슐화
         
           
             싱글 스레드에서 요청을 비동기로 처리하기 위해 사용하는 루프.
-(gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요? - 배하람의 블로그 links gevent 비동기 
+(python asyncio에서) Asyncio Event Loop (gevent에서) I/O 요청시 커널에 요청을 주고 커널로 부터 응답 받은 이벤트를 처리하기 위해 돌고있는 루프 유저 영역 요청 -&amp;gt; 이벤트 루프 -&amp;gt; 이벤트 루프 응답 -&amp;gt; 대기하며 진행 커널 영역 블락 -&amp;gt; 이벤트 발생 -&amp;gt; 이벤트 루프에 노티 -&amp;gt; 대기 중인 것을 실현 (javascript에서) 콜백 큐에서 콜백 함수를 꺼내 콜 스택에 넣어 주는 루프 refs DEVIEW 2014 [JS] 도대체 이벤트 루프가 뭔가요?
           
           
         

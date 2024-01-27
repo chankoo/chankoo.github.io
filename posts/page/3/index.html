@@ -119,6 +119,75 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/" title="도커 네트워크">도커 네트워크</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-10-24</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/docker/' title="docker" class="post_tag button button_translucent">docker
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>도커 네트워크는 docker0 라는 이름의 가상 네트워크 브리지(bridge 옵션이 디폴트)로 구성된다. docker0 는 도커 내부 로직에 따라 16bit netmask의 ip를 할당 받으며, 컨테이너들의 gateway로 기능한다.
+컨테이너들은 docker0와 pair interface로 통신하는데, docker0 쪽은 vethXXX, 컨테이너 쪽은 eth0 라는 이름으로 구성되어 서로 packet을 주고받는다. 컨테이너는 Linux Namespace 를 이용하여 각자 독립적인 네트워크 공간을 할당받는다
+refs Networking overview | Docker …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0/" title="파일 디스크립터">파일 디스크립터</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-10-20</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="파일시스템" class="post_tag button button_translucent">파일시스템
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>유닉스 기반 OS에서 프로세스가 내부적으로 저장한 파일의 추상표현으로, 음이 아닌 정수이다.
+프로세스가 파일을 열면 OS는 해당 프로세스의 파일 디스크립터 중 가장 작은 값을 할당해준다. 다음부터 프로세스가 파일에 접근할 때는 파일 디스크립터 값을 인덱스로 사용한다. 해당 FD로 파일 테이블 포인터를 찾은 뒤, 시스템 파일을 참조(Inode에 접근)한다.
+0 ~ 2는 예약된 자리로 각각 표준 입력, 표준 출력, 표준 에러 출력을 의미한다.
+refs 파일 디스크립터(File Descriptor)란? links 파일 inode</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%BC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0/" title="파이썬 디스크립터">파이썬 디스크립터</a>
       </h3>
       
@@ -1728,73 +1797,6 @@ refs 클린 아키텍처 links SOLID</p>
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/di/" title="DI">DI</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-10-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' title="디자인패턴" class="post_tag button button_translucent">디자인패턴
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Dependency Injection(의존성 주입) 클라이언트에서 사용할 의존성을 외부에서 넣어주는 일
-refs links</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/di/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/ioc/" title="IOC">IOC</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-10-06</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' title="디자인패턴" class="post_tag button button_translucent">디자인패턴
-        </a><a href='https://chankoo.github.io/tags/spring/' title="spring" class="post_tag button button_translucent">spring
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Inversion Of Control(제어 역전) 클라이언트(프로그래머)가 직접 사용할 의존성을 제어하는 상황(일반적, 절차적) -&gt; 누군가(프레임워크)가 의존성을 정해주는(DI, DIP 등으로) 상황(역전)
-refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 지배한다 links DI DIP</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/ioc/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item">
@@ -1844,7 +1846,7 @@ refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 �
 
 
     
-    
+
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
@@ -1862,9 +1864,18 @@ refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 �
       <li>
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
       </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 준비">&lt;시스템 디자인 연습&gt; 준비</a>
+      </li>
     </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
+      <li>
+        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
+      </li>
       <li>
         <a href="https://chankoo.github.io/posts/asyncio-cancellation/" class="nav-link" title="Asyncio Cancellation">Asyncio Cancellation</a>
       </li>
@@ -1873,36 +1884,6 @@ refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 �
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/call-by-sharing/" class="nav-link" title="Call by Sharing">Call by Sharing</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/" class="nav-link" title="레퍼런스">레퍼런스</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/using-asyncio-in-python/" class="nav-link" title="Using Asyncio in Python">Using Asyncio in Python</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/asyncio/" class="nav-link" title="Asyncio">Asyncio</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C-%ED%8E%B8%EC%A7%91/" class="nav-link" title="동시 편집">동시 편집</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%94%BD%EC%8A%A4%EC%B2%98/" class="nav-link" title="테스트 픽스처">테스트 픽스처</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트">&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처">&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계">&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
       </li>
     </ul>
     <div>
@@ -1918,14 +1899,14 @@ refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 �
           <span class="button_tally">25</span>
         </a>
         
+        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
+          OS
+          <span class="button_tally">22</span>
+        </a>
+        
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
           네트워크
           <span class="button_tally">21</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
-          OS
-          <span class="button_tally">20</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="컴퓨터구조">
@@ -2119,7 +2100,7 @@ refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 �
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/docker/' class=" post_tag button button_translucent" data-position=1 title="docker">DOCKER<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/docker/' class=" post_tag button button_translucent" data-position=2 title="docker">DOCKER<span class="button_tally">2</span>
             </a>
             
             
@@ -2187,7 +2168,7 @@ refs 학습 페이지 [Study]IoC, DI, DIP 개념 잡기 - 기록은 기억을 �
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=3 title="unix">UNIX<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=4 title="unix">UNIX<span class="button_tally">4</span>
             </a>
             
             

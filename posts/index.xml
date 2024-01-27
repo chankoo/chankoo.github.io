@@ -6,7 +6,43 @@
     <description>Recent content in Posts on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jan 2024 15:44:56 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Jan 2024 18:12:29 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>시그널</title>
+      <link>https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/</link>
+      <pubDate>Sat, 27 Jan 2024 18:12:29 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/</guid>
+      <description>
+        
+          
+            Unix에서 프로세스에 보내는 IPC(Inter Process Communication)로 프로세스를 종료하는 등 특정한 역할 수행을 명령한다.
+대표적으로 아래와 같다.
+SIGTERM - 프로세스에 종료를 부탁. Graceful Shutdown을 유도(docker stop) SIGINT - ctrl + c 로 프로세스를 종료할 때 사용 SIGKILL - 프로세스를 즉시 종료(docker kill) refs asyncio 뽀개기 3 - SIGTERM (CTRL+C) 올바르게 처리하기 links 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>도커 Shutdown</title>
+      <link>https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/</link>
+      <pubDate>Sat, 27 Jan 2024 18:11:01 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/</guid>
+      <description>
+        
+          
+            일반적으로 docker stop [-t] 명령(SIGTERM)을 통해 컨테이너의 graceful shutdown을 유도한다. t초 후 SIGKILL을 통해 프로세스를 강제 종료한다.
+다만 컨테이너의 루트 프로세스에 시그널을 보내는 것임을 주의해야한다. 종료하려는 프로세스가 루트가 아닌 경우, 비정상적으로 종료될 수 있다. 아래와 같이 entrypoint 를 이용한 경우, 컨테이너 루트 프로세스인 /bin/bash 가 종료 시그널을 받게 되는 것이다. /bin/bash는 자식 프로세스가 종료할 때까지 SIGTERM 을 대기시킴으로써 정상적인 종료를 방해한다.
+root@a4373403d220:/ebook_moim/ebookFinder# ps -ef UID PID PPID C STIME TTY TIME CMD root 1 0 0 09:02 ?
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Asyncio Cancellation</title>
       <link>https://chankoo.github.io/posts/asyncio-cancellation/</link>
@@ -735,7 +771,7 @@ non-block IO - 요청을 block하는 작업이 아니기에 I/O를 기다리는 
         
           
             DB Connection Pool. DB와의 커넥션 풀을 어플리케이션 단에 미리 만들어두는 것이다. DB와 커넥션을 맺고 끊기 위해 매번 TCP 통신하는 비용을 줄인다.
-mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정 django 기준으로 성능에 중요한 설정 django는 커넥션 풀을 지원하지 않고, 요청마다 커넥션을 맺고 끊는다. CONN_MAX_AGE: 하지만 CONN_MAX_AGE(default: 0)에 값을 주면, 커넥션을 지정한 시간 동안 종료하지 않아 커넥션 풀처럼 재사용이 가능하다.
+mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 connect_timeout: 커넥션을 맺기 위해 기다리는 최대 시간(기본값 10초) wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정(기본값 28800 - 8시간). 연결을 맺고 다음 쿼리까지 기다리는 최대 시간 django 기준으로 성능에 중요한 설정 django는 커넥션 풀을 지원하지 않고, 요청마다 커넥션을 맺고 끊는다.
           
           
         

@@ -336,6 +336,73 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" title="시그널">시그널</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-27</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/unix/' title="UNIX" class="post_tag button button_translucent">UNIX
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Unix에서 프로세스에 보내는 IPC(Inter Process Communication)로 프로세스를 종료하는 등 특정한 역할 수행을 명령한다.
+대표적으로 아래와 같다.
+SIGTERM - 프로세스에 종료를 부탁. Graceful Shutdown을 유도(docker stop) SIGINT - ctrl + c 로 프로세스를 종료할 때 사용 SIGKILL - 프로세스를 즉시 종료(docker kill) refs asyncio 뽀개기 3 - SIGTERM (CTRL+C) 올바르게 처리하기 links</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" title="도커 Shutdown">도커 Shutdown</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-01-27</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/docker/' title="docker" class="post_tag button button_translucent">docker
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>일반적으로 docker stop [-t] 명령(SIGTERM)을 통해 컨테이너의 graceful shutdown을 유도한다. t초 후 SIGKILL을 통해 프로세스를 강제 종료한다.
+다만 컨테이너의 루트 프로세스에 시그널을 보내는 것임을 주의해야한다. 종료하려는 프로세스가 루트가 아닌 경우, 비정상적으로 종료될 수 있다. 아래와 같이 entrypoint 를 이용한 경우, 컨테이너 루트 프로세스인 /bin/bash 가 종료 시그널을 받게 되는 것이다. /bin/bash는 자식 프로세스가 종료할 때까지 SIGTERM 을 대기시킴으로써 정상적인 종료를 방해한다. …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/asyncio-cancellation/" title="Asyncio Cancellation">Asyncio Cancellation</a>
       </h3>
       
@@ -1732,74 +1799,10 @@ non-block IO - 요청을 block하는 작업이 아니기에 I/O를 기다리는 
         <div class="pale">
           
             <p>DB Connection Pool. DB와의 커넥션 풀을 어플리케이션 단에 미리 만들어두는 것이다. DB와 커넥션을 맺고 끊기 위해 매번 TCP 통신하는 비용을 줄인다.
-mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정 django 기준으로 성능에 중요한 설정 django는 커넥션 풀을 지원하지 않고, 요청마다 커넥션을 맺고 끊는다. CONN_MAX_AGE: 하지만 CONN_MAX_AGE(default: 0) …</p>
+mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 connect_timeout: 커넥션을 맺기 위해 기다리는 최대 시간(기본값 10초) wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정(기본값 28800 - 8시간). 연결을 맺고 다음 쿼리까지 기다리는 최대 시간 django …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/dbcp/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/lsm-tree/" title="LSM Tree">LSM Tree</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-21</span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Log Structured Merge Tree는 로그성 데이터 색인을 위해 고안된 자료구조로, 정렬된 키-값 데이터인 SS테이블(Sorted String Table) 형식으로 디스크에 데이터를 저장한다.
-refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형태 : LSM 트리 &amp; B 트리 | by allocProc | Medium links B-Tree Hash 인덱스</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/lsm-tree/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" title="Mysql 인덱스">Mysql 인덱스</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-21</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu’s Diary 데이터 중심 애플리케이션 설계 links B-Tree Hash 인덱스 전문 검색 인덱스</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -1854,7 +1857,7 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
 
 
     
-    
+
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
@@ -1872,9 +1875,18 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
       <li>
         <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
       </li>
+      <li>
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 준비">&lt;시스템 디자인 연습&gt; 준비</a>
+      </li>
     </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
+      <li>
+        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
+      </li>
       <li>
         <a href="https://chankoo.github.io/posts/asyncio-cancellation/" class="nav-link" title="Asyncio Cancellation">Asyncio Cancellation</a>
       </li>
@@ -1883,36 +1895,6 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/call-by-sharing/" class="nav-link" title="Call by Sharing">Call by Sharing</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/" class="nav-link" title="레퍼런스">레퍼런스</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/using-asyncio-in-python/" class="nav-link" title="Using Asyncio in Python">Using Asyncio in Python</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/asyncio/" class="nav-link" title="Asyncio">Asyncio</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%8F%99%EC%8B%9C-%ED%8E%B8%EC%A7%91/" class="nav-link" title="동시 편집">동시 편집</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%94%BD%EC%8A%A4%EC%B2%98/" class="nav-link" title="테스트 픽스처">테스트 픽스처</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트">&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처">&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계">&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
       </li>
     </ul>
     <div>
@@ -1928,14 +1910,14 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
           <span class="button_tally">25</span>
         </a>
         
+        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
+          OS
+          <span class="button_tally">22</span>
+        </a>
+        
         <a href='https://chankoo.github.io/categories/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/' class="post_tag button button_translucent" title="네트워크">
           네트워크
           <span class="button_tally">21</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/os/' class="post_tag button button_translucent" title="os">
-          OS
-          <span class="button_tally">20</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="컴퓨터구조">
@@ -2129,7 +2111,7 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/docker/' class=" post_tag button button_translucent" data-position=1 title="docker">DOCKER<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/docker/' class=" post_tag button button_translucent" data-position=2 title="docker">DOCKER<span class="button_tally">2</span>
             </a>
             
             
@@ -2197,7 +2179,7 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=3 title="unix">UNIX<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/unix/' class=" post_tag button button_translucent" data-position=4 title="unix">UNIX<span class="button_tally">4</span>
             </a>
             
             

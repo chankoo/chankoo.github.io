@@ -6,7 +6,25 @@
     <description>Recent content in UNIX on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Oct 2022 23:01:33 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Jan 2024 18:12:29 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>시그널</title>
+      <link>https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/</link>
+      <pubDate>Sat, 27 Jan 2024 18:12:29 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/</guid>
+      <description>
+        
+          
+            Unix에서 프로세스에 보내는 IPC(Inter Process Communication)로 프로세스를 종료하는 등 특정한 역할 수행을 명령한다.
+대표적으로 아래와 같다.
+SIGTERM - 프로세스에 종료를 부탁. Graceful Shutdown을 유도(docker stop) SIGINT - ctrl + c 로 프로세스를 종료할 때 사용 SIGKILL - 프로세스를 즉시 종료(docker kill) refs asyncio 뽀개기 3 - SIGTERM (CTRL+C) 올바르게 처리하기 links 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>블록</title>
       <link>https://chankoo.github.io/posts/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%A8/</link>

@@ -125,70 +125,6 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/lsm-tree/" title="LSM Tree">LSM Tree</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-21</span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Log Structured Merge Tree는 로그성 데이터 색인을 위해 고안된 자료구조로, 정렬된 키-값 데이터인 SS테이블(Sorted String Table) 형식으로 디스크에 데이터를 저장한다.
-refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형태 : LSM 트리 &amp; B 트리 | by allocProc | Medium links B-Tree Hash 인덱스</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/lsm-tree/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" title="Mysql 인덱스">Mysql 인덱스</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-21</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu’s Diary 데이터 중심 애플리케이션 설계 links B-Tree Hash 인덱스 전문 검색 인덱스</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/b-tree/" title="B-Tree">B-Tree</a>
       </h3>
       
@@ -315,6 +251,111 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
           
           <br>
           <a href="https://chankoo.github.io/posts/%EC%97%AD%EC%83%89%EC%9D%B8/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/" title="&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계">&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-15</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>작업 두번째 실험에서는 AWS ECS Fargate 를 이용해 페이지 조회 작업을 스케일 아웃했다. 첫번째 실험과 같은 조건인데, 100개의 짧은 글(post)이 로드된 페이지를 읽는 작업이다.
+목표 1000 RPS를 견디는 환경을 만든다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 3분 동안 요청을 지속했다.
+결과 요약 물리적 네트워크 대역폭이 병목인 상황을 확인하고 테스트 환경까지 클라우드에 구축했다. 위 목표를 달성하기 위해 Fargate 기준 vCPU 8개(1024 * 8)가 필요하다는 것을 확인했다. 환경 AWS
+서버: Django …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-12</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>작업 첫번째 실험은 가장 기본적인 페이지 조회이다. 로컬 환경에서 Django와 gunicorn 조합으로 어느 정도의 조회 트래픽을 감당하는지 파악하는 것이었다. 크게 두가지 작업을 진행했는데, 하나는 빈 페이지를 읽는, 다른 하나는 100자 분량의 짧은 글(post) 100개가 로드된 페이지를 읽는 작업이다.
+목표 목표는 로컬 환경에서 1000 RPS(초당 요청 수)를 견딜 수 있는지 확인하는 것이다. 이를 위해 가상 사용자(VU) 1000명을 설정하고, 1초 간격으로 5분 동안 요청을 지속했다.
+결과 요약 gevent 워커 사용: gunicorn gevent 워커 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" title="&lt;시스템 디자인 연습&gt; 준비">&lt;시스템 디자인 연습&gt; 준비</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-11</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%B6%80%ED%95%98%ED%85%8C%EC%8A%A4%ED%8A%B8/' title="부하테스트" class="post_tag button button_translucent">부하테스트
+        </a><a href='https://chankoo.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%94%94%EC%9E%90%EC%9D%B8/' title="시스템디자인" class="post_tag button button_translucent">시스템디자인
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>배경 ‘대용량 트래픽’ 또는 ‘분산 시스템’과 같은 용어를 채용공고에서 접하는 것이 일반적인 경험이 된 지 오래다. 대규모 서비스를 운영하는 아키텍처 대부분이 분산 시스템을 기반으로 하고 있기에, 이를 이해하고 경험해봐야겠다는 생각을 한 지도 오래되었다.
+그러나 대규모 분산 시스템을 실제로 경험하는 것은 쉬운 일이 아니다. 시니어 개발자들은 시스템 디자인 인터뷰 자리에서 복잡한 아키텍처를 뚝딱 그려낸다던데, 언제 그런 수준으로 성장할 수 있을지 의문이 들었다. “가상 면접 사례로 배우는 대규모 시스템 설계 기 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -1773,37 +1814,6 @@ refs 개발자에서 아키텍트로 클린 아키텍처 links 모듈 컴포넌�
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/" title="모듈">모듈</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-10-27</span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>설계 시점에 다루는 코드 덩어리. 시점상 가장 먼저 구현하는 단위
-refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item">
@@ -1854,29 +1864,11 @@ refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트</p>
 
     
 
-    <h2 class="mt-4">Featured Posts</h2>
-    <ul>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EA%B8%B0%EB%B3%B8-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트">&lt;시스템 디자인 연습&gt; 채팅 서비스 2 - 기본 성능 테스트</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처">&lt;시스템 디자인 연습&gt; 채팅 서비스 1 - 아키텍처</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-3-db-%EB%B3%91%EB%AA%A9/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목">&lt;시스템 디자인 연습&gt; 피드 서비스 3 - DB 병목</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-2-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%8C%80%EC%97%AD%ED%8F%AD-%ED%95%9C%EA%B3%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계">&lt;시스템 디자인 연습&gt; 피드 서비스 2 - 네트워크 대역폭 한계</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%ED%94%BC%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-1-%EC%84%9C%EB%B2%84-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%84%A4%EC%A0%95/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정">&lt;시스템 디자인 연습&gt; 피드 서비스 1 - 서버 동시성 설정</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/pages/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%97%B0%EC%8A%B5-%EC%A4%80%EB%B9%84/" class="nav-link" title="&lt;시스템 디자인 연습&gt; 준비">&lt;시스템 디자인 연습&gt; 준비</a>
-      </li>
-    </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/" class="nav-link" title="모바일 앱 개발 옵션">모바일 앱 개발 옵션</a>
+      </li>
       <li>
         <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
       </li>
@@ -1889,16 +1881,13 @@ refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트</p>
       <li>
         <a href="https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/" class="nav-link" title="전문가를 위한 파이썬">전문가를 위한 파이썬</a>
       </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/call-by-sharing/" class="nav-link" title="Call by Sharing">Call by Sharing</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/' class="post_tag button button_translucent" title="아키텍처">
           아키텍처
-          <span class="button_tally">41</span>
+          <span class="button_tally">42</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/' class="post_tag button button_translucent" title="언어">
@@ -2079,6 +2068,14 @@ refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트</p>
         <div class="post_tags">
           <div class="tags_list">
             
+            <a href='https://chankoo.github.io/tags/%23frontend/' class=" post_tag button button_translucent" data-position=1 title="#frontend">#FRONTEND<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/android/' class=" post_tag button button_translucent" data-position=1 title="android">ANDROID<span class="button_tally">1</span>
+            </a>
+            
+            
             <a href='https://chankoo.github.io/tags/api/' class=" post_tag button button_translucent" data-position=3 title="api">API<span class="button_tally">3</span>
             </a>
             
@@ -2123,7 +2120,7 @@ refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/ios/' class=" post_tag button button_translucent" data-position=1 title="ios">IOS<span class="button_tally">1</span>
+            <a href='https://chankoo.github.io/tags/ios/' class=" post_tag button button_translucent" data-position=2 title="ios">IOS<span class="button_tally">2</span>
             </a>
             
             
@@ -2196,6 +2193,10 @@ refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트</p>
             
             
             <a href='https://chankoo.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/' class=" post_tag button button_translucent" data-position=9 title="디자인패턴">디자인패턴<span class="button_tally">9</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/%EB%AA%A8%EB%B0%94%EC%9D%BC/' class=" post_tag button button_translucent" data-position=1 title="모바일">모바일<span class="button_tally">1</span>
             </a>
             
             

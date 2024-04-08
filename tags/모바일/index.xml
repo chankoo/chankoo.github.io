@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>모바일 on chankoo</title>
+    <link>https://chankoo.github.io/tags/%EB%AA%A8%EB%B0%94%EC%9D%BC/</link>
+    <description>Recent content in 모바일 on chankoo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Apr 2024 11:55:05 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/%EB%AA%A8%EB%B0%94%EC%9D%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>모바일 앱 개발 옵션</title>
+      <link>https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/</link>
+      <pubDate>Sun, 07 Apr 2024 11:55:05 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/</guid>
+      <description>
+        
+          
+            모바일 앱 개발이 필요하다면, 선택지는 보통 아래와 같다.
+네이티브 특정 OS 전용으로 개발하는 앱이다. iOS 앱을 Swift로, 안드로이드 앱을 Kotlin으로 개발하는 것 기기의 리소스(카메라, 알림, 네이티브 api 등)와 데이터(주소록, 파일 등)를 제약없이 사용할 수 있고, 성능이 가장 좋다 OS마다 별도로 개발해야해서 비용이 가장 크다 크로스 플랫폼 OS와 무관하게 하나의 언어로 개발할 수 있는 기술 React Native라면 JS로, Flutter라면 Dart로 개발하고, 빌드 타임에 각 OS에 맞게 언어를 변환한다. 기기의 리소스를 활용하면서도 개발 비용이 비교적 적게든다 여러 OS가 공통으로 제공하는 기능까지만 활용 가능하다 웹 앱, 모바일 앱 모바일 브라우저에서 동작하는 웹 웹만 개발하므로 비용이 가장적다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

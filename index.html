@@ -125,6 +125,40 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-04-28</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>B-Tree 계열 인덱스 사용시 정렬에 인덱스를 사용할 수 있으며, 그 효과가 인덱스 유지 비용보다 커야한다.
+Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처리한다. 아래로 갈수록 느리다.
+인덱스 사용한 정렬 정렬 목적 인덱스가 있어야함. (정렬 대상 컬럼이 테이블의 첫번째 컬럼이며 , 정렬 되어있어야 함) B-Tree 계열 인덱스에서만 사용 File Sort SortBuffer에서 테이블을 정렬하는 방식 조인이 필요한 경우, 드라이빙 테이블(정렬 필요 테이블)을 먼저 정렬하고 조인한다. Using temporary; File Sort …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/restful-api/" title="Restful API">Restful API</a>
       </h3>
       
@@ -1776,37 +1810,6 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/lsm-tree/" title="LSM Tree">LSM Tree</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-21</span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Log Structured Merge Tree는 로그성 데이터 색인을 위해 고안된 자료구조로, 정렬된 키-값 데이터인 SS테이블(Sorted String Table) 형식으로 디스크에 데이터를 저장한다.
-refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형태 : LSM 트리 &amp; B 트리 | by allocProc | Medium links B-Tree Hash 인덱스</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/lsm-tree/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -1860,6 +1863,9 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
       </li>
       <li>
@@ -1870,9 +1876,6 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/asyncio-cancellation/" class="nav-link" title="Asyncio Cancellation">Asyncio Cancellation</a>
       </li>
     </ul>
     <div>
@@ -1903,6 +1906,11 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
           <span class="button_tally">18</span>
         </a>
         
+        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
+          DB
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
           <span class="button_tally">12</span>
@@ -1911,11 +1919,6 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
           자료구조
           <span class="button_tally">12</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
-          DB
-          <span class="button_tally">11</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
@@ -2000,13 +2003,13 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
-          CPU
-          <span class="button_tally">6</span>
-        </a>
-        
         <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
           MYSQL
+          <span class="button_tally">7</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
+          CPU
           <span class="button_tally">6</span>
         </a>
         
@@ -2093,7 +2096,7 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=3 title="django">DJANGO<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
             </a>
             
             
@@ -2137,7 +2140,7 @@ refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=6 title="mysql">MYSQL<span class="button_tally">6</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
             </a>
             
             

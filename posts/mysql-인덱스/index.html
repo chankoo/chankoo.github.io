@@ -22,7 +22,7 @@
 
 <meta property="og:type" content="article">
 <meta name="description" content="mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-인덱스와 정렬 쿼리에 order …" />
+refs [MySQL] …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="Mysql 인덱스" />
@@ -30,7 +30,7 @@
 <meta property="og:url" content="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" />
 <meta property="og:title" content="Mysql 인덱스" />
 <meta property="og:description" content="mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-인덱스와 정렬 쿼리에 order …" />
+refs [MySQL] …" />
 <meta property="og:image" content="https://chankoo.github.io/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chankoo.github.io/icons/apple-touch-icon.png">
@@ -126,48 +126,10 @@
     <div class="post_body"><p>mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.</p>
 <img src="/images/Pasted%20image%2020231121192152.png" alt="" >
 
-<h3 id="인덱스와-정렬">인덱스와 정렬</h3>
-<p>쿼리에 order by가 사용되면 아래 3가지 중 하나로 처리한다. 밑으로 갈수록 느리다.</p>
-<ul>
-<li>인덱스 사용한 정렬
-<ul>
-<li>정렬 목적 인덱스가 있어야함. (정렬 대상 컬럼이 테이블의 첫번째 컬럼이며 , 정렬 되어있어야 함)</li>
-<li>B-Tree 계열 인덱스에서만 사용</li>
-</ul>
-</li>
-<li>File Sort
-<ul>
-<li>SortBuffer에서 테이블을 정렬하는 방식</li>
-<li>조인이 필요한 경우, 드라이빙 테이블(정렬 필요 테이블)을 먼저 정렬하고 조인한다.</li>
-</ul>
-</li>
-<li>Using temporary; File Sort
-<ul>
-<li>임시 테이블을 만들고, 임시 테이블을 소트버퍼에서 정렬하는 방식</li>
-<li>조인 후에 정렬이 필요한 경우이다.</li>
-</ul>
-</li>
-</ul>
-<p>인덱스 사용 정렬의 효과가 인덱스 유지 비용보다 크면 효율적이다.</p>
-<ul>
-<li>인덱스 사용 여부는 옵티마이저가 결정하므로, <code>EXPLAIN</code> 으로 인덱스를 타는지 확인하자
-<ul>
-<li>보통 limit이 걸린 경우 인덱스 스캔을 이용한다</li>
-<li><img src="/images/Pasted%20image%2020240427004656.png%20" alt="" >
-</li>
-<li>반면, 정렬에 적합한 인덱스가 없거나, 테이블 크기가 작거나, 인덱스의 카디널러티가 낮으면, 인덱스를 타지 않는다.</li>
-<li>그 결과 File Sort가 발생하고, 이는 보통 성능 관점에서 안좋은 지표이다.</li>
-<li><img src="/images/Pasted%20image%2020240427004627.png" alt="" >
-</li>
-</ul>
-</li>
-</ul>
 <h2 id="refs">refs</h2>
 <ul>
 <li><a href="https://mangkyu.tistory.com/286">[MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu&rsquo;s Diary</a></li>
 <li><a href="https://chankoo.github.io/posts/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EC%8B%AC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%A4%EA%B3%84/">데이터 중심 애플리케이션 설계</a></li>
-<li><a href="https://datarian.io/blog/postgresql-indexes-and-orderby">인덱스와 ORDER BY</a></li>
-<li><a href="https://jaehoney.tistory.com/192">SQL - Using Temporary, Using Filesort 정리 (+ 임시 테이블, 파일 정렬)</a></li>
 </ul>
 <h2 id="links">links</h2>
 <ul>
@@ -211,6 +173,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
       </li>
       <li>
@@ -221,9 +186,6 @@
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/asyncio-cancellation/" class="nav-link" title="Asyncio Cancellation">Asyncio Cancellation</a>
       </li>
     </ul>
     <div>
@@ -254,6 +216,11 @@
           <span class="button_tally">18</span>
         </a>
         
+        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
+          DB
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
           <span class="button_tally">12</span>
@@ -262,11 +229,6 @@
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
           자료구조
           <span class="button_tally">12</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
-          DB
-          <span class="button_tally">11</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
@@ -351,13 +313,13 @@
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
-          CPU
-          <span class="button_tally">6</span>
-        </a>
-        
         <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
           MYSQL
+          <span class="button_tally">7</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
+          CPU
           <span class="button_tally">6</span>
         </a>
         
@@ -444,7 +406,7 @@
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=3 title="django">DJANGO<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
             </a>
             
             
@@ -488,7 +450,7 @@
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=6 title="mysql">MYSQL<span class="button_tally">6</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
             </a>
             
             

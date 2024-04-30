@@ -6,7 +6,25 @@
     <description>Recent content in DB on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Dec 2023 21:29:31 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Apr 2024 12:02:40 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DB 인덱스와 정렬</title>
+      <link>https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/</link>
+      <pubDate>Sun, 28 Apr 2024 12:02:40 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/</guid>
+      <description>
+        
+          
+            B-Tree 계열 인덱스 사용시 정렬에 인덱스를 사용할 수 있으며, 그 효과가 인덱스 유지 비용보다 커야한다.
+Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처리한다. 아래로 갈수록 느리다.
+인덱스 사용한 정렬 정렬 목적 인덱스가 있어야함. (정렬 대상 컬럼이 테이블의 첫번째 컬럼이며 , 정렬 되어있어야 함) B-Tree 계열 인덱스에서만 사용 File Sort SortBuffer에서 테이블을 정렬하는 방식 조인이 필요한 경우, 드라이빙 테이블(정렬 필요 테이블)을 먼저 정렬하고 조인한다. Using temporary; File Sort 임시 테이블을 만들고, 임시 테이블을 소트버퍼에서 정렬하는 방식 조인 후에 정렬이 필요한 경우이다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>2PL</title>
       <link>https://chankoo.github.io/posts/2pl/</link>
@@ -102,8 +120,7 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
         
           
             mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-인덱스와 정렬 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처리한다. 밑으로 갈수록 느리다.
-인덱스 사용한 정렬 정렬 목적 인덱스가 있어야함. (정렬 대상 컬럼이 테이블의 첫번째 컬럼이며 , 정렬 되어있어야 함) B-Tree 계열 인덱스에서만 사용 File Sort SortBuffer에서 테이블을 정렬하는 방식 조인이 필요한 경우, 드라이빙 테이블(정렬 필요 테이블)을 먼저 정렬하고 조인한다.
+refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu&amp;rsquo;s Diary 데이터 중심 애플리케이션 설계 links B-Tree Hash 인덱스 전문 검색 인덱스 Real MySQL 
           
           
         
@@ -194,7 +211,7 @@ Atomic - 발생하거나, 발생하지 않거나하여 그 중간 상태가 없�
           
             Transaction 간 격리 수준
 DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation 관점에서 엄격히 제한된 Transaction의 병행성 제약을 완화한다. 이상적으로 Transaction은 엄격히 격리해야 하지만, 실무적으로 걸림돌이 되기에, 격리 수준을 단계적으로 완화하는 Isolation Levels 를 정의하여 상황에 맞게 제공한다.
-Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다. Repetable Reads 반복해서 읽어도 같은 결과를 보여주는 수준으로, 반복 read 도중 커밋이 발생하여 값이 변해도 커밋 전 값을 읽어간다.
+Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다. Repeatable Reads 반복해서 읽어도 같은 결과를 보여주는 수준으로, 반복 read 도중 커밋이 발생하여 값이 변해도 커밋 전 값을 읽어간다.
           
           
         

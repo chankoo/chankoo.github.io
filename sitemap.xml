@@ -2,26 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chankoo.github.io/tags/api/</loc>
-    <lastmod>2024-04-22T00:43:01+09:00</lastmod>
-  </url><url>
     <loc>https://chankoo.github.io/categories/</loc>
-    <lastmod>2024-04-27T00:55:41+09:00</lastmod>
+    <lastmod>2024-04-28T19:35:50+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/</loc>
-    <lastmod>2024-04-27T00:55:41+09:00</lastmod>
+    <lastmod>2024-04-28T19:35:50+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/categories/db/</loc>
+    <lastmod>2024-04-28T19:03:24+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/</loc>
+    <lastmod>2024-04-28T12:27:00+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/tags/mysql/</loc>
+    <lastmod>2024-04-28T19:03:24+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/posts/</loc>
+    <lastmod>2024-04-28T19:35:50+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/tags/</loc>
+    <lastmod>2024-04-28T19:35:50+09:00</lastmod>
+  </url><url>
+    <loc>https://chankoo.github.io/tags/api/</loc>
+    <lastmod>2024-04-22T00:43:01+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/tags/drf/</loc>
     <lastmod>2024-04-22T00:43:01+09:00</lastmod>
   </url><url>
-    <loc>https://chankoo.github.io/posts/</loc>
-    <lastmod>2024-04-27T00:55:41+09:00</lastmod>
-  </url><url>
     <loc>https://chankoo.github.io/posts/restful-api/</loc>
     <lastmod>2024-04-22T00:43:01+09:00</lastmod>
-  </url><url>
-    <loc>https://chankoo.github.io/tags/</loc>
-    <lastmod>2024-04-27T00:55:41+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/categories/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</loc>
     <lastmod>2024-04-23T10:20:56+09:00</lastmod>
@@ -60,13 +69,13 @@
     <lastmod>2024-01-27T23:32:53+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/tags/python/</loc>
-    <lastmod>2024-01-27T23:32:53+09:00</lastmod>
+    <lastmod>2024-04-28T19:35:50+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/</loc>
-    <lastmod>2024-01-27T23:32:53+09:00</lastmod>
+    <lastmod>2024-04-28T19:03:24+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/categories/%EC%96%B8%EC%96%B4/</loc>
-    <lastmod>2024-04-23T10:22:47+09:00</lastmod>
+    <lastmod>2024-04-28T19:35:50+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/</loc>
     <lastmod>2024-01-23T17:18:58+09:00</lastmod>
@@ -160,9 +169,6 @@
   </url><url>
     <loc>https://chankoo.github.io/posts/2pl/</loc>
     <lastmod>2023-12-20T21:43:27+09:00</lastmod>
-  </url><url>
-    <loc>https://chankoo.github.io/categories/db/</loc>
-    <lastmod>2024-04-27T00:55:41+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/posts/domain-driven-design/</loc>
     <lastmod>2023-12-29T03:06:06+09:00</lastmod>
@@ -260,9 +266,6 @@
     <loc>https://chankoo.github.io/tags/ip/</loc>
     <lastmod>2023-11-27T21:10:54+09:00</lastmod>
   </url><url>
-    <loc>https://chankoo.github.io/tags/mysql/</loc>
-    <lastmod>2024-04-27T00:55:41+09:00</lastmod>
-  </url><url>
     <loc>https://chankoo.github.io/posts/%EC%A0%84%EB%AC%B8-%EA%B2%80%EC%83%89-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</loc>
     <lastmod>2024-01-09T12:19:42+09:00</lastmod>
   </url><url>
@@ -279,7 +282,7 @@
     <lastmod>2024-04-23T10:22:47+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/tags/django/</loc>
-    <lastmod>2024-04-23T10:22:47+09:00</lastmod>
+    <lastmod>2024-04-28T19:35:50+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/posts/%EB%B9%84%EB%8F%99%EA%B8%B0/</loc>
     <lastmod>2024-01-25T15:43:31+09:00</lastmod>
@@ -294,7 +297,7 @@
     <lastmod>2024-01-09T12:18:11+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/</loc>
-    <lastmod>2024-04-27T00:55:41+09:00</lastmod>
+    <lastmod>2024-04-28T12:03:16+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/posts/b-tree/</loc>
     <lastmod>2023-12-22T12:37:13+09:00</lastmod>
@@ -501,7 +504,7 @@
     <lastmod>2024-01-09T14:35:27+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/posts/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0/</loc>
-    <lastmod>2024-01-07T10:33:14+09:00</lastmod>
+    <lastmod>2024-04-28T19:35:50+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/posts/filefield/</loc>
     <lastmod>2024-01-07T10:32:41+09:00</lastmod>
@@ -627,7 +630,7 @@
     <lastmod>2024-01-09T10:19:42+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/posts/isolation-levels/</loc>
-    <lastmod>2024-01-09T12:00:26+09:00</lastmod>
+    <lastmod>2024-04-28T19:03:24+09:00</lastmod>
   </url><url>
     <loc>https://chankoo.github.io/posts/gunicorn/</loc>
     <lastmod>2024-01-09T10:18:19+09:00</lastmod>

@@ -128,7 +128,7 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
 <p>DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation 관점에서 엄격히 제한된 Transaction의 병행성 제약을 완화한다. 이상적으로 Transaction은 엄격히 격리해야 하지만, 실무적으로 걸림돌이 되기에, 격리 수준을 단계적으로 완화하는 Isolation Levels 를 정의하여 상황에 맞게 제공한다.</p>
 <ul>
 <li>Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다.</li>
-<li>Repetable Reads
+<li>Repeatable Reads
 <ul>
 <li>반복해서 읽어도 같은 결과를 보여주는 수준으로, 반복 read 도중 커밋이 발생하여 값이 변해도 커밋 전 값을 읽어간다. (mysql innodb 에서 default)</li>
 <li>스냅숏 격리를 통해 구현하여 과거 스냅숏을 보여줌으로써 일관된 읽기를 가능케한다. 즉, 트랜잭션의 첫 읽기 발생시에 스냅숏을 가져와 이후 연산은 그 스냅숏을 기준으로 수행한다.</li>
@@ -207,6 +207,9 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
       </li>
       <li>
@@ -217,9 +220,6 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/asyncio-cancellation/" class="nav-link" title="Asyncio Cancellation">Asyncio Cancellation</a>
       </li>
     </ul>
     <div>
@@ -250,6 +250,11 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
           <span class="button_tally">18</span>
         </a>
         
+        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
+          DB
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
           <span class="button_tally">12</span>
@@ -258,11 +263,6 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
           자료구조
           <span class="button_tally">12</span>
-        </a>
-        
-        <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
-          DB
-          <span class="button_tally">11</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EA%B8%B0%ED%83%80/' class="post_tag button button_translucent" title="기타">
@@ -347,13 +347,13 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
-          CPU
-          <span class="button_tally">6</span>
-        </a>
-        
         <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
           MYSQL
+          <span class="button_tally">7</span>
+        </a>
+        
+        <a href='https://chankoo.github.io/tags/cpu/' class="post_tag button button_translucent" title="cpu">
+          CPU
           <span class="button_tally">6</span>
         </a>
         
@@ -440,7 +440,7 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=3 title="django">DJANGO<span class="button_tally">3</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
             </a>
             
             
@@ -484,7 +484,7 @@ DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation �
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=6 title="mysql">MYSQL<span class="button_tally">6</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
             </a>
             
             

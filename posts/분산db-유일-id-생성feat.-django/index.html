@@ -231,8 +231,9 @@ DBMS Auto Increment 옵션 조정 UUID 티켓서버 Snowflake ID 1. Auto Increme
 <li>결국 <strong>Auto Increment ID를 애플리케이션에서 생성</strong>하는 방식(<code>create_unique_account_number</code>)으로 구현했다.
 <ol>
 <li>계좌 생성이 필요한 <code>user_id</code>를 입력받아 해당하는 DB로 라우팅한다.</li>
-<li>DB 내 마지막 계좌의 id(내부 id)를 읽어온다.</li>
-<li>가져온 내부 id 값에 id 증가폭(<code>auto_increment_increment</code>)을 곱하고, 지정된 id 시작값(<code>auto_increment_offset</code>)을 더한다.</li>
+<li>DB 내 마지막 계좌의 id(계좌번호)를 읽어온다.</li>
+<li>가져온 id 값에 id 증가폭(<code>auto_increment_increment</code>)을 더해서 새로운 id를 만든다.</li>
+<li>가져온 id가 없다면 <code>auto_increment_offset</code> 값으로 id를 시작한다.</li>
 </ol>
 </li>
 <li>티켓서버와 유사한 방식으로, 애플리케이션이 중앙집중형으로 DB를 관리하기에 사용 가능했다.</li>

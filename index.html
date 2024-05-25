@@ -125,6 +125,111 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/sqlite/" title="SQLite">SQLite</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-05-24</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>SQLite는 DBMS로 아래와 같은 특징이 있다.
+파일 기반 DB DBMS 내 모든 데이터를 하나의 파일로 관리한다. 백업과 마이그레이션이 무척 편리하다. 서버리스 라이브러리 다른 DBMS와 달리 클라이언트-서버 아키텍처가 아님. 클라이언트 어플리케이션이 사용하는 라이브러리이다. 클라이언트 프로세스가 데이터베이스 엔진을 라이브러리로 사용하여, 파일IO를 통해 DBMS에 접근하는 것이다. DB 서버 프로세스와 통신하지 않으므로 IPC가 발생하지 않는다. 기존 클라이언트-서버 구조보다 더 가볍고, 빠를 수 있다. 이러한 특성 덕에 Django, 안드로이드 등에 기본적으 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/sqlite/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-05-23</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
+        </a><a href='https://chankoo.github.io/tags/sqlite/' title="sqlite" class="post_tag button button_translucent">sqlite
+        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>유일 ID 생성 방식 일반적으로 분산 시스템에서 유일 ID를 생성하는 방법은 아래와 같다.
+DBMS Auto Increment 옵션 조정 UUID 티켓서버 Snowflake ID 1. Auto Increment 옵션 조정 Auto Increment(Sequence) 은 대부분의 DBMS에 구현된 기능으로, 1씩 증가하는 값을 내놓도록 보장한다. 단일 DB 환경에서는 유일 ID를 쉽게 생성할 수 있다.
+마스터 노드가 여러개인 분산 환경이 문제인데, mysql과 같은 DBMS는 이 Auto Increment의 증가폭과 시작값 옵션을 조정하여 분산 환경 내 유일한 ID를  …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-05-23</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
+        </a><a href='https://chankoo.github.io/tags/sqlite/' title="sqlite" class="post_tag button button_translucent">sqlite
+        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>유일 ID 생성 방식 일반적으로 분산 시스템에서 유일 ID를 생성하는 방법은 아래와 같다.
+DBMS Auto Increment 옵션 조정 UUID 티켓서버 Snowflake ID 1. Auto Increment 옵션 조정 Auto Increment(Sequence) 은 대부분의 DBMS에 구현된 기능으로, 1씩 증가하는 값을 내놓도록 보장한다. 단일 DB 환경에서는 유일 ID를 쉽게 생성할 수 있다.
+마스터 노드가 여러개인 분산 환경이 문제인데, mysql과 같은 DBMS는 이 Auto Increment의 증가폭과 시작값 옵션을 조정하여 분산 환경 내 유일한 ID를  …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </h3>
       
@@ -1708,108 +1813,6 @@ refs P of EAA: Active Record links</p>
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EB%B9%84%EB%8F%99%EA%B8%B0/" title="비동기">비동기</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-22</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>동기적이지 않은 것(asynchronous)을 의미한다.
-동기적이라는 건 작업들을 순차적으로 진행함을 의미하는데, 한 작업이 끝나기를 기다려야하는 속성이 있다. 반면에 비동기는 한 작업이 끝나기를 기다리지 않고 다른 작업을 진행하는 것을 말하며, 동기적이지 않은 모든 방식을 의미한다.
-비동기 프로그래밍을 가능케하는 조건
-non-block IO - 요청을 block하는 작업이 아니기에 I/O를 기다리는 동안 다른 작업을 처리(async, non-block)할 수 있다. 멀티 스레딩 - 여러 작업을 각 스레드가 나누어 진행하기에 동기적이지 않다. block IO 작업이라 …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EB%B9%84%EB%8F%99%EA%B8%B0/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EC%8A%A4%EB%A0%88%EB%93%9C/" title="스레드">스레드</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-22</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>컴퓨터 과학에서 어떠한 작업을 처리하는 흐름의 단위를 말한다.
-종류 하드웨어 스레드 - 하드웨어 레벨에서 CPU 코어의 작업을 나눠 놓은 단위이다. 코어의 한 하드웨어 스레드가 메모리에 접근하는 시간에 다른 스레드가 CPU 연산을 이용하는 병행처리를 가능케 한다. OS 스레드 - 일반적인 의미의 스레드로, CPU에서 실제로 실행(CPU 스케줄링)되는 단위이다. OS 커널이 시스템콜을 통해 스레드를 생성하고, 컨텍스트 스위칭을 한다. 네이티브 스레드, 커널 스레드라 불리기도 한다. 유저 스레드 - 유저가 관리하는 단위의 스레드로 프로그래밍 레벨에서 추상화한 OS 스레드 …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EC%8A%A4%EB%A0%88%EB%93%9C/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/dbcp/" title="DBCP">DBCP</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-22</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
-        </a><a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>DB Connection Pool. DB와의 커넥션 풀을 어플리케이션 단에 미리 만들어두는 것이다. DB와 커넥션을 맺고 끊기 위해 매번 TCP 통신하는 비용을 줄인다.
-mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트와 맺을 수 있는 최대 커넥션 수 connect_timeout: 커넥션을 맺기 위해 기다리는 최대 시간(기본값 10초) wait_timeout: inactive 커넥션을 얼마까지 기다린 뒤 close 할지 설정(기본값 28800 - 8시간). 연결을 맺고 다음 쿼리까지 기다리는 최대 시간 django …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/dbcp/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -1863,19 +1866,19 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/sqlite/" class="nav-link" title="SQLite">SQLite</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/" class="nav-link" title="모바일 앱 개발 옵션">모바일 앱 개발 옵션</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
       </li>
     </ul>
     <div>
@@ -1908,12 +1911,12 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -1978,13 +1981,18 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
           <span class="button_tally">14</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
+          MYSQL
           <span class="button_tally">10</span>
         </a>
         
@@ -2003,8 +2011,8 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
-          MYSQL
+        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
+          DJANGO
           <span class="button_tally">7</span>
         </a>
         
@@ -2053,11 +2061,6 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">4</span>
-        </a>
-        
         
         <br>
         <div class="post_tags_toggle button">All Tags</div>
@@ -2096,7 +2099,7 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=7 title="django">DJANGO<span class="button_tally">7</span>
             </a>
             
             
@@ -2140,7 +2143,7 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=10 title="mysql">MYSQL<span class="button_tally">10</span>
             </a>
             
             
@@ -2165,6 +2168,10 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
             
             
             <a href='https://chankoo.github.io/tags/spring/' class=" post_tag button button_translucent" data-position=1 title="spring">SPRING<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/sqlite/' class=" post_tag button button_translucent" data-position=2 title="sqlite">SQLITE<span class="button_tally">2</span>
             </a>
             
             
@@ -2204,7 +2211,7 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=12 title="분산시스템">분산시스템<span class="button_tally">12</span>
             </a>
             
             

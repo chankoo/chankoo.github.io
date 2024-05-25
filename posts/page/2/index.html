@@ -119,6 +119,104 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/lsm-tree/" title="LSM Tree">LSM Tree</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-21</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Log Structured Merge Tree는 로그성 데이터 색인을 위해 고안된 자료구조로, 정렬된 키-값 데이터인 SS테이블(Sorted String Table) 형식으로 디스크에 데이터를 저장한다.
+refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형태 : LSM 트리 &amp; B 트리 | by allocProc | Medium links B-Tree Hash 인덱스</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/lsm-tree/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" title="Mysql 인덱스">Mysql 인덱스</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-21</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
+refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu’s Diary 데이터 중심 애플리케이션 설계 links B-Tree Hash 인덱스 전문 검색 인덱스 Real MySQL</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/b-tree/" title="B-Tree">B-Tree</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-11-21</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>BST(Binary Search Tree)를 일반화한 자료구조로 2개 이상의 자식 노드를 갖는 Balanced Tree이다.
+B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
+디스크 I/O로 데이터를 가져오는 단위인 블록의 크기는 고정(mysql은 16KB)인데, 키의 크 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/b-tree/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EC%8B%AC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%A4%EA%B3%84/" title="데이터 중심 애플리케이션 설계">데이터 중심 애플리케이션 설계</a>
       </h3>
       
@@ -480,7 +578,7 @@ refs 실무자를 위한 서비스 메시 - 지금 서비스 메시가 의미 �
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>content API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스) …</p>
+            <p>API Gateway Pattern 을 정확히 이해하자 MSA에 API Gateway Pattern이 필수적임 API Gateway Pattern은 API Gateway Framework와는 무관함 내부 api를 제공(단순 라우팅)할 용도로 API Gateway Framework를 쓰지말자 -&gt; controller와 facade가 없는 프레젠테이션 레이어를 구현하게됨 인가 로직이 비즈니스 레이어(각각의 마이크로서비스)에 들어가야해서 오염됨 로직 구현의 책임을 잘못된 곳에 전가함 클라이언트가 여러 로직을 직접 호출하여 조합하거나 특정 서비스가 자신의 도메인인 것처 …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/api-gateway-%ED%8C%A8%ED%84%B4/" title="Read More" class="excerpt_more button">Read More</a>
@@ -552,6 +650,44 @@ refs 리얼월드 HTTP Server-sent events - Web APIs | MDN links</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/sse/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%ED%83%80%EC%9E%84%EC%A1%B4-%EC%9D%B4%EC%8A%88/" title="타임존 이슈">타임존 이슈</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-01-18</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
+        </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>datetime이 타임존과 엮여 표현되는 방식을 이해하고 헷갈리지 말자
+db 타임존 설정은 보통 SYSTEM의 타임존 설정을 따르게 되어있음 SELECT @@global.time_zone; db가 돌고있는 시스템(보통 docker의 커널)의 타임존 설정은 대개 UTC +0000임. 때문에 DB의 타임존은 UTC를 따르는 것이 보통이고 표준이다.
+db에 저장된 예시 데이터를 보면
+한눈에 봐도 이른시간이 찍혀있고, UTC 기준임
+datetime 데이터는 불변이라는 것을 잊으면 안된다. 데이터를 표현하는 방법이 타임존에 따라 여러가지 인 것이다.
+DB가 UTC를 따르고, …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%ED%83%80%EC%9E%84%EC%A1%B4-%EC%9D%B4%EC%8A%88/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -1250,8 +1386,8 @@ refs [Web] HTTP Only와 Secure Cookie 이해하기 links XSS</p>
         <div class="pale">
           
             <p>JSON Web Token. 사용자의 정보를 Json에 담아 보내는 형식의 웹 토큰이다.
-Header / Payload / Signature 로 나뉘며, base64 인코딩을 통해 url-safe한 xxx.yyy.zzz 형태로 표현한다. Header에는 Signature 에 서명한 알고리즘 정보를 담는다. Payload에는 실제 사용자 정보를 Json 형태로 담으며 추가에 열려있다. Signature는 비대칭키 방식을 사용하여 header와 payload가 변경 안되었음을 보증한다.
-주로 인증을 위해 사용하는데, JWT의 유효성(위조 여부)만 확인하면 인증은 완료된 …</p>
+Header / Payload / Signature 로 나뉘며, base64 인코딩을 통해 url-safe한 xxx.yyy.zzz 형태로 표현한다. Header에는 Signature 에 서명한 알고리즘 정보를 담는다. Payload에는 실제 사용자 정보를 Json 형태로 담으며 추가에 열려있다. Signature는 header와 payload가 변경 안되었음을 보증한다.
+주로 인증을 위해 사용하는데, JWT의 유효성(위조 여부)만 확인하면 인증은 완료된다. 이미 JWT 발급 시점 …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/jwt/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1669,136 +1805,6 @@ OCP를 지키기 위해서는 의존 관계를 잘 설계해야한다. 의존 �
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/" title="컴포넌트">컴포넌트</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-10-27</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/' title="컴포넌트" class="post_tag button button_translucent">컴포넌트
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>런타임에 소프트웨어를 구성하는 요소. (컴파일 언어의 경우) 실행 가능한 바이너리 형태이며, 코드로 확인 가능한 모듈과 달리 가시성이 없다.
-(잘 설계한다면)컴포넌트는 독립적으로 배포 가능한 단위이다. 시스템은 컴포넌트 단위로 쪼개지며, 각 컴포넌트는 다른 컴포넌트에 영향 주지 않고 개발, 배포한다.
-refs 개발자에서 아키텍트로 클린 아키텍처 links 모듈 컴포넌트 설계 원칙</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/" title="모듈">모듈</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-10-27</span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>설계 시점에 다루는 코드 덩어리. 시점상 가장 먼저 구현하는 단위
-refs 개발자에서 아키텍트로 클린 아키텍처 links 컴포넌트</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%93%88/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%97%90%EC%84%9C-%EC%95%84%ED%82%A4%ED%85%8D%ED%8A%B8%EB%A1%9C/" title="개발자에서 아키텍트로">개발자에서 아키텍트로</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-10-27</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/%EC%B1%85/' title="책" class="post_tag button button_translucent">책
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>아키텍트는 기술과 비즈니스 그리고 사용자를 모두 이해해야한다. 유저영역의 문제를 엔지니어링 관점에서 정의하여 소프트웨어 아키텍처를 설계한다. 아키텍처는 품질 속성과 기술 부채를 고려하여 시스템을 요소로 분리해야한다. 그리고 큰 그림 속에서 요소들을 연결하고 통합한다. 아키텍트로서 프로젝트 정리 이해관계자들은 누구였고 주요 비즈니스 목표는 무엇이었는가 최종적으로 어떤 결과를 도출했는가 어떤 기술을 사용했는가 가장 큰 리스크는 무엇이었고, 어떻게 극복했는가 다시 시작할 수 있다면 어떤 점을 다르게 하겠는가 refs links</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%97%90%EC%84%9C-%EC%95%84%ED%82%A4%ED%85%8D%ED%8A%B8%EB%A1%9C/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/solid/" title="SOLID">SOLID</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2022-10-27</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/solid/' title="SOLID" class="post_tag button button_translucent">SOLID
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>모듈 수준의 소프트웨어 설계 원칙으로 다섯가지 원칙의 앞글자를 따서 부른다.
-refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/solid/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item">
@@ -1852,19 +1858,19 @@ refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/sqlite/" class="nav-link" title="SQLite">SQLite</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/" class="nav-link" title="모바일 앱 개발 옵션">모바일 앱 개발 옵션</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
       </li>
     </ul>
     <div>
@@ -1897,12 +1903,12 @@ refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -1967,13 +1973,18 @@ refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
           <span class="button_tally">14</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
+          MYSQL
           <span class="button_tally">10</span>
         </a>
         
@@ -1992,8 +2003,8 @@ refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
-          MYSQL
+        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
+          DJANGO
           <span class="button_tally">7</span>
         </a>
         
@@ -2042,11 +2053,6 @@ refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">4</span>
-        </a>
-        
         
         <br>
         <div class="post_tags_toggle button">All Tags</div>
@@ -2085,7 +2091,7 @@ refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=7 title="django">DJANGO<span class="button_tally">7</span>
             </a>
             
             
@@ -2129,7 +2135,7 @@ refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=10 title="mysql">MYSQL<span class="button_tally">10</span>
             </a>
             
             
@@ -2154,6 +2160,10 @@ refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
             
             
             <a href='https://chankoo.github.io/tags/spring/' class=" post_tag button button_translucent" data-position=1 title="spring">SPRING<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/sqlite/' class=" post_tag button button_translucent" data-position=2 title="sqlite">SQLITE<span class="button_tally">2</span>
             </a>
             
             
@@ -2193,7 +2203,7 @@ refs 클린 아키텍처 links 모듈 SRP OCP LSP ISP DIP</p>
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=12 title="분산시스템">분산시스템<span class="button_tally">12</span>
             </a>
             
             

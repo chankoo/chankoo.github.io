@@ -205,6 +205,43 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
 </ul>
 </li>
 </ul>
+<pre tabindex="0"><code>SELECT SQL_NO_CACHE * FROM `works_inout`  WHERE (`works_inout`.`check_ts` &gt;= 1714510800 AND `works_inout`.`check_ts` &lt; 1714597200 and `works_inout`.`user_id`=1) ORDER BY `works_inout`.`check_ts` ASC LIMIT 10;
+</code></pre><pre tabindex="0"><code>class InOut(models.Model):
+	&#34;&#34;&#34;
+	출입기록
+	&#34;&#34;&#34;
+	user_id = models.PositiveIntegerField()
+	is_out = models.BooleanField(default=False)
+	check_ts = models.PositiveIntegerField()
+	
+	
+	class Meta:
+	
+		indexes = [
+			models.Index(fields=[&#34;user_id&#34;]),
+			models.Index(fields=[&#34;check_ts&#34;]),
+			# models.Index(fields=[&#34;user_id&#34;, &#34;check_ts&#34;]),
+		]
+</code></pre><img src="/images/Pasted%20image%2020240520184414.png" alt="" >
+
+<pre tabindex="0"><code>class InOut(models.Model):
+	&#34;&#34;&#34;
+	출입기록
+	&#34;&#34;&#34;
+	user_id = models.PositiveIntegerField()
+	is_out = models.BooleanField(default=False)
+	check_ts = models.PositiveIntegerField()
+	
+	
+	class Meta:
+	
+		indexes = [
+			models.Index(fields=[&#34;user_id&#34;]),
+			models.Index(fields=[&#34;check_ts&#34;]),
+			models.Index(fields=[&#34;user_id&#34;, &#34;check_ts&#34;]),
+		]
+</code></pre><img src="/images/Pasted%20image%2020240520184635.png" alt="" >
+
 <h2 id="refs">refs</h2>
 <ul>
 <li><a href="https://datarian.io/blog/postgresql-indexes-and-orderby">인덱스와 ORDER BY</a></li>
@@ -252,19 +289,19 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/sqlite/" class="nav-link" title="SQLite">SQLite</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/" class="nav-link" title="모바일 앱 개발 옵션">모바일 앱 개발 옵션</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
       </li>
     </ul>
     <div>
@@ -297,12 +334,12 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -367,13 +404,18 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
           <span class="button_tally">14</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
+          MYSQL
           <span class="button_tally">10</span>
         </a>
         
@@ -392,8 +434,8 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
-          MYSQL
+        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
+          DJANGO
           <span class="button_tally">7</span>
         </a>
         
@@ -442,11 +484,6 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">4</span>
-        </a>
-        
         
         <br>
         <div class="post_tags_toggle button">All Tags</div>
@@ -485,7 +522,7 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=7 title="django">DJANGO<span class="button_tally">7</span>
             </a>
             
             
@@ -529,7 +566,7 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=10 title="mysql">MYSQL<span class="button_tally">10</span>
             </a>
             
             
@@ -554,6 +591,10 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
             
             
             <a href='https://chankoo.github.io/tags/spring/' class=" post_tag button button_translucent" data-position=1 title="spring">SPRING<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/sqlite/' class=" post_tag button button_translucent" data-position=2 title="sqlite">SQLITE<span class="button_tally">2</span>
             </a>
             
             
@@ -593,7 +634,7 @@ Mysql에서 쿼리에 order by가 사용되면 아래 3가지 중 하나로 처�
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=12 title="분산시스템">분산시스템<span class="button_tally">12</span>
             </a>
             
             

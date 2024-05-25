@@ -125,6 +125,139 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/assembly-language/" title="Assembly Language">Assembly Language</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-10-09</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>ISA의 명령어를 문자화 시킨 저급 언어이다. 프로그래머가 기계어를 다룰 수 있도록 고안되었고, 기계어 명령어와 일대일 대응한다. 그래서 ISA 의존적이고, 하드웨어 이식성이 낮다.
+refs [Chapter 7] Assembly Language - 어셈블리어, 어셈블러 links ISA</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/assembly-language/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/assembler/" title="Assembler">Assembler</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-10-09</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>어셈블리 언어(Assembly Language)를 기계어로 어셈블(assemble)하는 프로그램. 어셈블은 CPU의 ISA에 맞게 이루어진다.
+하나의 프로그램을 어셈블하면 여러 개의 소스 파일로 나뉠 수 있다. 이러한 파일(기계어 조각)을 합쳐서 하나의 실행 가능한 파일로 만드는 프로그램을 링커(Linker)라 하며, 그 파일의 코드와 데이터를 메모리에 올리고, 해당 프로그램의 시작 주소로 CPU를 제어하도록 하는 프로그램이 로더(Loader)이다.
+refs [Chapter 7] Assembly Language - 어셈블리어, 어셈블러 links Assembly …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/assembler/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/dis/" title="dis">dis</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-10-09</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/python/' title="python" class="post_tag button button_translucent">python
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>파이썬 바이트코드 역 어셈블러. CPython의 바이트 코드를 역 어셈블하여 바이트 코드 레벨의 분석을 돕는 모듈이다.
+ex)
+def hi(x): x += 1 print(x) return x 위 정의에 따르면, 추상화한 바이트코드를 바이트코드로 바꾸는 것도 어셈블이라 볼 수 있다.
+refs dis — 파이썬 바이트 코드 역 어셈블러 — 파이썬 설명서 주석판 links Bytecode Assembler</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/dis/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/isolation-levels/" title="Isolation Levels">Isolation Levels</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2022-10-09</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a><a href='https://chankoo.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/' title="동시성" class="post_tag button button_translucent">동시성
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Transaction 간 격리 수준
+DBMS는 다양한 수준의 Isolation Level을 제공하여 ACID의 Isolation 관점에서 엄격히 제한된 Transaction의 병행성 제약을 완화한다. 이상적으로 Transaction은 엄격히 격리해야 하지만, 실무적으로 걸림돌이 되기에, 격리 수준을 단계적으로 완화하는 Isolation Levels 를 정의하여 상황에 맞게 제공한다.
+Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial schedule 로 수행하여 다른 트랜잭션의 수행과 겹치는 시간이 없다. Repeatable …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/isolation-levels/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/gunicorn/" title="gunicorn">gunicorn</a>
       </h3>
       
@@ -1052,8 +1185,9 @@ refs 사이썬 - 위키백과, 우리 모두의 백과사전 links CPython 컴�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 인터프리터로 실행한다.
-refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동작 원리 – 도서출판 인사이트 links 인터프리터 Bytecode</p>
+            <p>C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 가상 머신에서 인터프리터로 실행한다.
+‘파이썬은 인터프리터 언어다’는 말은 반은 맞고 반은 틀리다. 전체 코드를 바이트코드로 컴파일하는 과정을 거치기 때문이다. 인터프리터는 컴파일한 언어를 가상머신 위에서 한줄한줄 실행한다. 물론 이건 CPython 기준이고, 구현체에 따라 실행 과정은 달라진다(Pypy, Jython 등)
+개발 환경에서는 바이트코드 파일을 생성하는게 귀찮을 때가 있다. 다행히도 바이트 코드 컴파일 과정은 매 …</p>
           
           <br>
           <a href="https://chankoo.github.io/posts/cpython/" title="Read More" class="excerpt_more button">Read More</a>
@@ -1314,19 +1448,19 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/sqlite/" class="nav-link" title="SQLite">SQLite</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/" class="nav-link" title="모바일 앱 개발 옵션">모바일 앱 개발 옵션</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
       </li>
     </ul>
     <div>
@@ -1359,12 +1493,12 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -1429,13 +1563,18 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
           <span class="button_tally">14</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
+          MYSQL
           <span class="button_tally">10</span>
         </a>
         
@@ -1454,8 +1593,8 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
-          MYSQL
+        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
+          DJANGO
           <span class="button_tally">7</span>
         </a>
         
@@ -1504,11 +1643,6 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">4</span>
-        </a>
-        
         
         <br>
         <div class="post_tags_toggle button">All Tags</div>
@@ -1547,7 +1681,7 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=7 title="django">DJANGO<span class="button_tally">7</span>
             </a>
             
             
@@ -1591,7 +1725,7 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=10 title="mysql">MYSQL<span class="button_tally">10</span>
             </a>
             
             
@@ -1616,6 +1750,10 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
             
             
             <a href='https://chankoo.github.io/tags/spring/' class=" post_tag button button_translucent" data-position=1 title="spring">SPRING<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/sqlite/' class=" post_tag button button_translucent" data-position=2 title="sqlite">SQLITE<span class="button_tally">2</span>
             </a>
             
             
@@ -1655,7 +1793,7 @@ atomic한 아이디어를 노트로 작성한다. 임시 노트를 작성하고 
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=12 title="분산시스템">분산시스템<span class="button_tally">12</span>
             </a>
             
             

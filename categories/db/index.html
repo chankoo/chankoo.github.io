@@ -119,6 +119,37 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/sqlite/" title="SQLite">SQLite</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-05-24</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>SQLite는 DBMS로 아래와 같은 특징이 있다.
+파일 기반 DB DBMS 내 모든 데이터를 하나의 파일로 관리한다. 백업과 마이그레이션이 무척 편리하다. 서버리스 라이브러리 다른 DBMS와 달리 클라이언트-서버 아키텍처가 아님. 클라이언트 어플리케이션이 사용하는 라이브러리이다. 클라이언트 프로세스가 데이터베이스 엔진을 라이브러리로 사용하여, 파일IO를 통해 DBMS에 접근하는 것이다. DB 서버 프로세스와 통신하지 않으므로 IPC가 발생하지 않는다. 기존 클라이언트-서버 구조보다 더 가볍고, 빠를 수 있다. 이러한 특성 덕에 Django, 안드로이드 등에 기본적으 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/sqlite/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </h3>
       
@@ -385,6 +416,44 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%ED%83%80%EC%9E%84%EC%A1%B4-%EC%9D%B4%EC%8A%88/" title="타임존 이슈">타임존 이슈</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2023-01-18</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
+        </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>datetime이 타임존과 엮여 표현되는 방식을 이해하고 헷갈리지 말자
+db 타임존 설정은 보통 SYSTEM의 타임존 설정을 따르게 되어있음 SELECT @@global.time_zone; db가 돌고있는 시스템(보통 docker의 커널)의 타임존 설정은 대개 UTC +0000임. 때문에 DB의 타임존은 UTC를 따르는 것이 보통이고 표준이다.
+db에 저장된 예시 데이터를 보면
+한눈에 봐도 이른시간이 찍혀있고, UTC 기준임
+datetime 데이터는 불변이라는 것을 잊으면 안된다. 데이터를 표현하는 방법이 타임존에 따라 여러가지 인 것이다.
+DB가 UTC를 따르고, …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%ED%83%80%EC%9E%84%EC%A1%B4-%EC%9D%B4%EC%8A%88/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/phantom-reads/" title="Phantom Reads">Phantom Reads</a>
       </h3>
       
@@ -543,19 +612,19 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/sqlite/" class="nav-link" title="SQLite">SQLite</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/" class="nav-link" title="모바일 앱 개발 옵션">모바일 앱 개발 옵션</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
       </li>
     </ul>
     <div>
@@ -588,12 +657,12 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -658,13 +727,18 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
           <span class="button_tally">14</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
+          MYSQL
           <span class="button_tally">10</span>
         </a>
         
@@ -683,8 +757,8 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
-          MYSQL
+        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
+          DJANGO
           <span class="button_tally">7</span>
         </a>
         
@@ -733,11 +807,6 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">4</span>
-        </a>
-        
         
         <br>
         <div class="post_tags_toggle button">All Tags</div>
@@ -776,7 +845,7 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=7 title="django">DJANGO<span class="button_tally">7</span>
             </a>
             
             
@@ -820,7 +889,7 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=10 title="mysql">MYSQL<span class="button_tally">10</span>
             </a>
             
             
@@ -845,6 +914,10 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
             
             
             <a href='https://chankoo.github.io/tags/spring/' class=" post_tag button button_translucent" data-position=1 title="spring">SPRING<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/sqlite/' class=" post_tag button button_translucent" data-position=2 title="sqlite">SQLITE<span class="button_tally">2</span>
             </a>
             
             
@@ -884,7 +957,7 @@ Serializable - Isolation 제약을 지키는 수준으로 트랜잭션을 serial
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=12 title="분산시스템">분산시스템<span class="button_tally">12</span>
             </a>
             
             

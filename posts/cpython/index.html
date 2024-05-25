@@ -21,16 +21,16 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 인터프리터로 실행한다.
-refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동작 원리 – 도서출판 인사이트 links 인터프리터 Bytecode " />
+<meta name="description" content="C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 가상 머신에서 인터프리터로 실행한다.
+&lsquo;파이썬은 인터프리터 언어다&rsquo;는 말은 반은 맞고 반은 틀리다. …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="CPython" />
 <meta name="twitter:image" content="https://chankoo.github.io/"/>
 <meta property="og:url" content="https://chankoo.github.io/posts/cpython/" />
 <meta property="og:title" content="CPython" />
-<meta property="og:description" content="C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 인터프리터로 실행한다.
-refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동작 원리 – 도서출판 인사이트 links 인터프리터 Bytecode " />
+<meta property="og:description" content="C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 가상 머신에서 인터프리터로 실행한다.
+&lsquo;파이썬은 인터프리터 언어다&rsquo;는 말은 반은 맞고 반은 틀리다. …" />
 <meta property="og:image" content="https://chankoo.github.io/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://chankoo.github.io/icons/apple-touch-icon.png">
@@ -123,7 +123,7 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
     </span>
   </div>
 
-    <div class="post_body"><p>C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, <strong>pycache</strong>)로 컴파일한 후, 인터프리터로 실행한다.</p>
+    <div class="post_body"><p>C로 구현한 파이썬 인터프리터 시스템. 파이썬 언어로 쓰인 스크립트를 바이트코드(.pyc, pycache)로 컴파일한 후, 가상 머신에서 인터프리터로 실행한다.</p>
 <p><figure>
   <picture>
 
@@ -151,9 +151,12 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
     </picture>
 </figure>
 </p>
+<p>&lsquo;파이썬은 인터프리터 언어다&rsquo;는 말은 반은 맞고 반은 틀리다. 전체 코드를 바이트코드로 컴파일하는 과정을 거치기 때문이다. 인터프리터는 컴파일한 언어를 가상머신 위에서 한줄한줄 실행한다. 물론 이건 CPython 기준이고, 구현체에 따라 실행 과정은 달라진다(Pypy, Jython 등)</p>
+<p>개발 환경에서는 바이트코드 파일을 생성하는게 귀찮을 때가 있다. 다행히도 바이트 코드 컴파일 과정은 매우 빠르므로, <code>PYTHONDONTWRITEBYTECODE 1</code> 설정을 통해 파일을 저장하지 않도록 할 수 있다.</p>
 <h2 id="refs">refs</h2>
 <ul>
 <li><a href="https://blog.insightbook.co.kr/2022/09/19/cpython-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0-%EB%94%B0%EB%9D%BC-%ED%95%98%EB%A9%B4%EC%84%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%82%B4%EB%B6%80%EC%9D%98-%EB%8F%99/">CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동작 원리 – 도서출판 인사이트</a></li>
+<li><a href="https://velog.io/@happycyc/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%98-%EA%B5%AC%ED%98%84%EC%B2%B4">파이썬의 구현체</a></li>
 </ul>
 <h2 id="links">links</h2>
 <ul>
@@ -195,19 +198,19 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/sqlite/" class="nav-link" title="SQLite">SQLite</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/" class="nav-link" title="모바일 앱 개발 옵션">모바일 앱 개발 옵션</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
       </li>
     </ul>
     <div>
@@ -240,12 +243,12 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -310,13 +313,18 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
           <span class="button_tally">14</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
+          MYSQL
           <span class="button_tally">10</span>
         </a>
         
@@ -335,8 +343,8 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
-          MYSQL
+        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
+          DJANGO
           <span class="button_tally">7</span>
         </a>
         
@@ -385,11 +393,6 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">4</span>
-        </a>
-        
         
         <br>
         <div class="post_tags_toggle button">All Tags</div>
@@ -428,7 +431,7 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=7 title="django">DJANGO<span class="button_tally">7</span>
             </a>
             
             
@@ -472,7 +475,7 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=10 title="mysql">MYSQL<span class="button_tally">10</span>
             </a>
             
             
@@ -497,6 +500,10 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
             
             
             <a href='https://chankoo.github.io/tags/spring/' class=" post_tag button button_translucent" data-position=1 title="spring">SPRING<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/sqlite/' class=" post_tag button button_translucent" data-position=2 title="sqlite">SQLITE<span class="button_tally">2</span>
             </a>
             
             
@@ -536,7 +543,7 @@ refs CPython 파헤치기: 따라 하면서 이해하는 파이썬 내부의 동
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=12 title="분산시스템">분산시스템<span class="button_tally">12</span>
             </a>
             
             

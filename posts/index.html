@@ -119,6 +119,111 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/sqlite/" title="SQLite">SQLite</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-05-24</span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>SQLite는 DBMS로 아래와 같은 특징이 있다.
+파일 기반 DB DBMS 내 모든 데이터를 하나의 파일로 관리한다. 백업과 마이그레이션이 무척 편리하다. 서버리스 라이브러리 다른 DBMS와 달리 클라이언트-서버 아키텍처가 아님. 클라이언트 어플리케이션이 사용하는 라이브러리이다. 클라이언트 프로세스가 데이터베이스 엔진을 라이브러리로 사용하여, 파일IO를 통해 DBMS에 접근하는 것이다. DB 서버 프로세스와 통신하지 않으므로 IPC가 발생하지 않는다. 기존 클라이언트-서버 구조보다 더 가볍고, 빠를 수 있다. 이러한 특성 덕에 Django, 안드로이드 등에 기본적으 …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/sqlite/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-05-23</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
+        </a><a href='https://chankoo.github.io/tags/sqlite/' title="sqlite" class="post_tag button button_translucent">sqlite
+        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>유일 ID 생성 방식 일반적으로 분산 시스템에서 유일 ID를 생성하는 방법은 아래와 같다.
+DBMS Auto Increment 옵션 조정 UUID 티켓서버 Snowflake ID 1. Auto Increment 옵션 조정 Auto Increment(Sequence) 은 대부분의 DBMS에 구현된 기능으로, 1씩 증가하는 값을 내놓도록 보장한다. 단일 DB 환경에서는 유일 ID를 쉽게 생성할 수 있다.
+마스터 노드가 여러개인 분산 환경이 문제인데, mysql과 같은 DBMS는 이 Auto Increment의 증가폭과 시작값 옵션을 조정하여 분산 환경 내 유일한 ID를  …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      2024-05-23</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/django/' title="django" class="post_tag button button_translucent">django
+        </a><a href='https://chankoo.github.io/tags/sqlite/' title="sqlite" class="post_tag button button_translucent">sqlite
+        </a><a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' title="분산시스템" class="post_tag button button_translucent">분산시스템
+        </a><a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
+        </a>
+    </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>유일 ID 생성 방식 일반적으로 분산 시스템에서 유일 ID를 생성하는 방법은 아래와 같다.
+DBMS Auto Increment 옵션 조정 UUID 티켓서버 Snowflake ID 1. Auto Increment 옵션 조정 Auto Increment(Sequence) 은 대부분의 DBMS에 구현된 기능으로, 1씩 증가하는 값을 내놓도록 보장한다. 단일 DB 환경에서는 유일 ID를 쉽게 생성할 수 있다.
+마스터 노드가 여러개인 분산 환경이 문제인데, mysql과 같은 DBMS는 이 Auto Increment의 증가폭과 시작값 옵션을 조정하여 분산 환경 내 유일한 ID를  …</p>
+          
+          <br>
+          <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </h3>
       
@@ -1698,104 +1803,6 @@ mysql 기준으로 성능에 중요한 설정 max_connections: 클라이언트�
     </div>
   </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/lsm-tree/" title="LSM Tree">LSM Tree</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-21</span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Log Structured Merge Tree는 로그성 데이터 색인을 위해 고안된 자료구조로, 정렬된 키-값 데이터인 SS테이블(Sorted String Table) 형식으로 디스크에 데이터를 저장한다.
-refs 데이터 중심 애플리케이션 설계 색인(index)의 두 가지 형태 : LSM 트리 &amp; B 트리 | by allocProc | Medium links B-Tree Hash 인덱스</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/lsm-tree/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" title="Mysql 인덱스">Mysql 인덱스</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-21</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>mysql의 InnoDB는 아래와 같은 구조로 인덱스를 생성한다. 해당 인덱스는 B-Tree 로 기본키를 저장하고, 기본키는 데이터에 접근한다. 이때 기본키와 데이터는 같은 공간에 저장한다. 이를 클러스터드 인덱스(테이블이 곧 기본키 인덱스)라고 부른다.
-refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하기 - MangKyu’s Diary 데이터 중심 애플리케이션 설계 links B-Tree Hash 인덱스 전문 검색 인덱스 Real MySQL</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/mysql-%EC%9D%B8%EB%8D%B1%EC%8A%A4/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://chankoo.github.io/posts/b-tree/" title="B-Tree">B-Tree</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      2023-11-21</span><span>&nbsp;· <a href='https://chankoo.github.io/tags/mysql/' title="mysql" class="post_tag button button_translucent">mysql
-        </a>
-    </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>BST(Binary Search Tree)를 일반화한 자료구조로 2개 이상의 자식 노드를 갖는 Balanced Tree이다.
-B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AVL Tree, RB Tree에 비해 자식 노드 개수가 많아 디스크 접근 수가 적음 블록 단위로 메모리에 적재하는 OS 특성도 효율적으로 활용 B Tree 인덱스의 성능은 키의 크기, 키의 카디널리티, 레코드 대비 인덱스 스캔의 범위 등 다양한 요소에 영향 받는다.
-디스크 I/O로 데이터를 가져오는 단위인 블록의 크기는 고정(mysql은 16KB)인데, 키의 크 …</p>
-          
-          <br>
-          <a href="https://chankoo.github.io/posts/b-tree/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
       <li>
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -1849,19 +1856,19 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://chankoo.github.io/posts/sqlite/" class="nav-link" title="SQLite">SQLite</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1feat.-django/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
+        <a href="https://chankoo.github.io/posts/%EB%B6%84%EC%82%B0db-%EC%9C%A0%EC%9D%BC-id-%EC%83%9D%EC%84%B1/" class="nav-link" title="분산DB 유일 ID 생성(feat. Django)">분산DB 유일 ID 생성(feat. Django)</a>
+      </li>
+      <li>
         <a href="https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/" class="nav-link" title="DB 인덱스와 정렬">DB 인덱스와 정렬</a>
       </li>
       <li>
         <a href="https://chankoo.github.io/posts/restful-api/" class="nav-link" title="Restful API">Restful API</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%98%B5%EC%85%98/" class="nav-link" title="모바일 앱 개발 옵션">모바일 앱 개발 옵션</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EC%8B%9C%EA%B7%B8%EB%84%90/" class="nav-link" title="시그널">시그널</a>
-      </li>
-      <li>
-        <a href="https://chankoo.github.io/posts/%EB%8F%84%EC%BB%A4-shutdown/" class="nav-link" title="도커 Shutdown">도커 Shutdown</a>
       </li>
     </ul>
     <div>
@@ -1894,12 +1901,12 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
         
         <a href='https://chankoo.github.io/categories/db/' class="post_tag button button_translucent" title="db">
           DB
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/' class="post_tag button button_translucent" title="백엔드">
           백엔드
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://chankoo.github.io/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' class="post_tag button button_translucent" title="자료구조">
@@ -1964,13 +1971,18 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
           <span class="button_tally">14</span>
         </a>
         
+        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
+          분산시스템
+          <span class="button_tally">12</span>
+        </a>
+        
         <a href='https://chankoo.github.io/tags/msa/' class="post_tag button button_translucent" title="msa">
           MSA
           <span class="button_tally">11</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class="post_tag button button_translucent" title="분산시스템">
-          분산시스템
+        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
+          MYSQL
           <span class="button_tally">10</span>
         </a>
         
@@ -1989,8 +2001,8 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
           <span class="button_tally">8</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/mysql/' class="post_tag button button_translucent" title="mysql">
-          MYSQL
+        <a href='https://chankoo.github.io/tags/django/' class="post_tag button button_translucent" title="django">
+          DJANGO
           <span class="button_tally">7</span>
         </a>
         
@@ -2039,11 +2051,6 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://chankoo.github.io/tags/api/' class="post_tag button button_translucent" title="api">
-          API
-          <span class="button_tally">4</span>
-        </a>
-        
         
         <br>
         <div class="post_tags_toggle button">All Tags</div>
@@ -2082,7 +2089,7 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=4 title="django">DJANGO<span class="button_tally">4</span>
+            <a href='https://chankoo.github.io/tags/django/' class=" post_tag button button_translucent" data-position=7 title="django">DJANGO<span class="button_tally">7</span>
             </a>
             
             
@@ -2126,7 +2133,7 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=7 title="mysql">MYSQL<span class="button_tally">7</span>
+            <a href='https://chankoo.github.io/tags/mysql/' class=" post_tag button button_translucent" data-position=10 title="mysql">MYSQL<span class="button_tally">10</span>
             </a>
             
             
@@ -2151,6 +2158,10 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
             
             
             <a href='https://chankoo.github.io/tags/spring/' class=" post_tag button button_translucent" data-position=1 title="spring">SPRING<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='https://chankoo.github.io/tags/sqlite/' class=" post_tag button button_translucent" data-position=2 title="sqlite">SQLITE<span class="button_tally">2</span>
             </a>
             
             
@@ -2190,7 +2201,7 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
             </a>
             
             
-            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=10 title="분산시스템">분산시스템<span class="button_tally">10</span>
+            <a href='https://chankoo.github.io/tags/%EB%B6%84%EC%82%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/' class=" post_tag button button_translucent" data-position=12 title="분산시스템">분산시스템<span class="button_tally">12</span>
             </a>
             
             

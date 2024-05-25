@@ -6,7 +6,24 @@
     <description>Recent content in DB on chankoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Apr 2024 12:02:40 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 May 2024 14:12:15 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLite</title>
+      <link>https://chankoo.github.io/posts/sqlite/</link>
+      <pubDate>Fri, 24 May 2024 14:12:15 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/sqlite/</guid>
+      <description>
+        
+          
+            SQLite는 DBMS로 아래와 같은 특징이 있다.
+파일 기반 DB DBMS 내 모든 데이터를 하나의 파일로 관리한다. 백업과 마이그레이션이 무척 편리하다. 서버리스 라이브러리 다른 DBMS와 달리 클라이언트-서버 아키텍처가 아님. 클라이언트 어플리케이션이 사용하는 라이브러리이다. 클라이언트 프로세스가 데이터베이스 엔진을 라이브러리로 사용하여, 파일IO를 통해 DBMS에 접근하는 것이다. DB 서버 프로세스와 통신하지 않으므로 IPC가 발생하지 않는다. 기존 클라이언트-서버 구조보다 더 가볍고, 빠를 수 있다. 이러한 특성 덕에 Django, 안드로이드 등에 기본적으로 내장되었다. 전체 DB를 잠그는 방식으로 락을 구현한다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>DB 인덱스와 정렬</title>
       <link>https://chankoo.github.io/posts/db-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%99%80-%EC%A0%95%EB%A0%AC/</link>
@@ -140,6 +157,27 @@ refs [MySQL] B-Tree로 인덱스(Index)에 대해 쉽고 완벽하게 이해하�
 예를 들어,
 &amp;ldquo;검색 엔진은 정보를 빠르게 찾을 수 있는 도구이다.&amp;rdquo; &amp;ldquo;인덱스는 검색을 효율적으로 만들어주는 역할을 한다.&amp;rdquo; 위 문서들을 역색인 하면 아래와 같이 저장한다.
 { &amp;#34;검색&amp;#34;: [1, 2], &amp;#34;엔진&amp;#34;: [1], &amp;#34;정보&amp;#34;: [1], &amp;#34;빠르게&amp;#34;: [1], &amp;#34;찾다&amp;#34;: [1], &amp;#34;도구&amp;#34;: [1], &amp;#34;인덱스&amp;#34;: [2], &amp;#34;효율적으로&amp;#34;: [2], &amp;#34;만들다&amp;#34;: [2], &amp;#34;역할&amp;#34;: [2] } 반면, 전문 검색 인덱스는 검색이 필요한 단어를 모두 인덱싱하는 방식으로, 일반적인 인덱싱 방식과 크게 다르지 않다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>타임존 이슈</title>
+      <link>https://chankoo.github.io/posts/%ED%83%80%EC%9E%84%EC%A1%B4-%EC%9D%B4%EC%8A%88/</link>
+      <pubDate>Wed, 18 Jan 2023 11:31:14 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%ED%83%80%EC%9E%84%EC%A1%B4-%EC%9D%B4%EC%8A%88/</guid>
+      <description>
+        
+          
+            datetime이 타임존과 엮여 표현되는 방식을 이해하고 헷갈리지 말자
+db 타임존 설정은 보통 SYSTEM의 타임존 설정을 따르게 되어있음 SELECT @@global.time_zone; db가 돌고있는 시스템(보통 docker의 커널)의 타임존 설정은 대개 UTC +0000임. 때문에 DB의 타임존은 UTC를 따르는 것이 보통이고 표준이다.
+db에 저장된 예시 데이터를 보면
+한눈에 봐도 이른시간이 찍혀있고, UTC 기준임
+datetime 데이터는 불변이라는 것을 잊으면 안된다. 데이터를 표현하는 방법이 타임존에 따라 여러가지 인 것이다.
+DB가 UTC를 따르고, Django에서 TIME_ZONE = &#39;Asia/Seoul&#39;; USE_TZ = True 로 지정한다면
           
           
         

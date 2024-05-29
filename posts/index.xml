@@ -964,7 +964,8 @@ B Tree 류 자료구조는 DB 인덱스로 많이 쓰인다. (Balanced BST인)AV
             키워드에 문서 인덱스를 저장하는 작업으로, 키워드를 포함한 문서를 빠르게 찾는 역인덱스이다.
 예를 들어,
 &amp;ldquo;검색 엔진은 정보를 빠르게 찾을 수 있는 도구이다.&amp;rdquo; &amp;ldquo;인덱스는 검색을 효율적으로 만들어주는 역할을 한다.&amp;rdquo; 위 문서들을 역색인 하면 아래와 같이 저장한다.
-{ &amp;#34;검색&amp;#34;: [1, 2], &amp;#34;엔진&amp;#34;: [1], &amp;#34;정보&amp;#34;: [1], &amp;#34;빠르게&amp;#34;: [1], &amp;#34;찾다&amp;#34;: [1], &amp;#34;도구&amp;#34;: [1], &amp;#34;인덱스&amp;#34;: [2], &amp;#34;효율적으로&amp;#34;: [2], &amp;#34;만들다&amp;#34;: [2], &amp;#34;역할&amp;#34;: [2] } 반면, 전문 검색 인덱스는 검색이 필요한 단어를 모두 인덱싱하는 방식으로, 일반적인 인덱싱 방식과 크게 다르지 않다.
+{ &amp;#34;검색&amp;#34;: [1, 2], &amp;#34;엔진&amp;#34;: [1], &amp;#34;정보&amp;#34;: [1], &amp;#34;빠르게&amp;#34;: [1], &amp;#34;찾다&amp;#34;: [1], &amp;#34;도구&amp;#34;: [1], &amp;#34;인덱스&amp;#34;: [2], &amp;#34;효율적으로&amp;#34;: [2], &amp;#34;만들다&amp;#34;: [2], &amp;#34;역할&amp;#34;: [2] } 전문 검색 인덱스 역시 검색이 필요한 단어를 모두 인덱싱하는 방식으로, 역색인을 사용한다.?
+{ 1: [&amp;#34;검색&amp;#34;, &amp;#34;엔진&amp;#34;, &amp;#34;정보&amp;#34;, &amp;#34;빠르게&amp;#34;, &amp;#34;찾을&amp;#34;, &amp;#34;수&amp;#34;, &amp;#34;있는&amp;#34;, &amp;#34;도구&amp;#34;], 2: [&amp;#34;인덱스&amp;#34;, &amp;#34;검색&amp;#34;, &amp;#34;효율적으로&amp;#34;, &amp;#34;만들어주는&amp;#34;, &amp;#34;역할&amp;#34;, &amp;#34;한다&amp;#34;] } refs 6.
           
           
         
@@ -1524,7 +1525,7 @@ refs [Web] HTTP Only와 Secure Cookie 이해하기 links XSS
         
           
             JSON Web Token. 사용자의 정보를 Json에 담아 보내는 형식의 웹 토큰이다.
-Header / Payload / Signature 로 나뉘며, base64 인코딩을 통해 url-safe한 xxx.yyy.zzz 형태로 표현한다. Header에는 Signature 에 서명한 알고리즘 정보를 담는다. Payload에는 실제 사용자 정보를 Json 형태로 담으며 추가에 열려있다. Signature는 header와 payload가 변경 안되었음을 보증한다.
+핵심 Header / Payload / Signature 로 나뉘며, base64 인코딩을 통해 url-safe한 xxx.yyy.zzz 형태로 표현한다. Header에는 Signature 에 서명한 알고리즘 정보를 담는다. Payload에는 실제 사용자 정보를 Json 형태로 담으며 추가에 열려있다. Signature는 header와 payload가 변경 안되었음을 보증한다.
 주로 인증을 위해 사용하는데, JWT의 유효성(위조 여부)만 확인하면 인증은 완료된다. 이미 JWT 발급 시점에 (id, pwd로) 사용자를 인증했고 그 결과로 JWT를 생성했기에, (Signature를 이용하여) JWT 가 위조되지 않았다는 것만 확인하면 JWT 발급 시점과 같은 사용자라는 것을 알게되는 원리이다.
           
           

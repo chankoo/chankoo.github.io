@@ -26,6 +26,24 @@ SIGTERM - 프로세스에 종료를 부탁. Graceful Shutdown을 유도(docker s
     </item>
     
     <item>
+      <title>셔뱅</title>
+      <link>https://chankoo.github.io/posts/%EC%85%94%EB%B1%85/</link>
+      <pubDate>Mon, 30 Jan 2023 14:04:02 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%85%94%EB%B1%85/</guid>
+      <description>
+        
+          
+            shebang(sharp + bang)은 #! 기호를 뜻하며, 스크립트의 맨 처음에 써서 해당 스크립트를 해석할 인터프리터의 절대경로를 지정한다.
+#!인터프리터절대경로 유닉스 계열 운영 체제에서 셔뱅이 있는 스크립트는 프로그램으로서 실행된다. 1) 지정된 인터프리터 프로그램이 대신 실행되고, 2) 스크립트의 실행을 시도할 때 처음 사용되었던 경로를 인수로서 넘겨준다. 이를테면 스크립트의 경로가 path/to/script 이고 다음의 줄로 시작한다면, 프로그램 로더는 프로그램 /bin/sh를 대신 실행하되 path/to/script를 첫 번째 인수로 넘겨준다.
+#!/bin/sh 다양한 머신으로 배포해야하는 스크립트의 경우, 머신에 따라 인터프리터 경로가 다른 경우가 있다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>블록</title>
       <link>https://chankoo.github.io/posts/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%86%A8/</link>
       <pubDate>Thu, 13 Oct 2022 23:01:33 +0900</pubDate>

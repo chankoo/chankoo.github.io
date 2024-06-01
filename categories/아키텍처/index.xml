@@ -166,6 +166,23 @@ non-block IO - 요청을 block하는 작업이 아니기에 I/O를 기다리는 
     </item>
     
     <item>
+      <title>적당히 타협한 Django 아키텍처</title>
+      <link>https://chankoo.github.io/posts/%EC%A0%81%EB%8B%B9%ED%9E%88-%ED%83%80%ED%98%91%ED%95%9C-django-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link>
+      <pubDate>Thu, 09 Nov 2023 23:16:07 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%A0%81%EB%8B%B9%ED%9E%88-%ED%83%80%ED%98%91%ED%95%9C-django-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid>
+      <description>
+        
+          
+            Django는 아래와 같은 특성 때문에 클린 아키텍처와 DDD를 적용하기 어렵다. (프레임워크의 의도와 다르게 코드를 작성해야하는 경우가 생긴다.)
+액티브 레코드 패턴을 사용하는 Model -&amp;gt; 도메인 모델로만 사용하기 어렵고 DB 테이블 구조와 밀접하게 연관 비즈니스 로직과 엮여있는 View -&amp;gt; 뷰에 비즈니스 로직을 구현하기 쉬운 구조 Django ORM -&amp;gt; 데이터를 가져오고 저장하는 방식이 특정 ORM 코드에 종속됨 차선으로 DDD를 선택적으로 적용한 Layered 아키텍처를 생각한다. MSA로 확장 가능성을 고려해서, 적당히 타협한 아키텍처를 생각해본다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>구글 엔지니어는 이렇게 일한다</title>
       <link>https://chankoo.github.io/posts/%EA%B5%AC%EA%B8%80-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%8A%94-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EC%9D%BC%ED%95%9C%EB%8B%A4/</link>
       <pubDate>Wed, 08 Nov 2023 10:06:07 +0900</pubDate>
@@ -280,7 +297,7 @@ refs 마이크로서비스 패턴 links
           
             동작을 구현한 클래스와 상태를 표현하는 클래스를 분리하여, 비즈니스 로직을 요청 타입에 따라 별도로 구분된 절차적 트랜잭션 스크립트로 작성한 패턴이다. 구현이 쉽고 빠르며, 비교적 단순한 비즈니스 로직에 적합하다.
 동작과 상태를 모두 구현하여 책임을 분리한 도메인 모델과는 대비되는 개념이다. 비즈니스 로직이 복잡해지고 여러 클래스가 복잡하게 얽힐수록, OOP적으로 잘 설계된 도메인 모델의 가치는 높아진다.
-도메인 모델 패턴에서는 도메인 객체가 비즈니스 로직을 처리하여, 서비스 클래스는 가벼워진다. refs 마이크로서비스 패턴 Django와 DDD가 함께하기 어려운 이유 (7/11 보완) | by Junha Baek | junhabaek links 
+도메인 모델 패턴에서는 도메인 객체가 비즈니스 로직을 처리하여, 서비스 클래스는 가벼워진다. refs 마이크로서비스 패턴 Django와 Layered Architecture 사이에서 타협점 찾기 | by 아테나스랩 | 아테나스랩 팀블로그 | Medium links 
           
           
         

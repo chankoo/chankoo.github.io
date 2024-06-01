@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DDD on chankoo</title>
+    <link>https://chankoo.github.io/tags/ddd/</link>
+    <description>Recent content in DDD on chankoo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Dec 2023 14:01:38 +0900</lastBuildDate><atom:link href="https://chankoo.github.io/tags/ddd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Domain Driven Design</title>
+      <link>https://chankoo.github.io/posts/domain-driven-design/</link>
+      <pubDate>Wed, 20 Dec 2023 14:01:38 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/domain-driven-design/</guid>
+      <description>
+        
+          
+            Domain과 Model Domain은 사용자가 SW를 사용하는 대상 영역을 말한다 SW의 본질은 (해당 도메인에서)사용자의 문제를 해결하는 것이다 그러므로 개발은 사용자 활동에 관련한 지식 체계에 집중해야 한다 지식의 양이 방대하므로 Model을 통해 추상화한다 Model의 유용성 모델과 핵심 설계는 서로 영향을 주며 구체화된다 유지보수와 계속되는 기능 개선을 가능케 한다 모델은 모든 구성원이 사용하는 언어의 중추이다 개발자와 도메인 전문가의 의사소통시 번역이 불필요하다 언어가 모델이 긴밀히 연결되므로 언어를 통해 모델을 정제할 수 있다 모델은 지식의 정수만을 뽑아낸 것이다 도메인 지식을 조직화하고 가장 중요한 요소를 구분짓는다 효과적인 모델링의 요소 개발 project의 iteration 내내 모델과 구현의 연결고리를 유지한다 모델은 언어에 기반해야하고 언어 역시 모델을 토대로 정제된다 모델은 풍부한 도메인 지식을 담아야한다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>적당히 타협한 Django 아키텍처</title>
+      <link>https://chankoo.github.io/posts/%EC%A0%81%EB%8B%B9%ED%9E%88-%ED%83%80%ED%98%91%ED%95%9C-django-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link>
+      <pubDate>Thu, 09 Nov 2023 23:16:07 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EC%A0%81%EB%8B%B9%ED%9E%88-%ED%83%80%ED%98%91%ED%95%9C-django-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid>
+      <description>
+        
+          
+            Django는 아래와 같은 특성 때문에 클린 아키텍처와 DDD를 적용하기 어렵다. (프레임워크의 의도와 다르게 코드를 작성해야하는 경우가 생긴다.)
+액티브 레코드 패턴을 사용하는 Model -&amp;gt; 도메인 모델로만 사용하기 어렵고 DB 테이블 구조와 밀접하게 연관 비즈니스 로직과 엮여있는 View -&amp;gt; 뷰에 비즈니스 로직을 구현하기 쉬운 구조 Django ORM -&amp;gt; 데이터를 가져오고 저장하는 방식이 특정 ORM 코드에 종속됨 차선으로 DDD를 선택적으로 적용한 Layered 아키텍처를 생각한다. MSA로 확장 가능성을 고려해서, 적당히 타협한 아키텍처를 생각해본다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>마이크로서비스 패턴 모음</title>
+      <link>https://chankoo.github.io/posts/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%8C%A8%ED%84%B4-%EB%AA%A8%EC%9D%8C/</link>
+      <pubDate>Wed, 07 Jun 2023 20:27:17 +0900</pubDate>
+      
+      <guid>https://chankoo.github.io/posts/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%8C%A8%ED%84%B4-%EB%AA%A8%EC%9D%8C/</guid>
+      <description>
+        
+          
+            패턴 개괄
+애플리케이션 패턴(application pattern): 개발자가 맞닥뜨리는 문제를 해결합니다. 분해: 시스템을 여러 서비스로 분해하는 기준을 결정하는 것. 비즈니스 능력 &amp;lt;-&amp;gt; 하위 도메인(DDD) 쿼리: 분산 db에서 쿼리하는 방법 API 조합 &amp;lt;-&amp;gt; CQRS 데이터 일관성: 분산 db 간 일관성 유지하는 방법 참고 - 2PC는 가용성 이슈와 성능 이슈 때문에 제외 테스트 자동화: 가급적 E2E를 피하고, 서비스 별로 분리하여 테스트하는 단순화가 필요 consumer-driven contract test / consumer-side contract test / service component test 애플리케이션 인프라(application infrastructure): 개발에도 영향을 미치는 인프라 문제를 해결합니다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
